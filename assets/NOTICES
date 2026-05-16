@@ -1711,6 +1711,9 @@ file_selector_linux
 file_selector_macos
 file_selector_platform_interface
 file_selector_windows
+google_sign_in_android
+google_sign_in_ios
+google_sign_in_web
 shared_preferences
 shared_preferences_android
 shared_preferences_foundation
@@ -4694,6 +4697,9 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 --------------------------------------------------------------------------------
 file_selector_web
 flutter_lints
+google_identity_services_web
+google_sign_in
+google_sign_in_platform_interface
 path_provider_linux
 path_provider_platform_interface
 path_provider_windows
