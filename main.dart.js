@@ -896,7 +896,7 @@ a.l()
 return l},
 lZ(a){return new A.Pm(a)},
 b9o(a){var s,r,q,p,o,n,m
-A:for(s=a.length,r=0;r<6;++r){q=B.PC[r]
+A:for(s=a.length,r=0;r<6;++r){q=B.PB[r]
 p=q.c
 o=p.length
 if(s<o)continue A
@@ -11688,7 +11688,7 @@ case 4:s=l.a
 s===$&&A.a()
 s=A.bK(s,200)
 r=A.bK(A.a9e(l,B.rM,B.Qb),24)
-q=A.bK(A.a9e(l,B.rM,B.R0),32)
+q=A.bK(A.a9e(l,B.rM,B.R1),32)
 p=A.bK(l.a,10)
 o=A.bK(l.a,12)
 l.d===$&&A.a()
@@ -11698,8 +11698,8 @@ break
 case 5:s=l.a
 s===$&&A.a()
 s=A.bK(A.CS(s+240),40)
-r=A.bK(A.a9e(l,B.rO,B.S2),24)
-q=A.bK(A.a9e(l,B.rO,B.S3),32)
+r=A.bK(A.a9e(l,B.rO,B.S3),24)
+q=A.bK(A.a9e(l,B.rO,B.S4),32)
 p=A.bK(l.a+15,8)
 o=A.bK(l.a+15,12)
 l.d===$&&A.a()
@@ -24358,7 +24358,7 @@ t.Dn.a(a)
 s=J.bv(a)
 r=s.i(a,0)
 r.toString
-switch(B.PM[A.eY(r)].a){case 0:s=s.i4(a,1)
+switch(B.PL[A.eY(r)].a){case 0:s=s.i4(a,1)
 r=s[0]
 r.toString
 A.eY(r)
@@ -28105,7 +28105,7 @@ _.x=i},
 a4L:function a4L(){},
 aVy(a,b,c){var s=B.c.au(a).toLowerCase(),r=A.b8u(s),q=A.b8v(b,c)
 return new A.a55(s,b,r==null&&q==null,r,q)},
-b8u(a){var s,r,q="Ingresa un correo valido.",p=a.length
+b8u(a){var s,r,q="Ingresa un correo v\xe1lido.",p=a.length
 if(p===0)return"Ingresa tu correo."
 if(p>254)return"El correo es demasiado largo."
 s=B.c.ir(a,"@")
@@ -28114,9 +28114,9 @@ r=B.c.cp(a,s+1)
 if(r.length===0||!B.c.p(r,"."))return q
 return null},
 b8v(a,b){var s=a.length
-if(s===0)return"Ingresa tu contrasena."
-if(s<8)return b?"La contrasena debe tener al menos 8 caracteres.":"La contrasena es demasiado corta."
-if(s>128)return"La contrasena es demasiado larga."
+if(s===0)return"Ingresa tu contrase\xf1a."
+if(s<8)return b?"La contrase\xf1a debe tener al menos 8 caracteres.":"La contrase\xf1a es demasiado corta."
+if(s>128)return"La contrase\xf1a es demasiado larga."
 return null},
 a55:function a55(a,b,c,d,e){var _=this
 _.a=a
@@ -28467,29 +28467,29 @@ aOr(a){var s=a.gc4().length,r=a.f.length,q=a.x.a
 if(q===0)q=1
 return new A.a68(s,r,q,a.r.length,a.w.length)},
 aZt(a){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c
-if(B.c.au(a.a).length===0||B.c.au(a.b).length===0)throw A.i(B.M0)
-if(a.e.length===0)throw A.i(B.LU)
-if(a.gc4().length===0)throw A.i(B.M1)
+if(B.c.au(a.a).length===0||B.c.au(a.b).length===0)throw A.i(B.LL)
+if(a.e.length===0)throw A.i(B.LV)
+if(a.gc4().length===0)throw A.i(B.M2)
 s=a.d
 if(isNaN(s)||s==1/0||s==-1/0)throw A.i(B.LX)
 for(s=a.e,r=s.length,q=0;q<r;++q){p=s[q]
 if(B.c.au(p.b).length===0)throw A.i(B.LI)
 for(o=p.e,n=o.length,m=0;m<n;++m){l=o[m]
-if(B.c.au(l.b).length===0)throw A.i(B.M5)
+if(B.c.au(l.b).length===0)throw A.i(B.M7)
 k=l.c
 if(!isNaN(k))k=k==1/0||k==-1/0||k<0
 else k=!0
-if(k)throw A.i(B.LK)
+if(k)throw A.i(B.LJ)
 j=l.d
 if(j!=null)k=j<1||j>31
 else k=!1
-if(k)throw A.i(B.Mb)}}s=a.gc4()
+if(k)throw A.i(B.LN)}}s=a.gc4()
 i=new A.Y(s,new A.a69(),A.M(s).h("Y<1,j>")).fg(0)
 for(s=a.f,r=s.length,q=0;q<s.length;s.length===r||(0,A.o)(s),++q){h=s[q]
 o=h.d
 if(!isNaN(o))n=o==1/0||o==-1/0||o<0
 else n=!0
-if(n)throw A.i(B.M3)
+if(n)throw A.i(B.M4)
 n=h.f===B.b6
 if(n&&h.r.length===0)throw A.i(B.Mc)
 k=h.r
@@ -28498,31 +28498,31 @@ for(f=k.length,m=0;m<k.length;k.length===f||(0,A.o)(k),++m){e=k[m]
 d=e.b
 if(!isNaN(d))d=d==1/0||d==-1/0||d<0
 else d=!0
-if(d)throw A.i(B.LJ)
+if(d)throw A.i(B.M5)
 d=e.a
-if(B.c.au(d).length===0)throw A.i(B.LV)
-if(!i.p(0,d))throw A.i(B.LZ)}if(n&&Math.abs(g-o)>0.01)throw A.i(B.M9)}for(s=a.w,r=s.length,q=0;q<r;++q){c=s[q]
-if(B.c.au(c.b).length===0)throw A.i(B.LT)
+if(B.c.au(d).length===0)throw A.i(B.M1)
+if(!i.p(0,d))throw A.i(B.M_)}if(n&&Math.abs(g-o)>0.01)throw A.i(B.LY)}for(s=a.w,r=s.length,q=0;q<r;++q){c=s[q]
+if(B.c.au(c.b).length===0)throw A.i(B.LU)
 o=c.c
 if(!isNaN(o))o=o==1/0||o==-1/0||o<0
 else o=!0
-if(o)throw A.i(B.M6)
+if(o)throw A.i(B.M8)
 o=c.d
 if(!isNaN(o))o=o==1/0||o==-1/0||o<0
 else o=!0
-if(o)throw A.i(B.LN)
+if(o)throw A.i(B.LO)
 o=c.y
 if(!isNaN(o))o=o==1/0||o==-1/0||o<0
 else o=!0
-if(o)throw A.i(B.M8)
+if(o)throw A.i(B.Ma)
 o=c.e
-if(o<0)throw A.i(B.M_)
-if(B.c.au(c.r).length===0)throw A.i(B.LR)
+if(o<0)throw A.i(B.M0)
+if(B.c.au(c.r).length===0)throw A.i(B.LS)
 n=c.w
-if(n<1||n>31)throw A.i(B.M7)
+if(n<1||n>31)throw A.i(B.M9)
 n=c.x
-if(n<0)throw A.i(B.LP)
-if(n>o)throw A.i(B.Ma)}},
+if(n<0)throw A.i(B.LQ)
+if(n>o)throw A.i(B.Mb)}},
 a69:function a69(){},
 a6a:function a6a(){},
 a68:function a68(a,b,c,d,e){var _=this
@@ -28543,18 +28543,18 @@ l=m.a
 if(!g.D(0,l))f.D(0,l)
 if(B.c.au(m.b).length===0)i.push(B.G0)
 l=m.c
-if(!(!isNaN(l)&&isFinite(l)&&l>=0&&l<Math.pow(10,9)))i.push(new A.ey("La categoria "+m.b+" tiene un plan invalido.",B.c9))
+if(!(!isNaN(l)&&isFinite(l)&&l>=0&&l<Math.pow(10,9)))i.push(new A.ey("La categor\xeda "+m.b+" tiene un plan inv\xe1lido.",B.c9))
 k=m.d
 if(k!=null)l=k<1||k>31
 else l=!1
-if(l)i.push(new A.ey("La categoria "+m.b+" tiene un dia de pago invalido.",B.c9))}}for(h=A.cw(f,f.r,f.$ti.c),s=h.$ti.c;h.v();){p=h.d
-i.push(new A.ey("Hay categorias duplicadas con id "+(p==null?s.a(p):p)+".",B.c9))}for(h=a.f,s=h.length,r=0;r<h.length;h.length===s||(0,A.o)(h),++r){j=h[r]
+if(l)i.push(new A.ey("La categor\xeda "+m.b+" tiene un d\xeda de pago inv\xe1lido.",B.c9))}}for(h=A.cw(f,f.r,f.$ti.c),s=h.$ti.c;h.v();){p=h.d
+i.push(new A.ey("Hay categor\xedas duplicadas con id "+(p==null?s.a(p):p)+".",B.c9))}for(h=a.f,s=h.length,r=0;r<h.length;h.length===s||(0,A.o)(h),++r){j=h[r]
 p=j.d
-if(!(!isNaN(p)&&isFinite(p)&&p>=0&&p<Math.pow(10,9))||p<=0)i.push(new A.ey("El movimiento "+j.c+" tiene un monto invalido.",B.c9))
+if(!(!isNaN(p)&&isFinite(p)&&p>=0&&p<Math.pow(10,9))||p<=0)i.push(new A.ey("El movimiento "+j.c+" tiene un monto inv\xe1lido.",B.c9))
 o=j.c
 if(B.c.au(o).length===0)i.push(new A.ey("Hay un movimiento sin concepto.",B.oF))
 if(j.f===B.b6){l=j.r
-if(l.length===0)i.push(new A.ey("El gasto "+o+" no tiene categoria.",B.c9))
+if(l.length===0)i.push(new A.ey("El gasto "+o+" no tiene categor\xeda.",B.c9))
 if(Math.abs(B.b.fd(l,0,new A.aJe(g,i,j))-p)>0.01)i.push(new A.ey("Las divisiones de "+o+" no cuadran con el total.",B.c9))}}return i},
 aUx(a){return!isNaN(a)&&isFinite(a)&&a>=0&&a<Math.pow(10,9)},
 MO:function MO(a,b){this.a=a
@@ -28596,7 +28596,7 @@ k=A.a6b(l,q,o,n,r,j,p,s.kr(0,new A.a6g(a),t.N,t.du),m)
 k.x.n(0,k.a,A.lw(k))
 return k},
 a6h(){var s=null,r="utilities",q="groceries",p="restaurants",o=2026,n=t.kN,m=t.YT
-return A.a6b(s,B.av,s,A.b([new A.bz("housing","Vivienda",61703,B.kY.C(),A.b([new A.bA("rent","Alquiler",1100,5,s,s),new A.bA(r,"Servicios",210,18,s,s),new A.bA("internet","Internet y telefono",95,22,s,s)],n)),new A.bz("food","Alimentacion",62334,B.IE.C(),A.b([new A.bA(q,"Supermercado",620,s,s,s),new A.bA(p,"Restaurantes",180,s,s,s)],n)),new A.bz("transport","Transporte",61382,B.J4.C(),A.b([new A.bA("gas","Gasolina",280,s,s,s),new A.bA("car_fund","Mantenimiento vehiculo",80,s,600,260)],n)),new A.bz("family","Familia",57948,B.Ig.C(),A.b([new A.bA("school","Colegio",350,10,s,s),new A.bA("health","Salud",140,s,900,320)],n)),new A.bz("savings","Ahorro y fondos",62262,B.IY.C(),A.b([new A.bA("emergency","Emergencia",500,s,5000,1850),new A.bA("vacation","Vacaciones",180,s,1800,540)],n)),new A.bz("giving","Generosidad",62633,B.I9.C(),A.b([new A.bA("donations","Donaciones",220,s,s,s)],n))],t.Cq),s,"Mayo 2026",4200,s,A.b([new A.ci("move_1",A.hm(o,5,2),"Super La Colonia",112.4,B.av,B.b6,A.b([new A.dY(q,112.4)],m),s),new A.ci("move_2",A.hm(o,5,1),"Shell",54.7,B.av,B.b6,A.b([new A.dY("gas",54.7)],m),s),new A.ci("move_3",A.hm(o,5,1),"Enel",86.35,B.av,B.b6,A.b([new A.dY(r,86.35)],m),s),new A.ci("move_4",A.hm(o,5,3),"Farmacia",32.9,B.av,B.b6,A.b([new A.dY("health",32.9)],m),s),new A.ci("move_5",A.hm(o,5,3),"Cafe y almuerzo",18.5,B.av,B.b6,A.b([new A.dY(p,18.5)],m),s)],t.I0))},
+return A.a6b(s,B.av,s,A.b([new A.bz("housing","Vivienda",61703,B.kY.C(),A.b([new A.bA("rent","Alquiler",1100,5,s,s),new A.bA(r,"Servicios",210,18,s,s),new A.bA("internet","Internet y tel\xe9fono",95,22,s,s)],n)),new A.bz("food","Alimentacion",62334,B.IE.C(),A.b([new A.bA(q,"Supermercado",620,s,s,s),new A.bA(p,"Restaurantes",180,s,s,s)],n)),new A.bz("transport","Transporte",61382,B.J4.C(),A.b([new A.bA("gas","Gasolina",280,s,s,s),new A.bA("car_fund","Mantenimiento vehiculo",80,s,600,260)],n)),new A.bz("family","Familia",57948,B.Ig.C(),A.b([new A.bA("school","Colegio",350,10,s,s),new A.bA("health","Salud",140,s,900,320)],n)),new A.bz("savings","Ahorro y fondos",62262,B.IY.C(),A.b([new A.bA("emergency","Emergencia",500,s,5000,1850),new A.bA("vacation","Vacaciones",180,s,1800,540)],n)),new A.bz("giving","Generosidad",62633,B.I9.C(),A.b([new A.bA("donations","Donaciones",220,s,s,s)],n))],t.Cq),s,"Mayo 2026",4200,s,A.b([new A.ci("move_1",A.hm(o,5,2),"Super La Colonia",112.4,B.av,B.b6,A.b([new A.dY(q,112.4)],m),s),new A.ci("move_2",A.hm(o,5,1),"Shell",54.7,B.av,B.b6,A.b([new A.dY("gas",54.7)],m),s),new A.ci("move_3",A.hm(o,5,1),"Enel",86.35,B.av,B.b6,A.b([new A.dY(r,86.35)],m),s),new A.ci("move_4",A.hm(o,5,3),"Farmacia",32.9,B.av,B.b6,A.b([new A.dY("health",32.9)],m),s),new A.ci("move_5",A.hm(o,5,3),"Cafe y almuerzo",18.5,B.av,B.b6,A.b([new A.dY(p,18.5)],m),s)],t.I0))},
 lw(a){return new A.jj(a.c,a.d,A.aMc(a.e),A.aMd(a.f,a.c))},
 aZv(a,b){var s,r,q=a.i(0,"currency"),p=A.u8(q==null?b.ghe():q)
 q=A.li(a.i(0,"monthlyIncome"),0)
@@ -28613,7 +28613,7 @@ return new A.jj(p,q,r,s)},
 Af(a){var s,r,q,p,o=A.bL(a.i(0,"id"))
 if(o==null)o="group_"+1000*Date.now()
 s=A.bL(a.i(0,"name"))
-if(s==null)s="Categoria"
+if(s==null)s="Categor\xeda"
 r=A.fw(a.i(0,"icon"))
 if(r==null)r=61239
 q=A.fw(a.i(0,"color"))
@@ -28880,13 +28880,13 @@ if(b.x)return B.a7h
 if(b.w)return B.a7e
 if(c)return B.a7k
 return B.a7f},
-b6M(a,b){if(b.y)return"No se guardara"
+b6M(a,b){if(b.y)return"No se guardar\xe1"
 if(!b.r)return"Ignorado por el usuario"
-if(a.kq(b.f)==null)return"Necesita categoria"
+if(a.kq(b.f)==null)return"Necesita categor\xeda"
 if(A.d4(b.at.a.a)<=0)return"Necesita monto"
 if(b.x)return"Revisado y listo para guardar"
 if(b.w)return"Coincide por fecha y monto"
-return"Pendiente de revision"},
+return"Pendiente de revisi\xf3n"},
 tv:function tv(a,b,c){this.c=a
 this.d=b
 this.a=c},
@@ -29140,14 +29140,14 @@ aI2:function aI2(a){this.a=a},
 aI3:function aI3(a){this.a=a},
 aI4:function aI4(a){this.a=a},
 b7e(a){var s=a.e.length
-if(s===0)return"Sin categorias"
-if(s===1)return"1 categoria"
-return""+s+" categorias"},
+if(s===0)return"Sin categor\xedas"
+if(s===1)return"1 categor\xeda"
+return""+s+" categor\xedas"},
 aU4(a,b){var s=a.c
 if(s<=0&&b<=0)return B.a6W
 if(b<=0)return B.a6U
 if(b>s)return new A.ts("Pasada",B.ab,B.ab.bc(0.045))
-if(s>0&&b/s>=0.85)return new A.ts("Cerca del limite",B.aS,B.aS.bc(0.045))
+if(s>0&&b/s>=0.85)return new A.ts("Cerca del l\xedmite",B.aS,B.aS.bc(0.045))
 return B.a6V},
 Ak:function Ak(a,b,c,d){var _=this
 _.c=a
@@ -29276,7 +29276,7 @@ return A.f4(s,null)},
 aMD(a){var s,r=B.c.au(a)
 if(r.length===0)return null
 s=A.f4(r,null)
-if(s==null||s<1||s>31)return"El dia de pago debe estar entre 1 y 31."
+if(s==null||s<1||s>31)return"El d\xeda de pago debe estar entre 1 y 31."
 return null},
 aI7:function aI7(a,b){this.a=a
 this.b=b},
@@ -31975,7 +31975,7 @@ acD(a){var s=a/100
 return(s<=0.0031308?s*12.92:1.055*Math.pow(s,0.4166666666666667)-0.055)*255},
 aKu(a){var s=Math.pow(Math.abs(a),0.42)
 return A.r6(a)*400*s/(s+27.13)},
-aKv(a){var s=A.oh(a,B.S1),r=A.aKu(s[0]),q=A.aKu(s[1]),p=A.aKu(s[2])
+aKv(a){var s=A.oh(a,B.S2),r=A.aKu(s[0]),q=A.aKu(s[1]),p=A.aKu(s[2])
 return Math.atan2((r+q-2*p)/9,(11*r+-12*q+p)/11)},
 b0R(a,b){var s,r,q,p,o,n=B.j.bT(b,4)<=1?0:100,m=(b&1)===0?0:100
 if(b<4){s=(a-n*0.7152-m*0.0722)/0.2126
@@ -32088,13 +32088,13 @@ return A.b([o*m+l*k+j*n,o*r+l*q+j*s,o*p[0]+l*p[1]+j*p[2]],t.n)},
 b6e(a,b){var s,r,q,p,o,n,m,l,k=null,j=A.x(t.N,t.FQ)
 for(s=a.e,r=s.length,q=0;q<s.length;s.length===r||(0,A.o)(s),++q){p=s[q]
 o=p.d
-n=(o==null?k:B.c.au(o.b).length!==0)===!0?B.c.au(o.b):"Categoria"
+n=(o==null?k:B.c.au(o.b).length!==0)===!0?B.c.au(o.b):"Categor\xeda"
 m=p.b
 j.n(0,m,new A.bA(m,n,p.c/100,k,k,k))}for(s=J.bP(b);s.v();){r=s.gN()
 l=r.b
 if(r.f.toUpperCase()!=="EXPENSE"||l==null||j.aq(l))continue
 o=r.x
-j.n(0,l,new A.bA(l,(o==null?k:B.c.au(o.b).length!==0)===!0?B.c.au(o.b):"Sin categoria",0,k,k,k))}s=j.$ti.h("bn<2>")
+j.n(0,l,new A.bA(l,(o==null?k:B.c.au(o.b).length!==0)===!0?B.c.au(o.b):"Sin categor\xeda",0,k,k,k))}s=j.$ti.h("bn<2>")
 s=A.U(new A.bn(j,s),s.h("y.E"))
 return s},
 b8o(a){var s,r,q,p=a.f.toUpperCase()==="INCOME"?B.hn:B.b6,o=a.d/100,n=a.b,m=B.c.au(a.r)
@@ -32110,10 +32110,10 @@ break A}s=B.av
 break A}return s},
 aJK(a,b){return A.b([B.Fp,new A.bq(0,B.T,a.bc(B.d.dK(b*0.24,0.02,0.05)),B.je,14)],t.V)},
 a4_(a){var s
-if(isNaN(a)||a==1/0||a==-1/0)throw A.i(B.LY)
-if(a<0)throw A.i(B.LS)
+if(isNaN(a)||a==1/0||a==-1/0)throw A.i(B.LZ)
+if(a<0)throw A.i(B.LT)
 s=B.d.aS(a*100)
-if(s>2147483647)throw A.i(B.LO)
+if(s>2147483647)throw A.i(B.LP)
 return s},
 fg(a,b,c){if(b===c)return a
 return c===B.bN?a/36.6243:a*36.6243},
@@ -32536,7 +32536,7 @@ $1(a){this.a.b=A.aVk(a.getOutputBounds(A.d5(this.b)))},
 $S:2}
 A.uT.prototype={
 gajb(){var s,r,q=new Float32Array(20)
-for(s=this.a,r=0;r<20;++r)if(B.b.p(B.Pz,r))q[r]=s[r]/255
+for(s=this.a,r=0;r<20;++r)if(B.b.p(B.Py,r))q[r]=s[r]/255
 else q[r]=s[r]
 return q},
 uR(){return $.b5.bk().ColorFilter.MakeMatrix(this.gajb())},
@@ -33863,7 +33863,7 @@ A.pV.prototype={
 I(){return"CanvasKitVariant."+this.b}}
 A.abd.prototype={
 gnn(){var s=this.b,r=s==null?null:s.canvasKitVariant
-return A.b0i(B.QU,r==null?"auto":r)},
+return A.b0i(B.QV,r==null?"auto":r)},
 gJQ(){var s,r=this.b
 if(r==null)s=null
 else{r=r.canvasKitMaximumSurfaces
@@ -40149,7 +40149,7 @@ if(p.d.r){p.gvR()
 p=p.b
 s=t.N
 r=t.z
-$.b_().jF(q,B.bO.kg(new A.iL(u.W,[p,A.ar(["deltas",A.b([A.ar(["oldText",b.a,"deltaText",b.b,"deltaStart",b.c,"deltaEnd",b.d,"selectionBase",b.e,"selectionExtent",b.f,"composingBase",b.r,"composingExtent",b.w],s,r)],t.H7)],s,r)])),A.a3N())}else{p.gvR()
+$.b_().jF(q,B.bO.kg(new A.iL(u.X,[p,A.ar(["deltas",A.b([A.ar(["oldText",b.a,"deltaText",b.b,"deltaStart",b.c,"deltaEnd",b.d,"selectionBase",b.e,"selectionExtent",b.f,"composingBase",b.r,"composingExtent",b.w],s,r)],t.H7)],s,r)])),A.a3N())}else{p.gvR()
 p=p.b
 $.b_().jF(q,B.bO.kg(new A.iL("TextInputClient.updateEditingState",[p,a.a20()])),A.a3N())}},
 $S:331}
@@ -45714,7 +45714,7 @@ D(a,b){this.dT(b,0,J.c1(b),!1)},
 dT(a,b,c,d){var s,r,q=J.bv(a)
 A.dE(b,c,q.gE(a),null,null)
 for(s=this.a,r=b;r<c;++r)if((q.i(a,r)&4294967168)>>>0!==0){if(r>b)s.dT(a,b,r,!1)
-s.D(0,B.P9)
+s.D(0,B.P8)
 b=r+1}if(b<c)s.dT(a,b,c,d)
 else if(d)s.aX()}}
 A.aEE.prototype={
@@ -48234,10 +48234,10 @@ p=s.b++
 q.$flags&2&&A.aA(q)
 q[p]=r&255
 continue}o=r-257
-n=B.RW[o]+k.jj(B.Sj[o])
+n=B.RX[o]+k.jj(B.Sj[o])
 m=k.I8(b)
 if(m<0||m>29)return-1
-l=B.RY[m]+k.jj(B.Qk[m])
+l=B.RZ[m]+k.jj(B.Qk[m])
 for(q=-l;n>l;){s.xP(s.OF(q))
 n-=l}if(n===l)s.xP(s.OF(q))
 else s.xP(s.OG(q,n-l))}while(s=k.e,s>=8){k.e=s-8
@@ -53097,7 +53097,7 @@ A.y0.prototype={
 I(){return"_CornerId."+this.b}}
 A.mT.prototype={}
 A.wb.prototype={
-lH(){var s,r,q,p=this,o=A.b7L(B.QY,new A.agW(p,p.b.gaV().a4(0,p.a.gaV()))),n=p.a
+lH(){var s,r,q,p=this,o=A.b7L(B.QZ,new A.agW(p,p.b.gaV().a4(0,p.a.gaV()))),n=p.a
 n.toString
 s=o.a
 r=p.qz(n,s)
@@ -54388,7 +54388,7 @@ A.aBY.prototype={
 $2(a,b){return this.a.m$.c8(a,this.b)},
 $S:13}
 A.Vl.prototype={
-gEX(){return B.Qi},
+gEX(){return B.Qh},
 JV(a){var s
 switch(a.a){case 0:s=this.d.b
 break
@@ -59094,7 +59094,7 @@ return s.b}}
 A.k2.prototype={
 I(){return"_ListTileSlot."+this.b}}
 A.Ys.prototype={
-gEX(){return B.QS},
+gEX(){return B.QT},
 JV(a){var s,r=this
 switch(a.a){case 0:s=r.d
 break
@@ -59892,7 +59892,7 @@ gjx(){return A.baE()},
 JK(a,b,c,d,e,f){return A.b_9(a,b,c,d,e,f)}}
 A.QH.prototype={
 a9g(a){var s=t.Tr
-s=A.U(new A.Y(B.QX,new A.aiD(a),s),s.h("a9.E"))
+s=A.U(new A.Y(B.QY,new A.aiD(a),s),s.h("a9.E"))
 return s},
 j(a,b){if(b==null)return!1
 if(this===b)return!0
@@ -76205,7 +76205,7 @@ B.bc.fi(s,b)
 return s.nw()},
 ZF(a,b){return this.pk(a,null,b)},
 Z7(a){var s,r,q,p,o,n
-if(a.byteLength===0)throw A.i(B.M2)
+if(a.byteLength===0)throw A.i(B.M3)
 s=new A.DK(a)
 if(s.q6(0)===0)return B.bc.jP(s)
 r=B.bc.jP(s)
@@ -77087,7 +77087,7 @@ if(i!==l.f){s=1
 break}switch(d){case"TextInputClient.updateEditingState":h=A.aS0(t.P.a(m.i(o,1)))
 $.cx().ap2(h,$.aJr())
 break
-case u.W:l=t.P
+case u.X:l=t.P
 g=l.a(m.i(o,1))
 m=A.b([],t.sD)
 for(n=J.bP(n.a(g.i(0,"deltas")));n.v();)m.push(A.b42(l.a(n.gN())))
@@ -94638,7 +94638,7 @@ return s},
 $S:546}
 A.acs.prototype={
 $2(a,b){if(b.a===B.im)return new A.BK("gsi_login_button",new A.acr(this.a,this.b),null)
-return B.a4J},
+return B.a4I},
 $S:547}
 A.acr.prototype={
 $1(a){var s=this.a.e
@@ -96090,7 +96090,7 @@ return A.B($async$j7,r)},
 h8(a){return this.aAO(a)},
 aAO(a){var s=0,r=A.C(t.H),q
 var $async$h8=A.D(function(b,c){if(b===1)return A.z(c,r)
-for(;;)switch(s){case 0:if(!(a.a.gwT()&&a.b.gwT()))throw A.i(B.LQ)
+for(;;)switch(s){case 0:if(!(a.a.gwT()&&a.b.gwT()))throw A.i(B.LR)
 q=new A.dM(Date.now(),0,!1).N9()
 s=2
 return A.r(A.hQ("mis_riales_api_session_v1",B.bh.rJ(A.ar(["schemaVersion",1,"savedAt",q.q_(),"session",a.cf()],t.N,t.K),null)),$async$h8)
@@ -96115,7 +96115,7 @@ case 1:return A.A(q,r)}})
 return A.B($async$E1,r)}}
 A.Ah.prototype={
 gKm(){var s=this.a,r=this.b
-return"Local: "+s.gc4().length+" categorias, "+s.f.length+" movimientos. Backend: "+r.gc4().length+" categorias, "+r.f.length+" movimientos."}}
+return"Local: "+s.gc4().length+" categor\xedas, "+s.f.length+" movimientos. Backend: "+r.gc4().length+" categor\xedas, "+r.f.length+" movimientos."}}
 A.uH.prototype={
 k(a){return this.a},
 $ibU:1}
@@ -96129,11 +96129,11 @@ if(r.gii().length!==0)return r.gyq()
 r=this.b
 s=r==null?null:r.gyq()
 if(s!=null)return s
-return"Listo para revisar migracion local."},
+return"Listo para revisar migraci\xf3n local."},
 ga0O(){var s,r
 if(this.a.gii().length!==0)return"Corregir datos locales"
 s=this.b
-if(s==null)return"Iniciar revision remota"
+if(s==null)return"Iniciar revisi\xf3n remota"
 switch(s.a.a){case 0:r="Crear primer presupuesto"
 break
 case 1:r="Subir datos locales"
@@ -96142,7 +96142,7 @@ case 2:r="Descargar datos remotos"
 break
 case 3:r="Continuar con backend"
 break
-case 4:r="Elegir version del mes"
+case 4:r="Elegir versi\xf3n del mes"
 break
 default:r=null}return r}}
 A.a6H.prototype={
@@ -96240,7 +96240,7 @@ break}j=c[m]
 n=j.a
 i=b.i(0,n)
 h=i==null?null:f.i(0,i)
-if(h==null)throw A.i(A.aOv("No se encontro linea remota para "+n+"."))
+if(h==null)throw A.i(A.aOv("No se encontr\xf3 l\xednea remota para "+n+"."))
 e=k
 d=n
 s=6
@@ -96300,7 +96300,7 @@ $ibU:1}
 A.pT.prototype={
 I(){return"BudgetSyncConflictStatus."+this.b}}
 A.a6J.prototype={
-gyq(){switch(this.a.a){case 0:var s="Local y backend estan vacios."
+gyq(){switch(this.a.a){case 0:var s="Local y backend est\xe1n vac\xedos."
 break
 case 1:s="Datos locales listos para subir."
 break
@@ -96313,7 +96313,7 @@ break
 default:s=null}return s},
 gaze(){switch(this.a.a){case 0:var s="Podes iniciar el mes en cualquiera de los dos modos."
 break
-case 1:s="La migracion local a API es la accion segura."
+case 1:s="La migraci\xf3n local a API es la acci\xf3n segura."
 break
 case 2:s="Conviene descargar primero los datos del backend."
 break
@@ -96336,7 +96336,7 @@ s=A.U(new A.W(s,new A.a6K(),r),r.h("y.E"))
 return s},
 gyq(){if(this.gii().length!==0)return""+this.gii().length+" bloqueo(s) antes de sincronizar"
 var s=this.a
-return""+s.d.length+" categorias, "+s.e.length+" planes y "+s.f.length+" movimientos listos"}}
+return""+s.d.length+" categor\xedas, "+s.e.length+" planes y "+s.f.length+" movimientos listos"}}
 A.a6K.prototype={
 $1(a){return a.c===B.c9},
 $S:568}
@@ -96376,7 +96376,7 @@ case 3:o=d
 n=p.Rk(o)
 if(t.j.b(n)){q=n
 s=1
-break}throw A.i(A.Ma(u.C,o.b))
+break}throw A.i(A.Ma(u.W,o.b))
 case 1:return A.A(q,r)}})
 return A.B($async$uK,r)},
 qV(a,b,c){return this.alr(a,b,c)},
@@ -96435,7 +96435,7 @@ case 4:p=3
 l=o.pop()
 n=A.ae(l)
 if(n instanceof A.FR)throw A.i(B.Eo)
-else if(n instanceof A.nB)throw A.i(A.Ma("No se pudo conectar con la API. Revisa que el backend local este levantado.",0))
+else if(n instanceof A.nB)throw A.i(A.Ma("No se pudo conectar con la API. Revisa que el backend local est\xe9 levantado.",0))
 else throw l
 s=6
 break
@@ -96446,10 +96446,10 @@ case 2:return A.z(o.at(-1),r)}})
 return A.B($async$n9,r)},
 yR(a){var s=this.Rk(a)
 if(t.P.b(s))return s
-throw A.i(A.Ma(u.C,a.b))},
+throw A.i(A.Ma(u.W,a.b))},
 Rk(a){var s,r,q=B.al.hK(a.w),p=A.c7()
 try{s=J.c1(q)===0?A.x(t.N,t.z):B.bh.w5(q,null)
-p.sdn(s)}catch(r){s=A.Ma("La API respondio con JSON invalido.",a.b)
+p.sdn(s)}catch(r){s=A.Ma("La API respondi\xf3 con JSON inv\xe1lido.",a.b)
 throw A.i(s)}s=a.b
 if(s<200||s>=300)throw A.i(A.Ma(t.P.b(p.a1m())?this.acI(p.a1m()):"No se pudo completar la solicitud.",s))
 return p.aM()},
@@ -96500,7 +96500,7 @@ j=A.b8w(l.b)
 i=A.aTG(l.d)
 h=A.b6e(l,k)
 m=l.c
-o=A.b([new A.bz("remote-categories","Categorias",60979,B.kY.C(),h)],t.Cq)
+o=A.b([new A.bz("remote-categories","Categor\xedas",60979,B.kY.C(),h)],t.Cq)
 n=J.eg(k,A.baC(),t.UD)
 n=A.U(n,n.$ti.h("a9.E"))
 q=A.a6b(null,i,null,o,j,j,m/100,null,n)
@@ -96525,7 +96525,7 @@ break}s=4
 return A.r(n.b.j7(),$async$t8)
 case 4:m=a1
 if(m==null){h=c
-q=new A.lx(h,h==null?B.dO:B.dk,"Modo API activo, pero no hay sesion guardada. Se cargaron datos locales.")
+q=new A.lx(h,h==null?B.dO:B.dk,"Modo API activo, pero no hay sesi\xf3n guardada. Se cargaron datos locales.")
 s=1
 break}l=n.d
 if(l==null){h=c
@@ -96608,7 +96608,7 @@ $S:111}
 A.a68.prototype={
 gt4(){var s,r,q,p,o,n,m=this,l=m.c,k=l===1?"1 mes":""+l+" meses"
 l=m.a
-s=l===1?"1 categoria":""+l+" categorias"
+s=l===1?"1 categor\xeda":""+l+" categor\xedas"
 l=m.b
 r=l===1?"1 movimiento":""+l+" movimientos"
 l=m.e
@@ -96636,8 +96636,8 @@ I(){return"BudgetIntegritySeverity."+this.b}}
 A.ey.prototype={}
 A.aJe.prototype={
 $2(a,b){var s=this
-if(!s.a.p(0,b.a))s.b.push(new A.ey("El gasto "+s.c.c+" apunta a una categoria que no existe.",B.c9))
-if(!A.aUx(b.b)||b.b<=0)s.b.push(new A.ey("El gasto "+s.c.c+" tiene una division invalida.",B.c9))
+if(!s.a.p(0,b.a))s.b.push(new A.ey("El gasto "+s.c.c+" apunta a una categor\xeda que no existe.",B.c9))
+if(!A.aUx(b.b)||b.b<=0)s.b.push(new A.ey("El gasto "+s.c.c+" tiene una divisi\xf3n inv\xe1lida.",B.c9))
 return a+b.b},
 $S:111}
 A.ji.prototype={
@@ -96660,7 +96660,7 @@ for(s=this.gc4(),r=s.length,q=0;q<r;++q){p=s[q]
 if(p.a===a)return p}return null},
 M3(a){var s=this.kq(a)
 s=s==null?null:s.b
-return s==null?"Sin categoria":s},
+return s==null?"Sin categor\xeda":s},
 arT(a){var s,r,q,p,o,n=this
 if(n.c===a)return
 s=n.x
@@ -96757,7 +96757,7 @@ s=A.u8(this.a.i(0,j))
 r=A.bL(a.i(0,"id"))
 if(r==null)r="debt_"+1000*Date.now()
 q=A.bL(a.i(0,"lender"))
-if(q==null)q="Prestamo bancario"
+if(q==null)q="Pr\xe9stamo bancario"
 p=A.li(a.i(0,"principal"),0)
 o=A.li(a.i(0,"annualInterestRate"),0)
 n=Math.max(0,A.zc(a.i(0,"termMonths")))
@@ -96922,7 +96922,7 @@ new A.p8(s,"change",!1,p).gS(0).bS(new A.a58(s,r),o)
 new A.p8(s,"error",!1,p).gS(0).bS(new A.a59(q),o)
 s.addEventListener("cancel",A.fx(new A.a5a(r)))
 n=j.document.querySelector("body")
-if(n==null){q.$1(new A.pa(u.g))
+if(n==null){q.$1(new A.pa(u.I))
 return l}n.appendChild(s)
 try{s.showPicker()}catch(m){s.click()}return l}}
 A.a5b.prototype={
@@ -97032,12 +97032,12 @@ A.fj.prototype={}
 A.Mr.prototype={
 A(a){return A.MY(new A.aS(B.cZ,A.fX(new A.a5C(this)),null),B.aM)}}
 A.a5C.prototype={
-$2(a,b){var s=null,r=t.p,q=A.as(A.b([B.a7R,B.jN,A.aQ(A.aG(A.b([B.a3M,B.c5,B.a4o],r),B.Z,B.e,B.i),1)],r),B.Z,B.e,B.i,0),p=A.en(B.NF,B.a4e,this.a.c,A.vz(B.r,s,B.h,B.Z_,s,s,s,s,s))
+$2(a,b){var s=null,r=t.p,q=A.as(A.b([B.a7R,B.jN,A.aQ(A.aG(A.b([B.a3O,B.c5,B.a5a],r),B.Z,B.e,B.i),1)],r),B.Z,B.e,B.i,0),p=A.en(B.NF,B.a4d,this.a.c,A.vz(B.r,s,B.h,B.Z_,s,s,s,s,s))
 if(b.b<520)return A.aG(A.b([q,B.J,p],r),B.D,B.e,B.i)
 return A.as(A.b([A.aQ(A.aG(A.b([q,B.J,B.a7S],r),B.Z,B.e,B.i),1),B.Z5,A.co(p,s,190)],r),B.o,B.e,B.i,0)},
 $S:51}
 A.XW.prototype={
-A(a){return A.p1(B.c7,B.PA,B.df,8,8)}}
+A(a){return A.p1(B.c7,B.Pz,B.df,8,8)}}
 A.tN.prototype={
 A(a){var s=null,r=A.ah(999),q=A.bj(B.l2)
 return A.aM(s,A.as(A.b([A.c9(this.c,B.r,s,15),B.cK,A.a5(this.d,s,s,s,s,B.a04,s,s)],t.p),B.o,B.e,B.a3,0),B.m,s,s,new A.au(B.eD,s,q,r,s,s,B.p),s,s,s,B.pZ,s,s,s)}}
@@ -97065,7 +97065,7 @@ if(h===0)A.a0(B.ED)
 if(h>12582912)A.a0(B.EE)
 g=A.b8H(j,i)
 f=g?A.b2c(i):B.al.BQ(i,!0)
-if(B.c.au(f).length===0)A.a0(new A.lr(g?"Este PDF no incluye texto legible para importar gastos.":"El archivo bancario esta vacio."))
+if(B.c.au(f).length===0)A.a0(new A.lr(g?"Este PDF no incluye texto legible para importar gastos.":"El archivo bancario est\xe1 vac\xedo."))
 i=A.aZg(f)
 q=new A.Ms(j,g,i)
 s=1
@@ -97099,7 +97099,7 @@ new A.p8(s,"change",!1,p).gS(0).bS(new A.a5E(s,r),o)
 new A.p8(s,"error",!1,p).gS(0).bS(new A.a5F(q),o)
 s.addEventListener("cancel",A.fx(new A.a5G(r)))
 n=j.document.querySelector("body")
-if(n==null){q.$1(new A.pa(u.g))
+if(n==null){q.$1(new A.pa(u.I))
 return l}n.appendChild(s)
 try{s.showPicker()}catch(m){s.click()}return l},
 zX(a){return this.alD(a)},
@@ -97146,7 +97146,7 @@ s.G$=$.am()
 s.H$=0
 this.av()},
 alR(){this.K(new A.avR(this))},
-A(a){var s=null,r=this.acZ(),q=A.bV(a,B.hS,t.w).w,p=t.p,o=A.aG(A.b([B.a4t,B.c5,B.a5b,B.J,A.cB(s,B.a7,!0,this.d,B.rt,!0,s,s,s,s,1,s,!1,s,s,s,s,B.ah,B.nx)],p),B.D,B.e,B.i),n=r.length
+A(a){var s=null,r=this.acZ(),q=A.bV(a,B.hS,t.w).w,p=t.p,o=A.aG(A.b([B.a4q,B.c5,B.a5b,B.J,A.cB(s,B.a7,!0,this.d,B.ru,!0,s,s,s,s,1,s,!1,s,s,s,s,B.ah,B.nx)],p),B.D,B.e,B.i),n=r.length
 if(n===0)n=B.a7s
 else n=new A.w3(new A.SO(new A.avS(this,r),n,!0,!0,!0,A.baI(),s),s,B.aa,!1,s,s,B.kz,!1,s,n,B.b5,s,s,B.ai,B.b_,s)
 return A.co(A.aG(A.b([new A.aS(B.KN,o,s),A.aQ(n,1)],p),B.D,B.e,B.i),q.a.b*0.72,s)},
@@ -97196,7 +97196,7 @@ A.avN.prototype={
 $0(){return A.bN(this.b,!1).hT(this.a.d.a)},
 $S:0}
 A.WV.prototype={
-A(a){return B.HN}}
+A(a){return B.HM}}
 A.xT.prototype={
 A(a){var s,r,q,p,o,n,m,l,k,j,i=this,h=null,g=i.d,f=A.d4(g.at.a.a),e=i.c,d=A.b6N(e,g,i.f),c=g.r&&!g.y
 if(c&&!i.r)s=B.ab
@@ -97247,7 +97247,7 @@ f=j}return f},
 $S:605}
 A.WW.prototype={
 A(a){var s=null
-return A.ek(new A.aS(B.q6,A.aG(A.b([B.Nm,B.K,A.a5(this.c===B.ev?"No hay gastos pendientes de revision.":"No hay gastos en este filtro.",s,s,s,s,B.bH,B.ch,s)],t.p),B.o,B.e,B.a3),s),s,s)}}
+return A.ek(new A.aS(B.q6,A.aG(A.b([B.Nm,B.K,A.a5(this.c===B.ev?"No hay gastos pendientes de revisi\xf3n.":"No hay gastos en este filtro.",s,s,s,s,B.bH,B.ch,s)],t.p),B.o,B.e,B.a3),s),s,s)}}
 A.XX.prototype={
 A(a){var s=null
 return A.kS(!0,A.aM(s,A.ek(new A.di(B.ov,A.fX(new A.azb(this)),s),s,s),B.m,s,s,B.Fk,s,s,s,B.q2,s,s,s),B.ag,!0)},
@@ -97450,7 +97450,7 @@ break}},
 $S:0}
 A.arN.prototype={
 $1(a){var s=null
-return A.zD(A.b([A.kY(B.em,s,s,new A.arL(a),s,s),A.BG(B.a4h,new A.arM(a),s)],t.p),B.a4k,B.a55)},
+return A.zD(A.b([A.kY(B.em,s,s,new A.arL(a),s,s),A.BG(B.a4f,new A.arM(a),s)],t.p),B.a4i,B.a56)},
 $S:68}
 A.arL.prototype={
 $0(){return A.bN(this.a,!1).hT(!1)},
@@ -97460,7 +97460,7 @@ $0(){return A.bN(this.a,!1).hT(!0)},
 $S:0}
 A.Xg.prototype={
 A(a){var s,r,q,p,o,n,m,l,k,j=this,i=null,h=t.p,g=A.b([],h)
-for(s=j.c,r=j.d,q=0;q<7;++q){p=B.Sb[q]
+for(s=j.c,r=j.d,q=0;q<7;++q){p=B.Sc[q]
 o=s===p
 n=j.acX(p)
 n=A.c9(n,o?B.h:B.P,i,15)
@@ -97477,7 +97477,7 @@ case 2:s="Todos"
 break
 case 3:s="Duplicados"
 break
-case 4:s="Sin categoria"
+case 4:s="Sin categor\xeda"
 break
 case 5:s="Editados"
 break
@@ -97507,8 +97507,8 @@ A.a09.prototype={
 A(a){var s=this,r=null,q=A.ah(8),p=A.bj(B.Q)
 return A.aM(r,A.fX(new A.aCX(s,s.d+s.e+s.f+s.r)),B.m,r,r,new A.au(B.h,r,p,q,B.rJ,r,B.p),r,r,r,B.cZ,r,r,r)}}
 A.aCX.prototype={
-$2(a,b){var s,r,q,p=null,o=A.ah(8),n=this.a,m=n.d,l=n.e,k=t.p,j=A.as(A.b([A.aM(p,B.NK,B.m,p,p,new A.au(B.eD,p,A.bj(B.p5),o,p,p,B.p),p,42,p,p,p,p,42),B.jN,A.aQ(A.aG(A.b([B.a4E,B.Za,A.a5(""+n.c+" visibles. "+m+" listos, "+l+" por revisar.",1,B.I,p,p,B.dB,p,p)],k),B.Z,B.e,B.i),1)],k),B.o,B.e,B.i,0)
-o=A.b([new A.tT(B.eT,"Categoria editable",!1,p),new A.tT(B.MW,"Moneda por fila",!1,p)],k)
+$2(a,b){var s,r,q,p=null,o=A.ah(8),n=this.a,m=n.d,l=n.e,k=t.p,j=A.as(A.b([A.aM(p,B.NK,B.m,p,p,new A.au(B.eD,p,A.bj(B.p5),o,p,p,B.p),p,42,p,p,p,p,42),B.jN,A.aQ(A.aG(A.b([B.a4D,B.Za,A.a5(""+n.c+" visibles. "+m+" listos, "+l+" por revisar.",1,B.I,p,p,B.dB,p,p)],k),B.Z,B.e,B.i),1)],k),B.o,B.e,B.i,0)
+o=A.b([new A.tT(B.eT,"Categor\xeda editable",!1,p),new A.tT(B.MW,"Moneda por fila",!1,p)],k)
 s=n.f
 if(s>0)o.push(new A.tT(B.qX,""+s+" duplicados",!0,p))
 n=n.r
@@ -97549,7 +97549,7 @@ return new A.W(s,this.gJN(),A.M(s).h("W<1>")).fd(0,0,new A.as8(this))},
 atw(){var s,r,q=this,p=q.w
 p===$&&A.a()
 if(q.xO(p).length!==0||q.a.e.length===0)return p
-for(s=0;s<7;++s){r=B.QR[s]
+for(s=0;s<7;++s){r=B.QS[s]
 if(q.xO(r).length!==0)return r}return p},
 xO(a){var s,r,q=this
 switch(a.a){case 0:s=q.a.e
@@ -97701,7 +97701,7 @@ s===$&&A.a()
 s.eM(0)},
 $S:5}
 A.asf.prototype={
-A(a){var s,r,q,p,o,n,m=this,l=null,k=m.atw(),j=m.xO(k),i=t.p,h=A.aG(A.b([B.a3L,A.a5(m.a.d,l,B.I,l,l,B.dB,l,l)],i),B.Z,B.e,B.i),g=A.eP(l,l,l,B.d3,l,l,new A.ask(a),l,l,l,"Cerrar",l),f=j.length,e=m.a.e,d=m.gJM()
+A(a){var s,r,q,p,o,n,m=this,l=null,k=m.atw(),j=m.xO(k),i=t.p,h=A.aG(A.b([B.a3N,A.a5(m.a.d,l,B.I,l,l,B.dB,l,l)],i),B.Z,B.e,B.i),g=A.eP(l,l,l,B.d3,l,l,new A.ask(a),l,l,l,"Cerrar",l),f=j.length,e=m.a.e,d=m.gJM()
 e=new A.W(e,d,A.M(e).h("W<1>")).gE(0)
 s=m.a.e
 r=m.gYs()
@@ -97780,12 +97780,12 @@ return A.aM(s,A.a5(n,s,s,s,s,A.c2(s,s,r?B.r:B.aZ,s,s,s,s,s,s,s,s,11,s,s,B.F,s,s,
 A.GM.prototype={
 A(a){var s=this,r=null,q=s.c,p=s.d,o=q.kq(p)!=null,n=s.e,m=n?s.f:r,l=A.ah(8),k=n?B.h:B.pC,j=A.ah(8),i=A.bj(o?B.p5:B.la),h=o?B.eT:B.h0
 h=A.c9(h,o?B.r:B.ab,r,14)
-q=o?q.M3(p):"Sin categoria"
+q=o?q.M3(p):"Sin categor\xeda"
 q=A.aQ(A.a5(q,1,B.I,r,r,A.c2(r,r,o?B.ca:B.ab,r,r,r,r,r,r,r,r,12,r,r,B.F,r,r,!0,r,r,r,r,r,r,r,r),r,r),1)
 return A.e7(!1,l,!0,A.aM(r,A.as(A.b([h,B.cK,q,B.D3,A.c9(B.h1,n?B.P:B.Q,r,16)],t.p),B.o,B.e,B.i,0),B.m,r,B.F7,new A.au(k,r,i,j,r,r,B.p),r,r,r,B.L2,r,r,r),r,!0,r,r,r,r,r,r,r,r,r,m,r,r,r,r,r,r,r)}}
 A.Jn.prototype={
 A(a){var s,r=this,q=null
-if(r.c)s=A.aKk(B.NA,B.a3F,new A.aCY(r),A.vz(B.eD,q,B.ca,q,B.L4,q,q,q,B.jS))
+if(r.c)s=A.aKk(B.NA,B.a3G,new A.aCY(r),A.vz(B.eD,q,B.ca,q,B.L4,q,q,q,B.jS))
 else{s=r.d?new A.aCZ(r):q
 s=A.eS(B.Nu,B.a3X,s,A.QB(q,q,q,q,q,q,q,q,q,q,q,q,B.dp,q,q,q,q,q,B.jS,q))}return A.co(s,30,q)}}
 A.aCY.prototype={
@@ -97805,7 +97805,7 @@ $2(a,b){var s,r,q=null,p=this.a,o=p.d,n=o.f,m=o.r,l=m&&!o.y,k=new A.Ve(p.c,n,l,p
 n=m&&!o.y
 l=$.nk()
 s=o.Q.gb9()
-m=m&&!o.y&&!this.b?"Monto invalido":q
+m=m&&!o.y&&!this.b?"Monto inv\xe1lido":q
 r=A.cB(q,B.a7,!1,o.at,A.fW(q,q,q,q,q,q,q,q,!0,q,q,q,q,q,m,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,"Monto",!0,!0,!1,q,q,q,q,q,s+" ",q,q,q,q,q,q,q,q),!0,n,q,l,B.bY,1,q,!1,new A.axs(p),q,q,q,B.a2,q)
 if(b.b<560)return A.aG(A.b([k,B.K,r],t.p),B.D,B.e,B.i)
 return A.as(A.b([A.aQ(k,1),B.ac,A.aQ(r,1)],t.p),B.Z,B.e,B.i,0)},
@@ -97819,7 +97819,7 @@ return A.e7(!1,A.ah(8),!0,A.aKD(r,A.as(A.b([A.aQ(A.a5(s.c.M3(s.d),1,B.I,r,r,B.nD
 A.Jr.prototype={
 A(a){return A.aR1(null,null,B.Nt,new A.aDk(this),this.f,B.dq,B.Wp,new A.ct(A.ah(8),B.t),"Acciones",t.xK)}}
 A.aDk.prototype={
-$1(a){var s=A.b([B.Wj],t.v_),r=this.a,q=!r.d
+$1(a){var s=A.b([B.Wk],t.v_),r=this.a,q=!r.d
 if(q&&r.c&&!r.e)s.push(B.Wg)
 if(q&&r.c&&r.e)s.push(B.Wl)
 if(q&&r.c)s.push(B.Wm)
@@ -97842,7 +97842,7 @@ A:{if(B.ev===o){s=A.b([new A.hL(B.qY,q,r.e,!0),new A.hL(B.e3,p,r.r,!1)],t.vB)
 break A}if(B.fs===o){s=A.b([new A.hL(B.r7,"Mover visibles a revisar",r.f,!1),new A.hL(B.e3,p,r.r,!1)],t.vB)
 break A}if(B.kg===o){s=A.b([new A.hL(B.qV,"Ignorar duplicados",r.x,!0),new A.hL(B.Ms,"Importar duplicados",r.y,!1)],t.vB)
 break A}if(B.hT===o){s=A.b([new A.hL(B.r3,"Restaurar visibles",r.w,!0)],t.vB)
-break A}if(B.o8===o){s=A.b([new A.hL(B.eT,"Cambiar categoria fila por fila",null,!1),new A.hL(B.e3,p,r.r,!1)],t.vB)
+break A}if(B.o8===o){s=A.b([new A.hL(B.eT,"Cambiar categor\xeda fila por fila",null,!1),new A.hL(B.e3,p,r.r,!1)],t.vB)
 break A}if(B.o9===o||B.kf===o){s=A.b([new A.hL(B.qY,q,r.e,!0),new A.hL(B.e3,p,r.r,!1)],t.vB)
 break A}s=null}return s}}
 A.aGc.prototype={
@@ -97929,8 +97929,8 @@ A.av6.prototype={
 $2(a,b){return a+this.a.qJ(b)},
 $S:233}
 A.av7.prototype={
-$2(a3,a4){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c=this,b=null,a=a4.b<560,a0=t.p,a1=A.b([A.as(A.b([B.a6X,B.aq,B.Lh],a0),B.o,B.e,B.i,0)],a0),a2=c.a
-if(a2.a.c.gc4().length===0)B.b.M(a1,A.b([B.J,B.a6Y,B.J,A.en(B.cc,B.a43,a2.a.d,b)],a0))
+$2(a3,a4){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c=this,b=null,a=a4.b<560,a0=t.p,a1=A.b([A.as(A.b([B.a6X,B.aq,B.Lm],a0),B.o,B.e,B.i,0)],a0),a2=c.a
+if(a2.a.c.gc4().length===0)B.b.M(a1,A.b([B.J,B.a6Y,B.J,A.en(B.cc,B.a4Q,a2.a.d,b)],a0))
 else{s=c.b
 r=c.c
 q=c.d
@@ -98011,7 +98011,7 @@ A(a){var s=this,r=null,q=s.e,p=s.d,o=p.bc(0.1),n=A.ah(8),m=A.bj(p.bc(0.18))
 return A.aM(B.O,A.c9(s.c,p,r,s.f),B.m,r,r,new A.au(o,r,m,n,r,r,B.p),r,q,r,r,r,r,q)}}
 A.V2.prototype={
 A(a){var s=null,r=A.ah(8),q=A.bj(B.Q)
-return A.aM(s,A.as(A.b([A.c9(B.d2,B.r,s,20),B.aq,A.aQ(A.a5("Todavia no hay categorias. Crea al menos una para asignar presupuesto y registrar gastos.",s,s,s,s,B.b1,s,s),1)],t.p),B.Z,B.e,B.i,0),B.m,s,s,new A.au(B.aM,s,q,r,s,s,B.p),s,s,s,B.bz,s,s,s)}}
+return A.aM(s,A.as(A.b([A.c9(B.d2,B.r,s,20),B.aq,A.aQ(A.a5("Todav\xeda no hay categor\xedas. Crea al menos una para asignar presupuesto y registrar gastos.",s,s,s,s,B.b1,s,s),1)],t.p),B.Z,B.e,B.i,0),B.m,s,s,new A.au(B.aM,s,q,r,s,s,B.p),s,s,s,B.bz,s,s,s)}}
 A.V0.prototype={
 A(a){var s=this,r=null,q=s.d,p=s.e,o=s.f
 return new A.tu(s.c,new A.tt("Concepto",B.nV,q,p,o,r),new A.tt("Plan",B.a6Z,q,p,o,r),new A.tt("Gastado",B.a7_,q,p,o,r),new A.tt("Disponible",B.a70,q,p,o,r),8,r)}}
@@ -98037,7 +98037,7 @@ s=p.d
 if(s!=null)g.push("Dia "+A.m(s))
 s=p.e
 if((s==null?0:s)>0)g.push("Fondo mensual")
-i=A.as(A.b([i,A.aQ(new A.xV(h,k,!1,B.b.bb(g," | "),m.b,q),1),A.eP(q,B.Fa,q,B.ri,17,q,l,B.ag,q,q,"Editar categoria",B.k0)],t.p),B.o,B.e,B.i,0)
+i=A.as(A.b([i,A.aQ(new A.xV(h,k,!1,B.b.bb(g," | "),m.b,q),1),A.eP(q,B.Fa,q,B.ri,17,q,l,B.ag,q,q,"Editar categor\xeda",B.k0)],t.p),B.o,B.e,B.i,0)
 p=p.c
 h=r.e
 s=n<0?B.ab:B.r
@@ -98109,10 +98109,10 @@ p=l.r
 o=l.w
 n=t.p
 m=l.x
-return new A.Wb("Registrar deuda",B.qT,A.b([B.a5_,B.bF,j,B.K,new A.Wf(l.Q,l.at,l.ax,k),B.K,h,B.K,A.cB(k,B.a7,!1,s,A.fW(k,k,k,k,k,k,k,k,!0,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,"Saldo del prestamo",!0,!0,!1,k,k,k,k,k,i.gb9()+" ",k,k,k,k,k,k,k,k),!0,k,k,r,B.bY,1,k,!1,k,k,k,k,B.a2,B.be),B.K,A.cB(k,B.a7,!1,q,A.fW(k,k,k,k,k,k,k,k,!0,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,"Opcional; se suma a la cuota total.",k,k,k,k,k,k,k,k,k,k,k,k,k,"Seguro mensual",!0,!0,!1,k,k,k,k,k,i.gb9()+" ",k,k,k,k,k,k,k,k),!0,k,k,r,B.bY,1,k,!1,k,k,k,k,B.a2,B.be),B.K,A.as(A.b([A.aQ(A.cB(k,B.a7,!1,p,B.Ob,!0,k,k,k,B.bY,1,k,!1,k,k,k,k,B.a2,B.be),1),B.ac,A.aQ(A.cB(k,B.a7,!1,o,B.Oj,!0,k,k,k,B.hL,1,k,!1,k,new A.a8b(l),k,k,B.a2,B.bs),1)],n),B.o,B.e,B.i,0),B.K,A.cB(k,B.a7,!1,m,B.Of,!0,k,k,A.b([$.aVO()],t.VS),B.hL,1,k,!1,k,k,k,k,B.a2,B.be),B.K,A.cB(k,B.a7,!1,l.y,B.Oa,!0,k,k,k,B.hL,1,k,!1,k,new A.a8c(l),k,k,B.a2,B.bs),B.J,A.hh(new A.mZ(A.b([s,q,p,o,m],t.bA)),new A.a8d(l),k),B.J,A.en(B.cc,B.a4x,l.ay,k)],n),k)}}
+return new A.Wb("Registrar deuda",B.qT,A.b([B.a5_,B.bF,j,B.K,new A.Wf(l.Q,l.at,l.ax,k),B.K,h,B.K,A.cB(k,B.a7,!1,s,A.fW(k,k,k,k,k,k,k,k,!0,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,"Saldo del pr\xe9stamo",!0,!0,!1,k,k,k,k,k,i.gb9()+" ",k,k,k,k,k,k,k,k),!0,k,k,r,B.bY,1,k,!1,k,k,k,k,B.a2,B.be),B.K,A.cB(k,B.a7,!1,q,A.fW(k,k,k,k,k,k,k,k,!0,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,"Opcional; se suma a la cuota total.",k,k,k,k,k,k,k,k,k,k,k,k,k,"Seguro mensual",!0,!0,!1,k,k,k,k,k,i.gb9()+" ",k,k,k,k,k,k,k,k),!0,k,k,r,B.bY,1,k,!1,k,k,k,k,B.a2,B.be),B.K,A.as(A.b([A.aQ(A.cB(k,B.a7,!1,p,B.Ob,!0,k,k,k,B.bY,1,k,!1,k,k,k,k,B.a2,B.be),1),B.ac,A.aQ(A.cB(k,B.a7,!1,o,B.Oj,!0,k,k,k,B.hL,1,k,!1,k,new A.a8b(l),k,k,B.a2,B.bs),1)],n),B.o,B.e,B.i,0),B.K,A.cB(k,B.a7,!1,m,B.Of,!0,k,k,A.b([$.aVO()],t.VS),B.hL,1,k,!1,k,k,k,k,B.a2,B.be),B.K,A.cB(k,B.a7,!1,l.y,B.Oa,!0,k,k,k,B.hL,1,k,!1,k,new A.a8c(l),k,k,B.a2,B.bs),B.J,A.hh(new A.mZ(A.b([s,q,p,o,m],t.bA)),new A.a8d(l),k),B.J,A.en(B.cc,B.a4u,l.ay,k)],n),k)}}
 A.a89.prototype={
 $1(a){var s=null
-return A.aPi(A.a5(a===B.av?"Cordobas":"Dolares",s,s,s,s,s,s,s),a,t.yR)},
+return A.aPi(A.a5(a===B.av?"C\xf3rdobas":"D\xf3lares",s,s,s,s,s,s,s),a,t.yR)},
 $S:621}
 A.a8a.prototype={
 $1(a){this.a.as.$1(a)},
@@ -98169,7 +98169,7 @@ s=new A.au(o,q,A.bj(r.y),s,q,q,B.p)
 o=s}return A.aQ(new A.aS(B.KU,new A.dQ(p,q,q,A.aM(p,A.ql(B.O,A.a5(r.c,1,q,q,q,A.c2(q,q,r.f,q,q,q,q,q,q,q,q,r.r,q,q,r.w,q,q,!0,q,q,q,q,q,q,q,q),q,q),B.di),B.m,q,B.F9,o,q,q,q,n,q,q,q),q),q),r.d)}}
 A.Wc.prototype={
 A(a){var s=null,r=A.ah(8),q=A.bj(B.Q)
-return A.aM(s,A.as(A.b([B.Lj,A.eP(s,s,s,B.d3,s,s,this.c,s,s,s,"Cerrar cuotas",s)],t.p),B.o,B.e,B.i,0),B.m,s,s,new A.au(B.aM,s,q,r,s,s,B.p),s,s,s,B.bz,s,s,s)}}
+return A.aM(s,A.as(A.b([B.Li,A.eP(s,s,s,B.d3,s,s,this.c,s,s,s,"Cerrar cuotas",s)],t.p),B.o,B.e,B.i,0),B.m,s,s,new A.au(B.aM,s,q,r,s,s,B.p),s,s,s,B.bz,s,s,s)}}
 A.Wa.prototype={
 A(a){var s,r,q,p,o,n,m=this,l=null,k=m.e,j=k==null,i=j?0:A.fg(k.c,m.d.f,m.c.c),h=j?l:A.uf(k.b),g=h!=null,f=g&&A.nc(h,m.c.a)>0,e=g&&h!==m.c.a
 g=A.ah(8)
@@ -98177,7 +98177,7 @@ s=A.bj(B.Q)
 r=j?B.N9:B.h3
 q=j?B.r:B.aZ
 p=t.p
-q=A.b([A.as(A.b([new A.tz(r,q,34,l),B.ac,A.aQ(A.aG(A.b([B.a4Z,B.bG,A.a5(j?"Prestamo completado":"Cuota "+k.a+" | "+A.aTW(k.b),l,B.I,l,l,B.bI,l,l)],p),B.Z,B.e,B.i),1)],p),B.o,B.e,B.i,0)],p)
+q=A.b([A.as(A.b([new A.tz(r,q,34,l),B.ac,A.aQ(A.aG(A.b([B.a4Z,B.bG,A.a5(j?"Pr\xe9stamo completado":"Cuota "+k.a+" | "+A.aTW(k.b),l,B.I,l,l,B.bI,l,l)],p),B.Z,B.e,B.i),1)],p),B.o,B.e,B.i,0)],p)
 if(!j){j=k.c
 r=m.d.f
 o=r.gb9()
@@ -98187,10 +98187,10 @@ if(o>0){n=r.gb9()
 j.push(new A.h7("Incluye seguro",A.bJ(A.bM(o,r),n+" ").bv(o),l))}o=m.c
 n=o.c
 if(r!==n){r=n.gb9()
-j.push(new A.h7("Gasto del mes",A.bJ(A.bM(i,n),r+" ").bv(i),l))}if(e){r=f?"No se pueden pagar cuotas adelantadas. Esta cuota corresponde a "+h+".":"Se guardara como gasto de "+h+", aunque estes en "+o.a+"."
+j.push(new A.h7("Gasto del mes",A.bJ(A.bM(i,n),r+" ").bv(i),l))}if(e){r=f?"No se pueden pagar cuotas adelantadas. Esta cuota corresponde a "+h+".":"Se guardar\xe1 como gasto de "+h+", aunque est\xe9s en "+o.a+"."
 B.b.M(j,A.b([B.a5,A.a5(r,l,l,l,l,A.c2(l,l,f?B.aS:B.P,l,l,l,l,l,l,l,l,12,l,l,B.bB,l,l,!0,l,l,l,l,l,l,l,l),l,l)],p))}j.push(B.K)
-j.push(A.en(B.rf,B.a3T,f?l:m.f,l))
-B.b.M(q,j)}else B.b.M(q,A.b([B.K,B.a56],p))
+j.push(A.en(B.rf,B.a3U,f?l:m.f,l))
+B.b.M(q,j)}else B.b.M(q,A.b([B.K,B.a47],p))
 return A.aM(l,A.aG(q,B.D,B.e,B.i),B.m,l,l,new A.au(B.aM,l,s,g,l,l,B.p),l,l,l,B.bz,l,l,l)}}
 A.y3.prototype={
 A(a){var s,r,q,p,o,n,m=this,l=null,k=m.c,j=k.a,i=j>0,h=Math.max(0,m.e-m.f),g=A.ah(8),f=A.bj(B.Q)
@@ -98199,15 +98199,15 @@ r=s.gb9()
 j=A.bJ(A.bM(j,s),r+" ").bv(j)}else j="Completa saldo, tasa y plazo"
 j=A.a5(j,l,l,l,l,A.c2(l,l,i?B.r:B.P,l,l,l,l,l,l,l,l,24,l,l,B.F,l,l,!0,l,l,l,l,l,l,l,l),l,l)
 if(i)s=k.c>0?"Cuota total mensual; incluye seguro.":"Cuota mensual fija estimada."
-else s="La cuota se calcula automaticamente antes de guardar."
+else s="La cuota se calcula autom\xe1ticamente antes de guardar."
 r=t.p
-s=A.b([B.a4d,B.a5,j,B.c5,A.a5(s,l,l,l,l,B.bI,l,l)],r)
+s=A.b([B.a4W,B.a5,j,B.c5,A.a5(s,l,l,l,l,B.bI,l,l)],r)
 if(i){j=A.b([B.K],r)
 q=k.c
 if(q>0){p=k.b
 o=m.d
 n=o.gb9()
-p=A.aQ(new A.l7("Prestamo",A.bJ(A.bM(p,o),n+" ").bv(p),l),1)
+p=A.aQ(new A.l7("Pr\xe9stamo",A.bJ(A.bM(p,o),n+" ").bv(p),l),1)
 n=o.gb9()
 B.b.M(j,A.b([A.as(A.b([p,B.aq,A.aQ(new A.l7("Seguro",A.bJ(A.bM(q,o),n+" ").bv(q),l),1)],r),B.o,B.e,B.i,0),B.a5],r))}q=k.d
 p=m.d
@@ -98236,7 +98236,7 @@ $S:234}
 A.We.prototype={
 A(a){var s,r,q,p,o,n=null,m=A.ah(8),l=A.bj(B.Q),k=A.b([],t.sd)
 for(s=this.c,r=s.length,q=t.kZ,p=0;p<s.length;s.length===r||(0,A.o)(s),++p){o=s[p]
-k.push(new A.e6(o,A.a5(B.j.k(o),n,n,n,n,n,n,n),B.c8,n,q))}return A.as(A.b([B.Lm,B.ac,A.co(A.aM(n,new A.vo(new A.nJ(k,this.d,n,n,new A.awH(this),n,n,8,n,B.Nx,n,n,24,!1,!0,48,n,n,!1,n,n,n,n,B.c8,n,!0,n,n,n,!1,B.a6B,t.CB),n),B.m,n,n,new A.au(B.aM,n,l,m,n,n,B.p),n,n,n,B.Kv,n,n,n),n,150)],t.p),B.o,B.e,B.i,0)}}
+k.push(new A.e6(o,A.a5(B.j.k(o),n,n,n,n,n,n,n),B.c8,n,q))}return A.as(A.b([B.Le,B.ac,A.co(A.aM(n,new A.vo(new A.nJ(k,this.d,n,n,new A.awH(this),n,n,8,n,B.Nx,n,n,24,!1,!0,48,n,n,!1,n,n,n,n,B.c8,n,!0,n,n,n,!1,B.a6B,t.CB),n),B.m,n,n,new A.au(B.aM,n,l,m,n,n,B.p),n,n,n,B.Kv,n,n,n),n,150)],t.p),B.o,B.e,B.i,0)}}
 A.awH.prototype={
 $1(a){this.a.e.$1(a)},
 $S:625}
@@ -98256,7 +98256,7 @@ A(a){var s=null
 return new A.aS(B.Kl,A.as(A.b([A.aQ(A.a5(this.c,s,s,s,s,B.dB,s,s),1),B.aq,new A.hY(1,B.d0,A.a5(this.d,s,B.I,s,s,B.DA,B.a2,s),s)],t.p),B.o,B.e,B.i,0),s)}}
 A.Wf.prototype={
 A(a){var s=null,r=A.ah(8),q=A.bj(B.Q),p=t.p
-return A.aM(s,A.as(A.b([B.Ni,B.ac,A.aQ(A.aG(A.b([B.a3E,B.bG,A.a5(this.c,1,B.I,s,s,B.bH,s,s)],p),B.Z,B.e,B.i),1),A.eP(s,s,s,B.rm,s,s,this.d,s,s,s,"Mes de inicio anterior",s),A.eP(s,s,s,B.rl,s,s,this.e,s,s,s,"Mes de inicio siguiente",s)],p),B.o,B.e,B.i,0),B.m,s,s,new A.au(B.aM,s,q,r,s,s,B.p),s,s,s,B.Kw,s,s,s)}}
+return A.aM(s,A.as(A.b([B.Ni,B.ac,A.aQ(A.aG(A.b([B.a3F,B.bG,A.a5(this.c,1,B.I,s,s,B.bH,s,s)],p),B.Z,B.e,B.i),1),A.eP(s,s,s,B.rm,s,s,this.d,s,s,s,"Mes de inicio anterior",s),A.eP(s,s,s,B.rl,s,s,this.e,s,s,s,"Mes de inicio siguiente",s)],p),B.o,B.e,B.i,0),B.m,s,s,new A.au(B.aM,s,q,r,s,s,B.p),s,s,s,B.Kw,s,s,s)}}
 A.NE.prototype={
 A(a){var s,r,q,p,o,n,m,l,k=this,j=null,i=k.c,h=A.b6G(i),g=i.w,f=g.length,e=f===0?B.P:B.aS,d=t.p
 e=A.as(A.b([B.a77,B.ac,B.La,new A.Wg(""+f,e,j)],d),B.o,B.e,B.i,0)
@@ -98269,7 +98269,7 @@ s=i.c
 q=s.gb9()
 r=A.b([e,B.J,A.as(A.b([f,B.aq,A.aQ(new A.l7("Saldo total",A.bJ(A.bM(r,s),q+" ").bv(r),j),1)],d),B.o,B.e,B.i,0),B.J],d)
 f=g.length
-if(f===0)r.push(B.a4V)
+if(f===0)r.push(B.a4w)
 else for(e=k.d,s=k.e,q=k.w,p=k.r,o=0;o<g.length;g.length===f||(0,A.o)(g),++o){n=g[o]
 m=e===n.a
 l=A.b([new A.W9(i,n,m,new A.a8e(k,n),new A.a8f(k,n),j)],d)
@@ -98344,7 +98344,7 @@ p=A.ah(8)
 o=A.ah(8)
 n=A.bj(B.Q)
 m=t.p
-return A.aG(A.b([B.Vs,A.e8(!1,B.S,!0,j,A.e7(!1,p,!0,A.aM(k,A.as(A.b([new A.qg(B.d2,s,34,k),B.ac,A.aQ(new A.a0x(i,q,k),1),B.aq,new A.a0w(q,r,k)],m),B.o,B.e,B.i,0),B.m,k,k,new A.au(k,k,n,o,B.eV,k,B.p),k,k,k,B.bz,k,k,k),k,!0,k,k,k,k,k,k,k,k,k,new A.aaJ(l,a),k,k,k,k,k,k,k),B.m,B.h,0,k,k,k,k,k,B.bp)],m),B.Z,B.e,B.i)},
+return A.aG(A.b([B.Vt,A.e8(!1,B.S,!0,j,A.e7(!1,p,!0,A.aM(k,A.as(A.b([new A.qg(B.d2,s,34,k),B.ac,A.aQ(new A.a0x(i,q,k),1),B.aq,new A.a0w(q,r,k)],m),B.o,B.e,B.i,0),B.m,k,k,new A.au(k,k,n,o,B.eV,k,B.p),k,k,k,B.bz,k,k,k),k,!0,k,k,k,k,k,k,k,k,k,new A.aaJ(l,a),k,k,k,k,k,k,k),B.m,B.h,0,k,k,k,k,k,B.bp)],m),B.Z,B.e,B.i)},
 zO(a){return this.akh(a)},
 akh(a){var s=0,r=A.C(t.H),q=this
 var $async$zO=A.D(function(b,c){if(b===1)return A.z(c,r)
@@ -98373,15 +98373,15 @@ $1(a){this.a.f.$0()},
 $S:5}
 A.a0x.prototype={
 A(a){var s=null,r=this.c,q=r==null,p=q?s:r.b.b
-p=A.a5(p==null?"Selecciona categoria":p,s,B.I,s,s,B.bH,s,s)
+p=A.a5(p==null?"Selecciona categor\xeda":p,s,B.I,s,s,B.bH,s,s)
 r=q?s:r.a.b
 return A.aG(A.b([p,B.bG,A.a5(r==null?this.d:r,s,B.I,s,s,B.dB,s,s)],t.p),B.Z,B.e,B.i)}}
 A.a0w.prototype={
 A(a){var s=null
-return A.aG(A.b([A.a5(this.c,s,s,s,s,A.c2(s,s,this.d<0?B.ab:B.r,s,s,s,s,s,s,s,s,12,s,s,B.F,s,s,!0,s,s,s,s,s,s,s,s),B.a2,s),B.c5,B.a3G],t.p),B.dU,B.e,B.i)}}
+return A.aG(A.b([A.a5(this.c,s,s,s,s,A.c2(s,s,this.d<0?B.ab:B.r,s,s,s,s,s,s,s,s,12,s,s,B.F,s,s,!0,s,s,s,s,s,s,s,s),B.a2,s),B.c5,B.a3I],t.p),B.dU,B.e,B.i)}}
 A.Oj.prototype={
-A(a){var s=null,r=A.ah(8),q=A.bj(B.Q),p=this.c,o=A.a5(p?"No encontre categorias con ese texto.":"Todavia no hay categorias para elegir.",s,s,s,s,B.bH,B.ch,s)
-return A.ek(A.aM(s,A.aG(A.b([B.Lu,B.K,o,B.a5,A.a5(p?"Proba otro nombre o crea una categoria nueva.":"Crea una categoria para poder guardar gastos.",s,s,s,s,B.b1,B.ch,s),B.J,A.en(B.cc,B.jU,this.d,s)],t.p),B.o,B.e,B.a3),B.m,s,s,new A.au(B.aM,s,q,r,s,s,B.p),s,s,s,B.fW,s,s,s),s,s)}}
+A(a){var s=null,r=A.ah(8),q=A.bj(B.Q),p=this.c,o=A.a5(p?"No encontr\xe9 categor\xedas con ese texto.":"Todav\xeda no hay categor\xedas para elegir.",s,s,s,s,B.bH,B.ch,s)
+return A.ek(A.aM(s,A.aG(A.b([B.Lu,B.K,o,B.a5,A.a5(p?"Prob\xe1 otro nombre o crea una categor\xeda nueva.":"Crea una categor\xeda para poder guardar gastos.",s,s,s,s,B.b1,B.ch,s),B.J,A.en(B.cc,B.jU,this.d,s)],t.p),B.o,B.e,B.a3),B.m,s,s,new A.au(B.aM,s,q,r,s,s,B.p),s,s,s,B.fW,s,s,s),s,s)}}
 A.vw.prototype={
 A(a){var s,r=this,q=null,p=r.c,o=p.b,n=p.c,m=o.c-n<0?B.ab:A.b7(p.a.d),l=o.c-n<0?"Pasada":"Queda",k=r.e,j=k?A.b7(p.a.d).bc(0.08):B.h,i=A.ah(8),h=A.ah(8),g=A.ah(8),f=A.bj(k?A.b7(p.a.d).bc(0.35):B.Q),e=k?A.aJK(A.b7(p.a.d),0.14):q,d=A.b7(p.a.d)
 p=A.aQ(new A.X5(p,q),1)
@@ -98409,7 +98409,7 @@ s.G$=$.am()
 s.H$=0
 this.av()},
 A(a){var s,r,q,p,o=this,n=null,m=o.d,l=A.aMS(m.a.a),k=A.aUY(o.a.c),j=A.M(k).h("W<1>"),i=A.U(new A.W(k,new A.axy(l),j),j.h("y.E"))
-j=A.cB(n,B.a7,!1,m,B.rt,!0,n,n,n,n,1,n,!1,n,n,n,n,B.ah,B.nx)
+j=A.cB(n,B.a7,!1,m,B.ru,!0,n,n,n,n,1,n,!1,n,n,n,n,B.ah,B.nx)
 s=k.length
 r=i.length
 q=o.a.c.e
@@ -98447,14 +98447,14 @@ $0(){return this.a.a.Mm(this.b.b.a)},
 $S:0}
 A.X2.prototype={
 A(a){var s=null
-return A.as(A.b([B.Lt,B.ac,B.Le,A.eP(s,s,s,B.d3,s,s,this.c,s,s,s,"Cerrar selector",s)],t.p),B.o,B.e,B.i,0)}}
+return A.as(A.b([B.Lt,B.ac,B.Lp,A.eP(s,s,s,B.d3,s,s,this.c,s,s,s,"Cerrar selector",s)],t.p),B.o,B.e,B.i,0)}}
 A.Ok.prototype={
-A(a){var s,r,q,p=this,o=null,n=p.f,m=""+p.c,l=n?""+p.d+" de "+m+" categorias":m+" categorias en "+p.e+" grupos"
+A(a){var s,r,q,p=this,o=null,n=p.f,m=""+p.c,l=n?""+p.d+" de "+m+" categor\xedas":m+" categor\xedas en "+p.e+" grupos"
 m=A.ah(8)
 s=A.bj(B.Q)
 r=t.p
 q=A.b([B.NM,B.aq,A.aQ(A.a5(l,o,o,o,o,B.jT,o,o),1)],r)
-if(n)B.b.M(q,A.b([B.aq,A.kY(B.a54,o,o,p.r,o,A.Fw(o,o,o,o,o,o,o,o,o,o,o,B.YW,o,B.dp,o,o,o,o,B.xZ,o,B.k0))],r))
+if(n)B.b.M(q,A.b([B.aq,A.kY(B.a55,o,o,p.r,o,A.Fw(o,o,o,o,o,o,o,o,o,o,o,B.YW,o,B.dp,o,o,o,o,B.xZ,o,B.k0))],r))
 return A.aM(o,A.as(q,B.o,B.e,B.i,0),B.m,o,o,new A.au(B.aM,o,s,m,o,o,B.p),o,o,o,B.Kx,o,o,o)}}
 A.Qd.prototype={
 A(a){var s,r,q=this,p=null,o=q.c,n=o.kq(q.d),m=t.p,l=A.b([],m),k=q.w
@@ -98472,7 +98472,7 @@ $S:6}
 A.Oo.prototype={
 A(a){var s=this,r=null,q=A.ah(8),p=A.bj(B.Q),o=s.c,n=A.aQ(new A.Yn(o,s.e,r),1)
 o=o.e.length<2?r:new A.aaR(s,a)
-return A.aM(r,A.as(A.b([n,new A.nO("Editar gasto",B.h2,new A.aaS(s,a),!1,r),new A.nO("Mover gasto a otra categoria",B.qP,o,!1,r),new A.nO("Eliminar gasto",B.ma,new A.aaT(s),!0,r)],t.p),B.o,B.e,B.i,0),B.m,r,r,new A.au(B.h,r,p,q,r,r,B.p),r,r,r,B.Kq,r,r,r)},
+return A.aM(r,A.as(A.b([n,new A.nO("Editar gasto",B.h2,new A.aaS(s,a),!1,r),new A.nO("Mover gasto a otra categor\xeda",B.qP,o,!1,r),new A.nO("Eliminar gasto",B.ma,new A.aaT(s),!0,r)],t.p),B.o,B.e,B.i,0),B.m,r,r,new A.au(B.h,r,p,q,r,r,B.p),r,r,r,B.Kq,r,r,r)},
 yY(a){return this.aco(a)},
 aco(a){var s=0,r=A.C(t.H),q=this,p,o
 var $async$yY=A.D(function(b,c){if(b===1)return A.z(c,r)
@@ -98535,7 +98535,7 @@ for(s=n.a.c.e,r=s.length,q=0;q<s.length;s.length===r||(0,A.o)(s),++q){p=s[q]
 o=n.a
 o=A.b([new A.On(o.c,p,o.e,o.f,o.w,o.x,o.y,m)],k)
 if(p!==B.b.gai(n.a.c.e))o.push(B.K)
-B.b.M(j,o)}return new A.BE("Crear categorias y gastos",B.d2,j,m)},
+B.b.M(j,o)}return new A.BE("Crear categor\xedas y gastos",B.d2,j,m)},
 V4(){var s,r=this,q=r.a.c.e
 if(q.length===0)return null
 s=new A.W(q,new A.axD(r),A.M(q).h("W<1>"))
@@ -98568,7 +98568,7 @@ $1(a){return a.a===this.a.r},
 $S:23}
 A.Ol.prototype={
 A(a){var s=null
-return A.as(A.b([A.aQ(A.cB(s,B.a7,!1,this.c,B.rs,!0,s,s,s,s,1,s,!1,s,new A.aaK(this),s,s,B.ah,B.bs),1),B.ac,A.en(B.cc,B.DD,this.d,s)],t.p),B.o,B.e,B.i,0)}}
+return A.as(A.b([A.aQ(A.cB(s,B.a7,!1,this.c,B.rs,!0,s,s,s,s,1,s,!1,s,new A.aaK(this),s,s,B.ah,B.bs),1),B.ac,A.en(B.cc,B.DE,this.d,s)],t.p),B.o,B.e,B.i,0)}}
 A.aaK.prototype={
 $1(a){return this.a.d.$0()},
 $S:6}
@@ -98599,11 +98599,11 @@ A.aaM.prototype={
 $1(a){return this.a.w.$0()},
 $S:6}
 A.GY.prototype={
-A(a){return A.en(B.cc,B.a3K,this.c,null)}}
+A(a){return A.en(B.cc,B.a3M,this.c,null)}}
 A.kw.prototype={}
 A.aJd.prototype={
 $1(a){var s=null,r=A.a5(this.a,s,s,s,s,s,s,s),q=this.b,p=A.cB(s,B.a7,!0,q,A.fW(s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,this.c,!0,!0,!1,s,s,s,s,s,s,s,s,s,s,s,s,s,s),!0,s,s,s,s,1,s,!1,s,new A.aJa(a,q),s,s,B.ah,B.bs)
-return A.zD(A.b([A.kY(B.em,s,s,new A.aJb(a),s,s),A.BG(B.DC,new A.aJc(a,q),s)],t.p),p,r)},
+return A.zD(A.b([A.kY(B.em,s,s,new A.aJb(a),s,s),A.BG(B.DD,new A.aJc(a,q),s)],t.p),p,r)},
 $S:68}
 A.aJa.prototype={
 $1(a){return A.bN(this.a,!1).hT(this.b.a.a)},
@@ -98615,9 +98615,9 @@ A.aJc.prototype={
 $0(){return A.bN(this.a,!1).hT(this.b.a.a)},
 $S:0}
 A.aJ1.prototype={
-$1(a){var s=this,r=null,q=A.a5(s.a,r,r,r,r,r,r,r),p=s.b,o=A.cB(r,B.a7,!0,p,B.ru,!0,r,r,r,r,1,r,!1,r,r,r,r,B.ah,B.be),n=s.c,m=$.nk(),l=t.p
+$1(a){var s=this,r=null,q=A.a5(s.a,r,r,r,r,r,r,r),p=s.b,o=A.cB(r,B.a7,!0,p,B.rv,!0,r,r,r,r,1,r,!1,r,r,r,r,B.ah,B.be),n=s.c,m=$.nk(),l=t.p
 m=A.aG(A.b([o,B.K,A.cB(r,B.a7,!1,n,A.fW(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,"Plan mensual",!0,!0,!1,r,r,r,r,r,s.d.c.gb9()+" ",r,r,r,r,r,r,r,r),!0,r,r,m,B.bY,1,r,!1,r,r,r,r,B.a2,r)],l),B.o,B.e,B.a3)
-return A.zD(A.b([A.kY(B.em,r,r,new A.aJ_(a),r,r),A.BG(B.DC,new A.aJ0(a,p,n),r)],l),m,q)},
+return A.zD(A.b([A.kY(B.em,r,r,new A.aJ_(a),r,r),A.BG(B.DD,new A.aJ0(a,p,n),r)],l),m,q)},
 $S:68}
 A.aJ_.prototype={
 $0(){return A.bN(this.a,!1).bV()},
@@ -98636,7 +98636,7 @@ $2(a,b){var s,r,q,p,o,n,m,l=null,k=this.a,j=k.a.a,i=A.b([],t.FG)
 for(s=this.b,r=s.length,q=this.c.a,p=t.b7,o=0;o<s.length;s.length===r||(0,A.o)(s),++o){n=s[o]
 m=n.a
 if(m!==q)i.push(new A.e6(m,A.a5(n.b,l,l,l,l,l,l,l),B.c8,l,p))}j=A.Bj(B.rs,j,i,l,new A.aJ4(k,b,s),t.N)
-return A.zD(A.b([A.kY(B.em,l,l,new A.aJ5(a),l,l),A.BG(B.a3V,new A.aJ6(k,a),l)],t.p),j,B.a50)},
+return A.zD(A.b([A.kY(B.em,l,l,new A.aJ5(a),l,l),A.BG(B.a3W,new A.aJ6(k,a),l)],t.p),j,B.a50)},
 $S:630}
 A.aJ4.prototype={
 $1(a){this.b.$1(new A.aJ3(this.a,this.c,a))},
@@ -98666,8 +98666,8 @@ s.b=s.b+a.b;++s.a
 return!0},
 $S:86}
 A.On.prototype={
-A(a){var s,r,q,p,o,n,m,l=this,k=null,j=A.ah(8),i=A.bj(B.Q),h=l.d,g=t.p,f=A.b([A.as(A.b([A.c9(B.d2,A.b7(h.d),k,20),B.aq,A.aQ(A.a5(h.b,1,B.I,k,k,B.bH,k,k),1),new A.nO("Editar categoria",B.h2,new A.aaO(l,a),!1,k),new A.nO("Eliminar categoria",B.ma,new A.aaP(l),!0,k)],g),B.o,B.e,B.i,0),B.a5],g),e=h.e,d=e.length
-if(d===0)f.push(B.a4y)
+A(a){var s,r,q,p,o,n,m,l=this,k=null,j=A.ah(8),i=A.bj(B.Q),h=l.d,g=t.p,f=A.b([A.as(A.b([A.c9(B.d2,A.b7(h.d),k,20),B.aq,A.aQ(A.a5(h.b,1,B.I,k,k,B.bH,k,k),1),new A.nO("Editar categor\xeda",B.h2,new A.aaO(l,a),!1,k),new A.nO("Eliminar categor\xeda",B.ma,new A.aaP(l),!0,k)],g),B.o,B.e,B.i,0),B.a5],g),e=h.e,d=e.length
+if(d===0)f.push(B.a4v)
 else for(s=l.c,r=l.r,q=l.w,p=l.x,o=0;o<e.length;e.length===d||(0,A.o)(e),++o){n=e[o]
 m=A.b([new A.Oo(s,h,n,r,q,p,k)],g)
 if(n!==B.b.gai(h.e))m.push(B.a5)
@@ -98678,7 +98678,7 @@ var $async$$0=A.D(function(a,b){if(a===1)return A.z(b,r)
 for(;;)switch(s){case 0:p=q.a
 o=p.d
 s=2
-return A.r(A.aN_(q.b,o.b,"Categoria","Editar categoria"),$async$$0)
+return A.r(A.aN_(q.b,o.b,"Categor\xeda","Editar categor\xeda"),$async$$0)
 case 2:n=b
 if(n!=null)p.e.$2(o,n)
 return A.A(null,r)}})
@@ -98919,7 +98919,7 @@ var $async$r_=A.D(function(a,b){if(a===1)return A.z(b,r)
 for(;;)switch(s){case 0:n=p.c
 n.toString
 s=3
-return A.r(p.mX(n,"Restaurar ejemplo",!0,"Esto reemplazara el presupuesto local actual por datos de ejemplo. Exporta un respaldo antes si queres conservar tus datos.","Restaurar ejemplo"),$async$r_)
+return A.r(p.mX(n,"Restaurar ejemplo",!0,"Esto reemplazar\xe1 el presupuesto local actual por datos de ejemplo. Exporta un respaldo antes si quer\xe9s conservar tus datos.","Restaurar ejemplo"),$async$r_)
 case 3:if(!b||p.c==null){s=1
 break}o=A.a6h()
 A.dG()
@@ -98982,8 +98982,8 @@ var $async$oI=A.D(function(b,c){if(b===1)return A.z(c,r)
 for(;;)switch(s){case 0:i=A.c7()
 try{o=B.c.au(a)
 n=o.length
-if(n===0)A.a0(B.LL)
-if(n>15e5)A.a0(B.M4)
+if(n===0)A.a0(B.LK)
+if(n>15e5)A.a0(B.M6)
 m=B.bh.w5(o,null)
 if(!t.P.b(m))A.a0(B.LW)
 l=A.aOs(m)
@@ -98997,7 +98997,7 @@ break}j=A.aOr(i.aM())
 n=p.c
 n.toString
 s=3
-return A.r(p.mX(n,"Restaurar respaldo",!0,"Esto reemplazara los datos locales actuales por el respaldo pegado ("+j.gt4()+").","Restaurar respaldo"),$async$oI)
+return A.r(p.mX(n,"Restaurar respaldo",!0,"Esto reemplazar\xe1 los datos locales actuales por el respaldo pegado ("+j.gt4()+").","Restaurar respaldo"),$async$oI)
 case 3:if(!c||p.c==null){q=!1
 s=1
 break}A.dG()
@@ -99021,7 +99021,7 @@ var $async$jh=A.D(function(a,b){if(a===1)return A.z(b,r)
 for(;;)switch(s){case 0:n=p.c
 n.toString
 s=3
-return A.r(p.mX(n,"Borrar datos",!0,"Esto elimina el presupuesto guardado solo en este navegador y vuelve al inicio. Exporta un respaldo si queres conservarlo.","Borrar datos locales"),$async$jh)
+return A.r(p.mX(n,"Borrar datos",!0,"Esto elimina el presupuesto guardado solo en este navegador y vuelve al inicio. Exporta un respaldo si quer\xe9s conservarlo.","Borrar datos locales"),$async$jh)
 case 3:if(!b||p.c==null){q=!1
 s=1
 break}o=A.aHt(B.av,B.rR,0,B.xV,$.aGU)
@@ -99068,7 +99068,7 @@ return A.B($async$Ai,r)},
 VP(a){var s,r=this,q=r.d
 if(q==null)return
 s=A.LA(q.a,a)
-if(A.nc(s,q.b)<0){A.aV("Para usar "+s+", cambia el mes inicial en Configuracion.",null,B.v)
+if(A.nc(s,q.b)<0){A.aV("Para usar "+s+", cambia el mes inicial en Configuraci\xf3n.",null,B.v)
 return}if(q.x.aq(s)){r.dQ(new A.auK(r,q,s))
 A.aV("Cambiado a "+s+".",null,B.v)
 return}if(a>0){r.zN(q,s)
@@ -99104,7 +99104,7 @@ this.K(new A.aus(this,b))},
 v7(a){return this.aka(a)},
 aka(a1){var s=0,r=A.C(t.H),q,p=2,o=[],n=[],m=this,l,k,j,i,h,g,f,e,d,c,b,a,a0
 var $async$v7=A.D(function(a2,a3){if(a2===1){o.push(a3)
-s=p}for(;;)switch(s){case 0:if(a1.gc4().length===0){A.aV("Crea al menos una categoria antes de importar gastos.",null,B.v)
+s=p}for(;;)switch(s){case 0:if(a1.gc4().length===0){A.aV("Crea al menos una categor\xeda antes de importar gastos.",null,B.v)
 s=1
 break}A.dG()
 l=null
@@ -99123,7 +99123,7 @@ if(m.c==null){s=1
 break}A.aV(k.a,null,B.v)
 s=1
 break}else{if(m.c==null){s=1
-break}A.aV("No se pudo abrir el selector. Proba el demo en Chrome o Edge.",null,B.v)
+break}A.aV("No se pudo abrir el selector. Prob\xe1 el demo en Chrome o Edge.",null,B.v)
 s=1
 break}s=6
 break
@@ -99131,7 +99131,7 @@ case 3:s=2
 break
 case 6:if(l==null||m.c==null){s=1
 break}j=l
-if(j.c.a.length===0){A.aV(j.b?"No encontre gastos validos en el PDF. Puede tener otro formato o no incluir texto legible.":"No encontre gastos validos en el archivo.",null,B.v)
+if(j.c.a.length===0){A.aV(j.b?"No encontr\xe9 gastos v\xe1lidos en el PDF. Puede tener otro formato o no incluir texto legible.":"No encontr\xe9 gastos v\xe1lidos en el archivo.",null,B.v)
 s=1
 break}i=B.dl.aqS(a1,j.c.a)
 p=8
@@ -99215,7 +99215,7 @@ Ab(a,b){if(B.b.cP(a.gc4(),new A.auE(b)))return b
 return a.gc4().length===0?"":B.b.gS(a.gc4()).a},
 a93(a){var s,r,q,p,o,n,m=this,l=null,k=m.db,j=B.c.au(k.a.a),i=m.dx,h=A.d4(i.a.a),g=m.dy,f=B.c.au(g.a.a),e=A.aMT(f),d=m.fr,c=A.d4(d.a.a)
 if(j.length===0||h<=0){A.aV("Escribe un nombre y un monto mayor que cero.",l,B.v)
-return l}if(A.a3T(a.gc4(),j,l)){A.aV("Ya existe una categoria con ese nombre.",l,B.v)
+return l}if(A.a3T(a.gc4(),j,l)){A.aV("Ya existe una categor\xeda con ese nombre.",l,B.v)
 return l}s=A.aMD(f)
 if(s!=null){A.aV(s,l,B.v)
 return l}r=B.b.m9(a.e,new A.asI(m,a))
@@ -99237,26 +99237,26 @@ r=A.d4(s.a.a)
 if(r<=0){A.aV("Completa un monto mayor que cero.",null,B.v)
 return}q=o.Ab(a,o.Q)
 p=a.kq(q)
-if(p==null){A.aV("Selecciona o crea una categoria para guardar el gasto.",null,B.v)
+if(p==null){A.aV("Selecciona o crea una categor\xeda para guardar el gasto.",null,B.v)
 return}if(l.length===0)n.a=a.M3(q)
 o.dQ(new A.asM(n,a,r,q))
 m.cB(B.ar)
 s.cB(B.ar)
 A.aV("Gasto guardado en "+p.b+".",null,B.v)},
 a95(a,b){var s=B.c.au(b)
-if(s.length===0){A.aV("Escribe el nombre de la categoria.",null,B.v)
-return}if(this.aea(a,s)){A.aV("Ya existe una categoria con ese nombre.",null,B.v)
+if(s.length===0){A.aV("Escribe el nombre de la categor\xeda.",null,B.v)
+return}if(this.aea(a,s)){A.aV("Ya existe una categor\xeda con ese nombre.",null,B.v)
 return}this.dQ(new A.asK(this,a,new A.bz("group_"+1000*Date.now(),s,60982,B.r.C(),A.b([],t.kN))))
-A.aV("Categoria creada.",null,B.v)},
+A.aV("Categor\xeda creada.",null,B.v)},
 alY(a,b,c){var s=B.c.au(c)
-if(s.length===0){A.aV("Escribe el nombre de la categoria.",null,B.v)
-return}if(this.SI(a,s,b.a)){A.aV("Ya existe una categoria con ese nombre.",null,B.v)
+if(s.length===0){A.aV("Escribe el nombre de la categor\xeda.",null,B.v)
+return}if(this.SI(a,s,b.a)){A.aV("Ya existe una categor\xeda con ese nombre.",null,B.v)
 return}this.dQ(new A.auy(b,s))
-A.aV("Categoria actualizada.",null,B.v)},
+A.aV("Categor\xeda actualizada.",null,B.v)},
 ux(a,b){return this.abJ(a,b)},
 abJ(a,b){var s=0,r=A.C(t.H),q,p=this,o,n,m,l,k
 var $async$ux=A.D(function(c,d){if(c===1)return A.z(d,r)
-for(;;)switch(s){case 0:if(a.e.length<=1){A.aV("Crea otra categoria antes de eliminar la unica actual.",null,B.v)
+for(;;)switch(s){case 0:if(a.e.length<=1){A.aV("Crea otra categor\xeda antes de eliminar la \xfanica actual.",null,B.v)
 s=1
 break}o=A.b9x(a,b)
 n=o.a
@@ -99271,16 +99271,16 @@ return A.r(p.qT(a,b.b,n),$async$ux)
 case 5:s=1
 break
 case 4:n=o.b
-l=n.length===0?"Esta categoria no tiene gastos relacionados.":"Tambien se borraran estos gastos sin movimientos: "+p.TR(n)+"."
+l=n.length===0?"Esta categor\xeda no tiene gastos relacionados.":"Tambi\xe9n se borrar\xe1n estos gastos sin movimientos: "+p.TR(n)+"."
 n=p.c
 n.toString
 s=6
-return A.r(p.ur(n,"Eliminar","Vas a eliminar "+b.b+". "+l,"Eliminar categoria"),$async$ux)
+return A.r(p.ur(n,"Eliminar","Vas a eliminar "+b.b+". "+l,"Eliminar categor\xeda"),$async$ux)
 case 6:if(!d||p.c==null){s=1
 break}k=B.b.it(a.e,new A.atj(b))
 if(k<0){s=1
 break}p.dQ(new A.atk(a,k))
-A.aV("Categoria eliminada.",A.aoj("Deshacer",new A.atl(p,k,a,b)),B.iz)
+A.aV("Categor\xeda eliminada.",A.aoj("Deshacer",new A.atl(p,k,a,b)),B.iz)
 case 1:return A.A(q,r)}})
 return A.B($async$ux,r)},
 a96(a,b,c){var s=null,r=B.c.au(c.a)
@@ -99294,7 +99294,7 @@ return}if(A.a3T(a.gc4(),s,c.a)){A.aV("Ya existe un gasto con ese nombre.",null,B
 return}this.dQ(new A.auz(this,c,s,d,b))
 A.aV("Gasto actualizado.",null,B.v)},
 aiY(a,b,c,d){var s
-if(b.a===d.a){A.aV("Selecciona otra categoria para mover el gasto.",null,B.v)
+if(b.a===d.a){A.aV("Selecciona otra categor\xeda para mover el gasto.",null,B.v)
 return}s=B.b.it(b.e,new A.ats(c))
 if(s<0)return
 this.dQ(new A.att(this,b,s,d,c))
@@ -99349,15 +99349,15 @@ s=B.c.au(j.k4.a.a)
 r=s.length===0?0:A.f4(s,i)
 q=B.c.au(j.ok.a.a)
 p=A.aMT(q)
-if(h.length===0){A.aV("Escribe el banco o nombre del prestamo.",i,B.v)
-return}if(g<=0){A.aV("Completa el saldo del prestamo.",i,B.v)
+if(h.length===0){A.aV("Escribe el banco o nombre del pr\xe9stamo.",i,B.v)
+return}if(g<=0){A.aV("Completa el saldo del pr\xe9stamo.",i,B.v)
 return}if(e<0){A.aV("La tasa anual no puede ser negativa.",i,B.v)
 return}if(f<0){A.aV("El seguro mensual no puede ser negativo.",i,B.v)
 return}if(d<=0){A.aV("Escribe un plazo en meses mayor que cero.",i,B.v)
-return}if(r==null){A.aV("Escribe las cuotas pagadas como numero entero.",i,B.v)
+return}if(r==null){A.aV("Escribe las cuotas pagadas como n\xfamero entero.",i,B.v)
 return}if(r<0){A.aV("Las cuotas pagadas no pueden ser negativas.",i,B.v)
 return}if(r>d){A.aV("Las cuotas pagadas no pueden superar el plazo.",i,B.v)
-return}if(q.length===0||p==null){A.aV("Escribe el dia de pago mensual.",i,B.v)
+return}if(q.length===0||p==null){A.aV("Escribe el d\xeda de pago mensual.",i,B.v)
 return}o=A.aMD(q)
 if(o!=null){A.aV(o,i,B.v)
 return}n=Date.now()
@@ -99373,9 +99373,9 @@ VO(a){this.K(new A.auJ(this,a))},
 akd(a){this.K(new A.au8(this,a))},
 aaE(){this.K(new A.asS(this))},
 akM(a,b){var s,r=A.aMR(A.aMH(b.d,b.y,b.x,b.w,b.c,b.r,b.e))
-if(r==null){A.aV("Este prestamo ya no tiene cuotas pendientes.",null,B.v)
+if(r==null){A.aV("Este pr\xe9stamo ya no tiene cuotas pendientes.",null,B.v)
 return}s=A.uf(r.b)
-if(A.nc(s,a.a)>0){A.aV("No se pueden pagar cuotas adelantadas. Abri "+s+" para pagar esa cuota.",null,B.v)
+if(A.nc(s,a.a)>0){A.aV("No se pueden pagar cuotas adelantadas. Abr\xed "+s+" para pagar esa cuota.",null,B.v)
 return}this.dQ(new A.auw(this,a,b,r))
 A.aV("Cuota "+r.a+" pagada y agregada a Gastos.",null,B.v)},
 abH(a,b){var s=B.b.it(a.w,new A.at9(b))
@@ -99729,14 +99729,14 @@ s.a=q.Aa(p)
 return new A.mE(new A.atT(s,q,p,a,r),null)},
 $S:132}
 A.atT.prototype={
-$2(a,b){var s=this,r=null,q=s.b,p=s.c,o=s.d,n=new A.atU(q,p,o),m=t.p,l=A.as(A.b([B.a7E,B.ac,B.Ll,A.eP(r,r,r,B.d3,r,r,new A.atM(o),r,r,r,"Cerrar editor",r)],m),B.o,B.e,B.i,0),k=A.cB(r,B.a7,!0,q.db,B.O9,!0,r,r,r,r,1,r,!1,r,new A.atN(o),r,r,B.ah,B.be),j=$.nk(),i=A.cB(r,B.a7,!1,q.dx,A.fW(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,"Este monto se resta del disponible del mes.",r,r,r,r,r,r,r,r,r,r,r,r,r,"Monto planificado",!0,!0,!1,r,r,r,r,r,p.c.gb9()+" ",r,r,r,r,r,r,r,r),!0,r,r,j,B.bY,1,r,!1,r,new A.atO(o),r,r,B.a2,B.be),h=s.a,g=h.a,f=p.e,e=A.M(f).h("Y<1,e6<j>>")
+$2(a,b){var s=this,r=null,q=s.b,p=s.c,o=s.d,n=new A.atU(q,p,o),m=t.p,l=A.as(A.b([B.a7E,B.ac,B.Lk,A.eP(r,r,r,B.d3,r,r,new A.atM(o),r,r,r,"Cerrar editor",r)],m),B.o,B.e,B.i,0),k=A.cB(r,B.a7,!0,q.db,B.O9,!0,r,r,r,r,1,r,!1,r,new A.atN(o),r,r,B.ah,B.be),j=$.nk(),i=A.cB(r,B.a7,!1,q.dx,A.fW(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,"Este monto se resta del disponible del mes.",r,r,r,r,r,r,r,r,r,r,r,r,r,"Monto planificado",!0,!0,!1,r,r,r,r,r,p.c.gb9()+" ",r,r,r,r,r,r,r,r),!0,r,r,j,B.bY,1,r,!1,r,new A.atO(o),r,r,B.a2,B.be),h=s.a,g=h.a,f=p.e,e=A.M(f).h("Y<1,e6<j>>")
 f=A.U(new A.Y(f,new A.atP(),e),e.h("a9.E"))
-return new A.aS(new A.a3(0,0,0,s.e.d),A.oM(new A.aS(B.q4,A.aG(A.b([l,B.a5,B.a4X,B.br,k,B.K,i,B.K,A.Bj(B.Od,g,f,r,new A.atQ(h,q,b),t.N),B.K,A.as(A.b([A.aQ(A.cB(r,B.a7,!1,q.dy,B.Oc,!0,r,r,r,B.hL,1,r,!1,r,new A.atR(o),r,r,B.a2,B.be),1),B.ac,A.aQ(A.cB(r,B.a7,!1,q.fr,A.fW(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,"Opcional",r,r,r,r,r,r,r,r,r,r,r,r,r,"Meta fondo",!0,!0,!1,r,r,r,r,r,p.c.gb9()+" ",r,r,r,r,r,r,r,r),!0,r,r,j,B.bY,1,r,!1,r,new A.atS(n),r,r,B.a2,B.bs),1)],m),B.o,B.e,B.i,0),B.J,A.en(B.cc,B.jU,n,r)],m),B.D,B.e,B.a3),r),r,B.aa),r)},
+return new A.aS(new A.a3(0,0,0,s.e.d),A.oM(new A.aS(B.q4,A.aG(A.b([l,B.a5,B.a4V,B.br,k,B.K,i,B.K,A.Bj(B.Od,g,f,r,new A.atQ(h,q,b),t.N),B.K,A.as(A.b([A.aQ(A.cB(r,B.a7,!1,q.dy,B.Oc,!0,r,r,r,B.hL,1,r,!1,r,new A.atR(o),r,r,B.a2,B.be),1),B.ac,A.aQ(A.cB(r,B.a7,!1,q.fr,A.fW(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,"Opcional",r,r,r,r,r,r,r,r,r,r,r,r,r,"Meta fondo",!0,!0,!1,r,r,r,r,r,p.c.gb9()+" ",r,r,r,r,r,r,r,r),!0,r,r,j,B.bY,1,r,!1,r,new A.atS(n),r,r,B.a2,B.bs),1)],m),B.o,B.e,B.i,0),B.J,A.en(B.cc,B.jU,n,r)],m),B.D,B.e,B.a3),r),r,B.aa),r)},
 $S:241}
 A.atU.prototype={
 $0(){var s=this.a.a93(this.b)
 if(s!=null){A.bN(this.c,!1).bV()
-A.aV("Categoria agregada y seleccionada.",null,B.v)}},
+A.aV("Categor\xeda agregada y seleccionada.",null,B.v)}},
 $S:0}
 A.atM.prototype={
 $0(){return A.bN(this.a,!1).bV()},
@@ -99973,7 +99973,7 @@ A.auk.prototype={
 $2(a,a0){var s,r,q,p,o,n,m,l,k,j,i,h=this,g=null,f=h.a,e=f.a.e,d=h.c,c=A.M(e).h("W<1>"),b=A.U(new A.W(e,new A.auf(d),c),c.h("y.E"))
 e=A.bV(a,g,t.w).w
 c=h.d
-s=A.a5("Selecciona a que gasto se moveran los movimientos de "+c+".",g,g,g,g,B.bI,g,g)
+s=A.a5("Selecciona a qu\xe9 gasto se mover\xe1n los movimientos de "+c+".",g,g,g,g,B.bI,g,g)
 r=f.a
 q=t.FG
 p=A.b([],q)
@@ -99984,7 +99984,7 @@ p=f.a
 r=f.b
 q=A.b([],q)
 for(j=b.length,l=0;l<b.length;b.length===j||(0,A.o)(b),++l){i=b[l]
-q.push(new A.e6(i.a,A.a5(i.b,g,g,g,g,g,g,g),B.c8,g,m))}return new A.aS(new A.a3(20,0,20,e.f.d+20),A.aG(A.b([B.a4K,B.dy,s,B.bF,o,B.K,A.Bj(B.ru,r.a,q,new A.cQ("target-"+p.a,t.kK),new A.auh(f,a0,b),n),B.br,A.en(B.NJ,B.a4Y,new A.aui(f,h.b,h.f,d,h.r,c),g)],t.p),B.D,B.e,B.a3),g)},
+q.push(new A.e6(i.a,A.a5(i.b,g,g,g,g,g,g,g),B.c8,g,m))}return new A.aS(new A.a3(20,0,20,e.f.d+20),A.aG(A.b([B.a4J,B.dy,s,B.bF,o,B.K,A.Bj(B.rv,r.a,q,new A.cQ("target-"+p.a,t.kK),new A.auh(f,a0,b),n),B.br,A.en(B.NJ,B.a4Y,new A.aui(f,h.b,h.f,d,h.r,c),g)],t.p),B.D,B.e,B.a3),g)},
 $S:241}
 A.auf.prototype={
 $1(a){return!this.a.p(0,a.a)},
@@ -100022,7 +100022,7 @@ l=p.b
 k=p.e
 j=p.a
 s=3
-return A.r(l.R6(k,"Mover","Se moveran "+A.a43(n,m)+" movimientos de "+p.f+" a "+j.b.b+".","Confirmar movimiento"),$async$$0)
+return A.r(l.R6(k,"Mover","Se mover\xe1n "+A.a43(n,m)+" movimientos de "+p.f+" a "+j.b.b+".","Confirmar movimiento"),$async$$0)
 case 3:if(!b||l.c==null){s=1
 break}o=A.c7()
 l.dQ(new A.auc(j,o,n,m))
@@ -100123,28 +100123,28 @@ j=d.x
 q=new A.au6(a2,a5,a1,j,a)
 i=b.d
 h=t.p
-j=A.as(A.b([new A.la(A.aUH(j.a),A.b7(j.d),38,c),B.ac,B.Ln,A.eP(c,c,c,B.d3,c,c,new A.atY(a5),c,c,c,"Cerrar editor",c)],h),B.o,B.e,B.i,0)
+j=A.as(A.b([new A.la(A.aUH(j.a),A.b7(j.d),38,c),B.ac,B.Lg,A.eP(c,c,c,B.d3,c,c,new A.atY(a5),c,c,c,"Cerrar editor",c)],h),B.o,B.e,B.i,0)
 g=J.uq(s)
 o=A.cB(c,B.a7,!1,o,B.Og,!0,c,c,c,c,1,c,!1,c,new A.atZ(a5),c,c,B.ah,B.be)
 f=$.nk()
-n=A.cB(c,B.a7,!1,n,A.fW(c,c,c,c,c,c,c,c,!0,c,c,c,c,c,c,c,c,c,c,c,c,c,c,c,c,c,"Actualiza cuanto queres reservar este mes.",c,c,c,c,c,c,c,c,c,c,c,c,c,"Plan mensual",!0,!0,!1,c,c,c,c,c,a1.c.gb9()+" ",c,c,c,c,c,c,c,c),!0,c,c,f,B.bY,1,c,!1,c,new A.au_(a5),c,c,B.a2,B.be)
+n=A.cB(c,B.a7,!1,n,A.fW(c,c,c,c,c,c,c,c,!0,c,c,c,c,c,c,c,c,c,c,c,c,c,c,c,c,c,"Actualiza cu\xe1nto quer\xe9s reservar este mes.",c,c,c,c,c,c,c,c,c,c,c,c,c,"Plan mensual",!0,!0,!1,c,c,c,c,c,a1.c.gb9()+" ",c,c,c,c,c,c,c,c),!0,c,c,f,B.bY,1,c,!1,c,new A.au_(a5),c,c,B.a2,B.be)
 e=a0?B.be:B.bs
-p=A.b([j,B.a5,B.a3H,B.br,new A.Vd(a1,a,a4,g,new A.au0(a2,a5,a1,a),c),B.br,o,B.K,n,B.K,A.cB(c,B.a7,!1,m,B.Om,!0,c,c,c,B.hL,1,c,!1,c,new A.au1(a0,a5,r),c,c,B.a2,e)],h)
+p=A.b([j,B.a5,B.a3J,B.br,new A.Vd(a1,a,a4,g,new A.au0(a2,a5,a1,a),c),B.br,o,B.K,n,B.K,A.cB(c,B.a7,!1,m,B.Om,!0,c,c,c,B.hL,1,c,!1,c,new A.au1(a0,a5,r),c,c,B.a2,e)],h)
 if(a0)J.aNR(p,A.b([B.K,A.as(A.b([A.aQ(A.cB(c,B.a7,!1,l,A.fW(c,c,c,c,c,c,c,c,!0,c,c,c,c,c,c,c,c,c,c,c,c,c,c,c,c,c,"Opcional",c,c,c,c,c,c,c,c,c,c,c,c,c,"Fondo objetivo",!0,!0,!1,c,c,c,c,c,a1.c.gb9()+" ",c,c,c,c,c,c,c,c),!0,c,c,f,B.bY,1,c,!1,c,new A.au2(a5),c,c,B.a2,B.be),1),B.ac,A.aQ(A.cB(c,B.a7,!1,k,A.fW(c,c,c,c,c,c,c,c,!0,c,c,c,c,c,c,c,c,c,c,c,c,c,c,c,c,c,"Actual acumulado",c,c,c,c,c,c,c,c,c,c,c,c,c,"Ahorrado",!0,!0,!1,c,c,c,c,c,a1.c.gb9()+" ",c,c,c,c,c,c,c,c),!0,c,c,f,B.bY,1,c,!1,c,new A.au3(r),c,c,B.a2,B.bs),1)],h),B.o,B.e,B.i,0)],h))
 J.fz(p,B.br)
-J.fz(p,A.as(A.b([A.eS(B.iU,B.a4R,q,c),B.ac,A.aQ(A.en(B.mi,B.a4b,r,c),1)],h),B.o,B.e,B.i,0))
+J.fz(p,A.as(A.b([A.eS(B.iU,B.a4R,q,c),B.ac,A.aQ(A.en(B.mi,B.a49,r,c),1)],h),B.o,B.e,B.i,0))
 return new A.aS(new A.a3(0,0,0,i),A.oM(new A.aS(B.q4,A.aG(p,B.D,B.e,B.a3),c),c,B.aa),c)},
 $S:662}
 A.au7.prototype={
 $0(){var s,r,q=this,p=null,o=B.c.au(q.b.a.a),n=A.d4(q.c.a.a),m=B.c.au(q.d.a.a),l=A.aMT(m),k=A.d4(q.e.a.a),j=A.d4(q.f.a.a)
 if(J.c1(o)===0||n<=0){A.aV("Escribe nombre y monto mayor que cero.",p,B.v)
 return}r=q.w
-if(A.a3T(q.r.gc4(),o,r.a)){A.aV("Ya existe una categoria con ese nombre.",p,B.v)
+if(A.a3T(q.r.gc4(),o,r.a)){A.aV("Ya existe una categor\xeda con ese nombre.",p,B.v)
 return}s=A.aMD(m)
 if(s!=null){A.aV(s,p,B.v)
 return}q.a.dQ(new A.au4(r,o,n,l,q.x,k,j))
 A.bN(q.y,!1).bV()
-A.aV("Categoria actualizada.",p,B.v)},
+A.aV("Categor\xeda actualizada.",p,B.v)},
 $S:0}
 A.au4.prototype={
 $0(){var s,r,q=this,p=q.a
@@ -100249,7 +100249,7 @@ p=p.e
 m=t.p
 l=A.b([A.co(A.aPN("assets/branding/logo-app.png",B.fv,B.h_,B.oA,i),70,210),B.Db],m)
 k=j.a
-if(k.c)l.push(A.eP(i,i,i,B.d3,i,i,k.d,i,i,i,"Cerrar guia",i))
+if(k.c)l.push(A.eP(i,i,i,B.d3,i,i,k.d,i,i,i,"Cerrar gu\xeda",i))
 return A.aLa(i,i,A.kS(!0,A.oM(A.ek(new A.di(B.Ff,A.aG(A.b([A.as(l,B.o,B.e,B.i,0),B.Z9,new A.Zd(j.e,i),B.br,A.fX(new A.aAO(j,s))],m),B.D,B.e,B.i),i),i,i),B.KL,B.aa),B.ag,!0),new A.Z8(h,!o,q,r,n,j.gagp(),p,i),i,i)},
 aoD(a){A.dG()
 this.K(new A.aAL(this,a))},
@@ -100260,14 +100260,14 @@ A.dG()
 s=p.r
 s===$&&A.a()
 r=B.c.au(s.a.a)
-if(r.length===0){A.aV("Escribe el nombre de la categoria.",o,B.v)
+if(r.length===0){A.aV("Escribe el nombre de la categor\xeda.",o,B.v)
 return}s=A.U($.aNC(),t.FQ)
 q=p.x
 q===$&&A.a()
 B.b.M(s,q)
-if(A.a3T(s,r,o)){A.aV("Ya existe una categoria con ese nombre.",o,B.v)
+if(A.a3T(s,r,o)){A.aV("Ya existe una categor\xeda con ese nombre.",o,B.v)
 return}p.K(new A.aAD(p,new A.bA("onboarding_line_"+1000*Date.now(),r,1000,o,o,o)))
-A.aV("Categoria agregada.",o,B.v)},
+A.aV("Categor\xeda agregada.",o,B.v)},
 alX(a){A.dG()
 this.K(new A.aAJ(this,a))},
 aa3(a){var s,r,q,p,o=this
@@ -100288,7 +100288,7 @@ return}A.dG()
 s.K(new A.aAF(s))
 return}if(r===1){r=s.w
 r===$&&A.a()
-if(r.a===0){A.aV("Selecciona al menos una categoria.",null,B.v)
+if(r.a===0){A.aV("Selecciona al menos una categor\xeda.",null,B.v)
 return}A.dG()
 s.K(new A.aAG(s))
 return}s.abl()},
@@ -100298,7 +100298,7 @@ s=A.d4(m.a.a)
 if(s<=0){A.aV("Ingresa tu ingreso mensual para crear el presupuesto.",null,B.v)
 return}m=n.w
 m===$&&A.a()
-if(m.a===0){A.aV("Selecciona al menos una categoria.",null,B.v)
+if(m.a===0){A.aV("Selecciona al menos una categor\xeda.",null,B.v)
 return}A.dG()
 r=n.a
 r.toString
@@ -100397,12 +100397,12 @@ $0(){return this.a.e=2},
 $S:0}
 A.Zc.prototype={
 A(a){var s=null,r=A.ah(8),q=this.c
-return A.aM(s,A.aG(A.b([B.a4I,B.K,B.a4a,B.bF,B.a8P,B.D5,new A.yD("1","Ingreso del mes","Definis la moneda, el mes inicial y cuanto vas a manejar.",q===0,s),new A.yD("2","Asigna cada centavo","Elegis o creas categorias y la app reparte el dinero.",q===1,s),new A.yD("3","Revisa y crea","Confirmas los montos antes de guardar el primer mes.",q===2,s),B.dy,new A.Z7(this.d,s)],t.p),B.D,B.e,B.i),B.m,s,s,new A.au(s,s,s,r,B.rT,B.OU,B.p),s,s,s,B.q3,s,s,s)}}
+return A.aM(s,A.aG(A.b([B.a4H,B.K,B.a48,B.bF,B.a8P,B.D5,new A.yD("1","Ingreso del mes","Defin\xeds la moneda, el mes inicial y cu\xe1nto vas a manejar.",q===0,s),new A.yD("2","Asigna cada centavo","Eleg\xeds o creas categor\xedas y la app reparte el dinero.",q===1,s),new A.yD("3","Revisa y crea","Confirmas los montos antes de guardar el primer mes.",q===2,s),B.dy,new A.Z7(this.d,s)],t.p),B.D,B.e,B.i),B.m,s,s,new A.au(s,s,s,r,B.rT,B.OU,B.p),s,s,s,B.q3,s,s,s)}}
 A.Z7.prototype={
 A(a){var s=null,r=B.h.bc(0.1),q=A.ah(8),p=A.bj(B.h.bc(0.16))
-return A.aM(s,A.aG(A.b([B.a3S,B.c5,B.a4P,B.K,A.en(B.mh,B.a57,this.c,s)],t.p),B.D,B.e,B.i),B.m,s,s,new A.au(r,s,p,q,s,s,B.p),s,s,s,B.bz,s,s,s)}}
+return A.aM(s,A.aG(A.b([B.a3T,B.c5,B.a4O,B.K,A.en(B.mh,B.a57,this.c,s)],t.p),B.D,B.e,B.i),B.m,s,s,new A.au(r,s,p,q,s,s,B.p),s,s,s,B.bz,s,s,s)}}
 A.Ze.prototype={
-A(a){return A.p1(B.c7,B.R3,B.df,8,8)}}
+A(a){return A.p1(B.c7,B.RU,B.df,8,8)}}
 A.yB.prototype={
 A(a){var s=null,r=B.h.bc(0.1),q=A.ah(999),p=A.bj(B.h.bc(0.16))
 return A.aM(s,A.as(A.b([A.c9(this.c,B.pc,s,15),B.cK,A.a5(this.d,s,s,s,s,B.a0o,s,s)],t.p),B.o,B.e,B.a3,0),B.m,s,s,new A.au(r,s,p,q,s,s,B.p),s,s,s,B.pZ,s,s,s)}}
@@ -100415,20 +100415,20 @@ A.Zg.prototype={
 A(a){var s,r,q,p,o,n,m,l,k,j=this,i=null,h=j.d,g=j.x,f=j.w,e=A.aHt(h,f,j.e,j.y,g),d=g.a,c=j.c
 A:{s=0===c
 if(s){r="1. Ingreso mensual"
-break A}if(1===c){r="2. Categorias y montos"
-break A}r="3. Revision final"
-break A}B:{if(s){s="Decinos cuanto dinero esperas manejar este mes."
-break B}if(1===c){s="Agrega categorias y asigna cuanto vas a reservar para cada gasto."
-break B}s="Confirma ingreso, categorias y montos antes de crear tu presupuesto."
+break A}if(1===c){r="2. Categor\xedas y montos"
+break A}r="3. Revisi\xf3n final"
+break A}B:{if(s){s="Decinos cu\xe1nto dinero esper\xe1s manejar este mes."
+break B}if(1===c){s="Agreg\xe1 categor\xedas y asign\xe1 cu\xe1nto vas a reservar para cada gasto."
+break B}s="Confirma ingreso, categor\xedas y montos antes de crear tu presupuesto."
 break B}q=A.uf(new A.dM(Date.now(),0,!1))
 p=A.ah(8)
 o=A.bj(B.Q)
 n=t.p
 s=A.b([B.a53,B.c5,A.a5(r,i,i,i,i,B.a2G,i,i),B.c5,A.a5(s,i,i,i,i,B.b1,i,i),B.J],n)
 if(c===0){g=t.yR
-g=A.aRE(new A.aAP(j),B.QZ,A.bW([h],g),g)
+g=A.aRE(new A.aAP(j),B.R_,A.bW([h],g),g)
 f=$.nk()
-B.b.M(s,A.b([g,B.J,A.cB(i,B.a7,!1,j.f,A.fW(i,i,i,i,i,i,i,i,!0,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,"Escribe tu ingreso mensual neto.",i,i,i,i,i,i,i,i,i,i,i,i,i,"Ingreso mensual",!0,!0,!1,i,i,i,i,i,h.gb9()+" ",i,i,i,i,i,i,i,i),!0,i,i,f,B.bY,1,i,!1,i,i,i,i,B.a2,B.bs),B.J,new A.pj(B.qZ,"Tu mes inicial sera "+q+". Si queres empezar en un mes anterior, lo podes cambiar despues en Configuracion.",i)],n))}else if(c===1){h=A.b([A.as(A.b([B.Lc,A.a5(""+d+" activas",i,i,i,i,B.nC,B.a2,i)],n),B.o,B.e,B.i,0),B.c5,B.a45,B.a5,A.cB(i,B.a7,!1,j.r,A.fW(i,i,i,i,i,i,i,i,!0,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,"Ejemplo: Mascotas, Internet o Ahorro",i,i,i,i,i,i,i,i,i,i,i,i,i,"Crear categoria propia",!0,!0,!1,i,i,i,i,i,i,i,i,A.eP(i,i,i,B.cc,i,i,j.as,i,i,i,"Agregar categoria propia",i),i,i,i,i,i),!0,i,i,i,i,1,i,!1,i,new A.aAQ(j),i,i,B.ah,B.bs)],n)
+B.b.M(s,A.b([g,B.J,A.cB(i,B.a7,!1,j.f,A.fW(i,i,i,i,i,i,i,i,!0,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,"Escribe tu ingreso mensual neto.",i,i,i,i,i,i,i,i,i,i,i,i,i,"Ingreso mensual",!0,!0,!1,i,i,i,i,i,h.gb9()+" ",i,i,i,i,i,i,i,i),!0,i,i,f,B.bY,1,i,!1,i,i,i,i,B.a2,B.bs),B.J,new A.pj(B.qZ,"Tu mes inicial ser\xe1 "+q+". Si quer\xe9s empezar en un mes anterior, lo pod\xe9s cambiar despu\xe9s en Configuraci\xf3n.",i)],n))}else if(c===1){h=A.b([A.as(A.b([B.Ld,A.a5(""+d+" activas",i,i,i,i,B.nC,B.a2,i)],n),B.o,B.e,B.i,0),B.c5,B.a44,B.a5,A.cB(i,B.a7,!1,j.r,A.fW(i,i,i,i,i,i,i,i,!0,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,"Ejemplo: Mascotas, Internet o Ahorro",i,i,i,i,i,i,i,i,i,i,i,i,i,"Crear categor\xeda propia",!0,!0,!1,i,i,i,i,i,i,i,i,A.eP(i,i,i,B.cc,i,i,j.as,i,i,i,"Agregar categor\xeda propia",i),i,i,i,i,i),!0,i,i,i,i,1,i,!1,i,new A.aAQ(j),i,i,B.ah,B.bs)],n)
 if(f.length!==0){r=A.b([],n)
 for(m=f.length,l=0;l<f.length;f.length===m||(0,A.o)(f),++l){k=f[l]
 r.push(new A.Ps(A.a5(k.b,i,i,i,i,i,i,i),g.p(0,k.a),new A.aAR(j,k),new A.aAS(j,k),i))}B.b.M(h,A.b([B.a5,A.p1(B.c7,r,B.df,8,8)],n))}h.push(B.a5)
@@ -100462,19 +100462,19 @@ r=Math.abs(s)
 q=r<0.01
 if(q)p=B.r
 else p=s>0?B.aS:B.ab
-if(q)o="Todo tu ingreso esta asignado."
+if(q)o="Todo tu ingreso est\xe1 asignado."
 else{n=f.c
 if(s>0){r=n.gb9()
 r="Te quedan "+A.bJ(A.bM(s,n),r+" ").bv(s)+" sin asignar."
 o=r}else{m=n.gb9()
-r="Estas asignando "+A.bJ(A.bM(r,n),m+" ").bv(r)+" mas que tu ingreso."
+r="Estas asignando "+A.bJ(A.bM(r,n),m+" ").bv(r)+" m\xe1s que tu ingreso."
 o=r}}r=A.ah(8)
 n=A.bj(B.Q)
 m=f.glj()
 l=f.c
 k=l.gb9()
 j=t.p
-m=A.b([A.as(A.b([B.Li,A.a5(A.bJ(A.bM(m,l),k+" ").bv(m),g,g,g,g,B.cN,B.a2,g)],j),B.o,B.e,B.i,0),B.c5,A.a5(o,g,g,g,g,A.c2(g,g,p,g,g,g,g,g,g,g,g,12,g,g,B.bB,g,g,!0,g,g,g,g,g,g,g,g),g,g),B.K],j)
+m=A.b([A.as(A.b([B.Lf,A.a5(A.bJ(A.bM(m,l),k+" ").bv(m),g,g,g,g,B.cN,B.a2,g)],j),B.o,B.e,B.i,0),B.c5,A.a5(o,g,g,g,g,A.c2(g,g,p,g,g,g,g,g,g,g,g,12,g,g,B.bB,g,g,!0,g,g,g,g,g,g,g,g),g,g),B.K],j)
 for(l=e.length,i=0;i<e.length;e.length===l||(0,A.o)(e),++i){h=e[i]
 k=A.b([new A.Z9(h,f.c,new A.aAC(this,h),g)],j)
 if(h!==B.b.gai(e))k.push(B.K)
@@ -100496,7 +100496,7 @@ A.Z8.prototype={
 A(a){var s=null
 return A.kS(!0,A.aM(s,A.fX(new A.aAB(this)),B.m,s,s,B.Fg,s,s,s,B.q2,s,s,s),B.ag,!1)}}
 A.aAB.prototype={
-$2(a,b){var s,r=null,q=this.a,p=q.c,o=A.eS(B.No,B.a4G,p?q.r:r,r),n=q.d?A.eS(B.NN,B.a5a,q.x,r):r,m=A.en(A.c9(q.f,r,r,r),A.a5(q.e,r,r,r,r,r,r,r),q.w,r)
+$2(a,b){var s,r=null,q=this.a,p=q.c,o=A.eS(B.No,B.a4F,p?q.r:r,r),n=q.d?A.eS(B.NN,B.a59,q.x,r):r,m=A.en(A.c9(q.f,r,r,r),A.a5(q.e,r,r,r,r,r,r,r),q.w,r)
 if(b.b<860){q=t.p
 s=A.b([m],q)
 if(n!=null)B.b.M(s,A.b([B.a5,n],q))
@@ -100514,7 +100514,7 @@ s=A.ah(8)
 r=A.bj(B.Q)
 q=this.d
 p=t.p
-o=A.b([A.as(A.b([A.aM(h,B.Nl,B.m,h,h,new A.au(B.r.bc(0.1),h,h,A.ah(8),h,h,B.p),h,28,h,h,h,h,28),B.aq,B.Lo,A.a5(""+q+" categorias",h,h,h,h,B.bI,B.a2,h)],p),B.o,B.e,B.i,0),B.a5],p)
+o=A.b([A.as(A.b([A.aM(h,B.Nl,B.m,h,h,new A.au(B.r.bc(0.1),h,h,A.ah(8),h,h,B.p),h,28,h,h,h,h,28),B.aq,B.Lq,A.a5(""+q+" categor\xedas",h,h,h,h,B.bI,B.a2,h)],p),B.o,B.e,B.i,0),B.a5],p)
 if(!(f>0))o.push(B.a40)
 else{f=A.b([new A.tp("Ingreso mensual",g.d,g.c,B.ap,B.F,h),B.c5,new A.tp("Asignado a gastos",g.glj(),g.c,B.r,B.F,h),B.K,new A.Zf(g,q,h),B.a5],p)
 for(q=e.length,n=0;n<e.length;e.length===q||(0,A.o)(e),++n){m=e[n]
@@ -100522,7 +100522,7 @@ l=A.a5(m.b,h,B.I,h,h,B.hM,h,h)
 k=m.c
 j=g.c
 i=j.gb9()
-f.push(new A.aS(B.Kg,A.as(A.b([new A.dj(1,B.aD,l,h),B.aq,A.a5(A.bJ(A.bM(k,j),i+" ").bv(k),h,h,h,h,B.cN,B.a2,h)],p),B.o,B.e,B.i,0),h))}if(g.gc4().length>e.length)f.push(A.a5("+"+(g.gc4().length-e.length)+" categorias mas",h,h,h,h,B.b1,h,h))
+f.push(new A.aS(B.Kg,A.as(A.b([new A.dj(1,B.aD,l,h),B.aq,A.a5(A.bJ(A.bM(k,j),i+" ").bv(k),h,h,h,h,B.cN,B.a2,h)],p),B.o,B.e,B.i,0),h))}if(g.gc4().length>e.length)f.push(A.a5("+"+(g.gc4().length-e.length)+" categor\xedas m\xe1s",h,h,h,h,B.b1,h,h))
 B.b.M(o,f)}return A.aM(h,A.aG(o,B.D,B.e,B.i),B.m,h,h,new A.au(B.aM,h,r,s,h,h,B.p),h,h,h,B.bz,h,h,h)}}
 A.Zf.prototype={
 A(a){var s,r=this.c,q=r.d-r.glj(),p=r.d>0,o=p?"Ingreso definido":"Falta ingreso"
@@ -100531,21 +100531,21 @@ r=r.c
 s=r.gb9()
 s=A.bJ(A.bM(q,r),s+" ").bv(q)
 r=q<0?B.ab:B.r
-return A.p1(B.c7,A.b([new A.yC(B.dr,"Listo para crear",o,p,null),new A.yC(B.MR,"Categorias",""+this.d+" activas",B.aZ,null),new A.yC(B.md,"Disponible",s,r,null)],t.p),B.df,8,8)}}
+return A.p1(B.c7,A.b([new A.yC(B.dr,"Listo para crear",o,p,null),new A.yC(B.MR,"Categor\xedas",""+this.d+" activas",B.aZ,null),new A.yC(B.md,"Disponible",s,r,null)],t.p),B.df,8,8)}}
 A.yC.prototype={
 A(a){var s=this,r=null,q=s.f,p=q.bc(0.08),o=A.ah(8),n=A.bj(q.bc(0.16)),m=t.p
 return A.aM(r,A.as(A.b([A.c9(s.c,q,r,16),B.ek,new A.hY(1,B.d0,A.aG(A.b([A.a5(s.d,r,B.I,r,r,B.Dx,r,r),A.a5(s.e,r,B.I,r,r,A.c2(r,r,q,r,r,r,r,r,r,r,r,12,r,r,B.F,r,r,!0,r,r,r,r,r,r,r,r),r,r)],m),B.Z,B.e,B.a3),r)],m),B.o,B.e,B.a3,0),B.m,r,B.F6,new A.au(p,r,n,o,r,r,B.p),r,r,r,B.iB,r,r,r)}}
 A.xW.prototype={
-A(a){var s=null,r=t.p,q=A.as(A.b([B.a7B,B.ac,B.Lf],r),B.o,B.e,B.i,0),p=this.c,o=p.glj(),n=p.c,m=n.gb9()
-return new A.aS(B.q5,A.aG(A.b([q,B.K,A.a5("Ya tenes "+A.bJ(A.bM(o,n),m+" ").bv(o)+" asignados en "+p.gc4().length+" categorias.",s,s,s,s,B.b1,s,s),B.J,B.a8F,B.br,A.en(B.cc,B.a4M,this.d,s),B.K,A.eS(B.Nq,B.a59,this.e,s)],r),B.D,B.e,B.a3),s)}}
+A(a){var s=null,r=t.p,q=A.as(A.b([B.a7B,B.ac,B.Lo],r),B.o,B.e,B.i,0),p=this.c,o=p.glj(),n=p.c,m=n.gb9()
+return new A.aS(B.q5,A.aG(A.b([q,B.K,A.a5("Ya ten\xe9s "+A.bJ(A.bM(o,n),m+" ").bv(o)+" asignados en "+p.gc4().length+" categor\xedas.",s,s,s,s,B.b1,s,s),B.J,B.a8F,B.br,A.en(B.cc,B.a4M,this.d,s),B.K,A.eS(B.Nq,B.a58,this.e,s)],r),B.D,B.e,B.a3),s)}}
 A.yz.prototype={
 A(a){var s,r,q=this,p=null,o=q.c,n=o.f,m=new A.W(n,new A.aAx(),A.M(n).h("W<1>")).gE(0)
 n=q.d
 s=t.p
 r=A.as(A.b([B.a7D,B.ac,A.aQ(A.a5("Preparar "+n,p,p,p,p,B.Dz,p,p),1)],s),B.o,B.e,B.i,0)
-o=A.a5("En esta version local solo hay un mes activo. Preparar "+n+" reemplaza la vista actual; genera un CSV si queres conservar una copia de "+o.a+".",p,p,p,p,B.b1,p,p)
-n=m===0?"No hay gastos reales que limpiar.":"Se borraran "+m+" gastos reales de la vista actual."
-return A.oM(new A.aS(B.q5,A.aG(A.b([r,B.K,o,B.J,new A.pj(B.e2,"Se conservaran ingreso, categorias y montos planificados. "+n,p),B.br,A.en(B.NL,B.a3Y,q.e,p),B.K,A.eS(B.NC,B.a4W,q.f,p)],s),B.D,B.e,B.a3),p),p,B.aa)}}
+o=A.a5("En esta versi\xf3n local solo hay un mes activo. Preparar "+n+" reemplaza la vista actual; genera un CSV si quer\xe9s conservar una copia de "+o.a+".",p,p,p,p,B.b1,p,p)
+n=m===0?"No hay gastos reales que limpiar.":"Se borrar\xe1n "+m+" gastos reales de la vista actual."
+return A.oM(new A.aS(B.q5,A.aG(A.b([r,B.K,o,B.J,new A.pj(B.e2,"Se conservar\xe1n ingreso, categor\xedas y montos planificados. "+n,p),B.br,A.en(B.NL,B.a3Y,q.e,p),B.K,A.eS(B.NC,B.a4X,q.f,p)],s),B.D,B.e,B.a3),p),p,B.aa)}}
 A.aAx.prototype={
 $1(a){return a.f===B.b6},
 $S:48}
@@ -100611,7 +100611,7 @@ A(a){var s=this,r=null,q=s.d,p=q?s.f:r,o=A.ah(999)
 q=q?B.h:B.h.bc(0.35)
 return A.xA(A.e7(!1,o,!0,A.co(A.c9(s.e,q,r,18),40,32),r,!0,r,r,r,r,r,r,r,r,r,p,r,r,r,r,r,r,r),s.c)}}
 A.XC.prototype={
-A(a){var s=null,r=this.c!=null,q=r?"Cuenta conectada":"Crear cuenta o iniciar sesion",p=A.ah(999),o=r?B.h.bc(0.2):B.h.bc(0.12),n=A.ah(999),m=A.bj(B.h.bc(0.22))
+A(a){var s=null,r=this.c!=null,q=r?"Cuenta conectada":"Crear cuenta o iniciar sesi\xf3n",p=A.ah(999),o=r?B.h.bc(0.2):B.h.bc(0.12),n=A.ah(999),m=A.bj(B.h.bc(0.22))
 return A.xA(A.e7(!1,p,!0,A.aM(B.O,A.c9(r?B.r9:B.MX,B.h,s,19),B.m,s,s,new A.au(o,s,m,n,s,s,B.p),s,40,s,s,s,s,40),s,!0,s,s,s,s,s,s,s,s,s,this.d,s,s,s,s,s,s,s),q)}}
 A.XE.prototype={
 A(a){var s=null,r=this.d,q=r.bc(0.1),p=A.ah(999),o=A.bj(r.bc(0.2))
@@ -100628,7 +100628,7 @@ if(a==="settings")this.a.d.$0()
 if(a==="reset")this.a.e.$0()},
 $S:6}
 A.ayQ.prototype={
-$1(a){return A.b([B.Wk,B.Wn,B.Wi],t.Do)},
+$1(a){return A.b([B.Wj,B.Wn,B.Wi],t.Do)},
 $S:666}
 A.to.prototype={
 ac(){var s=$.am()
@@ -100719,7 +100719,7 @@ h=o.pop()
 j=A.ae(h)
 if(j instanceof A.kc){l=j
 n.kT(l.a)}else if(j instanceof A.fQ){k=j
-n.kT(k.b)}else n.kT("No se pudo iniciar sesion con Gmail.")
+n.kT(k.b)}else n.kT("No se pudo iniciar sesi\xf3n con Gmail.")
 s=6
 break
 case 3:s=2
@@ -100747,7 +100747,7 @@ h=o.pop()
 j=A.ae(h)
 if(j instanceof A.kc){l=j
 n.kT(l.a)}else if(j instanceof A.fQ){k=j
-n.kT(k.b)}else n.kT("No se pudo iniciar sesion con Gmail.")
+n.kT(k.b)}else n.kT("No se pudo iniciar sesi\xf3n con Gmail.")
 s=6
 break
 case 3:s=2
@@ -100778,7 +100778,7 @@ A.aV(s.y?"Cuenta creada.":"Sesion iniciada.",null,B.v)},
 kT(a){if(this.c==null)return
 this.K(new A.aqK(this,a))},
 A(a){var s,r=this,q=null,p=r.x,o=A.bV(a,q,t.w).w,n=t.p
-n=A.b([A.as(A.b([B.a7C,B.ac,B.Lq,A.eP(q,q,q,B.d3,q,q,new A.aqP(a),q,q,q,"Cerrar cuenta",q)],n),B.o,B.e,B.i,0),B.bF],n)
+n=A.b([A.as(A.b([B.a7C,B.ac,B.Ln,A.eP(q,q,q,B.d3,q,q,new A.aqP(a),q,q,q,"Cerrar cuenta",q)],n),B.o,B.e,B.i,0),B.bF],n)
 s=r.z
 if(p!=null)n.push(new A.a0P(p.a.b,s,r.gaix(),q))
 else n.push(new A.U9(r.d,r.e,r.y,s,r.Q,new A.aqQ(r),r.gao3(),r.gao4(),r.gao5(),r.ganA(),q))
@@ -100833,14 +100833,14 @@ s.Q=null},
 $S:0}
 A.a0P.prototype={
 A(a){var s=null,r=A.ah(8),q=A.bj(B.Q),p=this.d,o=p?s:this.e
-return A.aM(s,A.aG(A.b([new A.id(B.r9,"Sesion",this.c,B.r,s),B.J,A.eS(p?B.cL:B.rj,B.DE,o,s)],t.p),B.D,B.e,B.i),B.m,s,s,new A.au(B.aM,s,q,r,s,s,B.p),s,s,s,B.cZ,s,s,s)}}
+return A.aM(s,A.aG(A.b([new A.id(B.r9,"Sesion",this.c,B.r,s),B.J,A.eS(p?B.cL:B.rj,B.DC,o,s)],t.p),B.D,B.e,B.i),B.m,s,s,new A.au(B.aM,s,q,r,s,s,B.p),s,s,s,B.cZ,s,s,s)}}
 A.U9.prototype={
-A(a){var s,r,q=this,p=null,o=q.e,n=o?"Crear cuenta":"Iniciar sesion",m=A.ah(8),l=A.bj(B.Q),k=t.y,j=A.bW([o],k),i=q.f
+A(a){var s,r,q=this,p=null,o=q.e,n=o?"Crear cuenta":"Iniciar sesi\xf3n",m=A.ah(8),l=A.bj(B.Q),k=t.y,j=A.bW([o],k),i=q.f
 k=A.aRE(i?p:new A.aqR(q),B.Qu,j,k)
 j=A.cB(p,B.rQ,!1,q.c,B.rr,!0,p,p,p,B.nz,1,p,!1,p,p,p,p,B.ah,B.be)
-s=o?B.RU:B.rU
+s=o?B.RV:B.rU
 r=t.p
-s=A.b([k,B.J,j,B.K,A.cB(!1,s,!1,q.d,B.rv,!1,p,p,p,p,1,p,!0,p,new A.aqS(q),p,p,B.ah,B.bs)],r)
+s=A.b([k,B.J,j,B.K,A.cB(!1,s,!1,q.d,B.rt,!1,p,p,p,p,1,p,!0,p,new A.aqS(q),p,p,B.ah,B.bs)],r)
 k=q.r
 if(k!=null)B.b.M(s,A.b([B.K,new A.k0(B.h0,B.ab,k,p)],r))
 s.push(B.J)
@@ -101043,7 +101043,7 @@ h=o.pop()
 j=A.ae(h)
 if(j instanceof A.kc){l=j
 n.oN(l.a)}else if(j instanceof A.fQ){k=j
-n.oN(k.b)}else n.oN("No se pudo iniciar sesion con Gmail.")
+n.oN(k.b)}else n.oN("No se pudo iniciar sesi\xf3n con Gmail.")
 s=6
 break
 case 3:s=2
@@ -101071,7 +101071,7 @@ h=o.pop()
 j=A.ae(h)
 if(j instanceof A.kc){l=j
 n.oN(l.a)}else if(j instanceof A.fQ){k=j
-n.oN(k.b)}else n.oN("No se pudo iniciar sesion con Gmail.")
+n.oN(k.b)}else n.oN("No se pudo iniciar sesi\xf3n con Gmail.")
 s=6
 break
 case 3:s=2
@@ -101211,7 +101211,7 @@ h=m.gKm()
 g=m.c.b
 g=g==null?null:g.a===B.kL
 s=11
-return A.r(n.us("Usar backend",g===!0,"Esto reemplazara los datos locales de este navegador por el mes "+i+" del backend ("+h+").","Usar datos del backend"),$async$qD)
+return A.r(n.us("Usar backend",g===!0,"Esto reemplazar\xe1 los datos locales de este navegador por el mes "+i+" del backend ("+h+").","Usar datos del backend"),$async$qD)
 case 11:l=b
 if(!l){if(n.c!=null)n.K(new A.aDW(n))
 s=1
@@ -101253,21 +101253,21 @@ break
 case 1:return A.A(q,r)}})
 return A.B($async$us,r)},
 A(a2){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d=this,c=null,b=A.aOr(d.a.c),a=d.a.c,a0=new A.MS(A.aUG(a),A.aVz(a)),a1=A.aOu(d.a.c,c)
-if(!d.ay)s="Revisando sesion local"
+if(!d.ay)s="Revisando sesi\xf3n local"
 else{a=d.as
-s=a==null?"Sin sesion guardada":a.a.b}a=A.bV(a2,c,t.w).w
+s=a==null?"Sin sesi\xf3n guardada":a.a.b}a=A.bV(a2,c,t.w).w
 r=t.p
-q=A.as(A.b([B.a7A,B.ac,B.Lp,A.eP(c,c,c,B.d3,c,c,new A.aEt(a2),c,c,c,"Cerrar configuracion",c)],r),B.o,B.e,B.i,0)
+q=A.as(A.b([B.a7A,B.ac,B.Lc,A.eP(c,c,c,B.d3,c,c,new A.aEt(a2),c,c,c,"Cerrar configuraci\xf3n",c)],r),B.o,B.e,B.i,0)
 p=A.ah(8)
 o=A.bj(B.Q)
 n=d.d
 n===$&&A.a()
-p=A.aM(c,A.aG(A.b([B.a4i,B.dy,B.a4j,B.bF,new A.a0I(n,A.nc(d.a.c.a,A.LA(n,1))>=0,new A.aEu(d),new A.aEv(d),c),B.J,new A.k0(B.qR,B.r,"No se podran usar meses anteriores a "+d.d+". El mes inicial no puede quedar despues del mes activo "+d.a.c.a+".",c)],r),B.D,B.e,B.i),B.m,c,c,new A.au(B.aM,c,o,p,c,c,B.p),c,c,c,B.cZ,c,c,c)
+p=A.aM(c,A.aG(A.b([B.a4g,B.dy,B.a4h,B.bF,new A.a0I(n,A.nc(d.a.c.a,A.LA(n,1))>=0,new A.aEu(d),new A.aEv(d),c),B.J,new A.k0(B.qR,B.r,"No se podr\xe1n usar meses anteriores a "+d.d+". El mes inicial no puede quedar despu\xe9s del mes activo "+d.a.c.a+".",c)],r),B.D,B.e,B.i),B.m,c,c,new A.au(B.aM,c,o,p,c,c,B.p),c,c,c,B.cZ,c,c,c)
 o=A.en(B.mi,B.a4c,new A.aEw(d),c)
 n=A.ah(8)
 m=A.bj(B.Q)
 l=A.as(A.b([B.Lb,new A.SB(A.aZu(),!1,c)],r),B.o,B.e,B.i,0)
-k=A.a5("Estas usando datos locales para probar rapido. El backend queda listo para activar cuentas y sync.",c,c,c,c,B.b1,c,c)
+k=A.a5("Estas usando datos locales para probar r\xe1pido. El backend queda listo para activar cuentas y sync.",c,c,c,c,B.b1,c,c)
 j=$.aN6().k(0)
 i=d.as==null
 h=i?B.MY:B.MG
@@ -101285,7 +101285,7 @@ j=l?B.me:B.qQ
 B.b.M(f,A.b([B.a5,new A.k0(j,l?B.r:B.aS,k,c)],r))}f.push(B.a5)
 l=a0.gii().length===0?B.r_:B.mg
 k=a0.gyq()
-f.push(new A.id(l,"Prevalidacion",k,a0.gii().length===0?B.r:B.ab,c))
+f.push(new A.id(l,"Prevalidaci\xf3n",k,a0.gii().length===0?B.r:B.ab,c))
 f.push(B.a5)
 f.push(new A.id(B.qW,"Sincronizacion",""+A.b8T(a0).b.length+" operaciones remotas estimadas",B.aZ,c))
 f.push(B.a5)
@@ -101295,18 +101295,18 @@ j=a1.ga0O()
 i=a1.gvP()?B.r:B.aS
 f.push(new A.id(l,"Migracion",k+" "+j+".",i,c))
 if(a0.gii().length!==0)B.b.M(f,A.b([B.J,new A.k0(B.h0,B.ab,B.b.gS(a0.gii()).b,c)],r))
-if(d.as==null){l=A.b([B.bF,B.pS,B.bF,B.a4_,B.dy,B.a4H,B.J,A.cB(c,B.rQ,!1,d.f,B.rr,!0,c,c,c,B.nz,1,c,!1,c,c,c,c,B.ah,B.be),B.K,A.cB(!1,B.rU,!1,d.r,B.rv,!1,c,c,c,c,1,c,!0,c,new A.aEx(d),c,c,B.ah,B.bs)],r)
+if(d.as==null){l=A.b([B.bF,B.pS,B.bF,B.a4_,B.dy,B.a4G,B.J,A.cB(c,B.rQ,!1,d.f,B.rr,!0,c,c,c,B.nz,1,c,!1,c,c,c,c,B.ah,B.be),B.K,A.cB(!1,B.rU,!1,d.r,B.rt,!1,c,c,c,c,1,c,!0,c,new A.aEx(d),c,c,B.ah,B.bs)],r)
 k=d.db
 if(k!=null)B.b.M(l,A.b([B.K,new A.k0(B.h0,B.ab,k,c)],r))
 l.push(B.J)
 k=d.CW
 j=k?c:new A.aEy(d)
-l.push(A.en(k?B.cL:B.re,B.a3P,j,c))
+l.push(A.en(k?B.cL:B.re,B.a3Q,j,c))
 l.push(B.a5)
 l.push(A.eS(B.mh,B.a5e,d.CW?c:new A.aEz(d),c))
 l.push(B.a5)
 l.push(new A.vI(d.CW,d.gao0(),d.gao1(),d.gany(),c))
-B.b.M(f,l)}if(d.as!=null){l=A.b([B.bF,B.pS,B.bF,B.a4D,B.dy,B.a49],r)
+B.b.M(f,l)}if(d.as!=null){l=A.b([B.bF,B.pS,B.bF,B.a4A,B.dy,B.a4B],r)
 k=d.at
 if(k!=null)B.b.M(l,A.b([B.J,new A.YN(k,c)],r))
 k=d.ax
@@ -101316,16 +101316,16 @@ if(k!=null)B.b.M(l,A.b([B.K,new A.k0(B.h0,B.ab,k,c)],r))
 l.push(B.J)
 k=d.cx
 j=k||d.cy?c:d.gamr()
-l.push(A.eS(k?B.cL:B.Nn,B.a4r,j,c))
+l.push(A.eS(k?B.cL:B.Nn,B.a4n,j,c))
 l.push(B.a5)
 k=d.cx||d.cy?c:d.gapD()
-l.push(A.en(d.cy?B.cL:B.NB,B.a4L,k,c))
+l.push(A.en(d.cy?B.cL:B.NB,B.a4K,k,c))
 l.push(B.a5)
-l.push(A.eS(B.Nk,B.a4g,d.cx||d.cy?c:d.gach(),c))
+l.push(A.eS(B.Nk,B.a4e,d.cx||d.cy?c:d.gach(),c))
 l.push(B.J)
 k=d.ch
 j=k?c:d.gaaA()
-l.push(A.eS(k?B.cL:B.rj,B.DE,j,c))
+l.push(A.eS(k?B.cL:B.rj,B.DC,j,c))
 B.b.M(f,l)}n=A.aM(c,A.aG(f,B.D,B.e,B.i),B.m,c,c,new A.au(B.h,c,m,n,c,c,B.p),c,c,c,B.cZ,c,c,c)
 m=A.ah(8)
 l=A.bj(B.Q)
@@ -101333,16 +101333,16 @@ k=A.a5("Actual: "+b.gt4()+".",c,c,c,c,B.b1,c,c)
 j=A.cB(c,B.a7,!1,d.e,B.Oh,!0,c,c,c,c,8,4,!1,c,c,c,c,B.ah,B.nw)
 i=d.fr
 h=i?c:d.gale()
-h=A.eS(i?B.cL:B.Ns,B.a3U,h,c)
+h=A.eS(i?B.cL:B.Ns,B.a3V,h,c)
 i=d.dy
 g=i?c:d.gaml()
-m=A.aM(c,A.aG(A.b([B.a4s,B.dy,k,B.J,j,B.J,new A.k0(B.qQ,B.aZ,"Restaurar reemplaza los datos locales de este navegador. No afecta el backend.",c),B.J,h,B.a5,A.en(i?B.cL:B.rn,B.a4q,g,c)],r),B.D,B.e,B.i),B.m,c,c,new A.au(B.h,c,l,m,c,c,B.p),c,c,c,B.cZ,c,c,c)
+m=A.aM(c,A.aG(A.b([B.a4p,B.dy,k,B.J,j,B.J,new A.k0(B.qQ,B.aZ,"Restaurar reemplaza los datos locales de este navegador. No afecta el backend.",c),B.J,h,B.a5,A.en(i?B.cL:B.rn,B.a4m,g,c)],r),B.D,B.e,B.i),B.m,c,c,new A.au(B.h,c,l,m,c,c,B.p),c,c,c,B.cZ,c,c,c)
 l=A.ah(8)
 k=A.bj(B.IS)
 j=d.fx
 i=j?c:d.gGp()
 j=j?B.cL:B.iU
-return A.oM(new A.aS(new A.a3(20,12,20,20+a.f.d),A.aG(A.b([q,B.br,p,B.J,o,B.br,n,B.br,m,B.br,A.aM(c,A.aG(A.b([B.a4u,B.dy,B.a4f,B.J,A.eS(j,B.a46,i,A.QB(c,c,c,c,c,c,c,c,c,B.ab,c,c,c,c,c,c,c,c,c,c))],r),B.D,B.e,B.i),B.m,c,c,new A.au(B.If,c,k,l,c,c,B.p),c,c,c,B.cZ,c,c,c),B.a5],r),B.D,B.e,B.a3),c),c,B.aa)}}
+return A.oM(new A.aS(new A.a3(20,12,20,20+a.f.d),A.aG(A.b([q,B.br,p,B.J,o,B.br,n,B.br,m,B.br,A.aM(c,A.aG(A.b([B.a4r,B.dy,B.a4o,B.J,A.eS(j,B.a45,i,A.QB(c,c,c,c,c,c,c,c,c,B.ab,c,c,c,c,c,c,c,c,c,c))],r),B.D,B.e,B.i),B.m,c,c,new A.au(B.If,c,k,l,c,c,B.p),c,c,c,B.cZ,c,c,c),B.a5],r),B.D,B.e,B.a3),c),c,B.aa)}}
 A.aE4.prototype={
 $0(){return this.a.dy=!0},
 $S:0}
@@ -101421,7 +101421,7 @@ s.db=this.b
 s.CW=!1},
 $S:0}
 A.aE3.prototype={
-$0(){return this.a.dx="Inicia sesion API para continuar."},
+$0(){return this.a.dx="Inicia sesi\xf3n API para continuar."},
 $S:0}
 A.aE6.prototype={
 $0(){var s=this.a
@@ -101565,7 +101565,7 @@ A(a){var s,r=this.c,q=r.c,p=q.gvP()?B.Na:B.N0,o=q.gOD(),n=q.gvP()?B.r:B.aS
 r=r.gKm()
 s=q.ga0O()
 q=q.gvP()?B.aZ:B.aS
-return A.aG(A.b([new A.id(p,"Revision backend",o,n,null),B.a5,new A.id(B.r6,"Comparacion",r,B.P,null),B.a5,new A.id(B.rc,"Accion sugerida",s,q,null)],t.p),B.D,B.e,B.i)}}
+return A.aG(A.b([new A.id(p,"Revisi\xf3n backend",o,n,null),B.a5,new A.id(B.r6,"Comparacion",r,B.P,null),B.a5,new A.id(B.rc,"Accion sugerida",s,q,null)],t.p),B.D,B.e,B.i)}}
 A.a0I.prototype={
 A(a){var s=this,r=null,q=A.ah(8),p=A.bj(B.Q),o=A.eP(r,r,r,B.rm,r,r,s.e,r,r,r,"Mes inicial anterior",r),n=A.aQ(A.a5(s.c,r,r,r,r,B.fi,B.ch,r),1)
 return A.aM(r,A.as(A.b([o,n,A.eP(r,r,r,B.rl,r,r,s.d?s.f:r,r,r,r,"Mes inicial siguiente",r)],t.p),B.o,B.e,B.i,0),B.m,r,r,new A.au(B.h,r,p,q,r,r,B.p),r,44,r,r,r,r,r)}}
@@ -101579,7 +101579,7 @@ A.awD.prototype={
 $0(){return this.a.d.$1(B.bN)},
 $S:0}
 A.H7.prototype={
-A(a){var s="Moneda actual",r=null,q=this.c,p=q==="$"?"Dolares":"Cordobas",o=this.d,n=o?s:"Tocar para cambiar moneda",m=o?s:"Cambiar moneda",l=A.ah(999),k=o?r:this.e,j=o?B.p4:B.y,i=A.ah(999),h=o?A.aJK(B.r,0.12):r
+A(a){var s="Moneda actual",r=null,q=this.c,p=q==="$"?"D\xf3lares":"C\xf3rdobas",o=this.d,n=o?s:"Tocar para cambiar moneda",m=o?s:"Cambiar moneda",l=A.ah(999),k=o?r:this.e,j=o?B.p4:B.y,i=A.ah(999),h=o?A.aJK(B.r,0.12):r
 return A.bo(!0,r,A.xA(A.e7(!1,l,!0,A.zF(A.ek(A.a5(q,r,r,r,r,A.c2(r,r,o?B.ca:B.h,r,r,r,r,r,r,r,r,r,r,r,B.F,r,r,!0,r,0,r,r,r,r,r,r),B.ch,r),r,r),r,B.U,new A.au(j,r,r,i,h,r,B.p),B.pT,34,B.dp,42),r,!0,r,r,r,r,r,r,r,r,r,k,r,r,r,r,r,r,r),m),!1,r,!o,r,!1,r,r,r,n,r,r,r,r,r,p,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,o,r,r,r,r,r,B.A,r)}}
 A.a1L.prototype={
 A(a){var s,r,q,p=null,o=A.ah(8),n=A.bj(B.h),m=A.b([],t.p)
@@ -101606,7 +101606,7 @@ case 3:s=r.r
 break
 default:s=null}return A.fX(new A.aAy(r,s))}}
 A.aAy.prototype={
-$2(a,b){var s,r=null,q=this.a.c,p=q.f,o=t.p,n=A.as(A.b([new A.la(q.d,p,42,r),B.jN,A.aQ(A.aG(A.b([B.a4Q,B.bG,A.a5(q.a,r,r,r,r,B.ff,r,r),B.c5,A.a5(q.b,r,r,r,r,B.b1,r,r)],o),B.Z,B.e,B.i),1)],o),B.Z,B.e,B.i,0),m=A.aKk(A.c9(q.e,r,r,r),A.a5(q.c,r,r,r,r,r,r,r),this.b,r)
+$2(a,b){var s,r=null,q=this.a.c,p=q.f,o=t.p,n=A.as(A.b([new A.la(q.d,p,42,r),B.jN,A.aQ(A.aG(A.b([B.a4P,B.bG,A.a5(q.a,r,r,r,r,B.ff,r,r),B.c5,A.a5(q.b,r,r,r,r,B.b1,r,r)],o),B.Z,B.e,B.i),1)],o),B.Z,B.e,B.i,0),m=A.aKk(A.c9(q.e,r,r,r),A.a5(q.c,r,r,r,r,r,r,r),this.b,r)
 q=A.ah(8)
 s=A.bj(p.bc(0.2))
 p=b.b<600?A.aG(A.b([new A.Gj(p,!1,r),B.J,n,B.J,m],o),B.D,B.e,B.i):A.as(A.b([new A.Gj(p,!0,r),B.Z4,A.aQ(n,1),B.ac,m],o),B.Z,B.e,B.i,0)
@@ -101629,14 +101629,14 @@ q=m.c
 p=q.c
 o=p.gb9()
 n=t.p
-k=A.as(A.b([r,B.aq,B.Lg,A.a5(A.bJ(A.bM(k,p),o+" ").bv(k),l,l,l,l,B.cN,B.a2,l)],n),B.o,B.e,B.i,0)
+k=A.as(A.b([r,B.aq,B.Lh,A.a5(A.bJ(A.bM(k,p),o+" ").bv(k),l,l,l,l,B.cN,B.a2,l)],n),B.o,B.e,B.i,0)
 o=A.ah(4)
 r=A.AH(o,new A.CF(8,g,B.IR,f?B.ab:B.r,l,l,l,l),B.bP)
 q=q.c
 p=f?B.ab:B.r
-n=A.b([k,B.K,r,B.a5,new A.tp("Gastado",i,q,B.P,B.bB,l),B.bG,new A.tp("Disponible",h,q,p,B.F,l),B.J,A.eS(B.cc,B.a51,m.r,l),B.J,B.a4C,B.dy],n)
+n=A.b([k,B.K,r,B.a5,new A.tp("Gastado",i,q,B.P,B.bB,l),B.bG,new A.tp("Disponible",h,q,p,B.F,l),B.J,A.eS(B.cc,B.a51,m.r,l),B.J,B.a4y,B.dy],n)
 k=m.f
-if(k.length===0)n.push(B.a4n)
+if(k.length===0)n.push(B.a4k)
 else B.b.M(n,new A.Y(k,new A.avM(m),A.M(k).h("Y<1,e>")))
 return A.aM(l,A.aG(n,B.D,B.e,B.i),B.m,l,l,new A.au(B.aM,l,s,j,l,l,B.p),l,l,l,B.bz,l,l,l)}}
 A.avM.prototype={
@@ -101863,10 +101863,10 @@ return A.B($async$uS,r)},
 aep(a){var s,r
 A:{if(a instanceof A.vK){s=a.a.e.a
 r=s==null?null:B.c.au(s)
-if(r==null||r.length===0){this.a.Di("Google no devolvio un token valido para iniciar sesion.")
+if(r==null||r.length===0){this.a.Di("Google no devolvi\xf3 un token v\xe1lido para iniciar sesi\xf3n.")
 return}this.a.axT(r)
 break A}break A}},
-aen(a){var s,r,q="No se pudo iniciar sesion con Gmail."
+aen(a){var s,r,q="No se pudo iniciar sesi\xf3n con Gmail."
 if(a instanceof A.kz){s=this.a
 s.toString
 r=a.b
@@ -105811,7 +105811,7 @@ s(A.a2E,A.asf)})()
 var v={G:typeof self!="undefined"?self:globalThis,typeUniverse:{eC:new Map(),tR:{},eT:{},tPV:{},sEA:[]},mangledGlobalNames:{k:"int",J:"double",dz:"num",j:"String",K:"bool",bB:"Null",S:"List",Q:"Object",aH:"Map",aD:"JSObject"},mangledNames:{},types:["~()","J(J)","~(aD)","J(el)","tl(el)","~(b4)","~(j)","G(bm<cu>)","ax<~>()","~(it)","~(K)","K(fj)","Bl(el)","K(nx,f)","K(j)","~(mc,f)","~(Q?)","K(bA)","~(bl)","~(q)","J(p)","~(vm)","e(O)","K(bz)","f9(el)","~(k)","K(df)","bB()","~(bp)","S<e5>()","K(Q?)","bB(~)","bB(aD)","~(dp?)","~(hU)","~(eW)","~(fC)","K(bl)","aL<J>(@)","G?(bm<cu>)","~(xp)","j(j)","~(or)","bB(Q,dw)","K(kx)","k(df,df)","K(ma)","~(er<Q?>,~())","K(ci)","n(bm<cu>)","~(e9)","vA(O,a2)","~(oq)","E(p,a2)","~(j?)","K(cP)","~(@)","bB(@)","~(Q)","bT<G?>?(bw?)","~(mi)","K(k)","J()","K(fZ)","~(~())","J(p,J)","K(ip)","K(eW)","nn(O)","~(Q,dw)","K()","~(J)","ax<wR>()","K(hr)","k()","hD()","k(q,q)","j()","k(k)","~(xq)","e(O,e?)","f(f)","aX(bm<cu>)","ez(@)","~(Q?,Q?)","ax<@>(jB)","K(dY)","bz(bz)","J(J,bA)","aD(Q?)","~(qu)","~(Fn)","G(G)","~(rg)","j(k)","k(bA,bA)","kn(O,a2)","K(Q?,Q?)","aD?(k)","bT<E?>?(bw?)","bT<aX?>?(bw?)","bT<dD?>?(bw?)","~(hn)","aD()","J(J,J)","dt(bm<cu>)","J(bm<cu>)","~(dA)","bB(Q)","ax<~>(jB)","S<bA>(bz)","J(J,dY)","j(bA)","bc(J)","k(Q?)","K(fM)","K(hs)","bA(bA)","j(@)","hC()","ax<K>()","~(E)","ij()","k(@,@)","K(rT)","bm<0^>()<Q?>","~(ij)","K(eD)","eG(eG)","lK(@)","bB(K)","K(qq)","mE(O)","@(@)","~(hC)","bT<J?>?(bw?)","~({curve:fB,descendant:q?,duration:b4,rect:t?})","k(cP,cP)","d8(O,bG<J>,e?)","~(lf)","+boundaryEnd,boundaryStart(ap,ap)(ap)","K(nx)","~(mz)","J({from!J,to!J})","~(f,p)","E(p)","~(S<nT>)","~(oI)","~(cP)","K(Q,cP)","e2(e9)","S<cP>(k4)","j(J,J,j)","K(q)","ax<dp?>(dp?)","~(e0)","aH<Q?,Q?>()","K(t3)","a2(p)","@(j)","K(oi)","kF(df,iG)","~(qy)","ax<~>(@)","K(a8S)","~([b4?])","ap(ap,K,hD)","t(bc,t)","~(TB)","~(S<aD>,aD)","eD(eD)","J?(+(a2,oQ))","~(jf)","k(ev,ev)","jz()","~(jz)","i1()","~(i1)","jE()","~(jE)","aL<@>?(aL<@>?,@,aL<@>(@))","no(@)","~(aLf)","lH(@)","~(xN)","~(jw)","p(k)","jU(bp)","aPa()","dQ(O,J,e?)","K(jK)","~(lJ)","K(i0<ai>)","K(eW,J)","hs()","@()","pu(O,bG<J>,e?)","~(Fq)","~(w6)","~(CL)","~(w5)","~(Fp)","~(Fr)","~(Fo)","~(F<Q?>,aD)","j(r2)","pt(O,bG<J>,e?)","~(j,@)","aD([aD?])","qI()","j(Q?)","k(j?)","bB(j)","~(p?)","Q?(Q?)","uP(S<e9>)","~(nS)","t()","J(J,ci)","aH<j,@>(bz)","aH<j,@>(ci)","bz(@)","ci(@)","mR()","~(aD?)","e(O,bm<cu>,e?)?(bw?)","~(Q?,j,j)","S<aD>()","bT<dd?>?(bw?)","ax<aD>([aD?])","bT<n?>?(bw?)","J(J,fj)","cJ(O,k)","J(J,bz)","K(nU)","0^?(0^?(bw?))<Q?>","oH(O,e?)","S<j>(j)","~(fZ)","~(pJ?)","Dz?()","aS(O,~(~()))","~(bz,bA)","ax<~>(j)","J?(p,a2,oQ)","j(j?)","~([ba?])","G?(G?)","e?(O,bG<J>,bG<J>,K,e?)","J(p,a2)","k(eW,eW)","~(fH)","kA(O,bG<J>,e?)","lm(O,e?)","~(xR)","xL()","K(bm<cu>)","0^?(bT<0^>?(bw?)[bm<cu>?])<Q?>","bw(bw?)","p0()","l1()","l1?()","~(jl)","kr(dT)","~(h3,iU?)","qK(O,e?)","ti(@)","nq()","iZ()","aB<Q,kZ<@>>(Q,kZ<@>)","K(aB<Q,kZ<@>>)","f(xB)","kA(O,bG<J>)","ax<fl>(o_{allowUpscaling:K,cacheHeight:k?,cacheWidth:k?})","ax<fl>(o_{getTargetSize:b3Y(k,k)?})","dd(dd,cj)","cj(cj)","K(cj)","j(cj)","K(J)","G(J)","yq()","~(ju?,K)","ax<~>(Q,dw?)","aiN(aiO)","bB(a51)","~(S<Q?>)","~(Q,dw?)?(jw)","~(fl)","~(Fs)","QI(bq)","t(bq)","rp(bq)","K(k,K)","nW?()","~(dT,k)","oc(oc)","~(aD,S<iP>)","lX(f,k)","E()","J?()","E(a2)","~({allowPlatformDefault:K})","~(h3)","K(m0)","t(t?,eG)","xZ()","j(j,G)","yJ()","dt(iM)","~(iM,bc)","K(iM)","~(m9)","qt(@)","vB(@)","dM()","~(S<e2>{isMergeUp:K})","e9?(e2)","~(@,Q?)","S<e2>(S<e2>)","S<ha>(ha)","bm<dF>?(e2)","bm<dF>(bm<dF>)","rH?(kk,j,j)","K(lf)","~(j,aD)","+boundaryEnd,boundaryStart(ap,ap)(ap,j)","cS(aaZ<cS>)","mJ?(mc,f)","K(x9{crossAxisPosition!J,mainAxisPosition!J})","ax<~>(~)","~(jn?,xu?)","K(p)","lB(e)","K(dk)","bl(k)","ax<oJ>(j,aH<j,j>)","J(@)","~(k,yg)","~(j_<aD>)","~(S<e9>)","b0V?()","vt(j)","pO(aD)","cP(n4)","ax<+(j,fD?)>()","k(jV,jV)","k(cP)","cP(k)","~(dF)","~(d1,~(Q?))","ax<j>()","dp(dp?)","ax<tq>(j)","ns(aH<Q?,Q?>)","cU<iJ>()","ax<j?>(j?)","j(dg)","ax<~>(dp?,~(dp?))","ax<aH<j,@>>(@)","~(mo)","bm<h>(h)","yh()","DH()","tk({from:J?})","~(op)","J?(k)","S<e0>()","S<e0>(S<e0>)","J(dz)","S<@>(j)","S<dz>(t0)","aH<j,@>(fo)","wv(O,wu)","tM(Dw)","ax<~>(bp)","~(E?)","K(iP)","~(bi<ba>)","eu?(iP)","~(p6)","e(p6)","K(e)","j(J)","cY<@>?(jH)","cY<@>(jH)","~(z1)","r_(O,e?)","K(vY)","aH<~(bp),bc?>()","v_(O)","~(~(bp),bc?)","ax<K>(jB)","nG(O)","ax<~>(it)","tw()","t(a8S)","~(eE)","bB(fF,fF)","e(O)?(us?)","at(O)","~(oV)","~(jG)","~(mv)","~(eV)","~(aaW)","~(j0)","Q?(ho)","ce(ce,td)","j(r3)","xv(O)","~(ml)","~(ce)","K(ce?,ce)","ce(ce)","nF(dL)","v8(O,ik)","vj(dL)","~([df?])","q4(dL)","K(Cw)","~(yd)","K(y5)","wb(t?,t?)","K(oW)","bm<iB>(ev)","bB(Q?)","S<iB>(O)","t(ev)","k(lc,lc)","S<ev>(ev,y<ev>)","K(ev)","kp<bl>(bl)","bl?(bl)","Q?(k,bl?)","jm()","~(jm)","ht<0^>(jH,e(O))<Q?>","rc()","rl()","J(mT)","K(aKe)","@(@,j)","~(mk)","~(mq)","~(iX,Q)","rB(O,e?)","~(mW)","e(O,bG<J>,vM,O,O)","K(mW)","jA(O,e?)","qG(O)","~(ju,K)","~(fC{isClosing:K?})","rJ()","aB<k,j>(aB<j,j>)","bB(~())","pR(@)","r8(@)","tg(@)","pP(@)","~(lE)","ax<@>(yI)","aH<h4,@>(S<@>)","aH<h4,@>(aH<h4,@>)","bB(aH<h4,@>)","jA(O)","K(Q)","K(cY<@>?)","ax<bB>(@)","K(ok)","uW()","bB(@,dw)","ip(cY<@>)","aB<j?,S<Q>>(@,@)","p?()","yE(O)","tY()","0^?(bT<0^>?(bw?))<Q?>","~(a2)","v0(O,e?)","~(E,f)","e(O,+(E,bc,E))","K(mp)","bB(e0?)","ci(je)","dx<K>(K)","K(ph)","oA(O,e?)","lm(O)","kA(O,e?)","qF(bp)","w7(bp)","G?()","~(k,@)","uV(rm)","e(O,ik)","~(Q[dw?])","e?(O,k)","k?(e,k)","bB(S<~>)","~(@,dw)","uU(rk)","~(@,@)","~(f)","~(j,Q?)","~(hT)","pc()","ps()","lg()","~(lg)","~(mj)","kk(Q?)","t(t)","K(t)","~(x7,ba)","S<p3>()","ba?()","O?()","bi<ba>?()","yZ(O,ik)","~(p)","bl?()","fo(fV)","nH(O)","pm(O)","dt?(bm<cu>)","dt?(bw?)","~(k,K(kx))","G?(bw?)","mP?(bw?)","r4?(bw?)","b4?(bw?)","K?(bw?)","hg?(bw?)","kW()","~(kW)","kX()","~(kX)","jr()","~(jr)","~(oY)","~(ox)","u5(O,mf)","ax<~>(j,dp?,~(dp?)?)","~(iw)","aD(k)","e(O,iv<~>)","m1?(bw?)","ax<~>(aD)","K(j,j)","k(j)","bB(j,j[Q?])","~(ai3<S<k>>)","~(S<k>)","CW()","~(j,j)","~(oX,k,k)","j(wk)","qJ(O,e?)","f(E,J)","e(O,bG<J>,bG<J>)","~(Fj,@)","fT(O)","k(i_,i_)","uz(@)","~(nl)","j(ey)","K(ey)","pH(@)","~(nz)","je(@)","ax<ji>({accessToken!j,month!j})","af(e)","K(k,k)","0&()","aX?(bm<cu>)","S<kN>()","0&(j,k?)","t()?(p)","~(ba?)","aH<j,@>(kg)","aH<j,@>(hn)","aB<j,aH<j,@>>(j,jj)","~(j,j?)","K(o1?)","kg(@)","hn(@)","aB<j,jj>(j,@)","aH<j,@>(bA)","bA(@)","aH<j,@>(dY)","dY(@)","aB<j,J>(dA,J)","aB<dA,J>(j,@)","G(pb)","ci(ci)","oH(O)","fj(md)","~(k,k,k)","ci(fj)","~(PH)","bB(F<Q?>,aD)","kn(O,k)","K(dF)","e(O,a2)","~(hJ)","tv(O)","S<e9>()","~({allowPlatformDefault!K})","k(hJ)","j?(j)","ax<~>([aD?])","xT(O,k)","~(hb)","S<jF<hb>>(O)","j(fj)","~(p5)","G?(G?,G?,G?[G?])","k(bz,bz)","k(nU)","e6<dA>(dA)","~(dA?)","y3(O,e?)","qX(O)","~(k?)","vC(O)","K(vv)","vw(O,k)","a_?(O,r0,cv<m6>)","nn(O,~(~()))","K(i4)","fF()","k(k,j)","aB<j,k>(aB<j,k>,aB<j,k>)","K(aB<k,j>)","j(aB<k,j>)","~(nr)","ax<bB>()","t4(@)","ax<~>(ji)","ax<K>(j)","ax<aD>()","~(ji)","oD(O,a2)","u_(O)","to(O)","xW(O)","yz(O)","pM(O)","~(S<fj>)","k(aD)","e6<j>(bz)","~(~)","~(bz,j)","~(bz)","~(bz,kw)","~(bz,bA,kw)","~(bz,bA,bz)","~(qh)","~(q6)","K(hn)","aS(O)","~(j,J)","~(bm<dA>)","ms(O,a2)","S<jF<j>>(O)","~(ma)","~(bm<K>)","vc(O,a2)","aS(ci)","e(O,bG<J>,bG<J>,K,e?)","k(ci,ci)","~(nX)","kL?(fK)","j?()","k(k1)","d8(O,e?)","Q(k1)","Q(fM)","k(fM,fM)","S<k1>(aB<Q,S<fM>>)","mC()","j(j,j)","aD(k{params:Q?})","fT(O,a2)","k(cr<@>,cr<@>)","S<j>()","S<j>(j,S<j>)","E?(E?,E?,J)","J?(dz?,dz?,J)","G?(G?,G?,J)","rI(O,a2)","e(O,f,f,e)","~(c8{forceReport:K})","e5(j)","jN?(j)","J(J,J,J)","e(O,bG<J>,bG<J>,e)","e(O,n0,os?,os?)","~(p,f)","e(O,bG<J>)","K?(K?,K?,J)","e(O,nL)","e(O,e)","dD?(dD?,dD?,J)","dd?(dd?,dd?,J)","n?(n?,n?,J)","k(K9<@>,K9<@>)","K({priority!k,scheduler!kT})","S<iJ>(j)","e(e,bG<J>)","e(e?,S<e>)","~(df{alignment:J?,alignmentPolicy:rV?,curve:fB?,duration:b4?})","k(bl,bl)","cX(cX?,cX?,J)","e?(O,r0,cv<m6>)","S<cY<@>>(jC,j)","k(e,k)","mI(O,e?)","K(j?)","j(je)","K(S<j>)","0^(0^,0^)<dz>","~(j?{wrapWidth:k?})","~({color!G,endFraction!J,startFraction!J})","wf(O,e?)","iw?(aD?)","~(er<Q?>)"],interceptorsByTag:null,leafTags:null,arrayRti:Symbol("$ti"),rttc:{"2;":(a,b)=>c=>c instanceof A.an&&a.b(c.a)&&b.b(c.b),"2;boundaryEnd,boundaryStart":(a,b)=>c=>c instanceof A.a_l&&a.b(c.a)&&b.b(c.b),"2;end,start":(a,b)=>c=>c instanceof A.a_m&&a.b(c.a)&&b.b(c.b),"2;endGlyphHeight,startGlyphHeight":(a,b)=>c=>c instanceof A.IS&&a.b(c.a)&&b.b(c.b),"2;key,value":(a,b)=>c=>c instanceof A.a_n&&a.b(c.a)&&b.b(c.b),"2;localPosition,paragraph":(a,b)=>c=>c instanceof A.a_o&&a.b(c.a)&&b.b(c.b),"2;representation,targetSize":(a,b)=>c=>c instanceof A.a_p&&a.b(c.a)&&b.b(c.b),"3;":(a,b,c)=>d=>d instanceof A.hI&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"3;amount,currency,merchant":(a,b,c)=>d=>d instanceof A.a_q&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"3;ascent,bottomHeight,subtextHeight":(a,b,c)=>d=>d instanceof A.a_r&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"3;breaks,graphemes,words":(a,b,c)=>d=>d instanceof A.a_s&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"3;completer,recorder,scene":(a,b,c)=>d=>d instanceof A.IT&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"3;data,event,timeStamp":(a,b,c)=>d=>d instanceof A.IU&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"3;domSize,representation,targetSize":(a,b,c)=>d=>d instanceof A.a_t&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"3;large,medium,small":(a,b,c)=>d=>d instanceof A.a_u&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"3;textConstraints,tileSize,titleY":(a,b,c)=>d=>d instanceof A.a_v&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"4;domBlurListener,domFocusListener,element,semanticsNodeId":a=>b=>b instanceof A.IV&&A.aVf(a,b.a),"4;queue,started,target,timer":a=>b=>b instanceof A.IW&&A.aVf(a,b.a)}}
 A.b5S(v.typeUniverse,JSON.parse('{"fF":"ob","QT":"ob","mM":"ob","bcR":"wh","AA":{"fl":[]},"kl":{"aPO":[]},"Ax":{"fl":[]},"uW":{"rp":[]},"uX":{"aiN":[]},"uU":{"ais":[]},"uV":{"Dm":[],"kr":[]},"rk":{"As":["aD"]},"rm":{"As":["aD"]},"dT":{"nE":[]},"lD":{"nE":[]},"rc":{"xO":[]},"rl":{"xO":[]},"rJ":{"kr":[]},"Dm":{"kr":[]},"fD":{"cF":[]},"aRI":{"eQ":[]},"kN":{"eQ":[]},"aeh":{"aiO":[]},"aPa":{"rp":[]},"Fy":{"jV":[]},"ws":{"jV":[]},"lM":{"abk":[]},"N3":{"PH":[]},"N4":{"i3":[]},"uT":{"i3":[]},"N7":{"i3":[]},"Nb":{"i3":[]},"uS":{"i3":[]},"Na":{"fl":[]},"N6":{"i3":[]},"Ay":{"i3":[]},"GO":{"i3":[]},"GQ":{"i3":[]},"GP":{"i3":[]},"N2":{"fl":[]},"km":{"QI":[]},"lC":{"aeh":[],"aiO":[]},"AB":{"oc":[]},"Bv":{"i3":[]},"Qt":{"mG":["ais","rk"],"mG.C":"ais"},"Qv":{"mG":["Dm","rm"],"mG.C":"Dm"},"P2":{"aPL":[]},"P1":{"bU":[]},"P0":{"bU":[]},"tD":{"y":["1"],"y.E":"1"},"OC":{"fD":[],"cF":[]},"BT":{"fD":[],"cF":[]},"BU":{"fD":[],"cF":[]},"P_":{"fl":[]},"OY":{"fl":[]},"SE":{"abK":[]},"ML":{"fl":[]},"uw":{"abK":[]},"RT":{"fl":[]},"Pm":{"bU":[]},"AQ":{"eQ":[]},"RW":{"eQ":[]},"Mn":{"eQ":[],"aOb":[]},"Ne":{"eQ":[],"aOC":[]},"Ni":{"eQ":[],"aOE":[]},"Ng":{"eQ":[],"aOD":[]},"Qx":{"eQ":[],"aQN":[]},"FZ":{"eQ":[],"aLy":[]},"Dk":{"eQ":[],"aLy":[],"aQL":[]},"Pn":{"eQ":[],"aPP":[]},"QX":{"eQ":[]},"fr":{"dN":[]},"cA":{"dN":[]},"Nu":{"dN":[]},"Mc":{"dN":[]},"Md":{"dN":[]},"fP":{"dN":[]},"lo":{"dN":[]},"nm":{"dN":[]},"ex":{"dN":[]},"ut":{"dN":[]},"M0":{"dN":[]},"v4":{"dN":[]},"qR":{"rp":[],"aOG":[]},"re":{"y":["iO"],"y.E":"iO"},"Dt":{"wV":[]},"Dy":{"wV":[]},"Sm":{"hA":[]},"Av":{"hA":[]},"uM":{"hA":[]},"Oh":{"hA":[]},"qp":{"hA":[]},"PE":{"hA":[]},"of":{"hA":[]},"RS":{"hA":[]},"Su":{"oG":[]},"Sr":{"oG":[]},"Sq":{"oG":[]},"rR":{"hA":[]},"SA":{"aLf":[]},"Tj":{"hA":[]},"z6":{"aY":["1"],"S":["1"],"aO":["1"],"y":["1"]},"Ya":{"z6":["k"],"aY":["k"],"S":["k"],"aO":["k"],"y":["k"]},"TF":{"z6":["k"],"aY":["k"],"S":["k"],"aO":["k"],"y":["k"],"aY.E":"k","y.E":"k"},"vs":{"oc":[]},"O6":{"jV":[]},"oR":{"qS":[]},"rq":{"qS":[]},"Bq":{"oR":[],"qS":[]},"rr":{"wr":[]},"tf":{"wr":[]},"N0":{"xl":[]},"RX":{"xl":[]},"WX":{"lM":[],"abk":[]},"vr":{"lM":[],"abk":[]},"F":{"S":["1"],"aO":["1"],"aD":[],"y":["1"],"y.E":"1"},"Cn":{"K":[],"cV":[]},"vX":{"bB":[],"cV":[]},"Cq":{"aD":[]},"ob":{"aD":[]},"Pv":{"En":[]},"adS":{"F":["1"],"S":["1"],"aO":["1"],"aD":[],"y":["1"],"y.E":"1"},"o9":{"J":[],"dz":[],"cr":["dz"]},"vW":{"J":[],"k":[],"dz":[],"cr":["dz"],"cV":[]},"Cp":{"J":[],"dz":[],"cr":["dz"],"cV":[]},"m2":{"j":[],"cr":["j"],"cV":[]},"jY":{"y":["2"]},"pX":{"jY":["1","2"],"y":["2"],"y.E":"2"},"Ht":{"pX":["1","2"],"jY":["1","2"],"aO":["2"],"y":["2"],"y.E":"2"},"GK":{"aY":["2"],"S":["2"],"jY":["1","2"],"aO":["2"],"y":["2"]},"ej":{"GK":["1","2"],"aY":["2"],"S":["2"],"jY":["1","2"],"aO":["2"],"y":["2"],"aY.E":"2","y.E":"2"},"lA":{"bm":["2"],"jY":["1","2"],"aO":["2"],"y":["2"],"y.E":"2"},"pY":{"bt":["3","4"],"aH":["3","4"],"bt.V":"4","bt.K":"3"},"lz":{"jY":["1","2"],"aO":["2"],"y":["2"],"y.E":"2"},"iI":{"cF":[]},"hk":{"aY":["k"],"S":["k"],"aO":["k"],"y":["k"],"aY.E":"k","y.E":"k"},"aO":{"y":["1"]},"a9":{"aO":["1"],"y":["1"]},"h1":{"a9":["1"],"aO":["1"],"y":["1"],"y.E":"1","a9.E":"1"},"eo":{"y":["2"],"y.E":"2"},"hV":{"eo":["1","2"],"aO":["2"],"y":["2"],"y.E":"2"},"Y":{"a9":["2"],"aO":["2"],"y":["2"],"y.E":"2","a9.E":"2"},"W":{"y":["1"],"y.E":"1"},"dB":{"y":["2"],"y.E":"2"},"ta":{"y":["1"],"y.E":"1"},"Bo":{"ta":["1"],"aO":["1"],"y":["1"],"y.E":"1"},"mx":{"y":["1"],"y.E":"1"},"vq":{"mx":["1"],"aO":["1"],"y":["1"],"y.E":"1"},"EZ":{"y":["1"],"y.E":"1"},"hW":{"aO":["1"],"y":["1"],"y.E":"1"},"qr":{"y":["1"],"y.E":"1"},"cC":{"y":["1"],"y.E":"1"},"xI":{"aY":["1"],"S":["1"],"aO":["1"],"y":["1"]},"Yq":{"a9":["k"],"aO":["k"],"y":["k"],"y.E":"k","a9.E":"k"},"qW":{"bt":["k","1"],"aH":["k","1"],"bt.V":"1","bt.K":"k"},"c6":{"a9":["1"],"aO":["1"],"y":["1"],"y.E":"1","a9.E":"1"},"fu":{"Fj":[]},"q0":{"mN":["1","2"],"aH":["1","2"]},"vb":{"aH":["1","2"]},"c4":{"vb":["1","2"],"aH":["1","2"]},"tP":{"y":["1"],"y.E":"1"},"cG":{"vb":["1","2"],"aH":["1","2"]},"AO":{"iV":["1"],"bm":["1"],"aO":["1"],"y":["1"]},"fm":{"iV":["1"],"bm":["1"],"aO":["1"],"y":["1"],"y.E":"1"},"eC":{"iV":["1"],"bm":["1"],"aO":["1"],"y":["1"],"y.E":"1"},"Pt":{"lW":[]},"o3":{"lW":[]},"Di":{"mK":[],"cF":[]},"Pw":{"cF":[]},"TL":{"cF":[]},"Qp":{"bU":[]},"K1":{"dw":[]},"nC":{"lW":[]},"Nk":{"lW":[]},"Nl":{"lW":[]},"Tk":{"lW":[]},"Ta":{"lW":[]},"uG":{"lW":[]},"S_":{"cF":[]},"fG":{"bt":["1","2"],"aH":["1","2"],"bt.V":"2","bt.K":"1"},"bx":{"aO":["1"],"y":["1"],"y.E":"1"},"bn":{"aO":["1"],"y":["1"],"y.E":"1"},"dW":{"aO":["aB<1,2>"],"y":["aB<1,2>"],"y.E":"aB<1,2>"},"Cr":{"fG":["1","2"],"bt":["1","2"],"aH":["1","2"],"bt.V":"2","bt.K":"1"},"qN":{"fG":["1","2"],"bt":["1","2"],"aH":["1","2"],"bt.V":"2","bt.K":"1"},"ys":{"Rk":[],"r2":[]},"Uf":{"y":["Rk"],"y.E":"Rk"},"xi":{"r2":[]},"a14":{"y":["r2"],"y.E":"r2"},"rf":{"aD":[],"kk":[],"cV":[]},"m9":{"i8":[],"oX":[],"aY":["k"],"S":["k"],"i2":["k"],"aO":["k"],"aD":[],"y":["k"],"cV":[],"aY.E":"k","y.E":"k"},"wh":{"aD":[],"kk":[],"cV":[]},"Da":{"aD":[]},"a2g":{"kk":[]},"D5":{"dp":[],"aD":[],"cV":[]},"wi":{"i2":["1"],"aD":[]},"D9":{"aY":["J"],"S":["J"],"i2":["J"],"aO":["J"],"aD":[],"y":["J"]},"i8":{"aY":["k"],"S":["k"],"i2":["k"],"aO":["k"],"aD":[],"y":["k"]},"D6":{"ab7":[],"aY":["J"],"S":["J"],"i2":["J"],"aO":["J"],"aD":[],"y":["J"],"cV":[],"aY.E":"J","y.E":"J"},"D7":{"ab8":[],"aY":["J"],"S":["J"],"i2":["J"],"aO":["J"],"aD":[],"y":["J"],"cV":[],"aY.E":"J","y.E":"J"},"Qh":{"i8":[],"adK":[],"aY":["k"],"S":["k"],"i2":["k"],"aO":["k"],"aD":[],"y":["k"],"cV":[],"aY.E":"k","y.E":"k"},"D8":{"i8":[],"adL":[],"aY":["k"],"S":["k"],"i2":["k"],"aO":["k"],"aD":[],"y":["k"],"cV":[],"aY.E":"k","y.E":"k"},"Qi":{"i8":[],"adM":[],"aY":["k"],"S":["k"],"i2":["k"],"aO":["k"],"aD":[],"y":["k"],"cV":[],"aY.E":"k","y.E":"k"},"Db":{"i8":[],"aq6":[],"aY":["k"],"S":["k"],"i2":["k"],"aO":["k"],"aD":[],"y":["k"],"cV":[],"aY.E":"k","y.E":"k"},"Dc":{"i8":[],"xE":[],"aY":["k"],"S":["k"],"i2":["k"],"aO":["k"],"aD":[],"y":["k"],"cV":[],"aY.E":"k","y.E":"k"},"Dd":{"i8":[],"aq7":[],"aY":["k"],"S":["k"],"i2":["k"],"aO":["k"],"aD":[],"y":["k"],"cV":[],"aY.E":"k","y.E":"k"},"Kk":{"h4":[]},"WZ":{"cF":[]},"Kl":{"mK":[],"cF":[]},"im":{"mF":["1"]},"Ki":{"TB":[]},"he":{"y":["1"],"y.E":"1"},"dn":{"cF":[]},"d9":{"l6":["1"],"cU":["1"],"cU.T":"1"},"tr":{"im":["1"],"mF":["1"]},"K7":{"p4":["1"]},"Gv":{"p4":["1"]},"FR":{"bU":[]},"bf":{"GS":["1"]},"ak":{"ax":["1"]},"Fc":{"cU":["1"]},"l3":{"z_":["1"]},"l6":{"cU":["1"],"cU.T":"1"},"tx":{"im":["1"],"mF":["1"]},"K5":{"cU":["1"]},"y6":{"mF":["1"]},"Hu":{"cU":["1"],"cU.T":"1"},"Ii":{"cU":["1"],"cU.T":"1"},"Ij":{"l3":["1"],"z_":["1"],"ai3":["1"]},"HH":{"cU":["2"]},"yf":{"im":["2"],"mF":["2"]},"I8":{"cU":["2"],"cU.T":"2"},"HP":{"cU":["1"],"cU.T":"1"},"mV":{"bt":["1","2"],"aH":["1","2"],"bt.V":"2","bt.K":"1"},"pd":{"mV":["1","2"],"bt":["1","2"],"aH":["1","2"],"bt.V":"2","bt.K":"1"},"H8":{"mV":["1","2"],"bt":["1","2"],"aH":["1","2"],"bt.V":"2","bt.K":"1"},"tJ":{"aO":["1"],"y":["1"],"y.E":"1"},"I5":{"fG":["1","2"],"bt":["1","2"],"aH":["1","2"],"bt.V":"2","bt.K":"1"},"l9":{"yY":["1"],"iV":["1"],"bm":["1"],"aO":["1"],"y":["1"],"y.E":"1"},"hH":{"yY":["1"],"iV":["1"],"b1h":["1"],"bm":["1"],"aO":["1"],"y":["1"],"y.E":"1"},"qV":{"y":["1"],"y.E":"1"},"aY":{"S":["1"],"aO":["1"],"y":["1"]},"bt":{"aH":["1","2"]},"xJ":{"bt":["1","2"],"aH":["1","2"]},"I7":{"aO":["2"],"y":["2"],"y.E":"2"},"CM":{"aH":["1","2"]},"mN":{"aH":["1","2"]},"Hf":{"Hg":["1"],"aPh":["1"]},"Hh":{"Hg":["1"]},"Bg":{"aO":["1"],"y":["1"],"y.E":"1"},"CG":{"a9":["1"],"aO":["1"],"y":["1"],"y.E":"1","a9.E":"1"},"iV":{"bm":["1"],"aO":["1"],"y":["1"]},"yY":{"iV":["1"],"bm":["1"],"aO":["1"],"y":["1"]},"F6":{"bt":["1","2"],"pn":["1","hc<1,2>"],"aH":["1","2"],"bt.V":"2","bt.K":"1","pn.K":"1"},"n2":{"aO":["1"],"y":["1"],"y.E":"1"},"u1":{"aO":["2"],"y":["2"],"y.E":"2"},"JW":{"aO":["aB<1,2>"],"y":["aB<1,2>"],"y.E":"aB<1,2>"},"n3":{"k5":["1","2","1"],"k5.T":"1"},"K0":{"k5":["1","hc<1,2>","2"],"k5.T":"2"},"u0":{"k5":["1","hc<1,2>","aB<1,2>"],"k5.T":"aB<1,2>"},"xg":{"iV":["1"],"bm":["1"],"aO":["1"],"pn":["1","hd<1>"],"y":["1"],"y.E":"1","pn.K":"1"},"nM":{"dJ":["j","S<k>"]},"Yd":{"bt":["j","@"],"aH":["j","@"],"bt.V":"@","bt.K":"j"},"Ye":{"a9":["j"],"aO":["j"],"y":["j"],"y.E":"j","a9.E":"j"},"I1":{"jO":[]},"Me":{"nM":[],"dJ":["j","S<k>"],"dJ.S":"j","dJ.T":"S<k>"},"a2e":{"cb":["j","S<k>"]},"Mg":{"cb":["j","S<k>"],"cb.S":"j","cb.T":"S<k>"},"a2f":{"jO":[]},"a2d":{"cb":["S<k>","j"]},"Mf":{"cb":["S<k>","j"],"cb.S":"S<k>","cb.T":"j"},"Mt":{"dJ":["S<k>","j"],"dJ.S":"S<k>","dJ.T":"j"},"Mv":{"cb":["S<k>","j"],"cb.S":"S<k>","cb.T":"j"},"Mu":{"cb":["j","S<k>"],"cb.S":"j","cb.T":"S<k>"},"UP":{"jO":[]},"HI":{"dJ":["1","3"],"dJ.S":"1","dJ.T":"3"},"HJ":{"cb":["1","3"],"cb.S":"1","cb.T":"3"},"Cs":{"cF":[]},"Py":{"cF":[]},"Px":{"dJ":["Q?","j"],"dJ.S":"Q?","dJ.T":"j"},"PA":{"cb":["Q?","j"],"cb.S":"Q?","cb.T":"j"},"Pz":{"cb":["j","Q?"],"cb.S":"j","cb.T":"Q?"},"PF":{"nM":[],"dJ":["j","S<k>"],"dJ.S":"j","dJ.T":"S<k>"},"PG":{"cb":["j","S<k>"],"cb.S":"j","cb.T":"S<k>"},"Cz":{"cb":["S<k>","j"],"cb.S":"S<k>","cb.T":"j"},"z0":{"jO":[]},"u3":{"jO":[]},"TR":{"nM":[],"dJ":["j","S<k>"],"dJ.S":"j","dJ.T":"S<k>"},"TS":{"cb":["j","S<k>"],"cb.S":"j","cb.T":"S<k>"},"Kz":{"jO":[]},"G7":{"cb":["S<k>","j"],"cb.S":"S<k>","cb.T":"j"},"dM":{"cr":["dM"]},"J":{"dz":[],"cr":["dz"]},"b4":{"cr":["b4"]},"k":{"dz":[],"cr":["dz"]},"S":{"aO":["1"],"y":["1"]},"dz":{"cr":["dz"]},"Rk":{"r2":[]},"bm":{"aO":["1"],"y":["1"]},"j":{"cr":["j"]},"pI":{"cF":[]},"mK":{"cF":[]},"iu":{"cF":[]},"wF":{"cF":[]},"Ca":{"cF":[]},"Qm":{"cF":[]},"G6":{"cF":[]},"TK":{"cF":[]},"fJ":{"cF":[]},"Nq":{"cF":[]},"QA":{"cF":[]},"F9":{"cF":[]},"pa":{"bU":[]},"bR":{"bU":[]},"HL":{"a9":["1"],"aO":["1"],"y":["1"],"y.E":"1","a9.E":"1"},"a15":{"dw":[]},"Kv":{"TO":[]},"j8":{"TO":[]},"W4":{"TO":[]},"Qo":{"bU":[]},"adM":{"S":["k"],"aO":["k"],"y":["k"]},"oX":{"S":["k"],"aO":["k"],"y":["k"]},"aq7":{"S":["k"],"aO":["k"],"y":["k"]},"adK":{"S":["k"],"aO":["k"],"y":["k"]},"aq6":{"S":["k"],"aO":["k"],"y":["k"]},"adL":{"S":["k"],"aO":["k"],"y":["k"]},"xE":{"S":["k"],"aO":["k"],"y":["k"]},"ab7":{"S":["J"],"aO":["J"],"y":["J"]},"ab8":{"S":["J"],"aO":["J"],"y":["J"]},"kP":{"yL":["kP"]},"rF":{"yL":["rF"]},"f6":{"y":["j"],"y.E":"j"},"c3":{"aH":["2","3"]},"xK":{"pp":["1","y<1>"],"pp.E":"1"},"x5":{"pp":["1","bm<1>"],"pp.E":"1"},"bG":{"ao":[]},"uy":{"bG":["J"],"ao":[]},"q5":{"bG":["J"],"ao":[]},"Ug":{"bG":["J"],"ao":[]},"Uh":{"bG":["J"],"ao":[]},"rE":{"bG":["J"],"ao":[]},"hz":{"bG":["J"],"ao":[]},"tm":{"bG":["J"],"ao":[]},"va":{"bG":["1"],"ao":[]},"zR":{"bG":["1"],"ao":[]},"I4":{"fB":[]},"Eo":{"fB":[]},"cM":{"fB":[]},"T7":{"fB":[]},"FL":{"fB":[]},"dU":{"fB":[]},"FK":{"fB":[]},"lS":{"fB":[]},"Wi":{"fB":[]},"aL":{"az":["1"],"az.T":"1","aL.T":"1"},"ez":{"aL":["G?"],"az":["G?"],"az.T":"G?","aL.T":"G?"},"aC":{"bG":["1"],"ao":[]},"h6":{"az":["1"],"az.T":"1"},"Ei":{"aL":["1"],"az":["1"],"az.T":"1","aL.T":"1"},"SI":{"aL":["E?"],"az":["E?"],"az.T":"E?","aL.T":"E?"},"DL":{"aL":["t?"],"az":["t?"],"az.T":"t?","aL.T":"t?"},"o4":{"aL":["k"],"az":["k"],"az.T":"k","aL.T":"k"},"fS":{"az":["J"],"az.T":"J"},"G2":{"az":["1"],"az.T":"1"},"AR":{"a_":[],"e":[]},"H_":{"a6":["AR"]},"cZ":{"G":[]},"VN":{"jR":[]},"Nv":{"R":[],"e":[]},"q4":{"a_":[],"e":[]},"H0":{"a6":["q4"]},"Nw":{"cX":[]},"b_g":{"b8":[],"aT":[],"e":[]},"VR":{"fY":["AT"],"fY.T":"AT"},"NK":{"AT":[]},"AV":{"a_":[],"e":[]},"H2":{"a6":["AV"]},"Nx":{"R":[],"e":[]},"AU":{"a_":[],"e":[]},"AS":{"a_":[],"e":[]},"y1":{"a_":[],"e":[]},"VS":{"a6":["AU"]},"VP":{"a6":["AS"]},"y2":{"a6":["y1<1>"]},"jZ":{"iz":[]},"ve":{"a_":[],"e":[]},"H1":{"kQ":["ve"],"a6":["ve"]},"VU":{"ao":[]},"Nz":{"jR":[]},"H4":{"a_":[],"e":[]},"NA":{"R":[],"e":[]},"VW":{"b0":[],"af":[],"e":[]},"a_A":{"p":[],"aI":["p"],"q":[],"ai":[]},"H5":{"a6":["H4"]},"Yl":{"ao":[]},"a0c":{"ao":[]},"VM":{"ao":[]},"H6":{"af":[],"e":[]},"VV":{"b6":[],"bl":[],"O":[]},"tW":{"cO":["p","fL"],"p":[],"a8":["p","fL"],"q":[],"ai":[],"a8.1":"fL","cO.1":"fL","a8.0":"p"},"nF":{"a_":[],"e":[]},"H3":{"a6":["nF"]},"Yu":{"ao":[]},"Cc":{"cI":[],"b8":[],"aT":[],"e":[]},"AX":{"R":[],"e":[]},"p9":{"e5":[]},"vt":{"p9":[],"e5":[]},"Oe":{"p9":[],"e5":[]},"Od":{"p9":[],"e5":[]},"qn":{"pI":[],"cF":[]},"NU":{"e5":[]},"Xk":{"e5":[]},"fR":{"ao":[]},"cv":{"ao":[]},"mZ":{"ao":[]},"kp":{"e5":[]},"B4":{"e5":[]},"NT":{"e5":[]},"B5":{"e5":[]},"PV":{"fp":[]},"l_":{"fp":[]},"cQ":{"fp":[],"cQ.T":"1"},"CD":{"iJ":[]},"bh":{"y":["1"],"y.E":"1"},"eO":{"y":["1"],"y.E":"1"},"dx":{"ax":["1"]},"BO":{"c8":[]},"eu":{"bp":[]},"mj":{"bp":[]},"oq":{"bp":[]},"or":{"bp":[]},"mi":{"bp":[]},"ml":{"bp":[]},"fH":{"bp":[]},"mk":{"bp":[]},"U8":{"bp":[]},"a1W":{"bp":[]},"rs":{"bp":[]},"a1S":{"rs":[],"bp":[]},"rx":{"bp":[]},"a22":{"rx":[],"bp":[]},"a1Y":{"mj":[],"bp":[]},"a1V":{"oq":[],"bp":[]},"a1X":{"or":[],"bp":[]},"a1U":{"mi":[],"bp":[]},"ru":{"bp":[]},"a1Z":{"ru":[],"bp":[]},"a26":{"ml":[],"bp":[]},"ry":{"fH":[],"bp":[]},"a24":{"ry":[],"fH":[],"bp":[]},"rz":{"fH":[],"bp":[]},"a25":{"rz":[],"fH":[],"bp":[]},"QZ":{"fH":[],"bp":[]},"a23":{"fH":[],"bp":[]},"a20":{"mk":[],"bp":[]},"rw":{"bp":[]},"a21":{"rw":[],"bp":[]},"rv":{"bp":[]},"a2_":{"rv":[],"bp":[]},"rt":{"bp":[]},"a1T":{"rt":[],"bp":[]},"jr":{"cS":[],"dh":[],"dg":[]},"Ic":{"z5":[]},"yA":{"z5":[]},"jz":{"cS":[],"dh":[],"dg":[]},"hT":{"cS":[],"dh":[],"dg":[]},"ij":{"hT":[],"cS":[],"dh":[],"dg":[]},"i1":{"hT":[],"cS":[],"dh":[],"dg":[]},"jE":{"hT":[],"cS":[],"dh":[],"dg":[]},"jm":{"dh":[],"dg":[]},"dh":{"dg":[]},"cS":{"dh":[],"dg":[]},"wB":{"cS":[],"dh":[],"dg":[]},"hC":{"cS":[],"dh":[],"dg":[]},"Mx":{"cS":[],"dh":[],"dg":[]},"kW":{"cS":[],"dh":[],"dg":[]},"kX":{"cS":[],"dh":[],"dg":[]},"A6":{"cS":[],"dh":[],"dg":[]},"tw":{"dg":[]},"Vs":{"vH":[]},"qF":{"jU":[]},"w7":{"jU":[]},"Ua":{"R":[],"e":[]},"Uc":{"R":[],"e":[]},"O9":{"R":[],"e":[]},"O8":{"R":[],"e":[]},"aYP":{"cI":[],"b8":[],"aT":[],"e":[]},"M_":{"R":[],"e":[]},"CP":{"a_":[],"e":[]},"I9":{"a6":["CP"]},"zW":{"a_":[],"e":[]},"a_4":{"E":[]},"Gt":{"a6":["zW"]},"Uy":{"b0":[],"af":[],"e":[]},"a_x":{"p":[],"aI":["p"],"q":[],"ai":[]},"aYY":{"cI":[],"b8":[],"aT":[],"e":[]},"wb":{"aL":["t?"],"az":["t?"],"az.T":"t?","aL.T":"t?"},"CR":{"aL":["f"],"az":["f"],"az.T":"f","aL.T":"f"},"b1r":{"cI":[],"b8":[],"aT":[],"e":[]},"Aa":{"a_":[],"e":[]},"tQ":{"a_":[],"e":[]},"GD":{"a6":["Aa"]},"WF":{"R":[],"e":[]},"UW":{"b0":[],"af":[],"e":[]},"IX":{"p":[],"aI":["p"],"q":[],"ai":[]},"yv":{"a6":["tQ<1>"]},"CZ":{"d0":["1"],"ec":["1"],"cY":["1"],"d0.T":"1"},"GC":{"R":[],"e":[]},"DI":{"a_":[],"e":[]},"a_f":{"a6":["DI"]},"Y9":{"b0":[],"af":[],"e":[]},"J7":{"p":[],"aI":["p"],"q":[],"ai":[]},"An":{"a_":[],"e":[]},"GH":{"a6":["An"]},"YP":{"dt":[],"bT":["dt"]},"Y8":{"b0":[],"af":[],"e":[]},"J6":{"p":[],"aI":["p"],"q":[],"ai":[]},"aZC":{"cI":[],"b8":[],"aT":[],"e":[]},"MX":{"R":[],"e":[]},"aZF":{"b8":[],"aT":[],"e":[]},"DG":{"a_":[],"e":[]},"IO":{"a6":["DG"]},"Y_":{"bT":["G?"]},"Vj":{"b0":[],"af":[],"e":[]},"a_y":{"p":[],"aI":["p"],"q":[],"ai":[]},"Vl":{"ft":["l5","p"],"af":[],"e":[],"ft.0":"l5","ft.1":"p"},"IZ":{"p":[],"iW":["l5","p"],"q":[],"ai":[]},"a2a":{"m1":[]},"WY":{"b0":[],"af":[],"e":[]},"a_E":{"p":[],"aI":["p"],"q":[],"ai":[]},"aZO":{"cI":[],"b8":[],"aT":[],"e":[]},"Q0":{"nD":["k"],"G":[],"nD.T":"k"},"Wt":{"jR":[]},"NR":{"R":[],"e":[]},"vj":{"R":[],"e":[]},"nn":{"R":[],"e":[]},"NV":{"R":[],"e":[]},"B6":{"d0":["1"],"ec":["1"],"cY":["1"],"d0.T":"1"},"b_A":{"cI":[],"b8":[],"aT":[],"e":[]},"Bb":{"R":[],"e":[]},"b_F":{"cI":[],"b8":[],"aT":[],"e":[]},"y9":{"a_":[],"e":[]},"y8":{"a_":[],"e":[]},"tF":{"a_":[],"e":[]},"yu":{"b0":[],"af":[],"e":[]},"e6":{"R":[],"e":[]},"vo":{"b8":[],"aT":[],"e":[]},"nJ":{"a_":[],"e":[]},"WJ":{"ao":[]},"ya":{"a6":["y9<1>"]},"Hl":{"a6":["y8<1>"]},"Hm":{"d0":["j3<1>"],"ec":["j3<1>"],"cY":["j3<1>"],"d0.T":"j3<1>"},"Hn":{"a6":["tF<1>"]},"a_M":{"p":[],"aI":["p"],"q":[],"ai":[]},"Hk":{"R":[],"e":[]},"y7":{"a6":["nJ<1>"],"d2":[]},"vn":{"qv":["1"],"a_":[],"e":[]},"tE":{"lU":["1"],"a6":["qv<1>"]},"vx":{"a_":[],"e":[]},"Hz":{"R":[],"e":[]},"Xa":{"bw":[]},"Xe":{"bw":[]},"b0m":{"cI":[],"b8":[],"aT":[],"e":[]},"Ot":{"R":[],"e":[]},"BL":{"b8":[],"aT":[],"e":[]},"Ox":{"R":[],"e":[]},"WT":{"dt":[],"bT":["dt"]},"Vi":{"b0":[],"af":[],"e":[]},"IY":{"p":[],"aI":["p"],"q":[],"ai":[]},"Gs":{"bG":["1"],"ao":[]},"b0o":{"cI":[],"b8":[],"aT":[],"e":[]},"JH":{"a_":[],"e":[]},"C5":{"R":[],"e":[]},"a0t":{"a6":["JH"]},"XQ":{"a_":[],"e":[]},"XP":{"bw":[]},"Xd":{"bw":[]},"Xf":{"bw":[]},"Zk":{"bw":[]},"C6":{"cI":[],"b8":[],"aT":[],"e":[]},"qJ":{"a_":[],"e":[]},"HY":{"a6":["qJ"]},"Ce":{"kD":[]},"o1":{"o5":[],"kD":[]},"Y2":{"m1":[]},"Cg":{"o5":[],"kD":[]},"Y3":{"m1":[]},"Ch":{"o5":[],"kD":[]},"o5":{"kD":[]},"IC":{"b8":[],"aT":[],"e":[]},"HX":{"a_":[],"e":[]},"Cf":{"R":[],"e":[]},"HW":{"a6":["HX"],"aLU":[]},"Pr":{"R":[],"e":[]},"iF":{"cj":[]},"jS":{"iF":[],"cj":[]},"hw":{"iF":[],"cj":[]},"Ps":{"R":[],"e":[]},"GB":{"a_":[],"e":[]},"HR":{"a_":[],"e":[]},"qK":{"a_":[],"e":[]},"Ci":{"cI":[],"b8":[],"aT":[],"e":[]},"HZ":{"ao":[]},"I_":{"aL":["iF"],"az":["iF"],"az.T":"iF","aL.T":"iF"},"Y4":{"ao":[]},"US":{"a6":["GB"]},"HS":{"a6":["HR"]},"J1":{"p":[],"iW":["fb","p"],"q":[],"ai":[]},"Wm":{"ft":["fb","p"],"af":[],"e":[],"ft.0":"fb","ft.1":"p"},"Gn":{"R":[],"e":[]},"I0":{"a6":["qK"]},"Y7":{"o2":[]},"kH":{"R":[],"e":[]},"Y0":{"bT":["G?"]},"Ys":{"ft":["k2","p"],"af":[],"e":[],"ft.0":"k2","ft.1":"p"},"Jb":{"p":[],"iW":["k2","p"],"q":[],"ai":[]},"qX":{"cI":[],"b8":[],"aT":[],"e":[]},"FD":{"a_":[],"e":[]},"Kc":{"a6":["FD"]},"PX":{"R":[],"e":[]},"CO":{"a_":[],"e":[]},"J5":{"p":[],"aI":["p"],"q":[],"ai":[]},"t4":{"aL":["cj?"],"az":["cj?"],"az.T":"cj?","aL.T":"cj?"},"Ia":{"a_":[],"e":[]},"YG":{"a6":["CO"]},"Y1":{"b0":[],"af":[],"e":[]},"YD":{"a6":["Ia"]},"JP":{"R":[],"e":[]},"JQ":{"ao":[]},"YE":{"fY":["r3"],"fY.T":"r3"},"NM":{"r3":[]},"Dn":{"a_":[],"e":[]},"Zj":{"R":[],"e":[]},"Zh":{"bw":[]},"b2_":{"cI":[],"b8":[],"aT":[],"e":[]},"ht":{"Q1":["1"],"wp":["1"],"d0":["1"],"ec":["1"],"cY":["1"],"d0.T":"1"},"pt":{"a_":[],"e":[]},"pu":{"a_":[],"e":[]},"yH":{"a_":[],"e":[]},"a2z":{"R":[],"e":[]},"a2x":{"a6":["pt"]},"a2y":{"a6":["pu"]},"X7":{"R":[],"e":[]},"U6":{"kL":[]},"Ny":{"kL":[]},"IB":{"a6":["yH<1>"]},"KN":{"ao":[]},"KO":{"ao":[]},"jF":{"a_":[],"e":[]},"hx":{"jF":["1"],"a_":[],"e":[]},"yK":{"a_":[],"e":[]},"wy":{"a_":[],"e":[]},"YK":{"b0":[],"af":[],"e":[]},"a_L":{"p":[],"aI":["p"],"q":[],"ai":[]},"wA":{"a6":["2"]},"IK":{"a6":["yK<1>"]},"IJ":{"d0":["1"],"ec":["1"],"cY":["1"],"d0.T":"1"},"wz":{"a6":["wy<1>"]},"WS":{"dt":[],"bT":["dt"]},"b2x":{"cI":[],"b8":[],"aT":[],"e":[]},"IL":{"a_":[],"e":[]},"IM":{"a_":[],"e":[]},"R3":{"kL":[]},"a_2":{"a6":["IL"],"d2":[]},"a_3":{"a6":["IM"]},"CF":{"a_":[],"e":[]},"uR":{"a_":[],"e":[]},"Ra":{"a_":[],"e":[]},"Yo":{"ao":[]},"Yp":{"a6":["CF"]},"Vn":{"ao":[]},"Vo":{"a6":["uR"]},"b2H":{"cI":[],"b8":[],"aT":[],"e":[]},"Eq":{"a_":[],"e":[]},"wU":{"a6":["Eq"]},"Jt":{"b8":[],"aT":[],"e":[]},"HC":{"a_":[],"e":[]},"oD":{"a_":[],"e":[]},"Er":{"a6":["oD"],"d2":[]},"b5E":{"a_":[],"e":[]},"a0h":{"ao":[]},"GA":{"a2":[],"lE":[]},"UR":{"R":[],"e":[]},"HD":{"a6":["HC"]},"Wy":{"bi":["ho"],"bi.T":"ho"},"a0i":{"b8":[],"aT":[],"e":[]},"XI":{"R":[],"e":[]},"yt":{"a_":[],"e":[]},"Sl":{"R":[],"e":[]},"YF":{"kQ":["yt"],"a6":["yt"]},"b3f":{"cI":[],"b8":[],"aT":[],"e":[]},"x_":{"a_":[],"e":[]},"ED":{"a6":["x_<1>"]},"JG":{"ep":[],"af":[],"e":[]},"yW":{"f1":["p"],"f0":[],"dK":["p"],"cN":[]},"yR":{"cO":["p","f1<p>"],"p":[],"a8":["p","f1<p>"],"q":[],"ai":[],"a8.1":"f1<p>","cO.1":"f1<p>","a8.0":"p"},"b3l":{"cI":[],"b8":[],"aT":[],"e":[]},"F2":{"a_":[],"e":[]},"xc":{"a_":[],"e":[]},"JU":{"a6":["F2"]},"JV":{"a6":["xc"]},"b3F":{"cI":[],"b8":[],"aT":[],"e":[]},"Tm":{"a_":[],"e":[]},"a1m":{"bw":[]},"Fv":{"cI":[],"b8":[],"aT":[],"e":[]},"FA":{"a_":[],"e":[]},"Ka":{"a6":["FA"]},"Q3":{"jR":[]},"a1r":{"ao":[]},"b46":{"cI":[],"b8":[],"aT":[],"e":[]},"Kf":{"a_":[],"e":[]},"Ty":{"R":[],"e":[]},"a1x":{"a6":["Kf"]},"a1y":{"b0":[],"af":[],"e":[]},"a1z":{"p":[],"aI":["p"],"q":[],"ai":[]},"a1u":{"ep":[],"af":[],"e":[]},"a1v":{"b6":[],"bl":[],"O":[]},"a_Y":{"p":[],"a8":["p","fL"],"q":[],"ai":[],"a8.1":"fL","a8.0":"p"},"a1t":{"R":[],"e":[]},"a1w":{"R":[],"e":[]},"TA":{"R":[],"e":[]},"th":{"R":[],"e":[]},"HV":{"cI":[],"b8":[],"aT":[],"e":[]},"ti":{"aL":["iZ"],"az":["iZ"],"az.T":"iZ","aL.T":"iZ"},"zN":{"a_":[],"e":[]},"Uq":{"a6":["zN"]},"FW":{"a_":[],"e":[]},"FX":{"a6":["FW"]},"a1I":{"R":[],"e":[]},"b4o":{"cI":[],"b8":[],"aT":[],"e":[]},"eh":{"hg":[]},"fi":{"hg":[]},"Ie":{"hg":[]},"a1b":{"ao":[]},"dD":{"cj":[]},"j2":{"cj":[]},"MD":{"cj":[]},"dI":{"cj":[]},"fk":{"cj":[]},"au":{"iz":[]},"bq":{"oK":[]},"e4":{"dD":[],"cj":[]},"nD":{"G":[]},"a3":{"dd":[]},"d7":{"dd":[]},"pg":{"dd":[]},"Mi":{"jv":["ke"]},"A0":{"jv":["ke"],"jv.T":"ke"},"QS":{"eD":[]},"ct":{"dD":[],"cj":[]},"kR":{"dD":[],"cj":[]},"yT":{"fc":["ct"],"dD":[],"cj":[],"fc.T":"ct"},"yU":{"fc":["kR"],"dD":[],"cj":[],"fc.T":"kR"},"fc":{"dD":[],"cj":[]},"ie":{"iz":[]},"h_":{"dD":[],"cj":[]},"fN":{"dD":[],"cj":[]},"fO":{"dD":[],"cj":[]},"xQ":{"hD":[]},"a2h":{"hD":[]},"f8":{"eD":[],"iM":[],"ai":[]},"DQ":{"p":[],"aI":["p"],"q":[],"ai":[]},"Gz":{"ao":[]},"Wn":{"mf":[]},"a06":{"rO":[],"aI":["p"],"q":[],"ai":[]},"a2":{"lE":[]},"nx":{"lX":[]},"f1":{"f0":[],"dK":["1"],"cN":[]},"p":{"q":[],"ai":[]},"nw":{"i0":["p"]},"f0":{"cN":[]},"iN":{"f1":["p"],"f0":[],"dK":["p"],"cN":[]},"DT":{"cO":["p","iN"],"p":[],"a8":["p","iN"],"q":[],"ai":[],"a8.1":"iN","cO.1":"iN","a8.0":"p"},"NC":{"ao":[]},"DU":{"p":[],"aI":["p"],"q":[],"ai":[]},"oy":{"ao":[]},"rL":{"p":[],"a8":["p","iY"],"q":[],"ai":[],"a8.1":"iY","a8.0":"p"},"a_C":{"p":[],"q":[],"ai":[]},"Kb":{"oy":[],"ao":[]},"GJ":{"oy":[],"ao":[]},"y_":{"oy":[],"ao":[]},"DW":{"p":[],"q":[],"ai":[]},"hp":{"f1":["p"],"f0":[],"dK":["p"],"cN":[]},"DY":{"cO":["p","hp"],"p":[],"a8":["p","hp"],"q":[],"ai":[],"a8.1":"hp","cO.1":"hp","a8.0":"p"},"E0":{"p":[],"q":[],"ai":[]},"fn":{"eE":[]},"v1":{"fn":[],"eE":[]},"AG":{"fn":[],"eE":[]},"mJ":{"jD":[],"fn":[],"eE":[]},"Qy":{"jD":[],"fn":[],"eE":[]},"CC":{"fn":[],"eE":[]},"zU":{"fn":[],"eE":[]},"QR":{"eE":[]},"QW":{"eE":[]},"jD":{"fn":[],"eE":[]},"AI":{"fn":[],"eE":[]},"C9":{"jD":[],"fn":[],"eE":[]},"A3":{"fn":[],"eE":[]},"BS":{"fn":[],"eE":[]},"kG":{"f1":["p"],"f0":[],"dK":["p"],"cN":[]},"E3":{"cO":["p","kG"],"p":[],"a8":["p","kG"],"q":[],"ai":[],"a8.1":"kG","cO.1":"kG","a8.0":"p"},"Qc":{"ao":[]},"q":{"ai":[]},"dK":{"cN":[]},"ha":{"e2":[]},"HU":{"e2":[]},"mg":{"dF":[]},"iY":{"dK":["p"],"cN":[]},"lf":{"eW":[],"ao":[]},"oz":{"p":[],"a8":["p","iY"],"q":[],"ai":[],"a8.1":"iY","a8.0":"p"},"IG":{"cS":[],"dh":[],"dg":[]},"QY":{"p":[],"q":[],"iM":[],"ai":[]},"oL":{"ao":[]},"DN":{"p":[],"aI":["p"],"q":[],"ai":[]},"mq":{"p":[],"aI":["p"],"q":[],"ai":[]},"RH":{"p":[],"aI":["p"],"q":[],"ai":[]},"E9":{"p":[],"aI":["p"],"q":[],"ai":[]},"rK":{"p":[],"aI":["p"],"q":[],"ai":[]},"RA":{"p":[],"aI":["p"],"q":[],"ai":[]},"E2":{"p":[],"aI":["p"],"q":[],"ai":[]},"RD":{"p":[],"aI":["p"],"q":[],"ai":[]},"Rn":{"p":[],"aI":["p"],"q":[],"ai":[]},"Ro":{"p":[],"aI":["p"],"q":[],"ai":[]},"AY":{"ao":[]},"yN":{"p":[],"aI":["p"],"q":[],"ai":[]},"Rs":{"p":[],"aI":["p"],"q":[],"ai":[]},"Rr":{"p":[],"aI":["p"],"q":[],"ai":[]},"Rq":{"p":[],"aI":["p"],"q":[],"ai":[]},"Jd":{"p":[],"aI":["p"],"q":[],"ai":[]},"RE":{"p":[],"aI":["p"],"q":[],"ai":[]},"RF":{"p":[],"aI":["p"],"q":[],"ai":[]},"Rt":{"p":[],"aI":["p"],"q":[],"ai":[]},"RO":{"p":[],"aI":["p"],"q":[],"ai":[]},"DX":{"p":[],"aI":["p"],"q":[],"ai":[]},"Rw":{"p":[],"aI":["p"],"q":[],"ai":[]},"RG":{"p":[],"aI":["p"],"q":[],"ai":[]},"E5":{"p":[],"aI":["p"],"q":[],"iM":[],"ai":[]},"RJ":{"p":[],"aI":["p"],"q":[],"ai":[]},"E_":{"p":[],"aI":["p"],"q":[],"ai":[]},"E6":{"p":[],"aI":["p"],"q":[],"ai":[]},"E4":{"p":[],"aI":["p"],"q":[],"ai":[]},"RK":{"p":[],"aI":["p"],"q":[],"ai":[]},"Rp":{"p":[],"aI":["p"],"q":[],"ai":[]},"RB":{"p":[],"aI":["p"],"q":[],"ai":[]},"Ru":{"p":[],"aI":["p"],"q":[],"ai":[]},"Rx":{"p":[],"aI":["p"],"q":[],"ai":[]},"Rz":{"p":[],"aI":["p"],"q":[],"ai":[]},"Rv":{"p":[],"aI":["p"],"q":[],"ai":[]},"DR":{"p":[],"aI":["p"],"q":[],"ai":[]},"eW":{"ao":[]},"rM":{"p":[],"aI":["p"],"q":[],"ai":[]},"E7":{"p":[],"aI":["p"],"q":[],"ai":[]},"Rm":{"p":[],"aI":["p"],"q":[],"ai":[]},"E8":{"p":[],"aI":["p"],"q":[],"ai":[]},"DZ":{"p":[],"aI":["p"],"q":[],"ai":[]},"DV":{"p":[],"aI":["p"],"q":[],"ai":[]},"mz":{"lE":[]},"x9":{"lX":[]},"mA":{"oN":[],"dK":["dk"],"cN":[]},"mB":{"oO":[],"dK":["dk"],"cN":[]},"dk":{"q":[],"ai":[]},"SQ":{"i0":["dk"]},"oN":{"cN":[]},"oO":{"cN":[]},"RM":{"wN":[],"dk":[],"a8":["p","kU"],"q":[],"ai":[],"a8.1":"kU","a8.0":"p"},"kE":{"cN":[]},"kU":{"oN":[],"dK":["p"],"kE":[],"cN":[]},"wN":{"dk":[],"a8":["p","kU"],"q":[],"ai":[]},"Ea":{"dk":[],"aI":["dk"],"q":[],"ai":[]},"RN":{"dk":[],"aI":["dk"],"q":[],"ai":[]},"ea":{"f1":["p"],"f0":[],"dK":["p"],"cN":[]},"wO":{"cO":["p","ea"],"p":[],"a8":["p","ea"],"q":[],"ai":[],"a8.1":"ea","cO.1":"ea","a8.0":"p"},"E1":{"cO":["p","ea"],"p":[],"a8":["p","ea"],"q":[],"ai":[],"a8.1":"ea","cO.1":"ea","a8.0":"p"},"no":{"aL":["hg?"],"az":["hg?"],"az.T":"hg?","aL.T":"hg?"},"rO":{"aI":["p"],"q":[],"ai":[]},"wQ":{"j7":["1"],"p":[],"a8":["dk","1"],"DO":[],"q":[],"ai":[]},"Ec":{"j7":["mB"],"p":[],"a8":["dk","mB"],"DO":[],"q":[],"ai":[],"a8.1":"mB","j7.0":"mB","a8.0":"dk"},"RL":{"j7":["mA"],"p":[],"a8":["dk","mA"],"DO":[],"q":[],"ai":[],"a8.1":"mA","j7.0":"mA","a8.0":"dk"},"ik":{"ao":[]},"l2":{"f1":["p"],"f0":[],"dK":["p"],"cN":[]},"Ed":{"cO":["p","l2"],"p":[],"a8":["p","l2"],"q":[],"ai":[],"a8.1":"l2","cO.1":"l2","a8.0":"p"},"tk":{"ax":["~"]},"FM":{"bU":[]},"mQ":{"cr":["mQ"]},"k4":{"cr":["k4"]},"n4":{"cr":["n4"]},"x4":{"cr":["x4"]},"a0E":{"e5":[]},"EO":{"ao":[]},"kJ":{"cr":["x4"]},"tq":{"a51":[]},"m3":{"iG":[]},"qO":{"iG":[]},"vZ":{"iG":[]},"Dv":{"bU":[]},"CY":{"bU":[]},"Wq":{"dt":[]},"a1c":{"D0":[]},"oP":{"dt":[]},"ou":{"mo":[]},"wJ":{"mo":[]},"Eh":{"ao":[]},"uN":{"hD":[]},"w0":{"hD":[]},"ol":{"hD":[]},"qc":{"hD":[]},"Tp":{"oT":[]},"To":{"oT":[]},"Tq":{"oT":[]},"xt":{"oT":[]},"BH":{"td":[]},"Zs":{"FC":[]},"P6":{"fo":[]},"P7":{"fo":[]},"Pa":{"fo":[]},"Pc":{"fo":[]},"P9":{"fo":[]},"Pb":{"fo":[]},"Pd":{"fo":[]},"P8":{"fo":[]},"tM":{"wu":[]},"lm":{"a_":[],"e":[]},"Gl":{"b8":[],"aT":[],"e":[]},"qq":{"a_":[],"e":[]},"aLB":{"ba":[]},"b_J":{"ba":[]},"b_I":{"ba":[]},"nl":{"ba":[]},"nz":{"ba":[]},"ho":{"ba":[]},"mm":{"ba":[]},"cW":{"bi":["1"]},"dc":{"bi":["1"],"bi.T":"1"},"Gm":{"a6":["lm"]},"HG":{"a6":["qq"]},"TY":{"bi":["aLB"],"bi.T":"aLB"},"Bc":{"bi":["ba"],"bi.T":"ba"},"NY":{"bi":["ho"]},"R9":{"cW":["mm"],"bi":["mm"],"cW.T":"mm","bi.T":"mm"},"Iy":{"cW":["1"],"yG":["1"],"bi":["1"],"cW.T":"1","bi.T":"1"},"Iz":{"cW":["1"],"yG":["1"],"bi":["1"],"cW.T":"1","bi.T":"1"},"GX":{"bi":["1"],"bi.T":"1"},"zL":{"a_":[],"e":[]},"Up":{"a6":["zL"]},"Uo":{"b0":[],"af":[],"e":[]},"zM":{"a_":[],"e":[]},"Gr":{"a6":["zM"]},"zT":{"b0":[],"af":[],"e":[]},"Gg":{"a_":[],"e":[]},"KF":{"a6":["Gg"],"d2":[]},"Mb":{"d2":[]},"vE":{"a_":[],"e":[]},"HK":{"a6":["vE<1>"]},"uC":{"a_":[],"e":[]},"Gw":{"a6":["uC"]},"Cu":{"ao":[]},"Z2":{"R":[],"e":[]},"iB":{"b8":[],"aT":[],"e":[]},"v0":{"b0":[],"af":[],"e":[]},"v_":{"b0":[],"af":[],"e":[]},"mI":{"b0":[],"af":[],"e":[]},"v8":{"b0":[],"af":[],"e":[]},"aS":{"b0":[],"af":[],"e":[]},"dQ":{"b0":[],"af":[],"e":[]},"lB":{"b0":[],"af":[],"e":[]},"fT":{"b0":[],"af":[],"e":[]},"CB":{"eF":["iN"],"aT":[],"e":[],"eF.T":"iN"},"cJ":{"b0":[],"af":[],"e":[]},"vC":{"b0":[],"af":[],"e":[]},"rB":{"eF":["ea"],"aT":[],"e":[],"eF.T":"ea"},"vA":{"ep":[],"af":[],"e":[]},"ms":{"ep":[],"af":[],"e":[]},"kn":{"ep":[],"af":[],"e":[]},"b_p":{"b8":[],"aT":[],"e":[]},"kA":{"b0":[],"af":[],"e":[]},"oH":{"b0":[],"af":[],"e":[]},"mE":{"a_":[],"e":[]},"a28":{"hr":[],"bl":[],"O":[]},"a29":{"b8":[],"aT":[],"e":[]},"Qw":{"b0":[],"af":[],"e":[]},"Mm":{"b0":[],"af":[],"e":[]},"B_":{"b0":[],"af":[],"e":[]},"Nf":{"b0":[],"af":[],"e":[]},"QP":{"b0":[],"af":[],"e":[]},"QQ":{"b0":[],"af":[],"e":[]},"Nn":{"b0":[],"af":[],"e":[]},"Ou":{"b0":[],"af":[],"e":[]},"OE":{"b0":[],"af":[],"e":[]},"AZ":{"ep":[],"af":[],"e":[]},"di":{"b0":[],"af":[],"e":[]},"PO":{"b0":[],"af":[],"e":[]},"Dl":{"b0":[],"af":[],"e":[]},"Z6":{"b6":[],"bl":[],"O":[]},"Pu":{"b0":[],"af":[],"e":[]},"SS":{"b0":[],"af":[],"e":[]},"a0B":{"b0":[],"af":[],"e":[]},"PQ":{"ep":[],"af":[],"e":[]},"F8":{"ep":[],"af":[],"e":[]},"Pq":{"R":[],"e":[]},"IP":{"ep":[],"af":[],"e":[]},"XZ":{"b6":[],"bl":[],"O":[]},"R2":{"R":[],"e":[]},"hY":{"eF":["hp"],"aT":[],"e":[],"eF.T":"hp"},"dj":{"eF":["hp"],"aT":[],"e":[],"eF.T":"hp"},"U5":{"ep":[],"af":[],"e":[]},"RV":{"ep":[],"af":[],"e":[]},"Re":{"af":[],"e":[]},"PT":{"b0":[],"af":[],"e":[]},"D1":{"b0":[],"af":[],"e":[]},"iS":{"b0":[],"af":[],"e":[]},"LX":{"b0":[],"af":[],"e":[]},"Q8":{"b0":[],"af":[],"e":[]},"we":{"b0":[],"af":[],"e":[]},"Mz":{"b0":[],"af":[],"e":[]},"nN":{"b0":[],"af":[],"e":[]},"Cb":{"b0":[],"af":[],"e":[]},"iH":{"R":[],"e":[]},"dR":{"R":[],"e":[]},"a11":{"a6":["mE"]},"Nm":{"b0":[],"af":[],"e":[]},"J_":{"p":[],"aI":["p"],"q":[],"ai":[]},"El":{"e":[]},"Ej":{"bl":[],"O":[]},"U4":{"kT":[],"ai":[]},"vc":{"R":[],"e":[]},"NG":{"b0":[],"af":[],"e":[]},"Wk":{"ao":[]},"nG":{"cI":[],"b8":[],"aT":[],"e":[]},"Z3":{"R":[],"e":[]},"NO":{"R":[],"e":[]},"B9":{"a_":[],"e":[]},"He":{"a6":["B9"]},"Ba":{"R":[],"e":[]},"nK":{"a_":[],"e":[]},"Ho":{"a6":["nK"]},"vp":{"a_":[],"e":[]},"nL":{"a6":["vp"],"d2":[]},"Jx":{"a_":[],"e":[]},"n1":{"xP":[],"eD":[]},"Vt":{"b0":[],"af":[],"e":[]},"a_z":{"p":[],"aI":["p"],"q":[],"ai":[]},"ck":{"cv":["ce"],"ao":[]},"Hp":{"ep":[],"af":[],"e":[]},"a0k":{"a6":["Jx"],"aRz":[]},"Vq":{"hD":[]},"mS":{"cW":["1"],"bi":["1"],"cW.T":"1","bi.T":"1"},"Kt":{"cW":["1"],"bi":["1"],"cW.T":"1","bi.T":"1"},"Ku":{"cW":["1"],"bi":["1"],"cW.T":"1","bi.T":"1"},"KC":{"dc":["1"],"bi":["1"],"bi.T":"1"},"a0s":{"cW":["mw"],"bi":["mw"],"cW.T":"mw","bi.T":"mw"},"VK":{"cW":["ko"],"bi":["ko"],"cW.T":"ko","bi.T":"ko"},"Zp":{"cW":["me"],"bi":["me"],"cW.T":"me","bi.T":"me"},"a2q":{"cv":["v3"],"ao":[],"d2":[]},"WQ":{"cW":["ks"],"bi":["ks"],"cW.T":"ks","bi.T":"ks"},"WR":{"cW":["kt"],"bi":["kt"],"cW.T":"kt","bi.T":"kt"},"df":{"ao":[]},"lT":{"df":[],"ao":[]},"UC":{"d2":[]},"BP":{"ao":[]},"nR":{"a_":[],"e":[]},"HE":{"kC":["df"],"b8":[],"aT":[],"e":[],"kC.T":"df"},"yc":{"a6":["nR"]},"BQ":{"a_":[],"e":[]},"Xs":{"a_":[],"e":[]},"Xr":{"a6":["nR"]},"Og":{"R":[],"e":[]},"BR":{"a_":[],"e":[]},"aL7":{"ba":[]},"rh":{"ba":[]},"rC":{"ba":[]},"nI":{"ba":[]},"HF":{"df":[],"ao":[]},"Xt":{"a6":["BR"]},"RR":{"bi":["aL7"],"bi.T":"aL7"},"Ql":{"bi":["rh"],"bi.T":"rh"},"R5":{"bi":["rC"],"bi.T":"rC"},"B8":{"bi":["nI"],"bi.T":"nI"},"b4Z":{"b8":[],"aT":[],"e":[]},"qv":{"a_":[],"e":[]},"lU":{"a6":["qv<1>"]},"js":{"fp":[]},"bs":{"js":["1"],"fp":[]},"a_":{"e":[]},"af":{"e":[]},"bl":{"O":[]},"iX":{"bl":[],"O":[]},"on":{"bl":[],"O":[]},"hr":{"bl":[],"O":[]},"qA":{"js":["1"],"fp":[]},"R":{"e":[]},"aT":{"e":[]},"eF":{"aT":[],"e":[]},"b8":{"aT":[],"e":[]},"PM":{"af":[],"e":[]},"b0":{"af":[],"e":[]},"ep":{"af":[],"e":[]},"Of":{"af":[],"e":[]},"AM":{"bl":[],"O":[]},"T9":{"bl":[],"O":[]},"DC":{"bl":[],"O":[]},"b6":{"bl":[],"O":[]},"PL":{"b6":[],"bl":[],"O":[]},"EV":{"b6":[],"bl":[],"O":[]},"i7":{"b6":[],"bl":[],"O":[]},"RP":{"b6":[],"bl":[],"O":[]},"Z1":{"bl":[],"O":[]},"Z4":{"e":[]},"iR":{"a_":[],"e":[]},"wI":{"a6":["iR"]},"cH":{"qz":["1"]},"OI":{"R":[],"e":[]},"Xz":{"b0":[],"af":[],"e":[]},"qD":{"a_":[],"e":[]},"yk":{"a6":["qD"]},"C3":{"rg":[]},"bH":{"R":[],"e":[]},"qG":{"cI":[],"b8":[],"aT":[],"e":[]},"C8":{"a_":[],"e":[]},"HT":{"a6":["C8"],"d2":[]},"pR":{"aL":["a2"],"az":["a2"],"az.T":"a2","aL.T":"a2"},"lH":{"aL":["iz"],"az":["iz"],"az.T":"iz","aL.T":"iz"},"lK":{"aL":["dd"],"az":["dd"],"az.T":"dd","aL.T":"dd"},"pP":{"aL":["cL?"],"az":["cL?"],"az.T":"cL?","aL.T":"cL?"},"r8":{"aL":["bc"],"az":["bc"],"az.T":"bc","aL.T":"bc"},"tg":{"aL":["n"],"az":["n"],"az.T":"n","aL.T":"n"},"zE":{"a_":[],"e":[]},"zI":{"a_":[],"e":[]},"zK":{"a_":[],"e":[]},"zH":{"a_":[],"e":[]},"zG":{"a_":[],"e":[]},"zJ":{"a_":[],"e":[]},"Bn":{"aL":["a3"],"az":["a3"],"az.T":"a3","aL.T":"a3"},"Po":{"a_":[],"e":[]},"vT":{"a6":["1"]},"ux":{"a6":["1"]},"Ui":{"a6":["zE"]},"Ul":{"a6":["zI"]},"Un":{"a6":["zK"]},"Uk":{"a6":["zH"]},"Uj":{"a6":["zG"]},"Um":{"a6":["zJ"]},"iE":{"b8":[],"aT":[],"e":[]},"Cd":{"hr":[],"bl":[],"O":[]},"kC":{"b8":[],"aT":[],"e":[]},"yn":{"hr":[],"bl":[],"O":[]},"cI":{"b8":[],"aT":[],"e":[]},"jX":{"R":[],"e":[]},"is":{"af":[],"e":[]},"AP":{"is":["1"],"af":[],"e":[]},"yo":{"b6":[],"bl":[],"O":[]},"PK":{"is":["a2"],"af":[],"e":[],"is.0":"a2"},"J8":{"eq":["a2","p"],"p":[],"aI":["p"],"q":[],"ai":[],"eq.0":"a2"},"I6":{"b8":[],"aT":[],"e":[]},"r_":{"a_":[],"e":[]},"w4":{"ao":[],"d2":[]},"a2v":{"fY":["Gh"],"fY.T":"Gh"},"NQ":{"Gh":[]},"Yw":{"a6":["r_"]},"aQo":{"b8":[],"aT":[],"e":[]},"Rh":{"R":[],"e":[]},"YZ":{"ao":[]},"YA":{"b0":[],"af":[],"e":[]},"a_K":{"p":[],"aI":["p"],"q":[],"ai":[]},"jA":{"iE":["dl"],"b8":[],"aT":[],"e":[],"iE.T":"dl"},"Id":{"a_":[],"e":[]},"YI":{"a6":["Id"],"d2":[]},"wf":{"R":[],"e":[]},"xS":{"cS":[],"dh":[],"dg":[]},"a0C":{"b0":[],"af":[],"e":[]},"a_R":{"p":[],"aI":["p"],"q":[],"ai":[]},"M4":{"a_":[],"e":[]},"Uv":{"qz":["xS"]},"YO":{"R":[],"e":[]},"Qk":{"R":[],"e":[]},"aQP":{"jH":[]},"qE":{"b8":[],"aT":[],"e":[]},"Dg":{"a_":[],"e":[]},"jC":{"a6":["Dg"]},"yy":{"pi":[]},"yx":{"pi":[]},"Io":{"pi":[]},"Ip":{"pi":[]},"XG":{"y":["ip"],"ao":[],"y.E":"ip"},"XH":{"er":["aH<j?,S<Q>>?"],"ao":[]},"du":{"aT":[],"e":[]},"Iu":{"bl":[],"O":[]},"lb":{"f1":["p"],"f0":[],"dK":["p"],"cN":[]},"QD":{"ep":[],"af":[],"e":[]},"yQ":{"cO":["p","lb"],"p":[],"a8":["p","lb"],"q":[],"ai":[],"a8.1":"lb","cO.1":"lb","a8.0":"p"},"ok":{"ao":[]},"n_":{"a_":[],"e":[]},"Ix":{"a6":["n_"]},"wn":{"a_":[],"e":[]},"Dp":{"a6":["wn"]},"tX":{"p":[],"a8":["p","ea"],"q":[],"ai":[],"a8.1":"ea","a8.0":"p"},"Do":{"a_":[],"e":[]},"pk":{"iK":["pk"],"iK.E":"pk"},"tY":{"b8":[],"aT":[],"e":[]},"ld":{"p":[],"aI":["p"],"q":[],"ai":[],"iK":["ld"],"iK.E":"ld"},"Ja":{"p":[],"aI":["p"],"q":[],"ai":[]},"yE":{"is":["+(E,bc,E)"],"af":[],"e":[],"is.0":"+(E,bc,E)"},"Kh":{"ep":[],"af":[],"e":[]},"a1C":{"b6":[],"bl":[],"O":[]},"z4":{"ea":[],"f1":["p"],"f0":[],"dK":["p"],"cN":[]},"Zm":{"a6":["Do"]},"yF":{"af":[],"e":[]},"Zl":{"b6":[],"bl":[],"O":[]},"Wp":{"b0":[],"af":[],"e":[]},"J9":{"eq":["+(E,bc,E)","p"],"p":[],"aI":["p"],"q":[],"ai":[],"eq.0":"+(E,bc,E)"},"C1":{"a_":[],"e":[]},"Fe":{"a_":[],"e":[]},"HN":{"a6":["C1"]},"HM":{"ao":[]},"XA":{"ao":[]},"K6":{"a6":["Fe"]},"a13":{"ao":[]},"Dq":{"h5":[]},"aQR":{"cQ":["1"],"fp":[]},"wq":{"R":[],"e":[]},"wp":{"d0":["1"],"ec":["1"],"cY":["1"]},"Dx":{"a_":[],"e":[]},"wv":{"af":[],"e":[]},"OZ":{"R":[],"e":[]},"IH":{"a6":["Dx"]},"Zu":{"p":[],"aI":["p"],"q":[],"ai":[]},"Zt":{"b0":[],"af":[],"e":[]},"wC":{"b8":[],"aT":[],"e":[]},"DJ":{"a_":[],"e":[]},"mp":{"a6":["DJ"]},"X_":{"b0":[],"af":[],"e":[]},"a_F":{"p":[],"aI":["p"],"q":[],"iM":[],"ai":[]},"oA":{"a_":[],"e":[]},"G4":{"b8":[],"aT":[],"e":[]},"Ek":{"a_":[],"e":[]},"er":{"ao":[]},"a05":{"a6":["oA"]},"Jp":{"a6":["Ek"]},"c0":{"er":["1"],"ao":[]},"io":{"c0":["1"],"er":["1"],"ao":[]},"Jm":{"io":["1"],"c0":["1"],"er":["1"],"ao":[]},"Eg":{"io":["1"],"c0":["1"],"er":["1"],"ao":[],"c0.T":"1","io.T":"1"},"rP":{"io":["K"],"c0":["K"],"er":["K"],"ao":[],"c0.T":"K","io.T":"K"},"RU":{"io":["j?"],"c0":["j?"],"er":["j?"],"ao":[],"c0.T":"j?","io.T":"j?"},"RZ":{"a_":[],"e":[]},"bbn":{"bdS":["ax<K>"]},"yV":{"a6":["RZ<1>"]},"a0g":{"b8":[],"aT":[],"e":[]},"a02":{"c0":["oC?"],"er":["oC?"],"ao":[],"c0.T":"oC?"},"Ig":{"iE":["ph"],"b8":[],"aT":[],"e":[],"iE.T":"ph"},"yw":{"a_":[],"e":[]},"k3":{"a6":["yw<1>"]},"wo":{"cY":["1"]},"ec":{"cY":["1"]},"Wz":{"bi":["ho"],"bi.T":"ho"},"d0":{"ec":["1"],"cY":["1"]},"DA":{"d0":["1"],"ec":["1"],"cY":["1"]},"wG":{"d0":["1"],"ec":["1"],"cY":["1"]},"S0":{"R":[],"e":[]},"wW":{"jv":["1"],"jv.T":"1"},"Et":{"b8":[],"aT":[],"e":[]},"Eu":{"ao":[]},"yX":{"a_":[],"e":[]},"tZ":{"cQ":["fp"],"fp":[],"cQ.T":"fp"},"JL":{"a6":["yX"]},"fZ":{"i4":[],"h5":[]},"jK":{"fZ":[],"i4":[],"h5":[]},"wX":{"fZ":[],"i4":[],"h5":[]},"kK":{"fZ":[],"i4":[],"h5":[]},"jJ":{"fZ":[],"i4":[],"h5":[]},"TQ":{"fZ":[],"i4":[],"h5":[]},"Jz":{"b8":[],"aT":[],"e":[]},"mY":{"iK":["mY"],"iK.E":"mY"},"Ex":{"a_":[],"e":[]},"Sh":{"a6":["Ex"]},"mu":{"ik":[],"ao":[]},"rT":{"h5":[]},"Ey":{"mu":[],"ik":[],"ao":[]},"Si":{"R":[],"e":[]},"MH":{"R":[],"e":[]},"w3":{"R":[],"e":[]},"Ez":{"a_":[],"e":[]},"JB":{"b8":[],"aT":[],"e":[]},"rX":{"a6":["Ez"]},"JD":{"a_":[],"e":[]},"a0n":{"a6":["JD"]},"JC":{"ao":[]},"a0m":{"b0":[],"af":[],"e":[]},"Jh":{"p":[],"aI":["p"],"q":[],"ai":[]},"a03":{"c0":["J?"],"er":["J?"],"ao":[],"c0.T":"J?"},"eV":{"ba":[]},"Es":{"cW":["eV"],"bi":["eV"],"cW.T":"eV","bi.T":"eV"},"wK":{"a_":[],"e":[]},"lg":{"hC":[],"cS":[],"dh":[],"dg":[]},"ps":{"ij":[],"hT":[],"cS":[],"dh":[],"dg":[]},"pc":{"i1":[],"hT":[],"cS":[],"dh":[],"dg":[]},"wZ":{"ao":[]},"kQ":{"a6":["1"]},"b3n":{"a_":[],"e":[]},"xh":{"ao":[]},"wg":{"ao":[]},"rY":{"a_":[],"e":[]},"x2":{"b8":[],"aT":[],"e":[]},"a0y":{"eW":[],"a6":["rY"],"ao":[]},"Sn":{"ao":[]},"ER":{"a_":[],"e":[]},"a0J":{"a6":["ER"]},"a0K":{"iE":["Q"],"b8":[],"aT":[],"e":[],"iE.T":"Q"},"aj":{"x7":[]},"t5":{"a_":[],"e":[]},"ET":{"a_":[],"e":[]},"x8":{"ao":[]},"JS":{"a6":["t5"]},"EU":{"ao":[]},"JR":{"a6":["ET"]},"a0N":{"b8":[],"aT":[],"e":[]},"yZ":{"b0":[],"af":[],"e":[]},"SD":{"R":[],"e":[]},"a0T":{"b6":[],"bl":[],"O":[]},"Jj":{"p":[],"aI":["p"],"DO":[],"q":[],"ai":[]},"SF":{"i4":[]},"SG":{"b0":[],"af":[],"e":[]},"a_S":{"p":[],"aI":["p"],"q":[],"ai":[]},"ST":{"af":[],"e":[]},"xb":{"af":[],"e":[]},"SR":{"xb":[],"af":[],"e":[]},"xa":{"b6":[],"bl":[],"O":[]},"Ct":{"eF":["kE"],"aT":[],"e":[],"eF.T":"kE"},"F0":{"ft":["1","2"],"af":[],"e":[]},"F1":{"b6":[],"bl":[],"O":[]},"F3":{"ao":[]},"SY":{"b0":[],"af":[],"e":[]},"yS":{"p":[],"aI":["p"],"q":[],"ai":[]},"SX":{"ao":[]},"Hc":{"ao":[]},"T4":{"R":[],"e":[]},"Tc":{"R":[],"e":[]},"Fk":{"a_":[],"e":[]},"a1a":{"a6":["Fk"]},"P4":{"fV":[]},"P5":{"fV":[]},"Pg":{"fV":[]},"Pi":{"fV":[]},"Pf":{"fV":[]},"Ph":{"fV":[]},"Pj":{"fV":[]},"Pe":{"fV":[]},"Eb":{"p":[],"aI":["p"],"q":[],"ai":[]},"wP":{"p":[],"aI":["p"],"q":[],"ai":[]},"xv":{"b0":[],"af":[],"e":[]},"Ti":{"b0":[],"af":[],"e":[]},"WM":{"dg":[]},"Ft":{"b0":[],"af":[],"e":[]},"nH":{"cI":[],"b8":[],"aT":[],"e":[]},"b_s":{"cI":[],"b8":[],"aT":[],"e":[]},"JI":{"a_":[],"e":[]},"Z5":{"R":[],"e":[]},"ag":{"R":[],"e":[]},"a0v":{"a6":["JI"]},"a0b":{"R":[],"e":[]},"a0u":{"ao":[]},"Bd":{"ba":[]},"q8":{"ba":[]},"qa":{"ba":[]},"q9":{"ba":[]},"B7":{"ba":[]},"lN":{"ba":[]},"lQ":{"ba":[]},"qj":{"ba":[]},"qe":{"ba":[]},"qf":{"ba":[]},"hX":{"ba":[]},"nP":{"ba":[]},"lR":{"ba":[]},"lP":{"ba":[]},"qi":{"ba":[]},"lO":{"ba":[]},"mv":{"ba":[]},"aaW":{"ba":[]},"mw":{"ba":[]},"ko":{"ba":[]},"me":{"ba":[]},"ox":{"ba":[]},"jG":{"ba":[]},"oY":{"ba":[]},"j0":{"ba":[]},"oV":{"ba":[]},"ks":{"ba":[]},"kt":{"ba":[]},"NX":{"ba":[]},"fL":{"f1":["p"],"f0":[],"dK":["p"],"cN":[]},"pm":{"a_":[],"e":[]},"JJ":{"a_":[],"e":[]},"FG":{"a_":[],"e":[]},"JM":{"a6":["pm"]},"JK":{"a6":["JJ"]},"Ke":{"a6":["FG"]},"AK":{"cv":["v3"],"ao":[],"d2":[]},"FN":{"a_":[],"e":[]},"Hs":{"b8":[],"aT":[],"e":[]},"a1E":{"a6":["FN"]},"Vu":{"ao":[]},"FS":{"a_":[],"e":[]},"a1G":{"a6":["FS"]},"zO":{"a_":[],"e":[]},"d8":{"b0":[],"af":[],"e":[]},"Gq":{"a6":["zO"]},"SN":{"a_":[],"e":[]},"CT":{"a_":[],"e":[]},"S2":{"a_":[],"e":[]},"RY":{"a_":[],"e":[]},"SH":{"a_":[],"e":[]},"NH":{"a_":[],"e":[]},"oe":{"a_":[],"e":[]},"M3":{"a_":[],"e":[]},"xF":{"a_":[],"e":[]},"xG":{"a6":["xF<1>"]},"G3":{"cv":["xH"],"ao":[]},"tn":{"a_":[],"e":[]},"z8":{"a6":["tn<1>"]},"G8":{"a_":[],"e":[]},"u5":{"b8":[],"aT":[],"e":[]},"IF":{"b8":[],"aT":[],"e":[]},"KA":{"a6":["G8"],"d2":[]},"Ri":{"R":[],"e":[]},"IR":{"af":[],"e":[]},"a_g":{"b6":[],"bl":[],"O":[]},"Hd":{"js":["1"],"fp":[]},"Gb":{"ep":[],"af":[],"e":[]},"a2l":{"b6":[],"bl":[],"O":[]},"SC":{"ep":[],"af":[],"e":[]},"KB":{"b8":[],"aT":[],"e":[]},"TX":{"R":[],"e":[]},"a2m":{"b0":[],"af":[],"e":[]},"a0_":{"p":[],"aI":["p"],"q":[],"ai":[]},"xP":{"eD":[]},"a2r":{"eF":["iY"],"aT":[],"e":[],"eF.T":"iY"},"UI":{"b0":[],"af":[],"e":[]},"Jg":{"p":[],"aI":["p"],"q":[],"ai":[]},"cu":{"U2":[]},"l1":{"G":[],"bT":["G"]},"p0":{"cv":["bm<cu>"],"ao":[]},"Uw":{"U2":[]},"n6":{"l1":[],"G":[],"bT":["G"]},"U0":{"dt":[],"bT":["dt"]},"KD":{"dt":[],"bT":["dt"]},"U_":{"aX":[],"bT":["aX?"]},"Ym":{"bT":["aX?"]},"jb":{"aX":[],"bT":["aX?"]},"U1":{"n":[],"bT":["n"]},"a2t":{"n":[],"bT":["n"]},"I2":{"bT":["1?"]},"bD":{"bT":["1"]},"il":{"bT":["1"]},"aU":{"bT":["1"]},"TE":{"bU":[]},"vK":{"nX":[]},"C2":{"nX":[]},"kz":{"bU":[]},"A1":{"iw":[]},"A2":{"iw":[]},"uA":{"iw":[]},"BK":{"a_":[],"e":[]},"HA":{"a6":["BK"]},"RQ":{"bU":[]},"uL":{"cU":["S<k>"],"cU.T":"S<k>"},"nB":{"bU":[]},"Tb":{"Fd":[]},"Au":{"c3":["j","j","1"],"aH":["j","1"],"c3.V":"1","c3.K":"j","c3.C":"j"},"S3":{"el":[]},"S4":{"el":[]},"S5":{"el":[]},"S6":{"el":[]},"S7":{"el":[]},"S8":{"el":[]},"S9":{"el":[]},"Sa":{"el":[]},"Sb":{"el":[]},"kc":{"bU":[]},"uH":{"bU":[]},"Ai":{"bU":[]},"qB":{"bU":[]},"fQ":{"bU":[]},"kf":{"bU":[]},"Mr":{"R":[],"e":[]},"XW":{"R":[],"e":[]},"tN":{"R":[],"e":[]},"XV":{"R":[],"e":[]},"lr":{"bU":[]},"tv":{"a_":[],"e":[]},"xT":{"R":[],"e":[]},"pM":{"a_":[],"e":[]},"GL":{"a6":["tv"]},"Vf":{"R":[],"e":[]},"WV":{"R":[],"e":[]},"WW":{"R":[],"e":[]},"XX":{"R":[],"e":[]},"Xg":{"R":[],"e":[]},"a09":{"R":[],"e":[]},"a0a":{"R":[],"e":[]},"tU":{"R":[],"e":[]},"tT":{"R":[],"e":[]},"UN":{"a6":["pM"]},"H9":{"R":[],"e":[]},"Ih":{"R":[],"e":[]},"W0":{"R":[],"e":[]},"GM":{"R":[],"e":[]},"Jn":{"R":[],"e":[]},"X0":{"R":[],"e":[]},"Ve":{"R":[],"e":[]},"Jr":{"R":[],"e":[]},"K2":{"R":[],"e":[]},"a2o":{"R":[],"e":[]},"a2n":{"R":[],"e":[]},"Ak":{"a_":[],"e":[]},"xY":{"R":[],"e":[]},"GF":{"a6":["Ak"]},"xV":{"R":[],"e":[]},"tu":{"R":[],"e":[]},"xX":{"R":[],"e":[]},"j1":{"R":[],"e":[]},"GG":{"R":[],"e":[]},"V2":{"R":[],"e":[]},"V0":{"R":[],"e":[]},"tt":{"R":[],"e":[]},"V_":{"R":[],"e":[]},"V1":{"R":[],"e":[]},"V3":{"R":[],"e":[]},"V4":{"R":[],"e":[]},"y3":{"R":[],"e":[]},"ND":{"R":[],"e":[]},"W8":{"R":[],"e":[]},"W6":{"R":[],"e":[]},"W7":{"R":[],"e":[]},"Wh":{"R":[],"e":[]},"Wc":{"R":[],"e":[]},"Wa":{"R":[],"e":[]},"Wd":{"R":[],"e":[]},"We":{"R":[],"e":[]},"tz":{"R":[],"e":[]},"Wg":{"R":[],"e":[]},"Wb":{"R":[],"e":[]},"h7":{"R":[],"e":[]},"Wf":{"R":[],"e":[]},"NE":{"R":[],"e":[]},"W9":{"R":[],"e":[]},"NF":{"R":[],"e":[]},"Ha":{"R":[],"e":[]},"l7":{"R":[],"e":[]},"Oi":{"R":[],"e":[]},"a0x":{"R":[],"e":[]},"a0w":{"R":[],"e":[]},"Oj":{"R":[],"e":[]},"vw":{"R":[],"e":[]},"X6":{"R":[],"e":[]},"X5":{"R":[],"e":[]},"X4":{"R":[],"e":[]},"BB":{"a_":[],"e":[]},"X3":{"a6":["BB"]},"X2":{"R":[],"e":[]},"Ok":{"R":[],"e":[]},"Qd":{"R":[],"e":[]},"Oo":{"R":[],"e":[]},"Yn":{"R":[],"e":[]},"nO":{"R":[],"e":[]},"BD":{"a_":[],"e":[]},"Hx":{"a6":["BD"]},"Ol":{"R":[],"e":[]},"Om":{"R":[],"e":[]},"GY":{"R":[],"e":[]},"On":{"R":[],"e":[]},"BC":{"R":[],"e":[]},"qg":{"R":[],"e":[]},"BE":{"R":[],"e":[]},"Oq":{"R":[],"e":[]},"Hy":{"R":[],"e":[]},"SB":{"R":[],"e":[]},"id":{"R":[],"e":[]},"Ag":{"a_":[],"e":[]},"Iv":{"a_":[],"e":[]},"xW":{"R":[],"e":[]},"yz":{"R":[],"e":[]},"to":{"a_":[],"e":[]},"u_":{"a_":[],"e":[]},"Qb":{"R":[],"e":[]},"GE":{"a6":["Ag"]},"Iw":{"a6":["Iv"]},"Zc":{"R":[],"e":[]},"Z7":{"R":[],"e":[]},"Ze":{"R":[],"e":[]},"yB":{"R":[],"e":[]},"yD":{"R":[],"e":[]},"Zg":{"R":[],"e":[]},"Za":{"R":[],"e":[]},"Z9":{"R":[],"e":[]},"Zd":{"R":[],"e":[]},"Z8":{"R":[],"e":[]},"Zb":{"R":[],"e":[]},"Zf":{"R":[],"e":[]},"yC":{"R":[],"e":[]},"Uz":{"R":[],"e":[]},"UA":{"R":[],"e":[]},"XB":{"R":[],"e":[]},"UB":{"R":[],"e":[]},"Gu":{"R":[],"e":[]},"XC":{"R":[],"e":[]},"XE":{"R":[],"e":[]},"tK":{"R":[],"e":[]},"XD":{"R":[],"e":[]},"Gk":{"a6":["to"]},"a0P":{"R":[],"e":[]},"U9":{"R":[],"e":[]},"JO":{"a6":["u_"]},"YN":{"R":[],"e":[]},"a0I":{"R":[],"e":[]},"W1":{"R":[],"e":[]},"H7":{"R":[],"e":[]},"a1L":{"R":[],"e":[]},"a1M":{"R":[],"e":[]},"Z0":{"R":[],"e":[]},"Gj":{"R":[],"e":[]},"Vd":{"R":[],"e":[]},"la":{"R":[],"e":[]},"pj":{"R":[],"e":[]},"k0":{"R":[],"e":[]},"tp":{"R":[],"e":[]},"uu":{"a_":[],"e":[]},"Gp":{"a6":["uu"]},"vI":{"a_":[],"e":[]},"HO":{"a6":["vI"]},"QN":{"bU":[]},"Os":{"jM":[],"cr":["jM"]},"yb":{"mC":[],"cr":["T1"]},"jM":{"cr":["jM"]},"T0":{"jM":[],"cr":["jM"]},"T1":{"cr":["T1"]},"T2":{"cr":["T1"]},"T3":{"bU":[]},"xe":{"bR":[],"bU":[]},"xf":{"cr":["T1"]},"mC":{"cr":["T1"]},"Td":{"bR":[],"bU":[]},"Hv":{"cU":["1"]},"p8":{"cU":["1"],"cU.T":"1"},"Hw":{"mF":["1"]},"b1q":{"a_":[],"e":[]},"b_V":{"a_":[],"e":[]},"b_W":{"a6":["b_V"]},"b5J":{"b8":[],"aT":[],"e":[]},"b4K":{"b8":[],"aT":[],"e":[]},"aKe":{"h5":[]}}'))
 A.b5R(v.typeUniverse,JSON.parse('{"PJ":1,"jW":1,"SL":1,"SM":1,"O7":1,"OB":1,"BJ":1,"TN":1,"xI":1,"KT":2,"AO":1,"f3":1,"d_":1,"wi":1,"mF":1,"ai3":1,"im":1,"j9":1,"Fc":1,"UH":1,"tx":1,"K5":1,"Ws":1,"tB":1,"IE":1,"y6":1,"a12":1,"HH":2,"yf":2,"xJ":2,"Kr":2,"CM":2,"JY":2,"JX":2,"JZ":1,"K_":1,"Ks":2,"N1":1,"z0":1,"cr":1,"u6":1,"Bz":1,"NL":1,"zS":1,"va":1,"GT":1,"GU":1,"GV":1,"Dr":1,"KP":1,"GZ":1,"cv":1,"kp":1,"B4":1,"Ds":2,"L_":1,"Q2":1,"Ib":1,"za":1,"GW":1,"PI":1,"dK":1,"eU":1,"DP":1,"AY":1,"yN":1,"Jd":1,"wQ":1,"K9":1,"L6":1,"L7":1,"nt":1,"O0":1,"ye":1,"vT":1,"ux":1,"ym":1,"AP":1,"TD":1,"NP":1,"aQR":1,"er":1,"iT":1,"Jm":1,"zb":1,"b2w":1,"wo":1,"PU":1,"DA":1,"wG":1,"tR":1,"yM":1,"F0":2,"JT":2,"fI":1,"e1":1,"Km":1,"Hv":1,"Hw":1,"aaZ":1}'))
-var u={S:"\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\u03f6\x00\u0404\u03f4 \u03f4\u03f6\u01f6\u01f6\u03f6\u03fc\u01f4\u03ff\u03ff\u0584\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u05d4\u01f4\x00\u01f4\x00\u0504\u05c4\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u0400\x00\u0400\u0200\u03f7\u0200\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u0200\u0200\u0200\u03f7\x00",t:"\x01\x01)==\xb5\x8d\x15)QeyQQ\xc9===\xf1\xf0\x00\x01)==\xb5\x8d\x15)QeyQQ\xc9===\xf1\xf0\x01\x01)==\xb5\x8d\x15(QeyQQ\xc9===\xf1\xf0\x01\x01(<<\xb4\x8c\x15(PdxPP\xc8<<<\xf1\xf0\x01\x01)==\xb5\x8d\x15(PeyQQ\xc9===\xf1\xf0\x01\x01)==\xb5\x8d\x15(PdyPQ\xc9===\xf1\xf0\x01\x01)==\xb5\x8d\x15(QdxPP\xc9===\xf1\xf0\x01\x01)==\xb5\x8d\x15(QeyQQ\xc9\u011a==\xf1\xf0\xf0\xf0\xf0\xf0\xf0\xdc\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\x01\x01)==\u0156\x8d\x15(QeyQQ\xc9===\xf1\xf0\x01\x01)==\xb5\x8d\x15(QeyQQ\xc9\u012e\u012e\u0142\xf1\xf0\x01\x01)==\xa1\x8d\x15(QeyQQ\xc9===\xf1\xf0\x00\x00(<<\xb4\x8c\x14(PdxPP\xc8<<<\xf0\xf0\x01\x01)==\xb5\x8d\x15)QeyQQ\xc9===\xf0\xf0??)\u0118=\xb5\x8c?)QeyQQ\xc9=\u0118\u0118?\xf0??)==\xb5\x8d?)QeyQQ\xc9\u012c\u012c\u0140?\xf0??)==\xb5\x8d?)QeyQQ\xc8\u0140\u0140\u0140?\xf0\xdc\xdc\xdc\xdc\xdc\u0168\xdc\xdc\xdc\xdc\xdc\xdc\xdc\xdc\xdc\xdc\xdc\xdc\xdc\x00\xa1\xa1\xa1\xa1\xa1\u0154\xa1\xa1\xa1\xa1\xa1\xa1\xa1\xa1\xa1\xa1\xa1\xa1\xa1\x00",e:"\x10\x10\b\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x10\x10\x10\x10\x10\x02\x02\x02\x04\x04\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x01\x01\x01\x01\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x0e\x02\x02\x02\x0e\x0e\x0e\x0e\x02\x02\x10\x02\x10\x04\x10\x04\x04\x02\x10\x10\x10\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x06\x02\x02\x02\x02\x06\x02\x06\x02\x02\x02\x02\x06\x06\x06\x02\x06\x02\x02\x02\x02\x02\x02\x02\x02\x04\x10\x10\x10\x10\x02\x02\x04\x04\x02\x02\x04\x04\x11\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x0e\x0e\x02\x0e\x10\x04\x04\x04\x04\x02\x10\x10\x10\x02\x10\x10\x10\x11\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x0e\x0e\x0e\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x04\x10\x10\x10\x10\x10\x10\x02\x10\x10\x04\x04\x10\x10\x02\x10\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x04\x04\x04\x04\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x10\x10\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x04\x10\x10\x10\x10\x10\x10\x10\x04\x04\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x02\x10\x02\x10\x10\x10\x02\x10\x10\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x04\x04\x10\x02\x02\x02\x02\x04\x10\x10\x10\x10\x10\x10\x10\x10\x04\x04\x04\x04\x11\x04\x04\x02\x10\x10\x10\x10\x10\x10\x10\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\f\r\r\r\r\r\r\r\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\x02\x02\x02\x02\x04\x10\x10\x10\x10\x02\x04\x04\x04\x02\x04\x04\x04\x11\b\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x01\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x10\x10\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x10\x10\x10\x10\x10\x10\x10\x02\x10\x10\x02\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x02\x02\x02\x10\x10\x10\x10\x10\x10\x01\x01\x01\x01\x01\x01\x01\x01\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x06\x06\x06\x02\x02\x02\x02\x02\x10\x04\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x04\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\x02\x02\x02\x04\x04\x10\x04\x04\x10\x04\x04\x02\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x02\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x02\x02\x02\x10\x04\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x0e\x0e\x02\x0e\x0e\x0e\x0e\x0e\x02\x02\x10\x02\x10\x10\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x0e\x0e\x02\x0e\x0e\x0e\x0e\x0e\x02\x02\x10\x02\x04\x04\x10\x10\x10\x10\x02\x02\x04\x04\x02\x02\x04\x04\x11\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x02\x02\x02\x02\x0e\x0e\x02\x0e\n\n\n\n\n\n\n\x02\x02\x02\x02\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\x10\x10\b\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x10\x10\x10\x10\x10\x10\x10\x02\x10\x10\x10\x10\x10\x10\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x04\x10\x10\x10\x10\x10\x10\x10\x04\x10\x10\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x02\x02\x02\x10\x02\x10\x10\x02\x10\x10\x10\x10\x10\x10\x10\b\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x04\x04\x02\x10\x10\x02\x04\x04\x10\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x04\x04\x04\x04\x02\x04\x04\x02\x02\x10\x10\x10\x10\b\x04\b\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x10\x10\x10\x10\x02\x02\x10\x10\x04\x04\x04\x04\x10\x02\x02\x02\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x07\x01\x01\x00\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x02\x02\x02\x02\x04\x04\x10\x10\x04\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\b\x02\x10\x10\x10\x10\x02\x10\x10\x10\x02\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x10\x04\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x10\x02\x02\x04\x10\x10\x02\x02\x02\x02\x02\x02\x10\x04\x10\x10\x04\x04\x04\x10\x04\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x01\x03\x0f\x01\x01\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x04\x04\x10\x10\x04\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x01\x01\x01\x01\x01\x01\x01\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x01\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x10\x10\x10\x02\x02\x10\x10\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x0e\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x04\x10\x10\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x10\x04\x04\x10\x10\x10\x02\x10\x02\x04\x04\x04\x04\x04\x04\x04\x10\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x04\x10\x10\x10\x10\x04\x04\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x04\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x10\x04\x10\x02\b\b\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x04\x04\x10\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x10\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x04\x04\x04\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x10\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\b\b\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x04\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x10\x10\x02\x10\x04\x04\x02\x02\x02\x04\x04\x04\x02\x04\x04\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x04\x10\x10\x10\x10\x04\x04\x10\x10\x04\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x10\x04\x10\x04\x04\x04\x04\x02\x02\x04\x04\x02\x02\x04\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x02\x02\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x04\x10\x10\x10\x10\x10\x10\x02\x10\x02\x02\x10\x02\x10\x10\x10\x04\x02\x04\x04\x10\x10\x10\b\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x10\x10\x02\x02\x02\x02\x10\x10\x02\x02\x10\x10\x10\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\b\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x10\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x04\x04\x04\x04\x10\x10\x04\x04\x04\x02\x02\x02\x02\x04\x04\x10\x04\x04\x04\x04\x04\x04\x10\x10\x10\x02\x02\x02\x02\x10\x10\x10\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x10\x04\x10\x02\x04\x04\x10\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x10\x10\x10\x10\x04\x04\x10\x10\x02\x02\b\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\b\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x10\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x04\x10\x10\x10\x10\x02\x02\x04\x04\x04\x04\x10\x10\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x10\x02\x02\x10\x10\x10\x10\x04\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x04\x04\x10\x10\x10\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x04\x10\x10\x10\x10\x10\x10\x04\x10\x04\x04\x10\x04\x10\x10\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x10\x10\x10\x04\x04\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x10\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\b\b\b\b\b\b\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x01\x02\x02\x02\x10\x10\x02\x10\x10\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x06\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x04\b\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x04\x04\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\b\b\b\b\b\b\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\n\x02\x02\x02\n\n\n\n\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x06\x02\x06\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x10\x02\x10\x02\x02\x02\x02\x04\x04\x04\x04\x04\x04\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x04\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x04\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x04\x10\x10\x10\x10\x10\x02\x10\x10\x04\x02\x04\x04\x11\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x10\x10\x04\x04\x02\x02\x02\x02\x02\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02",U:"\x15\x01)))\xb5\x8d\x01=Qeyey\xc9)))\xf1\xf0\x15\x01)))\xb5\x8d\x00=Qeyey\xc9)))\xf1\xf0\x15\x01)((\xb5\x8d\x01=Qeyey\xc9(((\xf1\xf0\x15\x01(((\xb4\x8c\x01<Pdxdx\xc8(((\xf1\xf0\x15\x01)((\xb5\x8d\x01=Pdydx\xc9(((\xf1\xf0\x15\x01)((\xb5\x8d\x01=Qdxey\xc9(((\xf1\xf0\x15\x01)((\xb5\x8d\x01=Qexey\xc9(((\xf1\xf0\x15\x01)\x8c(\xb5\x8d\x01=Qeyey\xc9\xa0\x8c\x8c\xf1\xf0\x15\x01)((\xb5\x8c\x01=Qeyey\xc9(((\xf1\xf0\x15\x01)(((\x8d\x01=Qeyey\xc9(((\xf1\xf0\x15\x01)((\xb5\x8d\x01=Qeyey\xc9\xc8\xc8\xdc\xf1\xf0\x15\x01)((\xb5\x8d\x01=Qeyey\xc8\xdc\xdc\xdc\xf1\xf0\x14\x00(((\xb4\x8c\x00<Pdxdx\xc8(((\xf0\xf0\x15\x01)))\xb5\x8d\x01=Qeyey\xc9)))\xf0\xf0\x15\x01(\u01b8(\u01e0\x8d\x01<Pdxdx\xc8\u012c\u0140\u0154\xf0\xf0\x15\x01)((\xb5\u011a\x01=Qeyey\u012e\u0190\u0190\u01a4\xf1\xf0\x15\x01)\u01b8(\xb5\x8d\x01=Qeyey\u012e\u0168\u0140\u0154\xf1\xf0\x15\x01)\u01b8(\xb5\x8d\x01=Qeyey\u0142\u017c\u0154\u0154\xf1\xf0\x15\x01)((\xb5\u011a\x01=Qeyey\xc9\u0190\u0190\u01a4\xf1\xf0\x15\x01)((\xb5\u011a\x01=Qeyey\u0142\u01a4\u01a4\u01a4\xf1\xf0\x15\x01)((\xb5\x8d\x01=Qeyey\u012e\u0190\u0190\u01a4\xf1\xf0\x15\x01)((\xb5\x8d\x01=Qeyey\u0142\u01a4\u01a4\u01a4\xf1\xf0\x15\x01)\u01b8(\xb5\x8d\x01=Qeyey\xc9\u01cc\u01b8\u01b8\xf1\xf0\x15\x01)((\xb5\u011a\x01=Qeyey\xc9(((\xf1\xf0\x15\x01)((\u0156\x8d\x01=Qeyey\xc9(((\xf1\xf0",D:" must not be greater than the number of characters in the file, ",r:'"recorder" must not already be associated with another Canvas.',T:"% of the way to being a CircleBorder that is ",z:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/",q:"Called rasterize() with a different number of canvases and pictures.",A:"Cannot extract a file path from a URI with a fragment component",B:"Cannot extract a file path from a URI with a query component",Q:"Cannot extract a non-Windows file path from a file URI with an authority",c:"Cannot fire new event. Controller is already firing an event",w:"Error handler must accept one Object or one Object and a StackTrace as arguments, and return a value of the returned future's type",s:"Escribe un gasto y un plan mensual mayor que cero.",p:"Failed to convert text image bitmap to an SkImage.",C:"La API respondio con un formato inesperado.",g:"No se encontro el contenedor del navegador.",V:"Stream has been disposed.\nAn ImageStream is considered disposed once at least one listener has been added and subsequently all listeners have been removed and no handles are outstanding from the keepAlive method.\nTo resolve this error, maintain at least one listener on the stream, or create an ImageStreamCompleterHandle from the keepAlive method, or create a new stream for the image.",E:"SystemChrome.setApplicationSwitcherDescription",W:"TextInputClient.updateEditingStateWithDeltas",l:"TextInputClient.updateEditingStateWithTag",u:"There was a problem trying to load FontManifest.json",F:"position:fixed;left:-10000px;top:0;width:1px;height:1px;opacity:0;",j:"\u1132\u166c\u166c\u206f\u11c0\u13fb\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1bff\u1bff\u1bff\u1c36\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1aee\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1fb5\u059c\u266d\u166c\u264e\u166c\u0a70\u175c\u166c\u166c\u1310\u033a\u1ebd\u0a6b\u2302\u166c\u166c\u22fc\u166c\u1ef8\u269d\u132f\u03b8\u166c\u1be8\u166c\u0a71\u0915\u1f5a\u1f6f\u04a2\u0202\u086b\u021a\u029a\u1427\u1518\u0147\u1eab\u13b9\u089f\u08b6\u2a91\u02d8\u086b\u0882\u08d5\u0789\u176a\u251c\u1d6c\u166c\u0365\u037c\u02ba\u22af\u07bf\u07c3\u0238\u024b\u1d39\u1d4e\u054a\u22af\u07bf\u166c\u1456\u2a9f\u166c\u07ce\u2a61\u166c\u166c\u2a71\u1ae9\u166c\u0466\u2a2e\u166c\u133e\u05b5\u0932\u1766\u166c\u166c\u0304\u1e94\u1ece\u1443\u166c\u166c\u166c\u07ee\u07ee\u07ee\u0506\u0506\u051e\u0526\u0526\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u196b\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1798\u1657\u046c\u046c\u166c\u0348\u146f\u166c\u0578\u166c\u166c\u166c\u22ac\u1763\u166c\u166c\u166c\u1f3a\u166c\u166c\u166c\u166c\u166c\u166c\u0482\u166c\u1364\u0322\u166c\u0a6b\u1fc6\u166c\u1359\u1f1f\u270e\u1ee3\u200e\u148e\u166c\u1394\u166c\u2a48\u166c\u166c\u166c\u166c\u0588\u137a\u166c\u166c\u166c\u166c\u166c\u166c\u1bff\u1bff\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u13a9\u13e8\u2574\u12b0\u166c\u166c\u0a6b\u1c35\u166c\u076b\u166c\u166c\u25a6\u2a23\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u0747\u2575\u166c\u166c\u2575\u166c\u256e\u07a0\u166c\u166c\u166c\u166c\u166c\u166c\u257b\u166c\u166c\u166c\u166c\u166c\u166c\u0757\u255d\u0c6d\u0d76\u28f0\u28f0\u28f0\u29ea\u28f0\u28f0\u28f0\u2a04\u2a19\u027a\u2693\u2546\u0832\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u074d\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u084c\u166c\u081e\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u165a\u166c\u166c\u166c\u174d\u166c\u166c\u166c\u1bff\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u0261\u166c\u166c\u0465\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u2676\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u26a4\u196a\u166c\u166c\u046e\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1f13\u12dd\u166c\u166c\u14de\u12ea\u1306\u02f2\u166c\u2a62\u0563\u07f1\u200d\u1d8e\u198c\u1767\u166c\u13d0\u1d80\u1750\u166c\u140b\u176b\u2ab4\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u080e\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04f6\u08f5\u052a\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u174e\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1c36\u1c36\u166c\u166c\u166c\u166c\u166c\u206f\u166c\u166c\u166c\u166c\u196a\u166c\u166c\u12c0\u166c\u166f\u168c\u1912\u166c\u166c\u166c\u166c\u166c\u166c\u0399\u166c\u166c\u1786\u2206\u22bc\u1f8e\u1499\u245b\u1daa\u2387\u20b4\u1569\u2197\u19e6\u0b88\u26b7\u166c\u09e9\u0ab8\u1c46\x00\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u205e\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1868\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1898\u1ac1\u166c\u2754\u166c\u0114\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166cc\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1bff\u166c\u0661\u1627\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u0918\u166c\u166c\u166c\u166c\u166c\u05c6\u1ac1\u16be\u166c\u1af8\u21c3\u166c\u166c\u1a21\u1aad\u166c\u166c\u166c\u166c\u166c\u166c\u28f0\u254e\u0d89\u0f41\u28f0\u0efb\u0e39\u27e0\u0c7c\u28a9\u28f0\u166c\u28f0\u28f0\u28f0\u28f2\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1140\u103c\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c"}
+var u={S:"\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\u03f6\x00\u0404\u03f4 \u03f4\u03f6\u01f6\u01f6\u03f6\u03fc\u01f4\u03ff\u03ff\u0584\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u05d4\u01f4\x00\u01f4\x00\u0504\u05c4\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u0400\x00\u0400\u0200\u03f7\u0200\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u0200\u0200\u0200\u03f7\x00",t:"\x01\x01)==\xb5\x8d\x15)QeyQQ\xc9===\xf1\xf0\x00\x01)==\xb5\x8d\x15)QeyQQ\xc9===\xf1\xf0\x01\x01)==\xb5\x8d\x15(QeyQQ\xc9===\xf1\xf0\x01\x01(<<\xb4\x8c\x15(PdxPP\xc8<<<\xf1\xf0\x01\x01)==\xb5\x8d\x15(PeyQQ\xc9===\xf1\xf0\x01\x01)==\xb5\x8d\x15(PdyPQ\xc9===\xf1\xf0\x01\x01)==\xb5\x8d\x15(QdxPP\xc9===\xf1\xf0\x01\x01)==\xb5\x8d\x15(QeyQQ\xc9\u011a==\xf1\xf0\xf0\xf0\xf0\xf0\xf0\xdc\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\x01\x01)==\u0156\x8d\x15(QeyQQ\xc9===\xf1\xf0\x01\x01)==\xb5\x8d\x15(QeyQQ\xc9\u012e\u012e\u0142\xf1\xf0\x01\x01)==\xa1\x8d\x15(QeyQQ\xc9===\xf1\xf0\x00\x00(<<\xb4\x8c\x14(PdxPP\xc8<<<\xf0\xf0\x01\x01)==\xb5\x8d\x15)QeyQQ\xc9===\xf0\xf0??)\u0118=\xb5\x8c?)QeyQQ\xc9=\u0118\u0118?\xf0??)==\xb5\x8d?)QeyQQ\xc9\u012c\u012c\u0140?\xf0??)==\xb5\x8d?)QeyQQ\xc8\u0140\u0140\u0140?\xf0\xdc\xdc\xdc\xdc\xdc\u0168\xdc\xdc\xdc\xdc\xdc\xdc\xdc\xdc\xdc\xdc\xdc\xdc\xdc\x00\xa1\xa1\xa1\xa1\xa1\u0154\xa1\xa1\xa1\xa1\xa1\xa1\xa1\xa1\xa1\xa1\xa1\xa1\xa1\x00",e:"\x10\x10\b\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x10\x10\x10\x10\x10\x02\x02\x02\x04\x04\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x01\x01\x01\x01\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x0e\x02\x02\x02\x0e\x0e\x0e\x0e\x02\x02\x10\x02\x10\x04\x10\x04\x04\x02\x10\x10\x10\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x06\x02\x02\x02\x02\x06\x02\x06\x02\x02\x02\x02\x06\x06\x06\x02\x06\x02\x02\x02\x02\x02\x02\x02\x02\x04\x10\x10\x10\x10\x02\x02\x04\x04\x02\x02\x04\x04\x11\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x0e\x0e\x02\x0e\x10\x04\x04\x04\x04\x02\x10\x10\x10\x02\x10\x10\x10\x11\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x0e\x0e\x0e\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x04\x10\x10\x10\x10\x10\x10\x02\x10\x10\x04\x04\x10\x10\x02\x10\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x04\x04\x04\x04\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x10\x10\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x04\x10\x10\x10\x10\x10\x10\x10\x04\x04\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x02\x10\x02\x10\x10\x10\x02\x10\x10\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x04\x04\x10\x02\x02\x02\x02\x04\x10\x10\x10\x10\x10\x10\x10\x10\x04\x04\x04\x04\x11\x04\x04\x02\x10\x10\x10\x10\x10\x10\x10\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\f\r\r\r\r\r\r\r\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\x02\x02\x02\x02\x04\x10\x10\x10\x10\x02\x04\x04\x04\x02\x04\x04\x04\x11\b\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x01\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x10\x10\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x10\x10\x10\x10\x10\x10\x10\x02\x10\x10\x02\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x02\x02\x02\x10\x10\x10\x10\x10\x10\x01\x01\x01\x01\x01\x01\x01\x01\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x06\x06\x06\x02\x02\x02\x02\x02\x10\x04\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x04\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\x02\x02\x02\x04\x04\x10\x04\x04\x10\x04\x04\x02\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x02\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x02\x02\x02\x10\x04\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x0e\x0e\x02\x0e\x0e\x0e\x0e\x0e\x02\x02\x10\x02\x10\x10\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x0e\x0e\x02\x0e\x0e\x0e\x0e\x0e\x02\x02\x10\x02\x04\x04\x10\x10\x10\x10\x02\x02\x04\x04\x02\x02\x04\x04\x11\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x02\x02\x02\x02\x0e\x0e\x02\x0e\n\n\n\n\n\n\n\x02\x02\x02\x02\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\x10\x10\b\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x10\x10\x10\x10\x10\x10\x10\x02\x10\x10\x10\x10\x10\x10\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x04\x10\x10\x10\x10\x10\x10\x10\x04\x10\x10\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x02\x02\x02\x10\x02\x10\x10\x02\x10\x10\x10\x10\x10\x10\x10\b\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x04\x04\x02\x10\x10\x02\x04\x04\x10\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x04\x04\x04\x04\x02\x04\x04\x02\x02\x10\x10\x10\x10\b\x04\b\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x10\x10\x10\x10\x02\x02\x10\x10\x04\x04\x04\x04\x10\x02\x02\x02\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x07\x01\x01\x00\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x02\x02\x02\x02\x04\x04\x10\x10\x04\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\b\x02\x10\x10\x10\x10\x02\x10\x10\x10\x02\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x10\x04\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x10\x02\x02\x04\x10\x10\x02\x02\x02\x02\x02\x02\x10\x04\x10\x10\x04\x04\x04\x10\x04\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x01\x03\x0f\x01\x01\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x04\x04\x10\x10\x04\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x01\x01\x01\x01\x01\x01\x01\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x01\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x10\x10\x10\x02\x02\x10\x10\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x0e\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x04\x10\x10\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x10\x04\x04\x10\x10\x10\x02\x10\x02\x04\x04\x04\x04\x04\x04\x04\x10\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x04\x10\x10\x10\x10\x04\x04\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x04\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x10\x04\x10\x02\b\b\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x04\x04\x10\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x10\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x04\x04\x04\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x10\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\b\b\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x04\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x10\x10\x02\x10\x04\x04\x02\x02\x02\x04\x04\x04\x02\x04\x04\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x04\x10\x10\x10\x10\x04\x04\x10\x10\x04\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x10\x04\x10\x04\x04\x04\x04\x02\x02\x04\x04\x02\x02\x04\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x02\x02\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x04\x10\x10\x10\x10\x10\x10\x02\x10\x02\x02\x10\x02\x10\x10\x10\x04\x02\x04\x04\x10\x10\x10\b\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x10\x10\x02\x02\x02\x02\x10\x10\x02\x02\x10\x10\x10\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\b\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x10\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x04\x04\x04\x04\x10\x10\x04\x04\x04\x02\x02\x02\x02\x04\x04\x10\x04\x04\x04\x04\x04\x04\x10\x10\x10\x02\x02\x02\x02\x10\x10\x10\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x10\x04\x10\x02\x04\x04\x10\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x10\x10\x10\x10\x04\x04\x10\x10\x02\x02\b\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\b\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x10\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x04\x10\x10\x10\x10\x02\x02\x04\x04\x04\x04\x10\x10\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x10\x02\x02\x10\x10\x10\x10\x04\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x04\x04\x10\x10\x10\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x04\x10\x10\x10\x10\x10\x10\x04\x10\x04\x04\x10\x04\x10\x10\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x10\x10\x10\x04\x04\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x10\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\b\b\b\b\b\b\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x01\x02\x02\x02\x10\x10\x02\x10\x10\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x06\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x04\b\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x04\x04\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\b\b\b\b\b\b\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\n\x02\x02\x02\n\n\n\n\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x06\x02\x06\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x10\x02\x10\x02\x02\x02\x02\x04\x04\x04\x04\x04\x04\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x04\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x04\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x04\x10\x10\x10\x10\x10\x02\x10\x10\x04\x02\x04\x04\x11\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x10\x10\x04\x04\x02\x02\x02\x02\x02\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02",U:"\x15\x01)))\xb5\x8d\x01=Qeyey\xc9)))\xf1\xf0\x15\x01)))\xb5\x8d\x00=Qeyey\xc9)))\xf1\xf0\x15\x01)((\xb5\x8d\x01=Qeyey\xc9(((\xf1\xf0\x15\x01(((\xb4\x8c\x01<Pdxdx\xc8(((\xf1\xf0\x15\x01)((\xb5\x8d\x01=Pdydx\xc9(((\xf1\xf0\x15\x01)((\xb5\x8d\x01=Qdxey\xc9(((\xf1\xf0\x15\x01)((\xb5\x8d\x01=Qexey\xc9(((\xf1\xf0\x15\x01)\x8c(\xb5\x8d\x01=Qeyey\xc9\xa0\x8c\x8c\xf1\xf0\x15\x01)((\xb5\x8c\x01=Qeyey\xc9(((\xf1\xf0\x15\x01)(((\x8d\x01=Qeyey\xc9(((\xf1\xf0\x15\x01)((\xb5\x8d\x01=Qeyey\xc9\xc8\xc8\xdc\xf1\xf0\x15\x01)((\xb5\x8d\x01=Qeyey\xc8\xdc\xdc\xdc\xf1\xf0\x14\x00(((\xb4\x8c\x00<Pdxdx\xc8(((\xf0\xf0\x15\x01)))\xb5\x8d\x01=Qeyey\xc9)))\xf0\xf0\x15\x01(\u01b8(\u01e0\x8d\x01<Pdxdx\xc8\u012c\u0140\u0154\xf0\xf0\x15\x01)((\xb5\u011a\x01=Qeyey\u012e\u0190\u0190\u01a4\xf1\xf0\x15\x01)\u01b8(\xb5\x8d\x01=Qeyey\u012e\u0168\u0140\u0154\xf1\xf0\x15\x01)\u01b8(\xb5\x8d\x01=Qeyey\u0142\u017c\u0154\u0154\xf1\xf0\x15\x01)((\xb5\u011a\x01=Qeyey\xc9\u0190\u0190\u01a4\xf1\xf0\x15\x01)((\xb5\u011a\x01=Qeyey\u0142\u01a4\u01a4\u01a4\xf1\xf0\x15\x01)((\xb5\x8d\x01=Qeyey\u012e\u0190\u0190\u01a4\xf1\xf0\x15\x01)((\xb5\x8d\x01=Qeyey\u0142\u01a4\u01a4\u01a4\xf1\xf0\x15\x01)\u01b8(\xb5\x8d\x01=Qeyey\xc9\u01cc\u01b8\u01b8\xf1\xf0\x15\x01)((\xb5\u011a\x01=Qeyey\xc9(((\xf1\xf0\x15\x01)((\u0156\x8d\x01=Qeyey\xc9(((\xf1\xf0",D:" must not be greater than the number of characters in the file, ",r:'"recorder" must not already be associated with another Canvas.',T:"% of the way to being a CircleBorder that is ",z:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/",q:"Called rasterize() with a different number of canvases and pictures.",A:"Cannot extract a file path from a URI with a fragment component",B:"Cannot extract a file path from a URI with a query component",Q:"Cannot extract a non-Windows file path from a file URI with an authority",c:"Cannot fire new event. Controller is already firing an event",w:"Error handler must accept one Object or one Object and a StackTrace as arguments, and return a value of the returned future's type",s:"Escribe un gasto y un plan mensual mayor que cero.",p:"Failed to convert text image bitmap to an SkImage.",W:"La API respondi\xf3 con un formato inesperado.",I:"No se encontr\xf3 el contenedor del navegador.",V:"Stream has been disposed.\nAn ImageStream is considered disposed once at least one listener has been added and subsequently all listeners have been removed and no handles are outstanding from the keepAlive method.\nTo resolve this error, maintain at least one listener on the stream, or create an ImageStreamCompleterHandle from the keepAlive method, or create a new stream for the image.",E:"SystemChrome.setApplicationSwitcherDescription",X:"TextInputClient.updateEditingStateWithDeltas",l:"TextInputClient.updateEditingStateWithTag",u:"There was a problem trying to load FontManifest.json",F:"position:fixed;left:-10000px;top:0;width:1px;height:1px;opacity:0;",j:"\u1132\u166c\u166c\u206f\u11c0\u13fb\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1bff\u1bff\u1bff\u1c36\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1aee\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1fb5\u059c\u266d\u166c\u264e\u166c\u0a70\u175c\u166c\u166c\u1310\u033a\u1ebd\u0a6b\u2302\u166c\u166c\u22fc\u166c\u1ef8\u269d\u132f\u03b8\u166c\u1be8\u166c\u0a71\u0915\u1f5a\u1f6f\u04a2\u0202\u086b\u021a\u029a\u1427\u1518\u0147\u1eab\u13b9\u089f\u08b6\u2a91\u02d8\u086b\u0882\u08d5\u0789\u176a\u251c\u1d6c\u166c\u0365\u037c\u02ba\u22af\u07bf\u07c3\u0238\u024b\u1d39\u1d4e\u054a\u22af\u07bf\u166c\u1456\u2a9f\u166c\u07ce\u2a61\u166c\u166c\u2a71\u1ae9\u166c\u0466\u2a2e\u166c\u133e\u05b5\u0932\u1766\u166c\u166c\u0304\u1e94\u1ece\u1443\u166c\u166c\u166c\u07ee\u07ee\u07ee\u0506\u0506\u051e\u0526\u0526\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u196b\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1798\u1657\u046c\u046c\u166c\u0348\u146f\u166c\u0578\u166c\u166c\u166c\u22ac\u1763\u166c\u166c\u166c\u1f3a\u166c\u166c\u166c\u166c\u166c\u166c\u0482\u166c\u1364\u0322\u166c\u0a6b\u1fc6\u166c\u1359\u1f1f\u270e\u1ee3\u200e\u148e\u166c\u1394\u166c\u2a48\u166c\u166c\u166c\u166c\u0588\u137a\u166c\u166c\u166c\u166c\u166c\u166c\u1bff\u1bff\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u13a9\u13e8\u2574\u12b0\u166c\u166c\u0a6b\u1c35\u166c\u076b\u166c\u166c\u25a6\u2a23\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u0747\u2575\u166c\u166c\u2575\u166c\u256e\u07a0\u166c\u166c\u166c\u166c\u166c\u166c\u257b\u166c\u166c\u166c\u166c\u166c\u166c\u0757\u255d\u0c6d\u0d76\u28f0\u28f0\u28f0\u29ea\u28f0\u28f0\u28f0\u2a04\u2a19\u027a\u2693\u2546\u0832\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u074d\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u084c\u166c\u081e\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u165a\u166c\u166c\u166c\u174d\u166c\u166c\u166c\u1bff\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u0261\u166c\u166c\u0465\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u2676\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u26a4\u196a\u166c\u166c\u046e\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1f13\u12dd\u166c\u166c\u14de\u12ea\u1306\u02f2\u166c\u2a62\u0563\u07f1\u200d\u1d8e\u198c\u1767\u166c\u13d0\u1d80\u1750\u166c\u140b\u176b\u2ab4\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u080e\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04f6\u08f5\u052a\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u174e\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1c36\u1c36\u166c\u166c\u166c\u166c\u166c\u206f\u166c\u166c\u166c\u166c\u196a\u166c\u166c\u12c0\u166c\u166f\u168c\u1912\u166c\u166c\u166c\u166c\u166c\u166c\u0399\u166c\u166c\u1786\u2206\u22bc\u1f8e\u1499\u245b\u1daa\u2387\u20b4\u1569\u2197\u19e6\u0b88\u26b7\u166c\u09e9\u0ab8\u1c46\x00\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u205e\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1868\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1898\u1ac1\u166c\u2754\u166c\u0114\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166cc\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1bff\u166c\u0661\u1627\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u0918\u166c\u166c\u166c\u166c\u166c\u05c6\u1ac1\u16be\u166c\u1af8\u21c3\u166c\u166c\u1a21\u1aad\u166c\u166c\u166c\u166c\u166c\u166c\u28f0\u254e\u0d89\u0f41\u28f0\u0efb\u0e39\u27e0\u0c7c\u28a9\u28f0\u166c\u28f0\u28f0\u28f0\u28f2\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1140\u103c\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c"}
 var t=(function rtii(){var s=A.av
 return{S6:s("@<U2>"),vH:s("aYP"),od:s("bi<ba>"),gj:s("aYS<Q>"),pC:s("hg"),so:s("bG<f>"),v:s("bG<J>"),Bs:s("bG<G?>"),ph:s("zT<kV>"),BS:s("uz"),zf:s("M8"),IW:s("pH"),HQ:s("je"),qH:s("aYY"),s1:s("zX"),vp:s("pI"),S7:s("A_"),jo:s("a51"),Ak:s("ns"),rB:s("pJ"),tJ:s("iw"),Fc:s("Mk"),r0:s("kg"),dP:s("fj"),Al:s("nv<Q?>"),m_:s("cL"),k:s("a2"),q:s("f0"),rf:s("ji"),yR:s("dA"),qK:s("bz"),FQ:s("bA"),T0:s("Ah"),du:s("jj"),IY:s("MP"),VX:s("lx"),_b:s("hR<dA>"),Mt:s("hR<K>"),Xj:s("aZC"),pI:s("kk"),V4:s("dp"),wY:s("dc<nl>"),nz:s("dc<nz>"),OX:s("dc<ho>"),vr:s("dc<aaW>"),fN:s("dc<ox>"),Tx:s("dc<jG>"),fn:s("dc<eV>"),j5:s("dc<oV>"),_n:s("dc<oY>"),ZQ:s("dc<j0>"),Am:s("aZF"),WG:s("Au<j>"),d0:s("ej<cY<@>?,cY<@>>"),aL:s("aZO"),Lh:s("Ax"),XY:s("kl"),PO:s("AA"),m6:s("AC"),Bn:s("uX"),S3:s("AD"),BQ:s("uY"),nR:s("AF"),Hz:s("hk"),hP:s("fl"),G:s("G"),IC:s("ez"),b8:s("cr<@>"),Ss:s("dT"),id:s("nE"),qO:s("q0<Fj,@>"),li:s("c4<j,j>"),eL:s("c4<j,k>"),fF:s("fm<j>"),Nq:s("lE"),a9:s("f1<p>"),vn:s("AQ"),pU:s("a8<q,dK<q>>"),ho:s("AT"),H5:s("b_g"),HY:s("fS"),ip:s("B_"),I7:s("vh"),HD:s("hn"),Hw:s("iz"),l4:s("b_p"),Uf:s("nG"),XP:s("b_s"),yS:s("nH"),Je:s("bbE"),EX:s("e5"),jh:s("b_A"),I:s("iB"),ra:s("bbF"),xm:s("ho"),Jj:s("b_F"),YH:s("O2<aD>"),uL:s("hU"),zk:s("vm"),U2:s("vo"),CB:s("nJ<k>"),b7:s("e6<j>"),kZ:s("e6<k>"),Tu:s("b4"),ML:s("el"),A0:s("dd"),Zi:s("ks"),Rz:s("kt"),Ee:s("aO<@>"),Q:s("bl"),GB:s("Br"),lz:s("lM"),Lt:s("cF"),VI:s("bU"),IX:s("dB<k4,cP>"),bh:s("qe"),oB:s("qf"),or:s("kw"),_w:s("lN"),HH:s("lO"),OO:s("hX"),cP:s("lP"),b5:s("qi"),P9:s("lQ"),eI:s("qj"),Ie:s("BF"),Q9:s("b0m"),US:s("hp"),N8:s("BL"),s4:s("ab7"),OE:s("ab8"),RO:s("b0o"),Kw:s("abk"),mx:s("df"),l5:s("lT"),zq:s("vB"),ia:s("qs"),VW:s("qt"),FK:s("fD"),jT:s("BV"),c4:s("ky"),bE:s("bR"),Uy:s("abK"),_8:s("lW"),qs:s("vE<~>"),Z9:s("ax<oJ>"),Ev:s("ax<K>()"),L0:s("ax<@>"),T8:s("ax<dp?>"),uz:s("ax<~>"),Fp:s("cG<x7,ba>"),Lu:s("eC<kO>"),MA:s("eC<fK>"),El:s("eC<cu>"),Ih:s("eC<k>"),g:s("vH"),cD:s("dh"),uA:s("cH<jm>"),C1:s("cH<jr>"),Uv:s("cH<i1>"),jn:s("cH<jz>"),YC:s("cH<jE>"),hg:s("cH<kW>"),Qm:s("cH<kX>"),UN:s("cH<hC>"),ok:s("cH<ij>"),lh:s("cH<pc>"),Bk:s("cH<lg>"),Pw:s("cH<ps>"),xR:s("qz<dh>"),yi:s("js<a6<a_>>"),TX:s("qA<jC>"),bT:s("qA<a6<a_>>"),Wv:s("OP"),rQ:s("bbW"),GF:s("eO<kF(iG)>"),PD:s("eO<~()>"),op:s("eO<~(nS)>"),bq:s("i_"),G7:s("OV<K9<@>>"),rA:s("qD"),mS:s("qE"),AL:s("i0<ai>"),Fn:s("lX"),zE:s("ai"),Lk:s("aPL"),g5:s("C6"),Oh:s("qG"),lu:s("aPO"),dW:s("jw"),SG:s("o_"),Bc:s("o0<bl?>"),ri:s("Cc"),IS:s("hr"),og:s("cI"),WB:s("b8"),U1:s("iF"),lA:s("Ci"),kW:s("o2"),JZ:s("adK"),XO:s("adL"),pT:s("adM"),gD:s("o4"),J:s("ba"),nQ:s("o5"),Ya:s("m1"),JY:s("y<@>"),VG:s("y<Q?>"),lY:s("F<aYS<Q>>"),QP:s("F<jf>"),NS:s("F<d6>"),l6:s("F<kg>"),tM:s("F<pO>"),V:s("F<bq>"),hx:s("F<MM>"),G6:s("F<MN>"),Rh:s("F<Ae>"),Cq:s("F<bz>"),jZ:s("F<ey>"),kN:s("F<bA>"),M1:s("F<ny>"),gb:s("F<kk>"),AT:s("F<uY>"),s8:s("F<aOG>"),t_:s("F<G>"),EV:s("F<nE>"),KV:s("F<fn>"),ZD:s("F<dL>"),Ug:s("F<q5>"),j9:s("F<hn>"),D:s("F<e5>"),vl:s("F<iB>"),Up:s("F<O3>"),FG:s("F<e6<j>>"),sd:s("F<e6<k>>"),lX:s("F<bl>"),LE:s("F<Ob>"),xr:s("F<vv>"),_m:s("F<BF>"),bp:s("F<df>"),z8:s("F<qt>"),Pt:s("F<fD>"),uf:s("F<ky>"),no:s("F<nT>"),ES:s("F<nU>"),wQ:s("F<ax<qs>>"),et:s("F<ax<+(j,fD?)>>"),mo:s("F<ax<~>>"),iQ:s("F<dg>"),DU:s("F<i_>"),om:s("F<i0<ai>>"),kr:s("F<fV>"),XZ:s("F<jw>"),Fa:s("F<hr>"),fJ:s("F<cI>"),VB:s("F<kD>"),VO:s("F<eD>"),O_:s("F<m0>"),O:s("F<aD>"),K0:s("F<iG>"),CE:s("F<kF>"),k5:s("F<eQ>"),k_:s("F<PH>"),HU:s("F<i3>"),xj:s("F<aeh>"),s9:s("F<CB>"),Y4:s("F<iJ>"),MH:s("F<qS>"),_f:s("F<qT>"),ER:s("F<oc>"),X_:s("F<S<e9>>"),rj:s("F<S<j>>"),fQ:s("F<S<e2>>"),zg:s("F<S<J>>"),Eo:s("F<ao>"),H8:s("F<PS>"),ss:s("F<qZ>"),aQ:s("F<fY<@>>"),IO:s("F<fY<Q?>>"),en:s("F<h>"),H7:s("F<aH<j,@>>"),Xr:s("F<bc>"),I0:s("F<ci>"),YT:s("F<dY>"),YE:s("F<iO>"),tc:s("F<rg>"),Qg:s("F<ma>"),jl:s("F<Q>"),Rd:s("F<ais>"),sF:s("F<Dm>"),wi:s("F<ok>"),g8:s("F<aQR<@>>"),zY:s("F<wr>"),OM:s("F<on<cN>>"),eY:s("F<md>"),H9:s("F<dN>"),RR:s("F<kN>"),tg:s("F<ws>"),tZ:s("F<wt>"),D9:s("F<iP>"),Y2:s("F<bp>"),Do:s("F<jF<j>>"),v_:s("F<jF<hb>>"),RW:s("F<wD>"),L7:s("F<+representation,targetSize(EY,E)>"),Co:s("F<+(j,G5)>"),lN:s("F<+data,event,timeStamp(S<iP>,aD,b4)>"),Nt:s("F<+domSize,representation,targetSize(E,EY,E)>"),AO:s("F<t>"),Pc:s("F<rH>"),Ik:s("F<p>"),xT:s("F<oy>"),TT:s("F<q>"),Ry:s("F<dk>"),QT:s("F<e0>"),y8:s("F<wV>"),ZP:s("F<mu>"),D1:s("F<eW>"),u1:s("F<t0>"),JO:s("F<hA>"),q1:s("F<e9>"),QF:s("F<cP>"),o4:s("F<Sy>"),Qo:s("F<t3>"),Ay:s("F<aRI>"),kO:s("F<oK>"),N_:s("F<cj>"),Gl:s("F<mF<~>>"),s:s("F<j>"),oU:s("F<b3P>"),PL:s("F<xl>"),bt:s("F<xm>"),Lx:s("F<eG>"),bG:s("F<Fy>"),sD:s("F<oT>"),VS:s("F<td>"),zs:s("F<Tv>"),AS:s("F<te>"),Ne:s("F<f8>"),FO:s("F<kZ<kZ<@>>>"),LX:s("F<G5>"),Uu:s("F<jV>"),p:s("F<e>"),GA:s("F<d2>"),Na:s("F<p3>"),SW:s("F<UJ>"),TV:s("F<mQ>"),Kj:s("F<y5>"),_Y:s("F<fM>"),mz:s("F<Yc>"),Kx:s("F<k1>"),zj:s("F<n_>"),IR:s("F<aLU>"),m3:s("F<yI>"),jE:s("F<lc>"),qi:s("F<ev>"),z_:s("F<ha>"),tf:s("F<hJ>"),uD:s("F<ip>"),M6:s("F<Js>"),s6:s("F<n1>"),lb:s("F<lf>"),bd:s("F<e2>"),YK:s("F<k4>"),Z4:s("F<b5E>"),cR:s("F<z5>"),NM:s("F<n4>"),vB:s("F<hL>"),HZ:s("F<K>"),n:s("F<J>"),ee:s("F<@>"),t:s("F<k>"),bA:s("F<ao?>"),L:s("F<h?>"),ef:s("F<Q?>"),iG:s("F<p?>"),ny:s("F<cY<@>?>"),Fi:s("F<cj?>"),XS:s("F<j?>"),Z:s("F<k?>"),a0:s("F<dz>"),Zt:s("F<ax<K>()>"),iL:s("F<cU<iJ>()>"),sA:s("F<K(iG)>"),qj:s("F<~()>"),SM:s("F<~(Q,dw?)>"),e:s("F<~(bi<ba>)>"),R:s("F<~(it)>"),LY:s("F<~(jf)>"),j1:s("F<~(b4)>"),s2:s("F<~(qy)>"),Jh:s("F<~(S<nT>)>"),hh:s("F<~(oI)>"),bz:s("vX"),m:s("aD"),lT:s("fF"),dC:s("i2<@>"),Hf:s("fG<Fj,@>"),Cl:s("kE"),D2:s("fp"),XU:s("kF(iG)"),SQ:s("w_"),Di:s("qP"),jk:s("bs<b_W>"),NE:s("bs<nL>"),ku:s("bs<Dp>"),LZ:s("bs<wI>"),cF:s("bs<mp>"),A:s("bs<a6<a_>>"),af:s("bs<Ix>"),E9:s("PH"),Cc:s("aeh"),gN:s("qR"),Hj:s("CC"),JB:s("iK<@>"),y4:s("qV<mY>"),oM:s("qV<pk>"),U9:s("kG"),NH:s("qX"),cm:s("S<pH>"),AF:s("S<je>"),Rk:s("S<ns>"),Lc:s("S<aD>"),qC:s("S<iJ>"),UX:s("S<Q>"),gm:s("S<kN>"),d_:s("S<bp>"),jQ:s("S<wD>"),I1:s("S<e0>"),lD:s("S<e9>"),xc:s("S<cP>"),yp:s("S<j>"),Xw:s("S<p3>"),rg:s("S<e2>"),j:s("S<@>"),Dn:s("S<Q?>"),I_:s("ao"),da:s("qZ"),l:s("h"),bS:s("aQo"),xF:s("aB<dA,J>"),tO:s("aB<f,ap>"),aE:s("aB<j,jj>"),mT:s("aB<j,j>"),nm:s("aB<j,J>"),UH:s("aB<ap,oF>"),DC:s("aB<k,f>"),q9:s("aB<k,j>"),sw:s("aB<Q,kZ<@>>"),V5:s("aB<j,aH<j,@>>"),qE:s("aB<j?,S<Q>>"),Dx:s("r1<@,@>"),kY:s("aH<x7,ba>"),nf:s("aH<j,Q>"),GU:s("aH<j,j>"),P:s("aH<j,@>"),_P:s("aH<j,k>"),e3:s("aH<h4,@>"),f:s("aH<@,@>"),xE:s("aH<j,Q?>"),pE:s("aH<Q?,Q?>"),rr:s("aH<~(bp),bc?>"),C9:s("eo<j,jN?>"),a4:s("Y<j,j>"),Gf:s("Y<j,@>"),J3:s("Y<n4,cP>"),qn:s("Y<k,cP>"),gn:s("Y<k,j>"),hE:s("Y<dA,e6<dA>>"),Tr:s("Y<fK,kL?>"),iB:s("b1r"),E:s("r3"),i1:s("r4"),xV:s("bc"),w:s("jA"),xS:s("i5"),UD:s("ci"),Pb:s("dt"),ZA:s("D0"),_h:s("iM"),Ra:s("dY"),Wz:s("iN"),Lb:s("ep"),Es:s("rc"),CW:s("iO"),hA:s("rf"),A3:s("i8"),u9:s("m9"),uK:s("jC"),K3:s("du<aKe>"),Jc:s("du<vY>"),Tm:s("du<i4>"),w3:s("du<oi>"),ji:s("du<rT>"),WA:s("du<fZ>"),kj:s("du<jK>"),Te:s("ma"),a:s("bB"),K:s("Q"),xA:s("Q(k)"),_a:s("Q(k{params:Q?})"),yw:s("bh<aLU>"),d:s("bh<~(bi<ba>)>"),T:s("bh<~(it)>"),Xx:s("bh<~(oI)>"),pw:s("rl"),o:s("f"),gY:s("jD"),qt:s("cS"),Fj:s("Dm"),BR:s("b2_"),Ms:s("ok"),Mf:s("wq"),M9:s("aQP<Q?>"),Q2:s("QI"),Fw:s("eF<kE>"),IL:s("eF<cN>"),ke:s("rp"),Ud:s("dN"),v3:s("v"),sT:s("kN"),sv:s("mf"),mX:s("rr"),qa:s("bcW"),ge:s("rs"),Ko:s("rt"),F:s("kO"),pY:s("mi"),qL:s("bp"),GG:s("bd1"),XA:s("mj"),n2:s("ru"),WQ:s("rv"),w5:s("mk"),DB:s("rw"),PB:s("rx"),Mj:s("ry"),xb:s("rz"),ks:s("fH"),oN:s("ml"),f9:s("b2w<Q?>"),wI:s("hx<j>"),nj:s("hx<hb>"),mn:s("b2x"),bb:s("wC"),C0:s("b2H"),yH:s("aT"),jU:s("wK"),pK:s("bd6"),Rp:s("+()"),Vf:s("+(aD,dM)"),BZ:s("+(j,fD?)"),Yr:s("+(tO,J)"),mi:s("+(Q?,Q?)"),Qu:s("t"),Qz:s("Rk"),CZ:s("DN"),NW:s("DO"),x:s("p"),vz:s("rJ"),DW:s("rL"),f1:s("E_"),kQ:s("E4"),I9:s("q"),F5:s("af"),GM:s("aI<q>"),Wx:s("mq"),nl:s("dk"),kl:s("wN"),Cn:s("wP"),dw:s("Eb"),Ju:s("rO"),E1:s("Ec"),UM:s("jG"),Wd:s("wR"),dZ:s("Eg<k>"),yb:s("er<Q?>"),z4:s("e0"),k2:s("Ei<t?>"),hF:s("c6<nE>"),MV:s("c6<n_>"),o_:s("c6<k4>"),ad:s("El"),oj:s("wS"),pO:s("cY<@>(O,Q?)"),nY:s("Ep<b1q,bc3>"),BL:s("Ep<xc,jL>"),Np:s("Er"),JE:s("wW<Q>"),Cy:s("Et"),gt:s("mu"),Lm:s("rX"),sm:s("wZ"),NF:s("b3f"),eh:s("b3l"),qd:s("bdc"),NU:s("bdd"),hI:s("bde"),x9:s("eW"),mb:s("EF"),Wu:s("x2"),iN:s("oG"),_S:s("d1"),VP:s("e9"),bu:s("cP"),UF:s("t3"),g3:s("dF"),HS:s("oJ"),n5:s("x5<@>"),hi:s("bm<wP>"),p7:s("bm<cP>"),Ro:s("bm<@>"),uy:s("aRI"),RY:s("cj"),jH:s("oL"),cZ:s("x6"),Vz:s("x7"),yE:s("bdk"),Mp:s("b0"),FW:s("E"),Vr:s("SK"),Ws:s("EZ<j>"),r:s("mz"),Xp:s("oN"),Gt:s("xa"),Y:s("kU"),M0:s("xb"),jB:s("oO"),fO:s("b3F"),y3:s("jM"),Bb:s("mC"),B:s("ea"),Km:s("dw"),MF:s("iX"),d1:s("a_"),Iz:s("R"),ZE:s("Fd"),N:s("j"),Vc:s("b3P"),NC:s("jO"),WT:s("dx<ke>"),u4:s("dx<AT>"),re:s("dx<aH<h4,@>>"),az:s("dx<r3>"),E8:s("dx<Gh>"),d9:s("dx<K>"),hr:s("dx<e0?>"),b6:s("dx<~>"),ZC:s("oP"),ev:s("kV"),NJ:s("oR"),if:s("Fv"),iy:s("FE"),ot:s("iY"),qY:s("jR"),jY:s("b46"),fm:s("tf"),E6:s("f8"),em:s("n"),nH:s("th"),we:s("iZ"),ZM:s("ti"),ZF:s("kZ<kZ<@>>"),zo:s("kZ<@>"),qe:s("TB"),U:s("fL"),U4:s("b4o"),zW:s("cV"),Ni:s("aL<f>"),c:s("aL<J>"),u:s("h4"),ns:s("mK"),w7:s("aq6"),rd:s("xE"),Po:s("aq7"),H3:s("oX"),pm:s("xF<ce>"),Pj:s("j_<aD>"),kk:s("mM"),lQ:s("G4"),G5:s("mN<j,j>"),N2:s("xK<@>"),gU:s("j0"),Xu:s("TO"),yg:s("cQ<q6>"),Il:s("cQ<qh>"),V1:s("cQ<Q>"),A9:s("cQ<Fa>"),kK:s("cQ<j>"),Ll:s("cQ<fp?>"),j3:s("tn<J>"),GY:s("jU"),JH:s("xL"),Dg:s("Gb"),rS:s("h5"),X3:s("mP"),v6:s("Gc"),Vu:s("Ge"),Hd:s("W<j>"),SF:s("cC<dT>"),FI:s("cC<bp>"),t5:s("cC<e9>"),Hx:s("cC<bm<dF>>"),ZK:s("cC<jN>"),Ri:s("cC<j>"),ow:s("cC<p9>"),fG:s("cC<ha>"),kE:s("cC<~(Q,dw?)>"),Pi:s("l0<lT>"),Zw:s("l0<ha>"),l7:s("e"),a7:s("xP"),C:s("cu"),_E:s("l1"),GC:s("il<G?>"),ZX:s("il<dt?>"),y2:s("aU<aX>"),De:s("aU<G>"),mD:s("aU<dd>"),dy:s("aU<dD>"),W7:s("aU<E>"),uE:s("aU<n>"),XR:s("aU<J>"),rc:s("aU<G?>"),RP:s("aU<n?>"),YI:s("aU<J?>"),Ag:s("U2"),Zr:s("p0"),QN:s("e(O,bm<cu>,e?)"),X5:s("d2"),Uh:s("Gh"),Qy:s("l2"),L1:s("Gl"),JX:s("p3"),CL:s("tq"),h8:s("bf<ke>"),Iy:s("bf<x6>"),D5:s("bf<jL>"),gI:s("bf<oX>"),yB:s("bf<dp?>"),Qr:s("bf<aD?>"),EZ:s("bf<e0?>"),h:s("bf<~>"),J2:s("l3<iJ>"),zb:s("l3<S<k>>"),BY:s("b4K"),ZW:s("xZ"),B6:s("GI"),me:s("p6"),Wb:s("l5"),EG:s("tw"),bY:s("H6"),TC:s("ty"),uC:s("fb"),dA:s("mS<q8>"),Fb:s("mS<q9>"),Uz:s("mS<qa>"),Q8:s("Hd<a6<a_>>"),UJ:s("Wx"),rM:s("tC<aD>"),s5:s("tD<aD>"),l3:s("Hs"),Ds:s("p8<aD>"),Eh:s("HE"),fk:s("yd"),Jp:s("b4Z"),h1:s("yg"),Lv:s("ak<ke>"),cN:s("ak<x6>"),dH:s("ak<jL>"),aP:s("ak<oX>"),LR:s("ak<@>"),wJ:s("ak<k>"),gg:s("ak<dp?>"),a_:s("ak<vJ?>"),hf:s("ak<aD?>"),X6:s("ak<e0?>"),W:s("ak<~>"),cK:s("yh"),aw:s("mW"),U3:s("yk"),UR:s("fM"),R9:s("pb"),Fy:s("pd<Q?,Q?>"),Nr:s("HV"),cA:s("k2"),Sx:s("mY"),pt:s("yq"),Gk:s("I6"),PJ:s("yr"),Fe:s("Ig"),xg:s("YR"),Tv:s("Ii<S<k>>"),Tp:s("pi"),pi:s("lb"),Vl:s("pk"),KJ:s("n_"),eU:s("yF"),sZ:s("IC"),Sc:s("Zq"),Li:s("IF"),c_:s("IP"),bR:s("IR"),h7:s("lc"),zP:s("ev"),rk:s("J_"),l0:s("tW"),Lj:s("ld"),zd:s("J5"),SN:s("Ja"),ju:s("ha"),Eg:s("yQ"),xL:s("yS"),im:s("tX"),pR:s("tY"),Ez:s("ip"),xK:s("hb"),Pu:s("Jt"),yd:s("Jz"),jF:s("JB"),Fk:s("yW"),vC:s("e2"),kS:s("a0Q<Q?>"),S8:s("K4"),TB:s("he<S<ci>>"),sN:s("he<ci>"),bm:s("he<p>"),dQ:s("he<ld>"),HE:s("z1"),f2:s("Kh"),i9:s("z4"),tH:s("b5J"),Wp:s("Ku<B7>"),_l:s("u5"),ps:s("KB"),px:s("KC<mv>"),GD:s("bD<aX>"),mN:s("bD<G>"),Dm:s("bD<K>"),N5:s("bD<J>"),bZ:s("bD<aX?>"),b:s("bD<G?>"),Hy:s("bD<n?>"),DH:s("a2u"),y:s("K"),i:s("J"),z:s("@"),C_:s("@(Q)"),Hg:s("@(Q,dw)"),S:s("k"),ZU:s("no?"),yF:s("pJ?"),tX:s("aOb?"),m2:s("A3?"),SA:s("Mo?"),ff:s("Ms?"),Vx:s("dI?"),sa:s("fk?"),eJ:s("pP?"),oI:s("aX?"),YY:s("pR?"),Xl:s("ji?"),gu:s("bz?"),fr:s("Ah?"),CD:s("dp?"),L5:s("aOC?"),JG:s("AG?"),cW:s("aOD?"),eG:s("AI?"),e4:s("aOE?"),EM:s("v1?"),VA:s("v2?"),_:s("G?"),YJ:s("ez?"),xG:s("lH?"),V2:s("iB?"),pc:s("dd?"),Om:s("lK?"),Dv:s("bl?"),e8:s("vr?"),QJ:s("kw?"),pk:s("df?"),RC:s("BS?"),U5:s("fD?"),uZ:s("ax<bB>?"),z1:s("vJ?"),_I:s("qE?"),gx:s("i1?"),lF:s("cX?"),C6:s("aPP?"),Pr:s("o1?"),Ef:s("iF?"),NX:s("aD?"),LO:s("fp?"),kc:s("S<@>?"),wh:s("S<Q?>?"),y6:s("h?"),qA:s("jz?"),nA:s("aH<j,@>?"),Xy:s("aH<@,@>?"),XF:s("aH<j,Q?>?"),J1:s("aH<Q?,Q?>?"),iD:s("bc?"),ka:s("r8?"),WV:s("dt?"),X:s("Q?"),Ff:s("aQL?"),dJ:s("jD?"),Tg:s("aQN?"),KX:s("dD?"),uR:s("jE?"),xO:s("on<kE>?"),Qv:s("p?"),xP:s("p?(p)"),CA:s("rL?"),p2:s("b6?"),ym:s("mq?"),IT:s("dk?"),_N:s("rX?"),LQ:s("cP?"),wW:s("bm<dF>?"),Sy:s("cj?"),TZ:s("t4?"),pg:s("ie?"),tW:s("E?"),MR:s("kU?"),lE:s("iX?"),ob:s("j?"),f3:s("hC?"),p8:s("n?"),Dh:s("tg?"),qf:s("aLy?"),zV:s("mJ?"),ir:s("aL<J>?"),nc:s("oX?"),Wn:s("ij?"),BM:s("Gd?"),Xk:s("fM?"),av:s("II?"),Kp:s("ld?"),JI:s("K9<@>?"),X7:s("K?"),PM:s("J?"),bo:s("k?"),R7:s("dz?"),Nw:s("~()?"),Ci:s("dz"),H:s("~"),M:s("~()"),CF:s("~(Q,dw?)"),zv:s("~(b4)"),Su:s("~(nS)"),xt:s("~(S<nT>)"),lO:s("~(Q)"),hK:s("~(Q,dw)"),Ld:s("~(bp)"),iS:s("~(mo)"),HT:s("~(Q?)")}})();(function constants(){var s=hunkHelpers.makeConstList
 B.On=J.Ck.prototype
@@ -105865,7 +105865,7 @@ B.am=new A.dU(0.4,0,0.2,1)
 B.cq=new A.b4(15e4)
 B.eK=new A.b4(75e3)
 B.a9b=new A.M6(B.am,B.cq,B.eK)
-B.Eo=new A.fQ(0,"La API tardo demasiado en responder.")
+B.Eo=new A.fQ(0,"La API tard\xf3 demasiado en responder.")
 B.Ep=new A.nq(null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.kC=new A.zX(0,"exit")
 B.oh=new A.zX(1,"cancel")
@@ -105901,12 +105901,12 @@ B.Ew=new A.kf("El respaldo debe estar en texto UTF-8.")
 B.Ex=new A.kf("No se pudo abrir el respaldo.")
 B.Ey=new A.kf("Selecciona un archivo .json de respaldo.")
 B.Ez=new A.kf("El archivo de respaldo es demasiado grande.")
-B.EA=new A.kf("El archivo de respaldo esta vacio.")
+B.EA=new A.kf("El archivo de respaldo est\xe1 vac\xedo.")
 B.EB=new A.A4(null,null,null,null,null,null,null,null)
 B.Rs=s([],t.eY)
 B.EC=new A.A5(B.Rs)
-B.ED=new A.lr("El PDF bancario esta vacio.")
-B.EE=new A.lr("El PDF bancario es demasiado grande. Exporta solo el mes que queres importar.")
+B.ED=new A.lr("El PDF bancario est\xe1 vac\xedo.")
+B.EE=new A.lr("El PDF bancario es demasiado grande. Exporta solo el mes que quer\xe9s importar.")
 B.EF=new A.lr("No se pudo abrir o leer el PDF bancario.")
 B.dP=new A.adP()
 B.EG=new A.nv("flutter/keyevent",B.dP,t.Al)
@@ -106000,14 +106000,14 @@ B.en=new A.FP(0,"clamp")
 B.IV=new A.G(1,0.9372549019607843,0.9725490196078431,0.9490196078431372,B.f)
 B.kW=new A.G(1,0.9607843137254902,0.9803921568627451,0.9647058823529412,B.f)
 B.P5=s([B.IV,B.kW,B.h],t.t_)
-B.PN=s([0,0.42,1],t.n)
-B.OT=new A.qU(B.ky,B.kx,B.en,B.P5,B.PN,null)
+B.PM=s([0,0.42,1],t.n)
+B.OT=new A.qU(B.ky,B.kx,B.en,B.P5,B.PM,null)
 B.Fi=new A.au(null,null,null,null,null,B.OT,B.p)
 B.Fj=new A.au(null,null,B.kH,null,null,null,B.p)
 B.UQ=new A.f(0,-10)
 B.FK=new A.bq(0,B.T,B.eE,B.UQ,26)
-B.QW=s([B.FK],t.V)
-B.Fk=new A.au(B.h,null,B.kH,null,B.QW,null,B.p)
+B.QX=s([B.FK],t.V)
+B.Fk=new A.au(B.h,null,B.kH,null,B.QX,null,B.p)
 B.oA=new A.MF(1,"contain")
 B.di=new A.MF(6,"scaleDown")
 B.i_=new A.Ac(0,"tight")
@@ -106028,12 +106028,12 @@ B.av=new A.dA(0,"nio")
 B.bN=new A.dA(1,"usd")
 B.oE=new A.a6w(0,"localDemo")
 B.c9=new A.MO(1,"error")
-B.G_=new A.ey("El ingreso mensual no es un monto valido.",B.c9)
-B.G0=new A.ey("Hay una categoria sin nombre.",B.c9)
+B.G_=new A.ey("El ingreso mensual no es un monto v\xe1lido.",B.c9)
+B.G0=new A.ey("Hay una categor\xeda sin nombre.",B.c9)
 B.oF=new A.MO(0,"warning")
 B.G1=new A.ey("Hay un grupo sin nombre.",B.oF)
-B.G2=new A.ey("El mes activo esta antes del mes inicial configurado.",B.c9)
-B.G3=new A.uH("Inicia sesion API para continuar.")
+B.G2=new A.ey("El mes activo est\xe1 antes del mes inicial configurado.",B.c9)
+B.G3=new A.uH("Inicia sesi\xf3n API para continuar.")
 B.dk=new A.Aj(0,"localDemo")
 B.kK=new A.Aj(1,"remoteApi")
 B.dO=new A.Aj(2,"empty")
@@ -106317,9 +106317,9 @@ B.P=new A.G(1,0.3803921568627451,0.4392156862745098,0.403921568627451,B.f)
 B.bB=new A.hq(800)
 B.nC=new A.n(!0,B.P,null,null,null,null,null,B.bB,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.ch=new A.mH(2,"center")
-B.a4B=new A.ag("No hay categorias con ese nombre.",null,B.nC,B.ch,null,null,null,null,null,null)
-B.Vt=new A.aS(B.q6,B.a4B,null)
-B.HN=new A.lB(B.O,null,null,B.Vt,null)
+B.a3E=new A.ag("No hay categor\xedas con ese nombre.",null,B.nC,B.ch,null,null,null,null,null,null)
+B.Vs=new A.aS(B.q6,B.a3E,null)
+B.HM=new A.lB(B.O,null,null,B.Vs,null)
 B.HO=new A.Aw(null,null,null,null,null,null,null,null,null)
 B.eC=new A.uO(0,0,"none")
 B.dS=new A.uO(1,1,"isTrue")
@@ -106764,65 +106764,65 @@ B.qf=new A.qf(!1,!1,!1,!0)
 B.aD=new A.Ow(0,"tight")
 B.F=new A.hq(900)
 B.Du=new A.n(!0,null,null,null,null,null,20,B.F,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.a4p=new A.ag("Tus deudas",null,B.Du,null,null,null,null,null,null,null)
-B.La=new A.dj(1,B.aD,B.a4p,null)
+B.a4l=new A.ag("Tus deudas",null,B.Du,null,null,null,null,null,null,null)
+B.La=new A.dj(1,B.aD,B.a4l,null)
 B.fi=new A.n(!0,B.ap,null,null,null,null,16,B.F,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.a5c=new A.ag("Conexion y cuenta",null,B.fi,null,null,null,null,null,null,null)
 B.Lb=new A.dj(1,B.aD,B.a5c,null)
+B.fg=new A.n(!0,B.ap,null,null,null,null,20,B.F,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
+B.a4L=new A.ag("Configuraci\xf3n",null,B.fg,null,null,null,null,null,null,null)
+B.Lc=new A.dj(1,B.aD,B.a4L,null)
 B.cN=new A.n(!0,null,null,null,null,null,null,B.F,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.a3J=new A.ag("Categorias del mes",null,B.cN,null,null,null,null,null,null,null)
-B.Lc=new A.dj(1,B.aD,B.a3J,null)
+B.a3L=new A.ag("Categor\xedas del mes",null,B.cN,null,null,null,null,null,null,null)
+B.Ld=new A.dj(1,B.aD,B.a3L,null)
+B.dA=new A.n(!0,B.P,null,null,null,null,12,B.F,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
+B.a4C=new A.ag("A\xf1o de cuotas",null,B.dA,null,null,null,null,null,null,null)
+B.Le=new A.dj(1,B.aD,B.a4C,null)
+B.bH=new A.n(!0,B.ap,null,null,null,null,null,B.F,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
+B.a3D=new A.ag("Asignar presupuesto",null,B.bH,null,null,null,null,null,null,null)
+B.Lf=new A.dj(1,B.aD,B.a3D,null)
+B.a54=new A.ag("Editar categor\xeda",null,B.fg,null,null,null,null,null,null,null)
+B.Lg=new A.dj(1,B.aD,B.a54,null)
+B.a4x=new A.ag("Detalle de categor\xeda",null,B.bH,null,null,null,null,null,null,null)
+B.Lh=new A.dj(1,B.aD,B.a4x,null)
+B.bA=new A.hq(700)
+B.bI=new A.n(!0,B.P,null,null,null,null,null,B.bA,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
+B.a3C=new A.ag("No se pudo calcular el calendario de cuotas para este pr\xe9stamo.",null,B.bI,null,null,null,null,null,null,null)
+B.Li=new A.dj(1,B.aD,B.a3C,null)
+B.a4N=new A.ag("Nueva categor\xeda",null,B.fg,null,null,null,null,null,null,null)
+B.Lk=new A.dj(1,B.aD,B.a4N,null)
 B.e=new A.og(0,"start")
 B.i=new A.PY(1,"max")
 B.c6=new A.aqh(1,"down")
-B.fg=new A.n(!0,B.ap,null,null,null,null,20,B.F,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.a48=new A.ag("Elegir categoria",null,B.fg,null,null,null,null,null,null,null)
-B.bG=new A.cJ(null,2,null,null)
-B.b1=new A.n(!0,B.P,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.a42=new A.ag("Busca y confirma donde cae el gasto.",null,B.b1,null,null,null,null,null,null,null)
-B.Qh=s([B.a48,B.bG,B.a42],t.p)
-B.J5=new A.kn(B.aa,B.e,B.i,B.Z,null,B.c6,null,0,B.Qh,null)
-B.Le=new A.dj(1,B.aD,B.J5,null)
-B.Dz=new A.n(!0,B.ap,null,null,null,null,22,B.F,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.a4N=new A.ag("Tu presupuesto esta listo",null,B.Dz,null,null,null,null,null,null,null)
-B.Lf=new A.dj(1,B.aD,B.a4N,null)
-B.bH=new A.n(!0,B.ap,null,null,null,null,null,B.F,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.a4A=new A.ag("Detalle de categoria",null,B.bH,null,null,null,null,null,null,null)
-B.Lg=new A.dj(1,B.aD,B.a4A,null)
 B.ff=new A.n(!0,B.ap,null,null,null,null,18,B.F,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.a58=new A.ag("Presupuesto por categoria",null,B.ff,null,null,null,null,null,null,null)
-B.bA=new A.hq(700)
+B.a4b=new A.ag("Presupuesto por categor\xeda",null,B.ff,null,null,null,null,null,null,null)
+B.bG=new A.cJ(null,2,null,null)
 B.dB=new A.n(!0,B.P,null,null,null,null,12,B.bA,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.a4T=new A.ag("Toca una fila para editar. Toca encabezados para ordenar.",null,B.dB,null,null,null,null,null,null,null)
-B.Sc=s([B.a58,B.bG,B.a4T],t.p)
-B.J6=new A.kn(B.aa,B.e,B.i,B.Z,null,B.c6,null,0,B.Sc,null)
-B.Lh=new A.dj(1,B.aD,B.J6,null)
-B.a3D=new A.ag("Asignar presupuesto",null,B.bH,null,null,null,null,null,null,null)
-B.Li=new A.dj(1,B.aD,B.a3D,null)
-B.bI=new A.n(!0,B.P,null,null,null,null,null,B.bA,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.a3C=new A.ag("No se pudo calcular el calendario de cuotas para este prestamo.",null,B.bI,null,null,null,null,null,null,null)
-B.Lj=new A.dj(1,B.aD,B.a3C,null)
-B.a4O=new A.ag("Nueva categoria",null,B.fg,null,null,null,null,null,null,null)
-B.Ll=new A.dj(1,B.aD,B.a4O,null)
-B.dA=new A.n(!0,B.P,null,null,null,null,12,B.F,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.a4m=new A.ag("A\xc3\xb1o de cuotas",null,B.dA,null,null,null,null,null,null,null)
-B.Lm=new A.dj(1,B.aD,B.a4m,null)
-B.a41=new A.ag("Editar categoria",null,B.fg,null,null,null,null,null,null,null)
-B.Ln=new A.dj(1,B.aD,B.a41,null)
-B.a3N=new A.ag("Revision del presupuesto",null,B.bH,null,null,null,null,null,null,null)
-B.Lo=new A.dj(1,B.aD,B.a3N,null)
-B.a4U=new A.ag("Configuracion",null,B.fg,null,null,null,null,null,null,null)
-B.Lp=new A.dj(1,B.aD,B.a4U,null)
-B.a4l=new A.ag("Cuenta Mis riales",null,B.fg,null,null,null,null,null,null,null)
-B.Lq=new A.dj(1,B.aD,B.a4l,null)
+B.S6=s([B.a4b,B.bG,B.a4T],t.p)
+B.J5=new A.kn(B.aa,B.e,B.i,B.Z,null,B.c6,null,0,B.S6,null)
+B.Lm=new A.dj(1,B.aD,B.J5,null)
+B.a4j=new A.ag("Cuenta Mis riales",null,B.fg,null,null,null,null,null,null,null)
+B.Ln=new A.dj(1,B.aD,B.a4j,null)
+B.Dz=new A.n(!0,B.ap,null,null,null,null,22,B.F,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
+B.a43=new A.ag("Tu presupuesto est\xe1 listo",null,B.Dz,null,null,null,null,null,null,null)
+B.Lo=new A.dj(1,B.aD,B.a43,null)
+B.a4U=new A.ag("Elegir categor\xeda",null,B.fg,null,null,null,null,null,null,null)
+B.b1=new A.n(!0,B.P,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
+B.a41=new A.ag("Busca y confirma donde cae el gasto.",null,B.b1,null,null,null,null,null,null,null)
+B.PO=s([B.a4U,B.bG,B.a41],t.p)
+B.J6=new A.kn(B.aa,B.e,B.i,B.Z,null,B.c6,null,0,B.PO,null)
+B.Lp=new A.dj(1,B.aD,B.J6,null)
+B.a4a=new A.ag("Revisi\xf3n del presupuesto",null,B.bH,null,null,null,null,null,null,null)
+B.Lq=new A.dj(1,B.aD,B.a4a,null)
 B.Ls=new A.BA(null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.r1=new A.at(61869,"MaterialIcons",!1)
 B.Lt=new A.qg(B.r1,B.r,40,null)
 B.N3=new A.at(62282,"MaterialIcons",!1)
 B.Lu=new A.qg(B.N3,B.aZ,42,null)
 B.d2=new A.at(60982,"MaterialIcons",!1)
-B.Lv=new A.BC(B.aS,"Crea una categoria primero","Despues vas a poder agregar gastos dentro de ella.",null)
-B.Lw=new A.BC(B.aZ,"Primero crea una categoria","Cada gasto necesita una categoria para quedar contra el presupuesto del mes.",null)
+B.Lv=new A.BC(B.aS,"Crea una categor\xeda primero","Despu\xe9s vas a poder agregar gastos dentro de ella.",null)
+B.Lw=new A.BC(B.aZ,"Primero crea una categor\xeda","Cada gasto necesita una categor\xeda para quedar contra el presupuesto del mes.",null)
 B.Lx=new A.Op(0)
 B.iE=new A.qh(0,"register")
 B.qg=new A.qh(1,"create")
@@ -106884,40 +106884,40 @@ B.m8=new A.nS(1,"traditional")
 B.a9n=new A.abo(0,"automatic")
 B.qw=new A.abs("focus")
 B.LI=new A.bR("Hay un grupo sin nombre.",null,null)
-B.LJ=new A.bR("Hay una division con monto invalido.",null,null)
-B.LK=new A.bR("Hay una categoria con monto invalido.",null,null)
-B.LL=new A.bR("El respaldo esta vacio.",null,null)
+B.LJ=new A.bR("Hay una categor\xeda con monto inv\xe1lido.",null,null)
+B.LK=new A.bR("El respaldo est\xe1 vac\xedo.",null,null)
 B.qx=new A.bR("Invalid method call",null,null)
+B.LL=new A.bR("El respaldo no tiene un mes v\xe1lido.",null,null)
 B.LM=new A.bR("Invalid envelope",null,null)
-B.LN=new A.bR("Hay una deuda con tasa invalida.",null,null)
-B.LO=new A.bR("El monto supera el maximo permitido.",null,null)
-B.LP=new A.bR("Hay una deuda con cuotas pagadas invalidas.",null,null)
-B.LQ=new A.bR("La sesion API no esta completa.",null,null)
-B.LR=new A.bR("Hay una deuda sin mes de inicio.",null,null)
-B.LS=new A.bR("El monto no puede ser negativo.",null,null)
-B.LT=new A.bR("Hay una deuda sin nombre.",null,null)
-B.LU=new A.bR("El respaldo no tiene grupos de presupuesto.",null,null)
-B.LV=new A.bR("Hay una division sin categoria.",null,null)
+B.LN=new A.bR("Hay una categor\xeda con d\xeda inv\xe1lido.",null,null)
+B.LO=new A.bR("Hay una deuda con tasa inv\xe1lida.",null,null)
+B.LP=new A.bR("El monto supera el maximo permitido.",null,null)
+B.LQ=new A.bR("Hay una deuda con cuotas pagadas inv\xe1lidas.",null,null)
+B.LR=new A.bR("La sesi\xf3n API no est\xe1 completa.",null,null)
+B.LS=new A.bR("Hay una deuda sin mes de inicio.",null,null)
+B.LT=new A.bR("El monto no puede ser negativo.",null,null)
+B.LU=new A.bR("Hay una deuda sin nombre.",null,null)
+B.LV=new A.bR("El respaldo no tiene grupos de presupuesto.",null,null)
 B.LW=new A.bR("El respaldo debe ser un objeto JSON.",null,null)
-B.LX=new A.bR("El ingreso mensual no es valido.",null,null)
-B.LY=new A.bR("El monto no es valido.",null,null)
-B.LZ=new A.bR("Hay un gasto en una categoria inexistente.",null,null)
-B.M_=new A.bR("Hay una deuda con plazo invalido.",null,null)
-B.M0=new A.bR("El respaldo no tiene un mes valido.",null,null)
-B.M1=new A.bR("El respaldo no tiene categorias.",null,null)
-B.M2=new A.bR("Expected envelope, got nothing",null,null)
-B.M3=new A.bR("Hay un movimiento con monto invalido.",null,null)
+B.LX=new A.bR("El ingreso mensual no es v\xe1lido.",null,null)
+B.LY=new A.bR("Hay un gasto con divisi\xf3n descuadrada.",null,null)
+B.LZ=new A.bR("El monto no es v\xe1lido.",null,null)
+B.M_=new A.bR("Hay un gasto en una categor\xeda inexistente.",null,null)
+B.M0=new A.bR("Hay una deuda con plazo inv\xe1lido.",null,null)
+B.M1=new A.bR("Hay una divisi\xf3n sin categor\xeda.",null,null)
+B.M2=new A.bR("El respaldo no tiene categor\xedas.",null,null)
+B.M3=new A.bR("Expected envelope, got nothing",null,null)
+B.M4=new A.bR("Hay un movimiento con monto inv\xe1lido.",null,null)
+B.M5=new A.bR("Hay una divisi\xf3n con monto inv\xe1lido.",null,null)
 B.qy=new A.bR("Too many percent/permill",null,null)
 B.cb=new A.bR("Message corrupted",null,null)
-B.M4=new A.bR("El respaldo es demasiado grande.",null,null)
-B.M5=new A.bR("Hay una categoria sin nombre.",null,null)
-B.M6=new A.bR("Hay una deuda con saldo invalido.",null,null)
-B.M7=new A.bR("Hay una deuda con dia de pago invalido.",null,null)
-B.M8=new A.bR("Hay una deuda con seguro mensual invalido.",null,null)
-B.M9=new A.bR("Hay un gasto con division descuadrada.",null,null)
-B.Ma=new A.bR("Hay una deuda con cuotas pagadas mayores al plazo.",null,null)
-B.Mb=new A.bR("Hay una categoria con dia invalido.",null,null)
-B.Mc=new A.bR("Hay un gasto sin categoria.",null,null)
+B.M6=new A.bR("El respaldo es demasiado grande.",null,null)
+B.M7=new A.bR("Hay una categor\xeda sin nombre.",null,null)
+B.M8=new A.bR("Hay una deuda con saldo inv\xe1lido.",null,null)
+B.M9=new A.bR("Hay una deuda con d\xeda de pago inv\xe1lido.",null,null)
+B.Ma=new A.bR("Hay una deuda con seguro mensual inv\xe1lido.",null,null)
+B.Mb=new A.bR("Hay una deuda con cuotas pagadas mayores al plazo.",null,null)
+B.Mc=new A.bR("Hay un gasto sin categor\xeda.",null,null)
 B.iQ=new A.BW(0)
 B.Md=new A.OF(0,0,0,0,0)
 B.qz=new A.BX(0,"rectangular")
@@ -106933,7 +106933,7 @@ B.e1=new A.C0(0,"ready")
 B.iS=new A.C0(1,"possible")
 B.Mn=new A.C0(2,"defunct")
 B.Mo=new A.qB("Gmail requiere configurar MIS_RIALES_GOOGLE_CLIENT_ID o MIS_RIALES_GOOGLE_SERVER_CLIENT_ID.")
-B.Mp=new A.qB("Gmail en web usa el boton oficial de Google.")
+B.Mp=new A.qB("Gmail en web usa el bot\xf3n oficial de Google.")
 B.qF=new A.OO(0,"unknownError")
 B.Mq=new A.OO(1,"canceled")
 B.qG=new A.kz(B.Mq,null)
@@ -107091,28 +107091,28 @@ B.b0=s([],t.oU)
 B.O6=new A.m0("\ufffc",null,null,null,!0,!0,B.b0)
 B.O7=new A.o2(null,null,null,null,null,null,null,null,null,B.m6,B.kN,!1,null,!1,null,null,null,null,null,null,null,null,!1,null,null,null,null,null,null,null,null,null,null,null,!1,null,null)
 B.rr=new A.ds(null,null,null,"Correo",null,null,null,null,null,null,"tu@correo.com",null,null,null,null,null,!0,!0,!1,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,!0,null,null,null,null)
-B.rs=new A.ds(null,null,null,"Nueva categoria",null,null,null,null,null,null,null,null,null,null,null,null,!0,!0,!1,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,!0,null,null,null,null)
-B.O8=new A.ds(null,null,null,"Descripcion",null,null,null,null,null,null,null,null,null,null,null,null,!0,!0,!1,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,!0,null,null,null,null)
+B.rs=new A.ds(null,null,null,"Nueva categor\xeda",null,null,null,null,null,null,null,null,null,null,null,null,!0,!0,!1,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,!0,null,null,null,null)
+B.O8=new A.ds(null,null,null,"Descripci\xf3n",null,null,null,null,null,null,null,null,null,null,null,null,!0,!0,!1,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,!0,null,null,null,null)
 B.O9=new A.ds(null,null,null,"Nombre",null,null,null,"Ejemplo: Alquiler, Colegio o Gasolina",null,null,null,null,null,null,null,null,!0,!0,!1,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,!0,null,null,null,null)
 B.Oa=new A.ds(null,null,null,"Dia de pago mensual",null,null,null,"Recordatorio para futuras notificaciones push.",null,null,null,null,null,null,null,null,!0,!0,!1,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,"de cada mes",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,!0,null,null,null,null)
-B.MJ=new A.at(58727,"MaterialIcons",!1)
-B.NH=new A.bH(B.MJ,null,null,null,null)
-B.rt=new A.ds(null,null,null,"Buscar categoria",null,null,null,null,null,null,null,null,null,null,null,null,!0,!0,!1,null,null,null,null,null,null,null,null,null,B.NH,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,!0,null,null,null,null)
-B.mj=new A.ds(null,null,null,"Categoria",null,null,null,null,null,null,null,null,null,null,null,null,!0,!0,!1,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,!0,null,null,null,null)
+B.mj=new A.ds(null,null,null,"Categor\xeda",null,null,null,null,null,null,null,null,null,null,null,null,!0,!0,!1,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,!0,null,null,null,null)
 B.a9o=new A.ds(null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,!0,!0,!1,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,!0,null,null,null,null)
 B.Ob=new A.ds(null,null,null,"Tasa anual",null,null,null,null,null,null,null,null,null,null,null,null,!0,!0,!1,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,"%",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,!0,null,null,null,null)
 B.Oc=new A.ds(null,null,null,"Dia pago",null,null,null,"Opcional",null,null,null,null,null,null,null,null,!0,!0,!1,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,!0,null,null,null,null)
-B.Od=new A.ds(null,null,null,"Grupo",null,null,null,"Usalo para ordenar categorias relacionadas.",null,null,null,null,null,null,null,null,!0,!0,!1,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,!0,null,null,null,null)
-B.Oe=new A.ds(null,null,null,"Banco o prestamo",null,null,null,"Ejemplo: BAC, Ficohsa, auto o vivienda.",null,null,null,null,null,null,null,null,!0,!0,!1,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,!0,null,null,null,null)
-B.Of=new A.ds(null,null,null,"Cuotas pagadas",null,null,null,"Usa 0 si aun no has pagado; no puede superar el plazo.",null,null,null,null,null,null,null,null,!0,!0,!1,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,"cuotas",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,!0,null,null,null,null)
+B.Od=new A.ds(null,null,null,"Grupo",null,null,null,"\xdasalo para ordenar categor\xedas relacionadas.",null,null,null,null,null,null,null,null,!0,!0,!1,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,!0,null,null,null,null)
+B.rt=new A.ds(null,null,null,"Contrase\xf1a",null,null,null,null,null,null,null,null,null,null,null,null,!0,!0,!1,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,!0,null,null,null,null)
+B.MJ=new A.at(58727,"MaterialIcons",!1)
+B.NH=new A.bH(B.MJ,null,null,null,null)
+B.ru=new A.ds(null,null,null,"Buscar categor\xeda",null,null,null,null,null,null,null,null,null,null,null,null,!0,!0,!1,null,null,null,null,null,null,null,null,null,B.NH,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,!0,null,null,null,null)
+B.Oe=new A.ds(null,null,null,"Banco o pr\xe9stamo",null,null,null,"Ejemplo: BAC, Ficohsa, auto o vivienda.",null,null,null,null,null,null,null,null,!0,!0,!1,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,!0,null,null,null,null)
+B.Of=new A.ds(null,null,null,"Cuotas pagadas",null,null,null,"Usa 0 si a\xfan no has pagado; no puede superar el plazo.",null,null,null,null,null,null,null,null,!0,!0,!1,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,"cuotas",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,!0,null,null,null,null)
 B.Og=new A.ds(null,null,null,"Nombre",null,null,null,"Este nombre aparece en Plan, Gastos y Deudas.",null,null,null,null,null,null,null,null,!0,!0,!1,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,!0,null,null,null,null)
-B.ru=new A.ds(null,null,null,"Gasto",null,null,null,null,null,null,null,null,null,null,null,null,!0,!0,!1,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,!0,null,null,null,null)
-B.Oh=new A.ds(null,null,null,"Respaldo JSON",null,null,null,"Pega aqui el JSON exportado desde Configuracion.",null,null,null,null,null,null,null,null,!0,!0,!1,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,!0,null,null,null,null)
-B.Oi=new A.ds(null,null,null,"Descripcion opcional",null,null,null,"Comercio o referencia.",null,null,null,null,null,null,null,null,!0,!0,!1,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,!0,null,null,null,null)
+B.rv=new A.ds(null,null,null,"Gasto",null,null,null,null,null,null,null,null,null,null,null,null,!0,!0,!1,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,!0,null,null,null,null)
+B.Oh=new A.ds(null,null,null,"Respaldo JSON",null,null,null,"Pega aqui el JSON exportado desde Configuraci\xf3n.",null,null,null,null,null,null,null,null,!0,!0,!1,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,!0,null,null,null,null)
+B.Oi=new A.ds(null,null,null,"Descripci\xf3n opcional",null,null,null,"Comercio o referencia.",null,null,null,null,null,null,null,null,!0,!0,!1,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,!0,null,null,null,null)
 B.Oj=new A.ds(null,null,null,"Plazo",null,null,null,null,null,null,null,null,null,null,null,null,!0,!0,!1,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,"meses",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,!0,null,null,null,null)
 B.Ok=new A.ds(null,null,null,"Nuevo gasto",null,null,null,null,null,null,null,null,null,null,null,null,!0,!0,!1,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,!0,null,null,null,null)
-B.rv=new A.ds(null,null,null,"Contrasena",null,null,null,null,null,null,null,null,null,null,null,null,!0,!0,!1,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,!0,null,null,null,null)
-B.Ol=new A.ds(null,null,null,"Moneda del prestamo",null,null,null,null,null,null,null,null,null,null,null,null,!0,!0,!1,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,!0,null,null,null,null)
+B.Ol=new A.ds(null,null,null,"Moneda del pr\xe9stamo",null,null,null,null,null,null,null,null,null,null,null,null,!0,!0,!1,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,!0,null,null,null,null)
 B.Om=new A.ds(null,null,null,"Dia de pago",null,null,null,"Opcional",null,null,null,null,null,null,null,null,!0,!0,!1,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,!0,null,null,null,null)
 B.Oo=new A.cM(0.25,0.5,B.U)
 B.J8=new A.dU(0.1,0,0.45,1)
@@ -107187,41 +107187,41 @@ B.OW=new A.qY(1,"titleHeight")
 B.OX=new A.qY(2,"top")
 B.rG=new A.qY(3,"center")
 B.OY=new A.qY(4,"bottom")
-B.R_=s([1373.2198709594231,-1100.4251190754821,-7.278681089101213],t.n)
+B.R0=s([1373.2198709594231,-1100.4251190754821,-7.278681089101213],t.n)
 B.QD=s([-271.815969077903,559.6580465940733,-32.46047482791194],t.n)
 B.Sm=s([1.9622899599665666,-57.173814538844006,308.7233197812385],t.n)
-B.P7=s([B.R_,B.QD,B.Sm],t.zg)
+B.P7=s([B.R0,B.QD,B.Sm],t.zg)
 B.rH=s(["text","multiline","number","phone","datetime","emailAddress","url","visiblePassword","name","address","none","webSearch","twitter"],t.s)
-B.P9=s([239,191,189],t.t)
-B.Pz=s([4,9,14,19],t.t)
+B.P8=s([239,191,189],t.t)
+B.Py=s([4,9,14,19],t.t)
 B.N1=new A.at(62251,"MaterialIcons",!1)
 B.a7W=new A.tN(B.N1,"Revisar filas",null)
-B.a7T=new A.tN(B.eT,"Cambiar categoria",null)
+B.a7T=new A.tN(B.eT,"Cambiar categor\xeda",null)
 B.a7V=new A.tN(B.h2,"Editar montos",null)
 B.a7U=new A.tN(B.qV,"Ignorar duplicados",null)
-B.PA=s([B.a7W,B.a7T,B.a7V,B.a7U],t.p)
-B.RV=s([137,80,78,71,13,10,26,10],t.Z)
+B.Pz=s([B.a7W,B.a7T,B.a7V,B.a7U],t.p)
+B.RW=s([137,80,78,71,13,10,26,10],t.Z)
 B.NU=new A.nZ(0,"png")
 B.O1=new A.kB(B.NU,!1,0,"png")
-B.NS=new A.m_(B.RV,B.O1,0,"png")
-B.RZ=s([71,73,70,56,55,97],t.Z)
-B.NR=new A.m_(B.RZ,B.iV,1,"gif87a")
-B.QV=s([71,73,70,56,57,97],t.Z)
-B.NQ=new A.m_(B.QV,B.iV,2,"gif89a")
-B.Pa=s([255,216,255],t.Z)
+B.NS=new A.m_(B.RW,B.O1,0,"png")
+B.S_=s([71,73,70,56,55,97],t.Z)
+B.NR=new A.m_(B.S_,B.iV,1,"gif87a")
+B.QW=s([71,73,70,56,57,97],t.Z)
+B.NQ=new A.m_(B.QW,B.iV,2,"gif89a")
+B.P9=s([255,216,255],t.Z)
 B.NV=new A.nZ(2,"jpeg")
 B.O5=new A.kB(B.NV,!1,3,"jpeg")
-B.NT=new A.m_(B.Pa,B.O5,3,"jpeg")
+B.NT=new A.m_(B.P9,B.O5,3,"jpeg")
 B.Q_=s([82,73,70,70,null,null,null,null,87,69,66,80],t.Z)
 B.NP=new A.m_(B.Q_,B.rq,4,"webp")
 B.PS=s([66,77],t.Z)
 B.NW=new A.nZ(4,"bmp")
 B.O3=new A.kB(B.NW,!1,6,"bmp")
 B.NO=new A.m_(B.PS,B.O3,5,"bmp")
-B.PC=s([B.NS,B.NR,B.NQ,B.NT,B.NP,B.NO],A.av("F<m_>"))
+B.PB=s([B.NS,B.NR,B.NQ,B.NT,B.NP,B.NO],A.av("F<m_>"))
 B.ob=new A.Jq(0,"named")
 B.Ec=new A.Jq(1,"anonymous")
-B.PM=s([B.ob,B.Ec],A.av("F<Jq>"))
+B.PL=s([B.ob,B.Ec],A.av("F<Jq>"))
 B.QG=s([0.41233895,0.35762064,0.18051042],t.n)
 B.Qd=s([0.2126,0.7152,0.0722],t.n)
 B.Sf=s([0.01932141,0.11916382,0.95034478],t.n)
@@ -107255,17 +107255,17 @@ B.ah=new A.mH(4,"start")
 B.jP=new A.mH(5,"end")
 B.Q2=s([B.dz,B.a2,B.ch,B.hK,B.ah,B.jP],A.av("F<mH>"))
 B.Qp=s([2,1.13276676],t.n)
-B.Pd=s([2.18349805,1.20311921],t.n)
+B.Pc=s([2.18349805,1.20311921],t.n)
 B.RD=s([2.33888662,1.28698796],t.n)
 B.RI=s([2.48660575,1.36351941],t.n)
 B.Q7=s([2.62226596,1.44717976],t.n)
 B.Qg=s([2.7514899,1.53385819],t.n)
-B.QT=s([3.36298265,1.98288283],t.n)
+B.QU=s([3.36298265,1.98288283],t.n)
 B.Qs=s([4.08649929,2.23811846],t.n)
 B.QJ=s([4.85481134,2.47563463],t.n)
 B.Qc=s([5.62945551,2.72948597],t.n)
 B.Qq=s([6.43023796,2.98020421],t.n)
-B.rK=s([B.Qp,B.Pd,B.RD,B.RI,B.Q7,B.Qg,B.QT,B.Qs,B.QJ,B.Qc,B.Qq],t.zg)
+B.rK=s([B.Qp,B.Pc,B.RD,B.RI,B.Q7,B.Qg,B.QU,B.Qs,B.QJ,B.Qc,B.Qq],t.zg)
 B.Q4=s([5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5],t.t)
 B.Q6=s([B.kE,B.kF],A.av("F<zZ>"))
 B.Qa=s([B.av,B.bN],A.av("F<dA>"))
@@ -107273,7 +107273,7 @@ B.Qb=s([18,15,10,12,15,18,15,12,12],t.n)
 B.c_=new A.l5(0,"label")
 B.bu=new A.l5(1,"avatar")
 B.cO=new A.l5(2,"deleteIcon")
-B.Qi=s([B.c_,B.bu,B.cO],A.av("F<l5>"))
+B.Qh=s([B.c_,B.bu,B.cO],A.av("F<l5>"))
 B.Qk=s([0,0,0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13],t.t)
 B.Qm=s(["debito","debit","cargo","retiro","salida","egreso","consumo"],t.s)
 B.bg=new A.fb(0,"icon")
@@ -107299,10 +107299,10 @@ B.a7q=new A.mU(6,0.11)
 B.a7o=new A.mU(8,0.12)
 B.a7n=new A.mU(12,0.14)
 B.rN=s([B.a7m,B.a7r,B.a7p,B.a7q,B.a7o,B.a7n],A.av("F<mU>"))
-B.DD=new A.ag("Crear",null,null,null,null,null,null,null,null,null)
-B.Ga=new A.hR(!0,B.mh,B.DD,t.Mt)
-B.a3I=new A.ag("Entrar",null,null,null,null,null,null,null,null,null)
-B.G8=new A.hR(!1,B.re,B.a3I,t.Mt)
+B.DE=new A.ag("Crear",null,null,null,null,null,null,null,null,null)
+B.Ga=new A.hR(!0,B.mh,B.DE,t.Mt)
+B.a3K=new A.ag("Entrar",null,null,null,null,null,null,null,null,null)
+B.G8=new A.hR(!1,B.re,B.a3K,t.Mt)
 B.Qu=s([B.Ga,B.G8],A.av("F<hR<K>>"))
 B.rO=s([0,21,51,121,151,191,271,321,360],t.n)
 B.QC=s([-1,0,0,1,0,0,-1,0,1,0,0,0,-1,1,0,1,1,1,1,0],t.n)
@@ -107335,18 +107335,18 @@ B.ev=new A.hJ(0,"attention")
 B.kf=new A.hJ(2,"all")
 B.o8=new A.hJ(4,"uncategorized")
 B.o9=new A.hJ(5,"edited")
-B.QR=s([B.fs,B.kg,B.hT,B.ev,B.kf,B.o8,B.o9],t.tf)
+B.QS=s([B.fs,B.kg,B.hT,B.ev,B.kf,B.o8,B.o9],t.tf)
 B.dH=new A.k2(0,"leading")
 B.cj=new A.k2(1,"title")
 B.dI=new A.k2(2,"subtitle")
 B.fq=new A.k2(3,"trailing")
-B.QS=s([B.dH,B.cj,B.dI,B.fq],A.av("F<k2>"))
+B.QT=s([B.dH,B.cj,B.dI,B.fq],A.av("F<k2>"))
 B.HH=new A.pV(0,"auto")
 B.HI=new A.pV(1,"full")
 B.HJ=new A.pV(2,"chromium")
-B.QU=s([B.HH,B.HI,B.HJ,B.dn],A.av("F<pV>"))
+B.QV=s([B.HH,B.HI,B.HJ,B.dn],A.av("F<pV>"))
 B.bV=new A.fK(1,"fuchsia")
-B.QX=s([B.aF,B.bV,B.a0,B.bW,B.bd,B.bX],A.av("F<fK>"))
+B.QY=s([B.aF,B.bV,B.a0,B.bW,B.bd,B.bX],A.av("F<fK>"))
 B.DU=new A.y0(0,"topLeft")
 B.DX=new A.y0(3,"bottomRight")
 B.a79=new A.mT(B.DU,B.DX)
@@ -107355,12 +107355,12 @@ B.DV=new A.y0(1,"topRight")
 B.DW=new A.y0(2,"bottomLeft")
 B.a7a=new A.mT(B.DV,B.DW)
 B.a7b=new A.mT(B.DW,B.DV)
-B.QY=s([B.a79,B.a7c,B.a7a,B.a7b],A.av("F<mT>"))
-B.a47=new A.ag("C$",null,null,null,null,null,null,null,null,null)
-B.G7=new A.hR(B.av,null,B.a47,t._b)
-B.a4v=new A.ag("$",null,null,null,null,null,null,null,null,null)
-B.G9=new A.hR(B.bN,null,B.a4v,t._b)
-B.QZ=s([B.G7,B.G9],A.av("F<hR<dA>>"))
+B.QZ=s([B.a79,B.a7c,B.a7a,B.a7b],A.av("F<mT>"))
+B.a46=new A.ag("C$",null,null,null,null,null,null,null,null,null)
+B.G7=new A.hR(B.av,null,B.a46,t._b)
+B.a4s=new A.ag("$",null,null,null,null,null,null,null,null,null)
+B.G9=new A.hR(B.bN,null,B.a4s,t._b)
+B.R_=s([B.G7,B.G9],A.av("F<hR<dA>>"))
 B.WT=new A.an(0.01339448,0.05994973)
 B.WS=new A.an(0.13664115,0.13592082)
 B.WF=new A.an(0.24545546,0.14099516)
@@ -107376,13 +107376,7 @@ B.WC=new A.an(0.66416338,0.0734653)
 B.Wz=new A.an(0.68675338,0.06974996)
 B.WP=new A.an(0.70678034,0.06529512)
 B.rP=s([B.WT,B.WS,B.WF,B.WI,B.WR,B.Wy,B.WD,B.WG,B.WB,B.WO,B.WV,B.WC,B.Wz,B.WP],A.av("F<+(J,J)>"))
-B.R0=s([35,30,20,25,30,35,30,25,25],t.n)
-B.rb=new A.at(984351,"MaterialIcons",!1)
-B.a8O=new A.yB(B.rb,"Solo mensual",null)
-B.Nf=new A.at(984560,"MaterialIcons",!1)
-B.a8M=new A.yB(B.Nf,"Editable despues",null)
-B.a8N=new A.yB(B.qR,"Datos locales",null)
-B.R3=s([B.a8O,B.a8M,B.a8N],t.p)
+B.R1=s([35,30,20,25,30,35,30,25,25],t.n)
 B.R6=s(["click","scroll"],t.s)
 B.R8=s(["cordobas","cordoba","nio"],t.s)
 B.Gv=new A.nl()
@@ -107416,8 +107410,8 @@ B.Re=s([],t.t)
 B.mq=s([],t.ee)
 B.Rx=s([],t.XS)
 B.RN=s(["super","pali","maxipali","colonia","walmart","mercado","pricesmart","launion","union"],t.s)
-B.Sa=s(["supermercado","alimentacion"],t.s)
-B.a7M=new A.hF(B.RN,B.Sa)
+B.Sb=s(["supermercado","alimentacion"],t.s)
+B.a7M=new A.hF(B.RN,B.Sb)
 B.Q0=s(["shell","uno","puma","petronic","texaco","gasolina","combustible"],t.s)
 B.Rz=s(["gasolina","transporte"],t.s)
 B.a7Q=new A.hF(B.Q0,B.Rz)
@@ -107425,26 +107419,26 @@ B.RC=s(["colegio","escuela","universidad","matricula"],t.s)
 B.R7=s(["colegio","familia"],t.s)
 B.a7L=new A.hF(B.RC,B.R7)
 B.QB=s(["farmacia","farma","hospital","clinica","salud","laboratorio"],t.s)
-B.S6=s(["salud","familia"],t.s)
-B.a7O=new A.hF(B.QB,B.S6)
+B.S8=s(["salud","familia"],t.s)
+B.a7O=new A.hF(B.QB,B.S8)
 B.Q8=s(["claro","tigo","internet","telefono","netflix","spotify","google","apple"],t.s)
 B.RG=s(["internet","telefono"],t.s)
 B.a7N=new A.hF(B.Q8,B.RG)
-B.PL=s(["enel","enacal","disnorte","dissur","agua","luz"],t.s)
-B.S7=s(["servicios","vivienda"],t.s)
-B.a7G=new A.hF(B.PL,B.S7)
-B.R1=s(["alquiler","renta","condominio"],t.s)
-B.R2=s(["alquiler","vivienda"],t.s)
-B.a7K=new A.hF(B.R1,B.R2)
+B.PK=s(["enel","enacal","disnorte","dissur","agua","luz"],t.s)
+B.S9=s(["servicios","vivienda"],t.s)
+B.a7G=new A.hF(B.PK,B.S9)
+B.R2=s(["alquiler","renta","condominio"],t.s)
+B.R3=s(["alquiler","vivienda"],t.s)
+B.a7K=new A.hF(B.R2,B.R3)
 B.Ra=s(["restaurante","cafe","pizza","comedor","subway","mcdonald","burger","tiptop"],t.s)
-B.S4=s(["restaurantes","alimentacion"],t.s)
-B.a7P=new A.hF(B.Ra,B.S4)
+B.S5=s(["restaurantes","alimentacion"],t.s)
+B.a7P=new A.hF(B.Ra,B.S5)
 B.Qj=s(["taxi","indrive","uber","bus","cabify","yango"],t.s)
 B.Sd=s(["transporte"],t.s)
 B.a7J=new A.hF(B.Qj,B.Sd)
 B.Qe=s(["ferreteria","sinsa","ferromax","construccion"],t.s)
-B.S8=s(["servicios","vivienda","mantenimiento"],t.s)
-B.a7I=new A.hF(B.Qe,B.S8)
+B.Sa=s(["servicios","vivienda","mantenimiento"],t.s)
+B.a7I=new A.hF(B.Qe,B.Sa)
 B.Ry=s(["hotel","aerolinea","avianca","copa","viaje"],t.s)
 B.Sg=s(["vacaciones","ahorro"],t.s)
 B.a7H=new A.hF(B.Ry,B.Sg)
@@ -107461,8 +107455,14 @@ B.RL=s(["dolares","dolaresus","usd","dollar","dollars"],t.s)
 B.RS=s([16,17,18,0,8,7,9,6,10,5,11,4,12,3,13,2,14,1,15],t.t)
 B.RT=s(["descripcion","description","concepto","detalle","comercio","merchant","narrative","movimiento","referencia"],t.s)
 B.h9=s([B.dL,B.dh,B.hV,B.hW,B.kD],t.QP)
-B.RU=s(["newPassword"],t.s)
-B.RW=s([3,4,5,6,7,8,9,10,11,13,15,17,19,23,27,31,35,43,51,59,67,83,99,115,131,163,195,227,258],t.t)
+B.rb=new A.at(984351,"MaterialIcons",!1)
+B.a8N=new A.yB(B.rb,"Solo mensual",null)
+B.Nf=new A.at(984560,"MaterialIcons",!1)
+B.a8O=new A.yB(B.Nf,"Editable despu\xe9s",null)
+B.a8M=new A.yB(B.qR,"Datos locales",null)
+B.RU=s([B.a8N,B.a8O,B.a8M],t.p)
+B.RV=s(["newPassword"],t.s)
+B.RX=s([3,4,5,6,7,8,9,10,11,13,15,17,19,23,27,31,35,43,51,59,67,83,99,115,131,163,195,227,258],t.t)
 B.Ir=new A.G(0.18823529411764706,0.0784313725490196,0.22745098039215686,0.18823529411764706,B.f)
 B.yc=new A.f(0,12)
 B.Fw=new A.bq(0,B.T,B.Ir,B.yc,28)
@@ -107470,14 +107470,14 @@ B.I6=new A.G(0.07058823529411765,0.0784313725490196,0.22745098039215686,0.188235
 B.ee=new A.f(0,3)
 B.FC=new A.bq(0,B.T,B.I6,B.ee,8)
 B.rT=s([B.Fw,B.FC],t.V)
-B.RY=s([1,2,3,4,5,7,9,13,17,25,33,49,65,97,129,193,257,385,513,769,1025,1537,2049,3073,4097,6145,8193,12289,16385,24577],t.t)
+B.RZ=s([1,2,3,4,5,7,9,13,17,25,33,49,65,97,129,193,257,385,513,769,1025,1537,2049,3073,4097,6145,8193,12289,16385,24577],t.t)
 B.rU=s(["password"],t.s)
 B.PV=s([0.001200833568784504,0.002389694492170889,0.0002795742885861124],t.n)
 B.Rb=s([0.0005891086651375999,0.0029785502573438758,0.0003270666104008398],t.n)
 B.Q9=s([0.00010146692491640572,0.0005364214359186694,0.0032979401770712076],t.n)
-B.S1=s([B.PV,B.Rb,B.Q9],t.zg)
-B.S2=s([45,95,45,20,45,90,45,45,45],t.n)
-B.S3=s([120,120,20,45,20,15,20,120,120],t.n)
+B.S2=s([B.PV,B.Rb,B.Q9],t.zg)
+B.S3=s([45,95,45,20,45,90,45,45,45],t.n)
+B.S4=s([120,120,20,45,20,15,20,120,120],t.n)
 B.eY=new A.i5(0,"controlModifier")
 B.eZ=new A.i5(1,"shiftModifier")
 B.f_=new A.i5(2,"altModifier")
@@ -107488,7 +107488,7 @@ B.mL=new A.i5(6,"scrollLockModifier")
 B.mM=new A.i5(7,"functionModifier")
 B.y1=new A.i5(8,"symbolModifier")
 B.rV=s([B.eY,B.eZ,B.f_,B.f0,B.mJ,B.mK,B.mL,B.mM,B.y1],A.av("F<i5>"))
-B.Sb=s([B.ev,B.fs,B.kf,B.kg,B.o8,B.o9,B.hT],t.tf)
+B.Sc=s([B.ev,B.fs,B.kf,B.kg,B.o8,B.o9,B.hT],t.tf)
 B.ms=s([!0,!1],t.HZ)
 B.Sh=s([8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,8,8,8,8,8,8,8,8],t.t)
 B.Si=s(["pointerdown","pointermove","pointerleave","pointerup","pointercancel","touchstart","touchend","touchmove","touchcancel","mousedown","mousemove","mouseleave","mouseup","wheel"],t.s)
@@ -107537,7 +107537,7 @@ B.Fy=new A.bq(-1,B.T,B.cz,B.ho,1)
 B.cA=new A.G(0.1411764705882353,0,0,0,B.f)
 B.Fn=new A.bq(0,B.T,B.cA,B.ce,1)
 B.Fx=new A.bq(0,B.T,B.cp,B.ce,3)
-B.RX=s([B.Fy,B.Fn,B.Fx],t.V)
+B.RY=s([B.Fy,B.Fn,B.Fx],t.V)
 B.Fv=new A.bq(-2,B.T,B.cz,B.ee,1)
 B.FN=new A.bq(0,B.T,B.cA,B.ho,2)
 B.Fq=new A.bq(0,B.T,B.cp,B.ce,5)
@@ -107550,7 +107550,7 @@ B.Fu=new A.bq(-1,B.T,B.cz,B.ho,4)
 B.yd=new A.f(0,4)
 B.FG=new A.bq(0,B.T,B.cA,B.yd,5)
 B.FA=new A.bq(0,B.T,B.cp,B.ce,10)
-B.Pc=s([B.Fu,B.FG,B.FA],t.V)
+B.Pb=s([B.Fu,B.FG,B.FA],t.V)
 B.Fl=new A.bq(-1,B.T,B.cz,B.ee,5)
 B.ye=new A.f(0,6)
 B.FP=new A.bq(0,B.T,B.cA,B.ye,10)
@@ -107560,7 +107560,7 @@ B.je=new A.f(0,5)
 B.Fr=new A.bq(-3,B.T,B.cz,B.je,5)
 B.FE=new A.bq(1,B.T,B.cA,B.jf,10)
 B.FV=new A.bq(2,B.T,B.cp,B.ee,14)
-B.Py=s([B.Fr,B.FE,B.FV],t.V)
+B.Px=s([B.Fr,B.FE,B.FV],t.V)
 B.Fm=new A.bq(-3,B.T,B.cz,B.je,6)
 B.yg=new A.f(0,9)
 B.FR=new A.bq(1,B.T,B.cA,B.yg,12)
@@ -107581,7 +107581,7 @@ B.UN=new A.f(0,24)
 B.FS=new A.bq(3,B.T,B.cA,B.UN,38)
 B.FJ=new A.bq(8,B.T,B.cp,B.yg,46)
 B.QE=s([B.Ft,B.FS,B.FJ],t.V)
-B.TQ=new A.cG([0,B.Rt,1,B.RX,2,B.Q3,3,B.RM,4,B.Pc,6,B.Qf,8,B.Py,9,B.PQ,12,B.Qo,16,B.Qn,24,B.QE],A.av("cG<k,S<bq>>"))
+B.TQ=new A.cG([0,B.Rt,1,B.RY,2,B.Q3,3,B.RM,4,B.Pb,6,B.Qf,8,B.Px,9,B.PQ,12,B.Qo,16,B.Qn,24,B.QE],A.av("cG<k,S<bq>>"))
 B.cF=new A.h(4294968065)
 B.ne=new A.aj(B.cF,!1,!1,!0,!1,B.u)
 B.cr=new A.h(4294968066)
@@ -108094,72 +108094,72 @@ B.mH=new A.c4(B.bC,[],A.av("c4<j,@>"))
 B.xT=new A.c4(B.bC,[],A.av("c4<Fj,@>"))
 B.U3=new A.c4(B.bC,[],A.av("c4<h4,dh>"))
 B.xU=new A.c4(B.bC,[],A.av("c4<h4,qz<dh>>"))
-B.Pr=s([42,null,null,8589935146],t.Z)
-B.Ps=s([43,null,null,8589935147],t.Z)
-B.Pt=s([45,null,null,8589935149],t.Z)
-B.Pu=s([46,null,null,8589935150],t.Z)
-B.Pv=s([47,null,null,8589935151],t.Z)
-B.Pw=s([48,null,null,8589935152],t.Z)
-B.Px=s([49,null,null,8589935153],t.Z)
-B.PB=s([50,null,null,8589935154],t.Z)
-B.PD=s([51,null,null,8589935155],t.Z)
-B.PE=s([52,null,null,8589935156],t.Z)
-B.PF=s([53,null,null,8589935157],t.Z)
-B.PG=s([54,null,null,8589935158],t.Z)
-B.PH=s([55,null,null,8589935159],t.Z)
-B.PI=s([56,null,null,8589935160],t.Z)
-B.PK=s([57,null,null,8589935161],t.Z)
+B.Pq=s([42,null,null,8589935146],t.Z)
+B.Pr=s([43,null,null,8589935147],t.Z)
+B.Ps=s([45,null,null,8589935149],t.Z)
+B.Pt=s([46,null,null,8589935150],t.Z)
+B.Pu=s([47,null,null,8589935151],t.Z)
+B.Pv=s([48,null,null,8589935152],t.Z)
+B.Pw=s([49,null,null,8589935153],t.Z)
+B.PA=s([50,null,null,8589935154],t.Z)
+B.PC=s([51,null,null,8589935155],t.Z)
+B.PD=s([52,null,null,8589935156],t.Z)
+B.PE=s([53,null,null,8589935157],t.Z)
+B.PF=s([54,null,null,8589935158],t.Z)
+B.PG=s([55,null,null,8589935159],t.Z)
+B.PH=s([56,null,null,8589935160],t.Z)
+B.PJ=s([57,null,null,8589935161],t.Z)
 B.QM=s([8589934852,8589934852,8589934853,null],t.Z)
-B.Pg=s([4294967555,null,4294967555,null],t.Z)
-B.Ph=s([4294968065,null,null,8589935154],t.Z)
-B.Pi=s([4294968066,null,null,8589935156],t.Z)
-B.Pj=s([4294968067,null,null,8589935158],t.Z)
-B.Pk=s([4294968068,null,null,8589935160],t.Z)
-B.Pp=s([4294968321,null,null,8589935157],t.Z)
+B.Pf=s([4294967555,null,4294967555,null],t.Z)
+B.Pg=s([4294968065,null,null,8589935154],t.Z)
+B.Ph=s([4294968066,null,null,8589935156],t.Z)
+B.Pi=s([4294968067,null,null,8589935158],t.Z)
+B.Pj=s([4294968068,null,null,8589935160],t.Z)
+B.Po=s([4294968321,null,null,8589935157],t.Z)
 B.QN=s([8589934848,8589934848,8589934849,null],t.Z)
-B.Pf=s([4294967423,null,null,8589935150],t.Z)
-B.Pl=s([4294968069,null,null,8589935153],t.Z)
-B.Pe=s([4294967309,null,null,8589935117],t.Z)
-B.Pm=s([4294968070,null,null,8589935159],t.Z)
-B.Pq=s([4294968327,null,null,8589935152],t.Z)
+B.Pe=s([4294967423,null,null,8589935150],t.Z)
+B.Pk=s([4294968069,null,null,8589935153],t.Z)
+B.Pd=s([4294967309,null,null,8589935117],t.Z)
+B.Pl=s([4294968070,null,null,8589935159],t.Z)
+B.Pp=s([4294968327,null,null,8589935152],t.Z)
 B.QO=s([8589934854,8589934854,8589934855,null],t.Z)
-B.Pn=s([4294968071,null,null,8589935155],t.Z)
-B.Po=s([4294968072,null,null,8589935161],t.Z)
+B.Pm=s([4294968071,null,null,8589935155],t.Z)
+B.Pn=s([4294968072,null,null,8589935161],t.Z)
 B.QP=s([8589934850,8589934850,8589934851,null],t.Z)
-B.xW=new A.cG(["*",B.Pr,"+",B.Ps,"-",B.Pt,".",B.Pu,"/",B.Pv,"0",B.Pw,"1",B.Px,"2",B.PB,"3",B.PD,"4",B.PE,"5",B.PF,"6",B.PG,"7",B.PH,"8",B.PI,"9",B.PK,"Alt",B.QM,"AltGraph",B.Pg,"ArrowDown",B.Ph,"ArrowLeft",B.Pi,"ArrowRight",B.Pj,"ArrowUp",B.Pk,"Clear",B.Pp,"Control",B.QN,"Delete",B.Pf,"End",B.Pl,"Enter",B.Pe,"Home",B.Pm,"Insert",B.Pq,"Meta",B.QO,"PageDown",B.Pn,"PageUp",B.Po,"Shift",B.QP],A.av("cG<j,S<k?>>"))
-B.PJ=s([B.t1,null,null,B.xI],t.L)
+B.xW=new A.cG(["*",B.Pq,"+",B.Pr,"-",B.Ps,".",B.Pt,"/",B.Pu,"0",B.Pv,"1",B.Pw,"2",B.PA,"3",B.PC,"4",B.PD,"5",B.PE,"6",B.PF,"7",B.PG,"8",B.PH,"9",B.PJ,"Alt",B.QM,"AltGraph",B.Pf,"ArrowDown",B.Pg,"ArrowLeft",B.Ph,"ArrowRight",B.Pi,"ArrowUp",B.Pj,"Clear",B.Po,"Control",B.QN,"Delete",B.Pe,"End",B.Pk,"Enter",B.Pd,"Home",B.Pl,"Insert",B.Pp,"Meta",B.QO,"PageDown",B.Pm,"PageUp",B.Pn,"Shift",B.QP],A.av("cG<j,S<k?>>"))
+B.PI=s([B.t1,null,null,B.xI],t.L)
 B.RA=s([B.xu,null,null,B.xJ],t.L)
 B.Ql=s([B.xv,null,null,B.xK],t.L)
 B.QQ=s([B.xw,null,null,B.e8],t.L)
 B.P4=s([B.xx,null,null,B.xL],t.L)
-B.S_=s([B.xy,null,null,B.mC],t.L)
+B.S0=s([B.xy,null,null,B.mC],t.L)
 B.RR=s([B.xz,null,null,B.hj],t.L)
 B.PT=s([B.xA,null,null,B.e9],t.L)
 B.Se=s([B.xB,null,null,B.hk],t.L)
 B.RQ=s([B.xC,null,null,B.ea],t.L)
 B.PP=s([B.xD,null,null,B.mD],t.L)
-B.Pb=s([B.xE,null,null,B.eb],t.L)
+B.Pa=s([B.xE,null,null,B.eb],t.L)
 B.Q5=s([B.xF,null,null,B.hl],t.L)
 B.RB=s([B.xG,null,null,B.ec],t.L)
 B.RE=s([B.xH,null,null,B.hm],t.L)
 B.PW=s([B.hh,B.hh,B.j6,null],t.L)
-B.S0=s([B.j2,null,B.j2,null],t.L)
+B.S1=s([B.j2,null,B.j2,null],t.L)
 B.Qv=s([B.cF,null,null,B.e9],t.L)
 B.Qw=s([B.cr,null,null,B.ea],t.L)
 B.Qx=s([B.cs,null,null,B.eb],t.L)
-B.S5=s([B.cG,null,null,B.ec],t.L)
+B.S7=s([B.cG,null,null,B.ec],t.L)
 B.RO=s([B.mw,null,null,B.mD],t.L)
 B.PX=s([B.hg,B.hg,B.j5,null],t.L)
 B.R4=s([B.bo,null,null,B.e8],t.L)
 B.Qy=s([B.e5,null,null,B.hj],t.L)
-B.PO=s([B.j1,null,null,B.mB],t.L)
+B.PN=s([B.j1,null,null,B.mB],t.L)
 B.Qz=s([B.e6,null,null,B.hl],t.L)
 B.RP=s([B.hf,null,null,B.mC],t.L)
 B.PY=s([B.hi,B.hi,B.j7,null],t.L)
 B.QA=s([B.hd,null,null,B.hk],t.L)
 B.Rd=s([B.he,null,null,B.hm],t.L)
 B.PZ=s([B.ds,B.ds,B.e7,null],t.L)
-B.U5=new A.cG(["*",B.PJ,"+",B.RA,"-",B.Ql,".",B.QQ,"/",B.P4,"0",B.S_,"1",B.RR,"2",B.PT,"3",B.Se,"4",B.RQ,"5",B.PP,"6",B.Pb,"7",B.Q5,"8",B.RB,"9",B.RE,"Alt",B.PW,"AltGraph",B.S0,"ArrowDown",B.Qv,"ArrowLeft",B.Qw,"ArrowRight",B.Qx,"ArrowUp",B.S5,"Clear",B.RO,"Control",B.PX,"Delete",B.R4,"End",B.Qy,"Enter",B.PO,"Home",B.Qz,"Insert",B.RP,"Meta",B.PY,"PageDown",B.QA,"PageUp",B.Rd,"Shift",B.PZ],A.av("cG<j,S<h?>>"))
+B.U5=new A.cG(["*",B.PI,"+",B.RA,"-",B.Ql,".",B.QQ,"/",B.P4,"0",B.S0,"1",B.RR,"2",B.PT,"3",B.Se,"4",B.RQ,"5",B.PP,"6",B.Pa,"7",B.Q5,"8",B.RB,"9",B.RE,"Alt",B.PW,"AltGraph",B.S1,"ArrowDown",B.Qv,"ArrowLeft",B.Qw,"ArrowRight",B.Qx,"ArrowUp",B.S7,"Clear",B.RO,"Control",B.PX,"Delete",B.R4,"End",B.Qy,"Enter",B.PN,"Home",B.Qz,"Insert",B.RP,"Meta",B.PY,"PageDown",B.QA,"PageUp",B.Rd,"Shift",B.PZ],A.av("cG<j,S<h?>>"))
 B.Mf=new A.vF(1,"medium")
 B.Mg=new A.vF(2,"small")
 B.Gd=new A.uJ("large",0,"large")
@@ -108552,8 +108552,8 @@ B.Vp=new A.QE(1,"end")
 B.Vq=new A.QF(0,"nearestOverlay")
 B.Vr=new A.QF(1,"rootOverlay")
 B.KT=new A.a3(2,0,0,6)
-B.a4F=new A.ag("Categoria / tipo de gasto",null,B.dA,null,null,null,null,null,null,null)
-B.Vs=new A.aS(B.KT,B.a4F,null)
+B.a4E=new A.ag("Categor\xeda / tipo de gasto",null,B.dA,null,null,null,null,null,null,null)
+B.Vt=new A.aS(B.KT,B.a4E,null)
 B.cf=new A.QL(0,"fill")
 B.c2=new A.QL(1,"stroke")
 B.Vu=new A.om(1/0)
@@ -108587,12 +108587,12 @@ B.Wc=new A.wx(1,"scroll")
 B.Wd=new A.wx(3,"scale")
 B.We=new A.wx(4,"unknown")
 B.a92=new A.hb(5,"remove")
-B.a3O=new A.ag("Eliminar fila",null,null,null,null,null,null,null,null,null)
-B.P1=new A.kH(B.iU,B.a3O,null,null,null,null,null)
+B.a3P=new A.ag("Eliminar fila",null,null,null,null,null,null,null,null,null)
+B.P1=new A.kH(B.iU,B.a3P,null,null,null,null,null)
 B.Wf=new A.hx(B.a92,B.P1,null,t.nj)
 B.Ed=new A.hb(1,"review")
-B.a44=new A.ag("Marcar revisado",null,null,null,null,null,null,null,null,null)
-B.P_=new A.kH(B.rf,B.a44,null,null,null,null,null)
+B.a42=new A.ag("Marcar revisado",null,null,null,null,null,null,null,null,null)
+B.P_=new A.kH(B.rf,B.a42,null,null,null,null,null)
 B.Wg=new A.hx(B.Ed,B.P_,null,t.nj)
 B.a91=new A.hb(4,"restore")
 B.a3Z=new A.ag("Restaurar",null,null,null,null,null,null,null,null,null)
@@ -108607,34 +108607,34 @@ B.Lr=new A.dj(1,B.aD,B.a52,null)
 B.QI=s([B.Nj,B.ac,B.Lr],t.p)
 B.X4=new A.ms(B.aA,B.e,B.i,B.o,null,B.c6,null,0,B.QI,null)
 B.Wi=new A.hx("reset",B.X4,null,t.wI)
-B.a9_=new A.hb(0,"edit")
-B.a3R=new A.ag("Editar",null,null,null,null,null,null,null,null,null)
-B.P3=new A.kH(B.ri,B.a3R,null,null,null,null,null)
-B.Wj=new A.hx(B.a9_,B.P3,null,t.nj)
 B.r0=new A.at(61563,"MaterialIcons",!1)
 B.Nr=new A.bH(B.r0,null,B.kU,null,null)
-B.a4z=new A.ag("Guia inicial",null,null,null,null,null,null,null,null,null)
-B.Lk=new A.dj(1,B.aD,B.a4z,null)
-B.S9=s([B.Nr,B.ac,B.Lk],t.p)
-B.X5=new A.ms(B.aA,B.e,B.i,B.o,null,B.c6,null,0,B.S9,null)
-B.Wk=new A.hx("guide",B.X5,null,t.wI)
+B.a3H=new A.ag("Gu\xeda inicial",null,null,null,null,null,null,null,null,null)
+B.Ll=new A.dj(1,B.aD,B.a3H,null)
+B.QR=s([B.Nr,B.ac,B.Ll],t.p)
+B.X6=new A.ms(B.aA,B.e,B.i,B.o,null,B.c6,null,0,B.QR,null)
+B.Wj=new A.hx("guide",B.X6,null,t.wI)
+B.a9_=new A.hb(0,"edit")
+B.a3S=new A.ag("Editar",null,null,null,null,null,null,null,null,null)
+B.P3=new A.kH(B.ri,B.a3S,null,null,null,null,null)
+B.Wk=new A.hx(B.a9_,B.P3,null,t.nj)
 B.Ee=new A.hb(2,"unreview")
 B.Np=new A.bH(B.r7,null,null,null,null)
-B.a3Q=new A.ag("Mover a revisar",null,null,null,null,null,null,null,null,null)
-B.OZ=new A.kH(B.Np,B.a3Q,null,null,null,null,null)
+B.a3R=new A.ag("Mover a revisar",null,null,null,null,null,null,null,null,null)
+B.OZ=new A.kH(B.Np,B.a3R,null,null,null,null,null)
 B.Wl=new A.hx(B.Ee,B.OZ,null,t.nj)
 B.a90=new A.hb(3,"ignore")
 B.NI=new A.bH(B.e3,null,null,null,null)
-B.a4w=new A.ag("Ignorar",null,null,null,null,null,null,null,null,null)
-B.P2=new A.kH(B.NI,B.a4w,null,null,null,null,null)
+B.a4t=new A.ag("Ignorar",null,null,null,null,null,null,null,null,null)
+B.P2=new A.kH(B.NI,B.a4t,null,null,null,null,null)
 B.Wm=new A.hx(B.a90,B.P2,null,t.nj)
 B.r5=new A.at(62318,"MaterialIcons",!1)
 B.Ny=new A.bH(B.r5,null,B.kU,null,null)
-B.a3W=new A.ag("Configuracion",null,null,null,null,null,null,null,null,null)
-B.Ld=new A.dj(1,B.aD,B.a3W,null)
-B.P8=s([B.Ny,B.ac,B.Ld],t.p)
-B.X6=new A.ms(B.aA,B.e,B.i,B.o,null,B.c6,null,0,B.P8,null)
-B.Wn=new A.hx("settings",B.X6,null,t.wI)
+B.a4z=new A.ag("Configuraci\xf3n",null,null,null,null,null,null,null,null,null)
+B.Lj=new A.dj(1,B.aD,B.a4z,null)
+B.Qi=s([B.Ny,B.ac,B.Lj],t.p)
+B.X5=new A.ms(B.aA,B.e,B.i,B.o,null,B.c6,null,0,B.Qi,null)
+B.Wn=new A.hx("settings",B.X5,null,t.wI)
 B.Wo=new A.R_(0,"over")
 B.Wp=new A.R_(1,"under")
 B.Wq=new A.rA(null,null,null,null,null,null,null,null,null,null,null,null,null)
@@ -108698,8 +108698,8 @@ B.mY=new A.Eo(2222)
 B.X8=new A.S1(null,null)
 B.a9x=new A.aqV(0,"material")
 B.HR=new A.uR(null,null,null,null,null,null,null,null)
-B.HM=new A.lB(B.O,null,null,B.HR,null)
-B.X9=new A.oD(null,B.HM,null,null,null,null,null)
+B.HN=new A.lB(B.O,null,null,B.HR,null)
+B.X9=new A.oD(null,B.HN,null,null,null,null,null)
 B.ej=new A.rS(0,"idle")
 B.C7=new A.rS(1,"transientCallbacks")
 B.C8=new A.rS(2,"midFrameMicrotasks")
@@ -109346,86 +109346,86 @@ B.a29=new A.n(!0,B.ae,null,".AppleSystemUIFont",null,null,null,null,null,null,nu
 B.a2v=new A.n(!0,B.q,null,".AppleSystemUIFont",null,null,null,null,null,null,null,null,null,null,null,null,null,B.l,null,null,null,"blackRedwoodCity labelMedium",null,null,null,null)
 B.a_t=new A.n(!0,B.q,null,".AppleSystemUIFont",null,null,null,null,null,null,null,null,null,null,null,null,null,B.l,null,null,null,"blackRedwoodCity labelSmall",null,null,null,null)
 B.a3B=new A.et(B.a1l,B.a0c,B.a1m,B.a1P,B.a_T,B.a00,B.a0y,B.a1K,B.a0K,B.a2d,B.a_m,B.a_F,B.a29,B.a2v,B.a_t)
-B.a3E=new A.ag("Inicio del prestamo",null,B.dA,null,null,null,null,null,null,null)
-B.a3F=new A.ag("Listo",null,null,null,null,null,null,null,null,null)
+B.a3F=new A.ag("Inicio del pr\xe9stamo",null,B.dA,null,null,null,null,null,null,null)
+B.a3G=new A.ag("Listo",null,null,null,null,null,null,null,null,null)
 B.a_j=new A.n(!0,B.r,null,null,null,null,12,B.F,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.a3G=new A.ag("Cambiar",null,B.a_j,null,null,null,null,null,null,null)
-B.a3H=new A.ag("Ajusta el plan mensual, fecha de pago o nombre. Los gastos ya registrados se conservan.",null,B.b1,null,null,null,null,null,null,null)
-B.a3K=new A.ag("Crear gasto",null,null,null,null,null,null,null,null,null)
-B.a3L=new A.ag("Revisar PDF bancario",null,B.cN,null,null,null,null,null,null,null)
+B.a3I=new A.ag("Cambiar",null,B.a_j,null,null,null,null,null,null,null)
+B.a3J=new A.ag("Ajusta el plan mensual, fecha de pago o nombre. Los gastos ya registrados se conservan.",null,B.b1,null,null,null,null,null,null,null)
+B.a3M=new A.ag("Crear gasto",null,null,null,null,null,null,null,null,null)
+B.a3N=new A.ag("Revisar PDF bancario",null,B.cN,null,null,null,null,null,null,null)
 B.a0V=new A.n(!0,B.ap,null,null,null,null,17,B.F,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.a3M=new A.ag("Importar PDF bancario",null,B.a0V,null,null,null,null,null,null,null)
-B.a3P=new A.ag("Iniciar sesion",null,null,null,null,null,null,null,null,null)
+B.a3O=new A.ag("Importar PDF bancario",null,B.a0V,null,null,null,null,null,null,null)
+B.a3Q=new A.ag("Iniciar sesi\xf3n",null,null,null,null,null,null,null,null,null)
 B.a_C=new A.n(!0,B.h,null,null,null,null,null,B.F,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.a3S=new A.ag("Tu cuenta",null,B.a_C,null,null,null,null,null,null,null)
-B.a3T=new A.ag("Realizar pago",null,null,null,null,null,null,null,null,null)
-B.a3U=new A.ag("Subir JSON",null,null,null,null,null,null,null,null,null)
-B.a3V=new A.ag("Mover",null,null,null,null,null,null,null,null,null)
+B.a3T=new A.ag("Tu cuenta",null,B.a_C,null,null,null,null,null,null,null)
+B.a3U=new A.ag("Realizar pago",null,null,null,null,null,null,null,null,null)
+B.a3V=new A.ag("Subir JSON",null,null,null,null,null,null,null,null,null)
+B.a3W=new A.ag("Mover",null,null,null,null,null,null,null,null,null)
 B.a3X=new A.ag("Revisado",null,null,null,null,null,null,null,null,null)
+B.DC=new A.ag("Cerrar sesi\xf3n",null,null,null,null,null,null,null,null,null)
 B.a3Y=new A.ag("Copiar plan y empezar gastos en cero",null,null,null,null,null,null,null,null,null)
 B.a4_=new A.ag("Cuenta",null,B.bH,null,null,null,null,null,null,null)
 B.a40=new A.ag("Ingresa tu ingreso para calcular montos sugeridos.",null,B.b1,null,null,null,null,null,null,null)
-B.a43=new A.ag("Agregar primera categoria",null,null,null,null,null,null,null,null,null)
-B.a45=new A.ag("Tu ingreso se reparte completo entre las categorias activas. Podes usar la base sugerida, agregar las tuyas y cambiar los montos.",null,B.DB,null,null,null,null,null,null,null)
-B.a46=new A.ag("Borrar datos locales",null,null,null,null,null,null,null,null,null)
-B.a49=new A.ag("Primero revisa el backend del mes. Despues elegis si subir lo local o usar lo remoto en este navegador.",null,B.b1,null,null,null,null,null,null,null)
+B.a44=new A.ag("Tu ingreso se reparte completo entre las categor\xedas activas. Podes usar la base sugerida, agregar las tuyas y cambiar los montos.",null,B.DB,null,null,null,null,null,null,null)
+B.a45=new A.ag("Borrar datos locales",null,null,null,null,null,null,null,null,null)
+B.a47=new A.ag("Todas las cuotas de este pr\xe9stamo est\xe1n marcadas como pagadas.",null,B.bI,null,null,null,null,null,null,null)
 B.a1q=new A.n(!0,B.l4,null,null,null,null,16,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.a4a=new A.ag("Armemos tu primer mes sin pedirte datos innecesarios.",null,B.a1q,null,null,null,null,null,null,null)
-B.a4b=new A.ag("Guardar cambios",null,null,null,null,null,null,null,null,null)
-B.DC=new A.ag("Guardar",null,null,null,null,null,null,null,null,null)
+B.a48=new A.ag("Armemos tu primer mes sin pedirte datos innecesarios.",null,B.a1q,null,null,null,null,null,null,null)
+B.a49=new A.ag("Guardar cambios",null,null,null,null,null,null,null,null,null)
+B.DD=new A.ag("Guardar",null,null,null,null,null,null,null,null,null)
 B.a4c=new A.ag("Guardar mes inicial",null,null,null,null,null,null,null,null,null)
-B.a4d=new A.ag("Calculo frances",null,B.dA,null,null,null,null,null,null,null)
-B.a4e=new A.ag("Subir PDF bancario",null,null,null,null,null,null,null,null,null)
-B.a4f=new A.ag("Usalo solo si queres limpiar este navegador y empezar de cero.",null,B.b1,null,null,null,null,null,null,null)
-B.a4g=new A.ag("Usar datos del backend aqui",null,null,null,null,null,null,null,null,null)
-B.a4h=new A.ag("Guardar as\xed",null,null,null,null,null,null,null,null,null)
-B.a4i=new A.ag("Mes inicial",null,B.fi,null,null,null,null,null,null,null)
-B.a4j=new A.ag("Es el primer mes disponible para ingresar datos. No borra datos guardados.",null,B.b1,null,null,null,null,null,null,null)
-B.a4k=new A.ag("Tiene movimientos sin revisar, desea guardarlos as\xed?",null,null,null,null,null,null,null,null,null)
-B.a4n=new A.ag("Todavia no hay gastos este mes en esta categoria.",null,B.b1,null,null,null,null,null,null,null)
-B.a4o=new A.ag("Subi tu estado de cuenta, revisa filas y guarda solo lo correcto.",null,B.dB,null,null,null,null,null,null,null)
-B.a4q=new A.ag("Restaurar respaldo",null,null,null,null,null,null,null,null,null)
-B.a4r=new A.ag("Revisar backend del mes",null,null,null,null,null,null,null,null,null)
-B.a4s=new A.ag("Respaldo local",null,B.fi,null,null,null,null,null,null,null)
-B.a4t=new A.ag("Elegir categoria",null,B.Du,null,null,null,null,null,null,null)
-B.a4u=new A.ag("Zona de seguridad",null,B.fi,null,null,null,null,null,null,null)
-B.a4x=new A.ag("Guardar deuda",null,null,null,null,null,null,null,null,null)
-B.a4y=new A.ag("Sin gastos creados.",null,B.bI,null,null,null,null,null,null,null)
-B.jU=new A.ag("Agregar categoria",null,null,null,null,null,null,null,null,null)
-B.a4C=new A.ag("Gastos del mes",null,B.dA,null,null,null,null,null,null,null)
-B.a4D=new A.ag("Migracion asistida",null,B.bH,null,null,null,null,null,null,null)
-B.DE=new A.ag("Cerrar sesion",null,null,null,null,null,null,null,null,null)
-B.a4E=new A.ag("Previsualizacion de registros",null,B.bH,null,null,null,B.I,1,null,null)
-B.a4G=new A.ag("Atras",null,null,null,null,null,null,null,null,null)
-B.a4H=new A.ag("Crea tu cuenta o inicia sesion para preparar la sincronizacion.",null,B.b1,null,null,null,null,null,null,null)
+B.a4d=new A.ag("Subir PDF bancario",null,null,null,null,null,null,null,null,null)
+B.a4e=new A.ag("Usar datos del backend aqui",null,null,null,null,null,null,null,null,null)
+B.a4f=new A.ag("Guardar as\xed",null,null,null,null,null,null,null,null,null)
+B.a4g=new A.ag("Mes inicial",null,B.fi,null,null,null,null,null,null,null)
+B.a4h=new A.ag("Es el primer mes disponible para ingresar datos. No borra datos guardados.",null,B.b1,null,null,null,null,null,null,null)
+B.a4i=new A.ag("Tiene movimientos sin revisar, desea guardarlos as\xed?",null,null,null,null,null,null,null,null,null)
+B.a4k=new A.ag("Todav\xeda no hay gastos este mes en esta categor\xeda.",null,B.b1,null,null,null,null,null,null,null)
+B.a4m=new A.ag("Restaurar respaldo",null,null,null,null,null,null,null,null,null)
+B.a4n=new A.ag("Revisar backend del mes",null,null,null,null,null,null,null,null,null)
+B.a4o=new A.ag("\xdasalo solo si quer\xe9s limpiar este navegador y empezar de cero.",null,B.b1,null,null,null,null,null,null,null)
+B.a4p=new A.ag("Respaldo local",null,B.fi,null,null,null,null,null,null,null)
+B.a4q=new A.ag("Elegir categor\xeda",null,B.Du,null,null,null,null,null,null,null)
+B.a4r=new A.ag("Zona de seguridad",null,B.fi,null,null,null,null,null,null,null)
+B.a4u=new A.ag("Guardar deuda",null,null,null,null,null,null,null,null,null)
+B.a4v=new A.ag("Sin gastos creados.",null,B.bI,null,null,null,null,null,null,null)
+B.a4w=new A.ag("Todav\xeda no ten\xe9s pr\xe9stamos registrados. Agrega uno para ver su cuota mensual y el total de intereses.",null,B.bI,null,null,null,null,null,null,null)
+B.jU=new A.ag("Agregar categor\xeda",null,null,null,null,null,null,null,null,null)
+B.a4y=new A.ag("Gastos del mes",null,B.dA,null,null,null,null,null,null,null)
+B.a4A=new A.ag("Migracion asistida",null,B.bH,null,null,null,null,null,null,null)
+B.a4B=new A.ag("Primero revisa el backend del mes. Despu\xe9s eleg\xeds si subir lo local o usar lo remoto en este navegador.",null,B.b1,null,null,null,null,null,null,null)
+B.a4D=new A.ag("Previsualizacion de registros",null,B.bH,null,null,null,B.I,1,null,null)
+B.a4F=new A.ag("Atras",null,null,null,null,null,null,null,null,null)
+B.a4G=new A.ag("Crea tu cuenta o inicia sesi\xf3n para preparar la sincronizaci\xf3n.",null,B.b1,null,null,null,null,null,null,null)
 B.a0g=new A.n(!0,B.h,null,null,null,null,26,B.F,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.a4I=new A.ag("Bienvenido a Mis riales",null,B.a0g,null,null,null,null,null,null,null)
-B.a4J=new A.ag("Getting ready",null,null,null,null,null,null,null,null,null)
-B.a4K=new A.ag("Mover movimientos relacionados",null,B.ff,null,null,null,null,null,null,null)
-B.a4L=new A.ag("Subir local al backend",null,null,null,null,null,null,null,null,null)
+B.a4H=new A.ag("Bienvenido a Mis riales",null,B.a0g,null,null,null,null,null,null,null)
+B.a4I=new A.ag("Getting ready",null,null,null,null,null,null,null,null,null)
+B.a4J=new A.ag("Mover movimientos relacionados",null,B.ff,null,null,null,null,null,null,null)
+B.a4K=new A.ag("Subir local al backend",null,null,null,null,null,null,null,null,null)
 B.a4M=new A.ag("Registrar primer gasto real",null,null,null,null,null,null,null,null,null)
 B.a_k=new A.n(!0,B.l4,null,null,null,null,12,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.a4P=new A.ag("Crea una cuenta con correo o entra con Gmail cuando el backend este listo.",null,B.a_k,null,null,null,null,null,null,null)
-B.a4Q=new A.ag("Siguiente paso",null,B.dA,null,null,null,null,null,null,null)
+B.a4O=new A.ag("Crea una cuenta con correo o entra con Gmail cuando el backend est\xe9 listo.",null,B.a_k,null,null,null,null,null,null,null)
+B.a4P=new A.ag("Siguiente paso",null,B.dA,null,null,null,null,null,null,null)
+B.a4Q=new A.ag("Agregar primera categor\xeda",null,null,null,null,null,null,null,null,null)
 B.a4R=new A.ag("Eliminar",null,null,null,null,null,null,null,null,null)
 B.a4S=new A.ag("Guardar movimientos",null,null,null,null,null,null,null,null,null)
-B.a4V=new A.ag("Todavia no tenes prestamos registrados. Agrega uno para ver su cuota mensual y el total de intereses.",null,B.bI,null,null,null,null,null,null,null)
+B.a4V=new A.ag("Defin\xed una categor\xeda mensual con el monto que quer\xe9s reservar. Despu\xe9s pod\xe9s editarla sin borrar tus gastos.",null,B.b1,null,null,null,null,null,null,null)
+B.a4W=new A.ag("C\xe1lculo franc\xe9s",null,B.dA,null,null,null,null,null,null,null)
 B.nE=new A.ag("Continuar con Gmail",null,null,null,null,null,null,null,null,null)
-B.a4W=new A.ag("Cambiar etiqueta sin limpiar",null,null,null,null,null,null,null,null,null)
-B.a4X=new A.ag("Defini una categoria mensual con el monto que queres reservar. Despues podes editarla sin borrar tus gastos.",null,B.b1,null,null,null,null,null,null,null)
+B.a4X=new A.ag("Cambiar etiqueta sin limpiar",null,null,null,null,null,null,null,null,null)
 B.a4Y=new A.ag("Aceptar",null,null,null,null,null,null,null,null,null)
 B.a4Z=new A.ag("Siguiente cuota pendiente",null,B.bH,null,null,null,null,null,null,null)
-B.a5_=new A.ag("Agrega prestamos bancarios y calcula la cuota fija con metodo frances.",null,B.bI,null,null,null,null,null,null,null)
+B.a5_=new A.ag("Agrega pr\xe9stamos bancarios y calcula la cuota fija con m\xe9todo franc\xe9s.",null,B.bI,null,null,null,null,null,null,null)
 B.a50=new A.ag("Mover gasto",null,null,null,null,null,null,null,null,null)
 B.a51=new A.ag("Registrar gasto aqui",null,null,null,null,null,null,null,null,null)
 B.a53=new A.ag("Crear mi presupuesto",null,B.fg,null,null,null,null,null,null,null)
-B.a54=new A.ag("Limpiar",null,null,null,null,null,null,null,null,null)
-B.a55=new A.ag("Movimientos sin revisar",null,null,null,null,null,null,null,null,null)
-B.a56=new A.ag("Todas las cuotas de este prestamo estan marcadas como pagadas.",null,B.bI,null,null,null,null,null,null,null)
-B.a57=new A.ag("Crear cuenta o iniciar sesion",null,null,null,null,null,null,null,null,null)
+B.a55=new A.ag("Limpiar",null,null,null,null,null,null,null,null,null)
+B.a56=new A.ag("Movimientos sin revisar",null,null,null,null,null,null,null,null,null)
+B.a57=new A.ag("Crear cuenta o iniciar sesi\xf3n",null,null,null,null,null,null,null,null,null)
 B.em=new A.ag("Cancelar",null,null,null,null,null,null,null,null,null)
-B.a59=new A.ag("Ajustar categorias",null,null,null,null,null,null,null,null,null)
-B.a5a=new A.ag("Probar con datos de ejemplo",null,null,null,null,null,null,null,null,null)
+B.a58=new A.ag("Ajustar categor\xedas",null,null,null,null,null,null,null,null,null)
+B.a59=new A.ag("Probar con datos de ejemplo",null,null,null,null,null,null,null,null,null)
+B.a5a=new A.ag("Sub\xed tu estado de cuenta, revisa filas y guarda solo lo correcto.",null,B.dB,null,null,null,null,null,null,null)
 B.a5b=new A.ag("Busca por nombre y revisa el disponible antes de asignar.",null,B.bI,null,null,null,null,null,null,null)
 B.a5d=new A.ag("Guardar gasto",null,null,null,null,null,null,null,null,null)
 B.a5e=new A.ag("Crear cuenta",null,null,null,null,null,null,null,null,null)
@@ -109636,7 +109636,7 @@ B.a7f=new A.l8("Pendiente",B.P,B.pw,B.Q)
 B.a7g=new A.l8("Ignorado",B.P,B.pq,B.Q)
 B.a7h=new A.l8("Listo",B.r,B.eD,B.l2)
 B.ps=new A.G(1,1,0.9254901960784314,0.9098039215686274,B.f)
-B.a7i=new A.l8("Sin categoria",B.ab,B.ps,B.la)
+B.a7i=new A.l8("Sin categor\xeda",B.ab,B.ps,B.la)
 B.a7j=new A.l8("Revisar monto",B.ab,B.ps,B.la)
 B.a7k=new A.l8("Editado",B.aZ,B.pj,B.pB)
 B.fm=new A.WC(0,"horizontal")
@@ -109736,15 +109736,15 @@ B.a8w=new A.dy(B.mL,B.d4)
 B.a8x=new A.dy(B.mM,B.d4)
 B.a8y=new A.Z_(null)
 B.a8z=new A.Is(0,"openGuide")
-B.a8C=new A.It("Defini tu ingreso mensual","Esto fija el limite del mes antes de asignar categorias.","Abrir guia",B.h3,B.r0,B.r,B.a8z)
+B.a8C=new A.It("Defin\xed tu ingreso mensual","Esto fija el l\xedmite del mes antes de asignar categor\xedas.","Abrir gu\xeda",B.h3,B.r0,B.r,B.a8z)
 B.a8A=new A.Is(1,"addCategory")
-B.a8D=new A.It("Asigna dinero a categorias","Crea una categoria o subile presupuesto a una existente.","Agregar categoria",B.d2,B.qJ,B.aZ,B.a8A)
+B.a8D=new A.It("Asigna dinero a categor\xedas","Crea una categor\xeda o s\xfabele presupuesto a una existente.","Agregar categor\xeda",B.d2,B.qJ,B.aZ,B.a8A)
 B.a8B=new A.Is(2,"addExpense")
-B.a8E=new A.It("Registra tu primer gasto","Asi el presupuesto deja de ser plan y empieza a compararse contra la realidad.","Registrar gasto",B.e2,B.qI,B.aS,B.a8B)
-B.a8F=new A.pj(B.rc,"Siguiente: registra gastos cuando ocurran. Si una categoria queda mal, podes editarla sin rehacer el presupuesto.",null)
-B.a8G=new A.pj(B.d2,"Selecciona o crea al menos una categoria para asignar montos.",null)
+B.a8E=new A.It("Registra tu primer gasto","As\xed el presupuesto deja de ser plan y empieza a compararse contra la realidad.","Registrar gasto",B.e2,B.qI,B.aS,B.a8B)
+B.a8F=new A.pj(B.rc,"Siguiente: registra gastos cuando ocurran. Si una categor\xeda queda mal, pod\xe9s editarla sin rehacer el presupuesto.",null)
+B.a8G=new A.pj(B.d2,"Selecciona o crea al menos una categor\xeda para asignar montos.",null)
 B.MO=new A.at(61259,"MaterialIcons",!1)
-B.a8H=new A.pj(B.MO,"Este paso solo revisa lo que vas a crear. Si queres cambiar montos, volve a Categorias y montos.",null)
+B.a8H=new A.pj(B.MO,"Este paso solo revisa lo que vas a crear. Si quer\xe9s cambiar montos, volv\xe9 a Categor\xedas y montos.",null)
 B.a8J=new A.Z2(null)
 B.a8I=new A.Z4(null)
 B.a8P=new A.Ze(null)
