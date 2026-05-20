@@ -1,11 +1,11 @@
 {
-    "name": "Mis riales",
-    "short_name": "Mis riales",
+    "name": "RIALES",
+    "short_name": "RIALES",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#F5F7F3",
-    "theme_color": "#16352E",
-    "description": "Mis riales, app Flutter para presupuesto mensual, gastos reales y reportes.",
+    "background_color": "#FBF8FF",
+    "theme_color": "#5F14E6",
+    "description": "RIALES, app Flutter para presupuesto mensual, gastos reales y deudas.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
