@@ -1,9 +1,11 @@
 html,
 body {
+  --riales-logo-on-dark: #F7FAFC;
+
   height: 100%;
   margin: 0;
   overflow: hidden;
-  background: #F8FAF9;
+  background: #00111C;
 }
 
 body {
@@ -14,10 +16,8 @@ body {
 
 #app-loader {
   align-items: center;
-  background:
-    radial-gradient(circle at 50% 24%, rgba(91, 74, 143, 0.10), transparent 32%),
-    #F8FAF9;
-  color: #223033;
+  background: #00111C;
+  color: #F7FAFC;
   display: flex;
   flex-direction: column;
   gap: 18px;
@@ -31,25 +31,46 @@ body {
 .loader-logo {
   align-items: center;
   aspect-ratio: 580 / 165;
+  background-color: var(--riales-logo-on-dark);
   display: flex;
+  mask-image: url("logo-loader.png");
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  -webkit-mask-image: url("logo-loader.png");
+  -webkit-mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  filter: drop-shadow(0 14px 24px rgba(0, 0, 0, 0.28));
   width: clamp(200px, 56vw, 240px);
 }
 
 .loader-logo img {
   display: block;
-  filter: drop-shadow(0 14px 24px rgba(28, 52, 50, 0.16));
   height: auto;
+  opacity: 0;
   width: 100%;
 }
 
+@supports not ((mask-image: url("")) or (-webkit-mask-image: url(""))) {
+  .loader-logo {
+    background-color: transparent;
+  }
+
+  .loader-logo img {
+    filter: brightness(0) invert(1) drop-shadow(0 14px 24px rgba(0, 0, 0, 0.28));
+    opacity: 1;
+  }
+}
+
 .loader-message {
-  color: #64706E;
+  color: #C0CBD5;
   font-size: 15px;
   max-width: 280px;
 }
 
 .loader-bar {
-  background: #D7E2DE;
+  background: #263442;
   border-radius: 999px;
   height: 5px;
   overflow: hidden;
@@ -58,7 +79,7 @@ body {
 
 .loader-bar::before {
   animation: loader-slide 1.1s ease-in-out infinite;
-  background: linear-gradient(90deg, #5B4A8F, #2F8C80);
+  background: #6FA2FF;
   border-radius: inherit;
   content: "";
   display: block;
