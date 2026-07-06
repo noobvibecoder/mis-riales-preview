@@ -63,32 +63,36 @@
       <header>
         <div class="meta">RIALES</div>
         <h1>Politica de privacidad</h1>
-        <p>Fecha de vigencia: 18 de junio de 2026.</p>
+        <p>Fecha de vigencia: 6 de julio de 2026.</p>
       </header>
 
       <section class="card">
         <p>
           RIALES es una app de finanzas personales para registrar ingresos,
-          gastos, deudas, calendario financiero, efectivo disponible e
-          indicadores. Esta politica explica que datos tratamos y para que los
-          usamos.
+          gastos, gastos recurrentes, deudas, pagos, intereses, activos,
+          calendario financiero, efectivo disponible, indicadores e
+          importaciones bancarias. Esta politica explica que datos tratamos y
+          para que los usamos.
         </p>
       </section>
 
       <h2>Datos que recopilamos</h2>
       <ul>
-        <li>Datos de cuenta, como correo electronico e identificador de usuario.</li>
-        <li>Datos financieros que ingresas: ingresos, gastos, categorias, deudas, pagos, calendario y efectivo disponible.</li>
+        <li>Datos de cuenta, como nombre, correo electronico, identificador de usuario, proveedor de inicio de sesion y estado de sesion.</li>
+        <li>Datos financieros que ingresas o confirmas: ingresos, gastos, categorias, gastos recurrentes, deudas, pagos, intereses y otros cargos, activos, calendario, efectivo disponible, monedas, tasa de cambio y respaldos.</li>
         <li>Preferencias necesarias para mostrar y sincronizar tu informacion.</li>
-        <li>Archivos que seleccionas para importar datos o restaurar respaldos.</li>
+        <li>Archivos que seleccionas para importar datos o restaurar respaldos, incluyendo PDFs bancarios, texto extraido, movimientos detectados, duplicados e ignorados.</li>
         <li>SMS bancarios nuevos de remitentes que autorizas, solo si activas la captura automatica en Android.</li>
+        <li>Reglas de clasificacion aprendidas cuando corregis una sugerencia, para mejorar futuras importaciones, SMS o registros por voz.</li>
+        <li>Texto copiado al portapapeles cuando usas la opcion de resumen para IA; RIALES no lo envia automaticamente a servicios externos de IA.</li>
       </ul>
 
       <h2>Permisos</h2>
       <p>
         La app puede solicitar microfono para dictado de movimientos. RIALES no
         guarda grabaciones de audio. La app puede usar biometria para facilitar
-        el acceso local cuando el dispositivo lo permita. En Android, la app
+        el acceso local cuando el dispositivo lo permita; RIALES no recibe ni
+        almacena datos biometricos. En Android, la app
         puede solicitar permiso de SMS solo cuando activas la captura automatica
         de compras bancarias; esa funcion procesa mensajes nuevos de remitentes
         autorizados por vos y deja gastos pendientes para confirmar.
@@ -97,17 +101,30 @@
       <h2>Uso de datos</h2>
       <p>
         Usamos tus datos para crear y proteger tu cuenta, guardar y sincronizar
-        informacion financiera, mostrar resumen, calendario, registros, deudas e
-        indicadores, permitir respaldos, sugerir movimientos desde archivos o
-        SMS bancarios autorizados y mantener la seguridad del servicio.
+        informacion financiera, mostrar resumen, calendario, registros, deudas,
+        activos e indicadores, permitir respaldos, sugerir movimientos desde
+        archivos, voz o SMS bancarios autorizados, aprender de correcciones de
+        clasificacion, convertir saldos globales entre monedas y mantener la
+        seguridad del servicio.
         RIALES no vende tus datos personales ni financieros.
       </p>
 
       <h2>Almacenamiento y seguridad</h2>
       <p>
         Los datos de produccion se guardan en Supabase con autenticacion y
-        controles por usuario. La app puede guardar datos locales cifrados para
-        cache, funcionamiento y respaldo. Las comunicaciones remotas usan HTTPS.
+        controles por usuario. En modo cuenta, RIALES es online-first y no usa
+        el dispositivo como fuente operativa de tus datos financieros. Puede
+        conservar datos tecnicos de sesion, permisos, procesamiento temporal o
+        respaldos locales que vos generas o restauras explicitamente. Las
+        comunicaciones remotas usan HTTPS.
+      </p>
+
+      <h2>Servicios externos</h2>
+      <p>
+        RIALES no vende tus datos personales ni financieros, no conecta con
+        bancos y no comparte tus datos con bancos. Podemos usar proveedores
+        necesarios para operar la app, como Supabase, Google si elegis iniciar
+        sesion con Google, tiendas de aplicaciones, correo o infraestructura.
       </p>
 
       <h2>Eliminacion de cuenta y datos</h2>
@@ -117,6 +134,11 @@
           >la pagina de eliminacion de cuenta</a
         >
         o desde la seccion Configuracion dentro de la app.
+      </p>
+      <p>
+        La opcion de borrar todo y empezar desde cero elimina los datos
+        financieros y configuraciones de RIALES asociados a tu cuenta, pero no
+        elimina por si sola tu correo, contrasena o cuenta de autenticacion.
       </p>
 
       <h2>Contacto</h2>
