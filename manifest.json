@@ -5,7 +5,7 @@
     "display": "standalone",
     "background_color": "#00111C",
     "theme_color": "#00111C",
-    "description": "RIALES, app Flutter para presupuesto mensual, gastos reales y deudas.",
+    "description": "RIALES, app Flutter para resumen mensual, gastos reales y deudas.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
